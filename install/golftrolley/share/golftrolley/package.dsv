@@ -1,0 +1,6 @@
+source;share/golftrolley/hook/pythonpath.ps1
+source;share/golftrolley/hook/pythonpath.dsv
+source;share/golftrolley/hook/pythonpath.sh
+source;share/golftrolley/hook/ament_prefix_path.ps1
+source;share/golftrolley/hook/ament_prefix_path.dsv
+source;share/golftrolley/hook/ament_prefix_path.sh

@@ -1,0 +1,32 @@
+running egg_info
+creating ../../build/golftrolley/golftrolley.egg-info
+writing ../../build/golftrolley/golftrolley.egg-info/PKG-INFO
+writing dependency_links to ../../build/golftrolley/golftrolley.egg-info/dependency_links.txt
+writing requirements to ../../build/golftrolley/golftrolley.egg-info/requires.txt
+writing top-level names to ../../build/golftrolley/golftrolley.egg-info/top_level.txt
+writing manifest file '../../build/golftrolley/golftrolley.egg-info/SOURCES.txt'
+reading manifest file '../../build/golftrolley/golftrolley.egg-info/SOURCES.txt'
+writing manifest file '../../build/golftrolley/golftrolley.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/golftrolley/robot_ws/build/golftrolley/build
+creating /home/golftrolley/robot_ws/build/golftrolley/build/lib
+creating /home/golftrolley/robot_ws/build/golftrolley/build/lib/golftrolley
+copying golftrolley/__init__.py -> /home/golftrolley/robot_ws/build/golftrolley/build/lib/golftrolley
+running install
+running install_lib
+creating /home/golftrolley/robot_ws/install/golftrolley/lib/python3.12/site-packages/golftrolley
+copying /home/golftrolley/robot_ws/build/golftrolley/build/lib/golftrolley/__init__.py -> /home/golftrolley/robot_ws/install/golftrolley/lib/python3.12/site-packages/golftrolley
+byte-compiling /home/golftrolley/robot_ws/install/golftrolley/lib/python3.12/site-packages/golftrolley/__init__.py to __init__.cpython-312.pyc
+running install_data
+creating /home/golftrolley/robot_ws/install/golftrolley/share/ament_index
+creating /home/golftrolley/robot_ws/install/golftrolley/share/ament_index/resource_index
+creating /home/golftrolley/robot_ws/install/golftrolley/share/ament_index/resource_index/packages
+copying resource/golftrolley -> /home/golftrolley/robot_ws/install/golftrolley/share/ament_index/resource_index/packages
+copying package.xml -> /home/golftrolley/robot_ws/install/golftrolley/share/golftrolley
+creating /home/golftrolley/robot_ws/install/golftrolley/share/golftrolley/launch
+copying launch/gps_launch.py -> /home/golftrolley/robot_ws/install/golftrolley/share/golftrolley/launch
+running install_egg_info
+Copying ../../build/golftrolley/golftrolley.egg-info to /home/golftrolley/robot_ws/install/golftrolley/lib/python3.12/site-packages/golftrolley-0.0.0-py3.12.egg-info
+running install_scripts
+writing list of installed files to '/home/golftrolley/robot_ws/build/golftrolley/install.log'
