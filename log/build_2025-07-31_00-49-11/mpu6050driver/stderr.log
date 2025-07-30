@@ -1,0 +1,50 @@
+In file included from [01m[K/home/golftrolley/robot_ws/src/ros2_mpu6050_driver/src/mpu6050sensor.cpp:1[m[K:
+[01m[K/home/golftrolley/robot_ws/src/ros2_mpu6050_driver/include/mpu6050driver/mpu6050sensor.h:76:28:[m[K [01;31m[Kerror: [m[Kfield ‘[01m[KACCEL_RANGES[m[K’ has incomplete type ‘[01m[Kconst std::array<int, 4>[m[K’
+   76 |   const std::array<int, 4> [01;31m[KACCEL_RANGES[m[K{2, 4, 8, 16};
+      |                            [01;31m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/13/bits/memory_resource.h:47[m[K,
+                 from [01m[K/usr/include/c++/13/string:58[m[K,
+                 from [01m[K/home/golftrolley/robot_ws/src/ros2_mpu6050_driver/include/mpu6050driver/mpu6050sensor.h:4[m[K:
+[01m[K/usr/include/c++/13/tuple:2019:45:[m[K [01;36m[Knote: [m[Kdeclaration of ‘[01m[Kstruct std::array<int, 4>[m[K’
+ 2019 |   template<typename _Tp, size_t _Nm> struct [01;36m[Karray[m[K;
+      |                                             [01;36m[K^~~~~[m[K
+[01m[K/home/golftrolley/robot_ws/src/ros2_mpu6050_driver/include/mpu6050driver/mpu6050sensor.h:77:28:[m[K [01;31m[Kerror: [m[Kfield ‘[01m[KGYRO_RANGES[m[K’ has incomplete type ‘[01m[Kconst std::array<int, 4>[m[K’
+   77 |   const std::array<int, 4> [01;31m[KGYRO_RANGES[m[K{250, 500, 1000, 2000};
+      |                            [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/13/tuple:2019:45:[m[K [01;36m[Knote: [m[Kdeclaration of ‘[01m[Kstruct std::array<int, 4>[m[K’
+ 2019 |   template<typename _Tp, size_t _Nm> struct [01;36m[Karray[m[K;
+      |                                             [01;36m[K^~~~~[m[K
+[01m[K/home/golftrolley/robot_ws/src/ros2_mpu6050_driver/include/mpu6050driver/mpu6050sensor.h:78:28:[m[K [01;31m[Kerror: [m[Kfield ‘[01m[KDLPF_RANGES[m[K’ has incomplete type ‘[01m[Kconst std::array<int, 7>[m[K’
+   78 |   const std::array<int, 7> [01;31m[KDLPF_RANGES[m[K{260, 184, 94, 44, 21, 10, 5};
+      |                            [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/13/tuple:2019:45:[m[K [01;36m[Knote: [m[Kdeclaration of ‘[01m[Kstruct std::array<int, 7>[m[K’
+ 2019 |   template<typename _Tp, size_t _Nm> struct [01;36m[Karray[m[K;
+      |                                             [01;36m[K^~~~~[m[K
+In file included from [01m[K/home/golftrolley/robot_ws/src/ros2_mpu6050_driver/include/mpu6050driver/mpu6050driver.h:4[m[K,
+                 from [01m[K/home/golftrolley/robot_ws/src/ros2_mpu6050_driver/src/mpu6050driver.cpp:1[m[K:
+[01m[K/home/golftrolley/robot_ws/src/ros2_mpu6050_driver/include/mpu6050driver/mpu6050sensor.h:76:28:[m[K [01;31m[Kerror: [m[Kfield ‘[01m[KACCEL_RANGES[m[K’ has incomplete type ‘[01m[Kconst std::array<int, 4>[m[K’
+   76 |   const std::array<int, 4> [01;31m[KACCEL_RANGES[m[K{2, 4, 8, 16};
+      |                            [01;31m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/13/bits/memory_resource.h:47[m[K,
+                 from [01m[K/usr/include/c++/13/string:58[m[K,
+                 from [01m[K/home/golftrolley/robot_ws/src/ros2_mpu6050_driver/include/mpu6050driver/mpu6050sensor.h:4[m[K:
+[01m[K/usr/include/c++/13/tuple:2019:45:[m[K [01;36m[Knote: [m[Kdeclaration of ‘[01m[Kstruct std::array<int, 4>[m[K’
+ 2019 |   template<typename _Tp, size_t _Nm> struct [01;36m[Karray[m[K;
+      |                                             [01;36m[K^~~~~[m[K
+[01m[K/home/golftrolley/robot_ws/src/ros2_mpu6050_driver/include/mpu6050driver/mpu6050sensor.h:77:28:[m[K [01;31m[Kerror: [m[Kfield ‘[01m[KGYRO_RANGES[m[K’ has incomplete type ‘[01m[Kconst std::array<int, 4>[m[K’
+   77 |   const std::array<int, 4> [01;31m[KGYRO_RANGES[m[K{250, 500, 1000, 2000};
+      |                            [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/13/tuple:2019:45:[m[K [01;36m[Knote: [m[Kdeclaration of ‘[01m[Kstruct std::array<int, 4>[m[K’
+ 2019 |   template<typename _Tp, size_t _Nm> struct [01;36m[Karray[m[K;
+      |                                             [01;36m[K^~~~~[m[K
+[01m[K/home/golftrolley/robot_ws/src/ros2_mpu6050_driver/include/mpu6050driver/mpu6050sensor.h:78:28:[m[K [01;31m[Kerror: [m[Kfield ‘[01m[KDLPF_RANGES[m[K’ has incomplete type ‘[01m[Kconst std::array<int, 7>[m[K’
+   78 |   const std::array<int, 7> [01;31m[KDLPF_RANGES[m[K{260, 184, 94, 44, 21, 10, 5};
+      |                            [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/13/tuple:2019:45:[m[K [01;36m[Knote: [m[Kdeclaration of ‘[01m[Kstruct std::array<int, 7>[m[K’
+ 2019 |   template<typename _Tp, size_t _Nm> struct [01;36m[Karray[m[K;
+      |                                             [01;36m[K^~~~~[m[K
+gmake[2]: *** [CMakeFiles/mpu6050driver.dir/build.make:90: CMakeFiles/mpu6050driver.dir/src/mpu6050sensor.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/mpu6050driver.dir/build.make:76: CMakeFiles/mpu6050driver.dir/src/mpu6050driver.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/mpu6050driver.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

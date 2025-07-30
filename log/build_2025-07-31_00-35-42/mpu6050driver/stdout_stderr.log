@@ -1,0 +1,62 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Found rclcpp: 28.1.10 (/opt/ros/jazzy/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  
+-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+-- Configuring done (9.5s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/golftrolley/robot_ws/build/mpu6050driver
+[ 33%] [32mBuilding CXX object CMakeFiles/mpu6050driver.dir/src/mpu6050driver.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/mpu6050driver.dir/src/mpu6050sensor.cpp.o[0m
+[01m[K/home/golftrolley/robot_ws/src/ros2_mpu6050_driver/src/mpu6050sensor.cpp:6:10:[m[K [01;31m[Kfatal error: [m[Ki2c/smbus.h: No such file or directory
+    6 | #include [01;31m[K<i2c/smbus.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/mpu6050driver.dir/build.make:90: CMakeFiles/mpu6050driver.dir/src/mpu6050sensor.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+In file included from [01m[K/home/golftrolley/robot_ws/src/ros2_mpu6050_driver/include/mpu6050driver/mpu6050driver.h:4[m[K,
+                 from [01m[K/home/golftrolley/robot_ws/src/ros2_mpu6050_driver/src/mpu6050driver.cpp:1[m[K:
+[01m[K/home/golftrolley/robot_ws/src/ros2_mpu6050_driver/include/mpu6050driver/mpu6050sensor.h:76:28:[m[K [01;31m[Kerror: [m[Kfield ‘[01m[KACCEL_RANGES[m[K’ has incomplete type ‘[01m[Kconst std::array<int, 4>[m[K’
+   76 |   const std::array<int, 4> [01;31m[KACCEL_RANGES[m[K{2, 4, 8, 16};
+      |                            [01;31m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/13/bits/memory_resource.h:47[m[K,
+                 from [01m[K/usr/include/c++/13/string:58[m[K,
+                 from [01m[K/home/golftrolley/robot_ws/src/ros2_mpu6050_driver/include/mpu6050driver/mpu6050sensor.h:4[m[K:
+[01m[K/usr/include/c++/13/tuple:2019:45:[m[K [01;36m[Knote: [m[Kdeclaration of ‘[01m[Kstruct std::array<int, 4>[m[K’
+ 2019 |   template<typename _Tp, size_t _Nm> struct [01;36m[Karray[m[K;
+      |                                             [01;36m[K^~~~~[m[K
+[01m[K/home/golftrolley/robot_ws/src/ros2_mpu6050_driver/include/mpu6050driver/mpu6050sensor.h:77:28:[m[K [01;31m[Kerror: [m[Kfield ‘[01m[KGYRO_RANGES[m[K’ has incomplete type ‘[01m[Kconst std::array<int, 4>[m[K’
+   77 |   const std::array<int, 4> [01;31m[KGYRO_RANGES[m[K{250, 500, 1000, 2000};
+      |                            [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/13/tuple:2019:45:[m[K [01;36m[Knote: [m[Kdeclaration of ‘[01m[Kstruct std::array<int, 4>[m[K’
+ 2019 |   template<typename _Tp, size_t _Nm> struct [01;36m[Karray[m[K;
+      |                                             [01;36m[K^~~~~[m[K
+[01m[K/home/golftrolley/robot_ws/src/ros2_mpu6050_driver/include/mpu6050driver/mpu6050sensor.h:78:28:[m[K [01;31m[Kerror: [m[Kfield ‘[01m[KDLPF_RANGES[m[K’ has incomplete type ‘[01m[Kconst std::array<int, 7>[m[K’
+   78 |   const std::array<int, 7> [01;31m[KDLPF_RANGES[m[K{260, 184, 94, 44, 21, 10, 5};
+      |                            [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/13/tuple:2019:45:[m[K [01;36m[Knote: [m[Kdeclaration of ‘[01m[Kstruct std::array<int, 7>[m[K’
+ 2019 |   template<typename _Tp, size_t _Nm> struct [01;36m[Karray[m[K;
+      |                                             [01;36m[K^~~~~[m[K
+gmake[2]: *** [CMakeFiles/mpu6050driver.dir/build.make:76: CMakeFiles/mpu6050driver.dir/src/mpu6050driver.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/mpu6050driver.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
