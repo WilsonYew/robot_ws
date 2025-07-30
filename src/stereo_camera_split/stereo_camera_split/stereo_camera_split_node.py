@@ -13,9 +13,9 @@ class StereoSplitCameraNode(Node):
     def __init__(self):
         super().__init__('stereo_split_camera_node')
 
-        self.declare_parameter('device', '/dev/video2')
-        self.declare_parameter('width', 2560)
-        self.declare_parameter('height', 720)
+        self.declare_parameter('device', '/dev/video0')
+        self.declare_parameter('width', 1280)
+        self.declare_parameter('height', 480)
         self.declare_parameter('frame_rate', 30)
         self.declare_parameter('left_camera_info_path', '')
         self.declare_parameter('right_camera_info_path', '')
@@ -30,6 +30,8 @@ class StereoSplitCameraNode(Node):
         self.cap.set(cv2.CAP_PROP_FRAME_WIDTH, width)
         self.cap.set(cv2.CAP_PROP_FRAME_HEIGHT, height)
         self.cap.set(cv2.CAP_PROP_FPS, frame_rate)
+        self.cap.set(cv2.CAP_PROP_FOURCC, cv2.VideoWriter_fourcc(*'MJPG'))
+
 
         if not self.cap.isOpened():
             self.get_logger().error(f"Failed to open camera device: {device}")
