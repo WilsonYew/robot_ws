@@ -17,8 +17,8 @@ class StereoSplitCameraNode(Node):
         self.declare_parameter('width', 1280)
         self.declare_parameter('height', 480)
         self.declare_parameter('frame_rate', 30)
-        self.declare_parameter('left_camera_info_path', '')
-        self.declare_parameter('right_camera_info_path', '')
+        self.declare_parameter('left_camera_info_path', '/home/golftrolley/robot_ws/src/stereo_camera_split/params/left_camera.yaml')
+        self.declare_parameter('right_camera_info_path', '/home/golftrolley/robot_ws/src/stereo_camera_split/params/right_camera.yaml')
 
         device = self.get_parameter('device').get_parameter_value().string_value
         width = self.get_parameter('width').get_parameter_value().integer_value

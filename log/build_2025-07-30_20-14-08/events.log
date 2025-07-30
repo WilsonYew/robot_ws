@@ -1,0 +1,356 @@
+[0.000000] (-) TimerEvent: {}
+[0.001126] (golftrolley) JobQueued: {'identifier': 'golftrolley', 'dependencies': OrderedDict()}
+[0.002067] (stereo_camera_split) JobQueued: {'identifier': 'stereo_camera_split', 'dependencies': OrderedDict()}
+[0.002589] (ydlidar_ros2_driver) JobQueued: {'identifier': 'ydlidar_ros2_driver', 'dependencies': OrderedDict()}
+[0.003098] (ydlidar_sdk) JobQueued: {'identifier': 'ydlidar_sdk', 'dependencies': OrderedDict()}
+[0.003272] (golftrolley) JobStarted: {'identifier': 'golftrolley'}
+[0.039898] (stereo_camera_split) JobStarted: {'identifier': 'stereo_camera_split'}
+[0.065808] (ydlidar_ros2_driver) JobStarted: {'identifier': 'ydlidar_ros2_driver'}
+[0.085853] (ydlidar_sdk) JobStarted: {'identifier': 'ydlidar_sdk'}
+[0.099092] (-) TimerEvent: {}
+[0.199876] (-) TimerEvent: {}
+[0.300719] (-) TimerEvent: {}
+[0.401838] (-) TimerEvent: {}
+[0.502526] (-) TimerEvent: {}
+[0.603164] (-) TimerEvent: {}
+[0.703851] (-) TimerEvent: {}
+[0.804503] (-) TimerEvent: {}
+[0.905219] (-) TimerEvent: {}
+[1.006161] (-) TimerEvent: {}
+[1.106931] (-) TimerEvent: {}
+[1.207732] (-) TimerEvent: {}
+[1.308698] (-) TimerEvent: {}
+[1.409399] (-) TimerEvent: {}
+[1.510075] (-) TimerEvent: {}
+[1.610775] (-) TimerEvent: {}
+[1.711466] (-) TimerEvent: {}
+[1.812217] (-) TimerEvent: {}
+[1.914041] (-) TimerEvent: {}
+[1.924721] (ydlidar_ros2_driver) JobProgress: {'identifier': 'ydlidar_ros2_driver', 'progress': 'cmake'}
+[1.928001] (ydlidar_ros2_driver) JobProgress: {'identifier': 'ydlidar_ros2_driver', 'progress': 'build'}
+[1.930914] (ydlidar_ros2_driver) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/golftrolley/robot_ws/build/ydlidar_ros2_driver', '--', '-j4', '-l4'], 'cwd': '/home/golftrolley/robot_ws/build/ydlidar_ros2_driver', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'golftrolley', 'SSH_CLIENT': '10.42.0.1 38216 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/home/golftrolley', 'OLDPWD': '/home/golftrolley', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/golftrolley/robot_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'golftrolley', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '42', 'PATH': '/home/golftrolley/robot_ws/install/ydlidar_sdk/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/golftrolley/robot_ws/install/ydlidar_ros2_driver:/home/golftrolley/robot_ws/install/stereo_camera_split:/home/golftrolley/robot_ws/install/golftrolley:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/golftrolley/robot_ws/build/ydlidar_ros2_driver', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '10.42.0.1 38216 10.42.0.2 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/golftrolley/robot_ws/install/stereo_camera_split/lib/python3.12/site-packages:/home/golftrolley/robot_ws/install/golftrolley/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/golftrolley/robot_ws/install/ydlidar_sdk:/home/golftrolley/robot_ws/install/ydlidar_ros2_driver:/home/golftrolley/robot_ws/install/stereo_camera_split:/home/golftrolley/robot_ws/install/golftrolley:/opt/ros/jazzy'}), 'shell': False}
+[1.949751] (ydlidar_sdk) JobProgress: {'identifier': 'ydlidar_sdk', 'progress': 'cmake'}
+[1.952505] (ydlidar_sdk) JobProgress: {'identifier': 'ydlidar_sdk', 'progress': 'build'}
+[1.953538] (ydlidar_sdk) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/golftrolley/robot_ws/build/ydlidar_sdk', '--', '-j4', '-l4'], 'cwd': '/home/golftrolley/robot_ws/build/ydlidar_sdk', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'golftrolley', 'SSH_CLIENT': '10.42.0.1 38216 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/home/golftrolley', 'OLDPWD': '/home/golftrolley', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/golftrolley/robot_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'golftrolley', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '42', 'PATH': '/home/golftrolley/robot_ws/install/ydlidar_sdk/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/golftrolley/robot_ws/install/ydlidar_ros2_driver:/home/golftrolley/robot_ws/install/stereo_camera_split:/home/golftrolley/robot_ws/install/golftrolley:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/golftrolley/robot_ws/build/ydlidar_sdk', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '10.42.0.1 38216 10.42.0.2 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/golftrolley/robot_ws/install/stereo_camera_split/lib/python3.12/site-packages:/home/golftrolley/robot_ws/install/golftrolley/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/golftrolley/robot_ws/install/ydlidar_sdk:/home/golftrolley/robot_ws/install/ydlidar_ros2_driver'}), 'shell': False}
+[2.016710] (-) TimerEvent: {}
+[2.117764] (-) TimerEvent: {}
+[2.221556] (-) TimerEvent: {}
+[2.306733] (ydlidar_ros2_driver) StdoutLine: {'line': b'[ 50%] Built target ydlidar_ros2_driver_node\n'}
+[2.322759] (-) TimerEvent: {}
+[2.334190] (ydlidar_ros2_driver) StdoutLine: {'line': b'[100%] Built target ydlidar_ros2_driver_client\n'}
+[2.411486] (ydlidar_ros2_driver) CommandEnded: {'returncode': 0}
+[2.412791] (ydlidar_ros2_driver) JobProgress: {'identifier': 'ydlidar_ros2_driver', 'progress': 'install'}
+[2.416663] (ydlidar_sdk) StdoutLine: {'line': b'[ 38%] Built target ydlidar_sdk\n'}
+[2.424539] (-) TimerEvent: {}
+[2.500582] (ydlidar_ros2_driver) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/golftrolley/robot_ws/build/ydlidar_ros2_driver'], 'cwd': '/home/golftrolley/robot_ws/build/ydlidar_ros2_driver', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'golftrolley', 'SSH_CLIENT': '10.42.0.1 38216 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/home/golftrolley', 'OLDPWD': '/home/golftrolley', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/golftrolley/robot_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'golftrolley', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '42', 'PATH': '/home/golftrolley/robot_ws/install/ydlidar_sdk/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/golftrolley/robot_ws/install/ydlidar_ros2_driver:/home/golftrolley/robot_ws/install/stereo_camera_split:/home/golftrolley/robot_ws/install/golftrolley:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/golftrolley/robot_ws/build/ydlidar_ros2_driver', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '10.42.0.1 38216 10.42.0.2 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/golftrolley/robot_ws/install/stereo_camera_split/lib/python3.12/site-packages:/home/golftrolley/robot_ws/install/golftrolley/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/golftrolley/robot_ws/install/ydlidar_sdk:/home/golftrolley/robot_ws/install/ydlidar_ros2_driver:/home/golftrolley/robot_ws/install/stereo_camera_split:/home/golftrolley/robot_ws/install/golftrolley:/opt/ros/jazzy'}), 'shell': False}
+[2.524750] (-) TimerEvent: {}
+[2.560273] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.564820] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/lib/ydlidar_ros2_driver/ydlidar_ros2_driver_node\n'}
+[2.572056] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/lib/ydlidar_ros2_driver/ydlidar_ros2_driver_client\n'}
+[2.579625] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch\n'}
+[2.586705] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/ydlidar.py\n'}
+[2.597766] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/x3_ydlidar_launch.py\n'}
+[2.602770] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/ydlidar_launch.py\n'}
+[2.608453] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/ydlidar_launch_view.py\n'}
+[2.610581] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params\n'}
+[2.611131] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/TEA.yaml\n'}
+[2.618523] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/GS2.yaml\n'}
+[2.619214] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/TG.yaml\n'}
+[2.619830] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/ydlidar_x3.yaml\n'}
+[2.620324] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/X4-Pro.yaml\n'}
+[2.631653] (-) TimerEvent: {}
+[2.632187] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/Tmini.yaml\n'}
+[2.632945] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/X3.yaml\n'}
+[2.636287] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/ydlidar.yaml\n'}
+[2.636822] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/Tmini-Plus-SH.yaml\n'}
+[2.637232] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/G4.yaml\n'}
+[2.644010] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/X2.yaml\n'}
+[2.644622] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/GS5.yaml\n'}
+[2.645109] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/G6.yaml\n'}
+[2.645598] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/X4.yaml\n'}
+[2.646083] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/G1.yaml\n'}
+[2.650730] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/sdm15.yaml\n'}
+[2.651421] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/G2.yaml\n'}
+[2.652025] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/startup\n'}
+[2.652419] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/startup/initenv.sh\n'}
+[2.652822] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/config\n'}
+[2.653164] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/config/ydlidar.rviz\n'}
+[2.655466] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ament_index/resource_index/package_run_dependencies/ydlidar_ros2_driver\n'}
+[2.656016] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ament_index/resource_index/parent_prefix_path/ydlidar_ros2_driver\n'}
+[2.656391] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/ament_prefix_path.sh\n'}
+[2.656831] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/ament_prefix_path.dsv\n'}
+[2.657210] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/path.sh\n'}
+[2.661172] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/path.dsv\n'}
+[2.661896] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.bash\n'}
+[2.662348] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.sh\n'}
+[2.662982] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.zsh\n'}
+[2.667792] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.dsv\n'}
+[2.668476] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Installing: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.dsv\n'}
+[2.669296] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ament_index/resource_index/packages/ydlidar_ros2_driver\n'}
+[2.669924] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/cmake/ydlidar_ros2_driverConfig.cmake\n'}
+[2.672742] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/cmake/ydlidar_ros2_driverConfig-version.cmake\n'}
+[2.677545] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.xml\n'}
+[2.690474] (ydlidar_ros2_driver) CommandEnded: {'returncode': 0}
+[2.723523] (ydlidar_sdk) StdoutLine: {'line': b'[ 41%] Built target gs_restart\n'}
+[2.733544] (-) TimerEvent: {}
+[2.747003] (ydlidar_sdk) StdoutLine: {'line': b'[ 45%] Built target gs_test\n'}
+[2.755336] (ydlidar_sdk) StdoutLine: {'line': b'[ 49%] Built target gs_ota\n'}
+[2.768123] (ydlidar_sdk) StdoutLine: {'line': b'[ 52%] Built target et_test\n'}
+[2.837881] (-) TimerEvent: {}
+[2.926269] (ydlidar_sdk) StdoutLine: {'line': b'[ 56%] Built target gs_test2\n'}
+[2.927035] (ydlidar_ros2_driver) JobEnded: {'identifier': 'ydlidar_ros2_driver', 'rc': 0}
+[2.940506] (-) TimerEvent: {}
+[2.993730] (ydlidar_sdk) StdoutLine: {'line': b'[ 60%] Built target sdm_test\n'}
+[3.020329] (ydlidar_sdk) StdoutLine: {'line': b'[ 63%] Built target scl_test\n'}
+[3.044529] (-) TimerEvent: {}
+[3.058615] (ydlidar_sdk) StdoutLine: {'line': b'[ 67%] Built target sdm18_test\n'}
+[3.146051] (-) TimerEvent: {}
+[3.167543] (ydlidar_sdk) StdoutLine: {'line': b'[ 70%] Built target tea_test\n'}
+[3.246219] (-) TimerEvent: {}
+[3.248022] (ydlidar_sdk) StdoutLine: {'line': b'[ 74%] Built target tia_test\n'}
+[3.260424] (ydlidar_sdk) StdoutLine: {'line': b'[ 78%] Built target tmini-sh_test\n'}
+[3.311726] (ydlidar_sdk) StdoutLine: {'line': b'[ 81%] Built target tmini_test\n'}
+[3.335585] (ydlidar_sdk) StdoutLine: {'line': b'[ 85%] Built target tof_test\n'}
+[3.348539] (-) TimerEvent: {}
+[3.451531] (-) TimerEvent: {}
+[3.510839] (ydlidar_sdk) StdoutLine: {'line': b'[ 89%] Built target tri_restart\n'}
+[3.530565] (ydlidar_sdk) StdoutLine: {'line': b'[ 92%] Built target tri_and_gs_test\n'}
+[3.535749] (ydlidar_sdk) StdoutLine: {'line': b'[ 96%] Built target tri_test\n'}
+[3.544140] (ydlidar_sdk) StdoutLine: {'line': b'[100%] Built target lidar_c_api_test\n'}
+[3.551810] (-) TimerEvent: {}
+[3.615506] (ydlidar_sdk) CommandEnded: {'returncode': 0}
+[3.622079] (ydlidar_sdk) JobProgress: {'identifier': 'ydlidar_sdk', 'progress': 'install'}
+[3.622741] (ydlidar_sdk) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/golftrolley/robot_ws/build/ydlidar_sdk'], 'cwd': '/home/golftrolley/robot_ws/build/ydlidar_sdk', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'golftrolley', 'SSH_CLIENT': '10.42.0.1 38216 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/home/golftrolley', 'OLDPWD': '/home/golftrolley', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/golftrolley/robot_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'golftrolley', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '42', 'PATH': '/home/golftrolley/robot_ws/install/ydlidar_sdk/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/golftrolley/robot_ws/install/ydlidar_ros2_driver:/home/golftrolley/robot_ws/install/stereo_camera_split:/home/golftrolley/robot_ws/install/golftrolley:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/golftrolley/robot_ws/build/ydlidar_sdk', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '10.42.0.1 38216 10.42.0.2 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/golftrolley/robot_ws/install/stereo_camera_split/lib/python3.12/site-packages:/home/golftrolley/robot_ws/install/golftrolley/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/golftrolley/robot_ws/install/ydlidar_sdk:/home/golftrolley/robot_ws/install/ydlidar_ros2_driver'}), 'shell': False}
+[3.651992] (-) TimerEvent: {}
+[3.666611] (ydlidar_sdk) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[3.670952] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/include/core/base/datatype.h\n'}
+[3.677729] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/include/core/base/locker.h\n'}
+[3.685808] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/include/core/base/thread.h\n'}
+[3.688052] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/include/core/base/timer.h\n'}
+[3.694103] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/include/core/base/typedef.h\n'}
+[3.699095] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/include/core/base/utils.h\n'}
+[3.701274] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/include/core/base/v8stdint.h\n'}
+[3.706682] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/include/core/base/ydlidar.h\n'}
+[3.710874] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/include/core/common/ChannelDevice.h\n'}
+[3.715225] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/include/core/common/DriverInterface.h\n'}
+[3.715842] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/include/core/common/ydlidar_datatype.h\n'}
+[3.722507] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/include/core/common/ydlidar_def.h\n'}
+[3.724942] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/include/core/common/ydlidar_help.h\n'}
+[3.727458] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/include/core/common/ydlidar_protocol.h\n'}
+[3.729842] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/include/core/json/cJSON.h\n'}
+[3.731526] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/include/core/math/angles.h\n'}
+[3.734017] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/include/core/network/ActiveSocket.h\n'}
+[3.736844] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/include/core/network/PassiveSocket.h\n'}
+[3.739499] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/include/core/network/SimpleSocket.h\n'}
+[3.742325] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/include/core/network/StatTimer.h\n'}
+[3.744838] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/include/core/serial/common.h\n'}
+[3.747751] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/include/core/serial/serial.h\n'}
+[3.750627] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/include/core/serial/impl/unix/lock.h\n'}
+[3.752980] (-) TimerEvent: {}
+[3.754174] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/include/core/serial/impl/unix/unix.h\n'}
+[3.757195] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/include/core/serial/impl/unix/unix_serial.h\n'}
+[3.759832] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/include/src/CYdLidar.h\n'}
+[3.763349] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/include/src/DTSLidarDriver.h\n'}
+[3.764313] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/include/src/ETLidarDriver.h\n'}
+[3.769311] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/include/src/GSLidarDriver.h\n'}
+[3.772657] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/include/src/SDMLidarDriver.h\n'}
+[3.775457] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/include/src/TiaLidarDriver.h\n'}
+[3.778125] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/include/src/YDlidarDriver.h\n'}
+[3.780221] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/include/src/ydlidar_sdk.h\n'}
+[3.783431] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/include/src/filters/FilterInterface.h\n'}
+[3.784385] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/include/src/filters/NoiseFilter.h\n'}
+[3.785031] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/include/src/filters/StrongLightFilter.h\n'}
+[3.785526] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/include/ydlidar_config.h\n'}
+[3.786033] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/lib/libydlidar_sdk.a\n'}
+[3.789078] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/lib/pkgconfig/YDLIDAR_SDK.pc\n'}
+[3.789826] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/lib/cmake/ydlidar_sdk/ydlidar_sdkConfig.cmake\n'}
+[3.790663] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/lib/cmake/ydlidar_sdk/ydlidar_sdkTargets.cmake\n'}
+[3.791216] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/lib/cmake/ydlidar_sdk/ydlidar_sdkConfigVersion.cmake\n'}
+[3.794056] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/FindYDLIDAR_SDK.cmake\n'}
+[3.794616] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK\n'}
+[3.795059] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/cmake_uninstall.cmake.in\n'}
+[3.795557] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/common\n'}
+[3.795985] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/common/ydlidar_base.cmake\n'}
+[3.796452] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/common/ydlidar_parse.cmake\n'}
+[3.797047] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/install_package.cmake\n'}
+[3.797603] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/PackageConfigVersion.cmake.in\n'}
+[3.798064] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/script_show_final_summary.cmake\n'}
+[3.798544] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/FindPackage.cmake.in\n'}
+[3.799008] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/PkgConfig.pc.in\n'}
+[3.799535] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/PackageConfig.cmake.in\n'}
+[3.801672] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/LICENSE.txt\n'}
+[3.802158] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/README.md\n'}
+[3.802663] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc\n'}
+[3.803093] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/Diagram.md\n'}
+[3.803584] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/Dataset.md\n'}
+[3.804063] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/tutorials\n'}
+[3.804605] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/tutorials/writing_lidar_tutorial_c++.md\n'}
+[3.805126] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/tutorials/writing_lidar_tutorial_python.md\n'}
+[3.805753] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/tutorials/writing_lidar_tutorial_c.md\n'}
+[3.806215] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/tutorials/writing_lidar_network_adapter_tutorial_c++.md\n'}
+[3.809349] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/tutorials/examine_the_simple_lidar_tutorial.md\n'}
+[3.810281] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/SDK.pdf\n'}
+[3.810847] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/YDLidar-SDK-Communication-Protocol.pdf\n'}
+[3.811257] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/YDLIDAR_SDK_API_for_Developers.md\n'}
+[3.811685] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/YDLidar_SDK_Communication_Protocol.pdf\n'}
+[3.812050] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/Tutorials.md\n'}
+[3.812456] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/images\n'}
+[3.812933] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/images/sdk_init.png\n'}
+[3.813292] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/images/sdk_scanning.png\n'}
+[3.813713] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/images/angle_q2.png\n'}
+[3.814074] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/images/communication_mechanism.png\n'}
+[3.814506] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/images/sequence.png\n'}
+[3.814904] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/images/YDLidar.jpg\n'}
+[3.815445] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/images/frame_intensity.png\n'}
+[3.818753] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/images/EAI.png\n'}
+[3.819186] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/images/FlowChart.png\n'}
+[3.819628] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/images/system_workflow.png\n'}
+[3.820027] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/images/sdk_architecture.png\n'}
+[3.820415] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/images/frame.png\n'}
+[3.820858] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/images/YDLidar.png\n'}
+[3.821204] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/YDLidar-SDK-Communication-Protocol.md\n'}
+[3.821686] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/README.md\n'}
+[3.822084] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto\n'}
+[3.822578] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/how_to_create_a_udev_rules.md\n'}
+[3.822956] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/how_to_build_and_install.md\n'}
+[3.823305] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/how_to_create_a_pull.md\n'}
+[3.823725] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/images\n'}
+[3.824087] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/images/csharp_library.png\n'}
+[3.827744] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/images/sdk_init.png\n'}
+[3.829406] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/images/sdk_scanning.png\n'}
+[3.829863] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/images/csharp_build.png\n'}
+[3.830234] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/images/csharp_exception.png\n'}
+[3.830656] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/images/ydlidar_lidar_monitor.png\n'}
+[3.831050] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/images/csharp_running.png\n'}
+[3.831423] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/images/sequence.png\n'}
+[3.832942] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/images/vscode\n'}
+[3.833429] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/images/vscode/run_tasks.jpg\n'}
+[3.833876] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/images/vscode/tasks.png\n'}
+[3.834234] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/images/csharp_project.png\n'}
+[3.834671] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/images/ttyUSB0.png\n'}
+[3.835043] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/images/ttyUSB1.png\n'}
+[3.837784] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/images/cpack.png\n'}
+[3.839337] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/how_to_gerenrate_vs_project_by_cmake.md\n'}
+[3.839889] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/how_to_solve_slow_pull_from_cn.md\n'}
+[3.840288] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/how_to_build_and_debug_using_vscode.md\n'}
+[3.840770] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/README.md\n'}
+[3.841184] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/how_to_create_a_csharp_project.md\n'}
+[3.843287] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/quickstart\n'}
+[3.844002] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/quickstart/ydlidar_sdk_software_installation_guide.md\n'}
+[3.844453] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/quickstart/README.md\n'}
+[3.845054] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/YDLidar-SDK-Communication-Protocol.html\n'}
+[3.845561] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/FAQs\n'}
+[3.846056] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/FAQs/Software_FAQs_cn.md\n'}
+[3.846631] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/FAQs/General_FAQs_cn.md\n'}
+[3.847098] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/FAQs/Hardware_FAQs_cn.md\n'}
+[3.847575] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/FAQs/General_FAQs.md\n'}
+[3.848057] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/FAQs/Hardware_FAQs.md\n'}
+[3.849713] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/FAQs/README.md\n'}
+[3.850293] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/FAQs/Software_FAQs.md\n'}
+[3.850753] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/startup/initenv.sh\n'}
+[3.851137] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/bin/et_test\n'}
+[3.851564] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/bin/gs_ota\n'}
+[3.852033] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/bin/gs_restart\n'}
+[3.853712] (-) TimerEvent: {}
+[3.855603] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/bin/gs_test\n'}
+[3.856319] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/bin/gs_test2\n'}
+[3.856865] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/bin/scl_test\n'}
+[3.857256] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/bin/sdm18_test\n'}
+[3.857750] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/bin/sdm_test\n'}
+[3.858172] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/bin/tea_test\n'}
+[3.858711] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/bin/tia_test\n'}
+[3.859171] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/bin/tmini-sh_test\n'}
+[3.859842] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/bin/tmini_test\n'}
+[3.860646] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/bin/tof_test\n'}
+[3.861160] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/bin/tri_and_gs_test\n'}
+[3.863173] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/bin/tri_restart\n'}
+[3.863808] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/bin/tri_test\n'}
+[3.864269] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/bin/lidar_c_api_test\n'}
+[3.864858] (ydlidar_sdk) CommandEnded: {'returncode': 0}
+[3.889007] (ydlidar_sdk) JobEnded: {'identifier': 'ydlidar_sdk', 'rc': 0}
+[3.953911] (-) TimerEvent: {}
+[4.056531] (-) TimerEvent: {}
+[4.157220] (-) TimerEvent: {}
+[4.257954] (-) TimerEvent: {}
+[4.358676] (-) TimerEvent: {}
+[4.459756] (-) TimerEvent: {}
+[4.560420] (-) TimerEvent: {}
+[4.661079] (-) TimerEvent: {}
+[4.761813] (-) TimerEvent: {}
+[4.862484] (-) TimerEvent: {}
+[4.963121] (-) TimerEvent: {}
+[5.063862] (-) TimerEvent: {}
+[5.164531] (-) TimerEvent: {}
+[5.265280] (-) TimerEvent: {}
+[5.366190] (-) TimerEvent: {}
+[5.467907] (-) TimerEvent: {}
+[5.566106] (golftrolley) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/golftrolley', 'build', '--build-base', '/home/golftrolley/robot_ws/build/golftrolley/build', 'install', '--record', '/home/golftrolley/robot_ws/build/golftrolley/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/golftrolley/robot_ws/src/golftrolley', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'golftrolley', 'SSH_CLIENT': '10.42.0.1 38216 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/home/golftrolley', 'OLDPWD': '/home/golftrolley', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/golftrolley/robot_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'golftrolley', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '42', 'PATH': '/home/golftrolley/robot_ws/install/ydlidar_sdk/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/golftrolley/robot_ws/install/ydlidar_ros2_driver:/home/golftrolley/robot_ws/install/stereo_camera_split:/home/golftrolley/robot_ws/install/golftrolley:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/golftrolley/robot_ws/build/golftrolley', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '10.42.0.1 38216 10.42.0.2 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/golftrolley/robot_ws/build/golftrolley/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/golftrolley/robot_ws/install/golftrolley/lib/python3.12/site-packages:/home/golftrolley/robot_ws/install/stereo_camera_split/lib/python3.12/site-packages:/home/golftrolley/robot_ws/install/golftrolley/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/golftrolley/robot_ws/install/ydlidar_sdk:/home/golftrolley/robot_ws/install/ydlidar_ros2_driver'}, 'shell': False}
+[5.572955] (-) TimerEvent: {}
+[5.612761] (stereo_camera_split) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/stereo_camera_split', 'build', '--build-base', '/home/golftrolley/robot_ws/build/stereo_camera_split/build', 'install', '--record', '/home/golftrolley/robot_ws/build/stereo_camera_split/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/golftrolley/robot_ws/src/stereo_camera_split', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'golftrolley', 'SSH_CLIENT': '10.42.0.1 38216 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/home/golftrolley', 'OLDPWD': '/home/golftrolley', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/golftrolley/robot_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'golftrolley', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '42', 'PATH': '/home/golftrolley/robot_ws/install/ydlidar_sdk/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/golftrolley/robot_ws/install/ydlidar_ros2_driver:/home/golftrolley/robot_ws/install/stereo_camera_split:/home/golftrolley/robot_ws/install/golftrolley:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/golftrolley/robot_ws/build/stereo_camera_split', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '10.42.0.1 38216 10.42.0.2 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/golftrolley/robot_ws/build/stereo_camera_split/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/golftrolley/robot_ws/install/stereo_camera_split/lib/python3.12/site-packages:/home/golftrolley/robot_ws/install/stereo_camera_split/lib/python3.12/site-packages:/home/golftrolley/robot_ws/install/golftrolley/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/golftrolley/robot_ws/install/ydlidar_sdk:/home/golftrolley/robot_ws/install/ydlidar_ros2_driver'}, 'shell': False}
+[5.673140] (-) TimerEvent: {}
+[5.773975] (-) TimerEvent: {}
+[5.874832] (-) TimerEvent: {}
+[5.975562] (-) TimerEvent: {}
+[6.076794] (-) TimerEvent: {}
+[6.177529] (-) TimerEvent: {}
+[6.278190] (-) TimerEvent: {}
+[6.378971] (-) TimerEvent: {}
+[6.479789] (-) TimerEvent: {}
+[6.580474] (-) TimerEvent: {}
+[6.681133] (-) TimerEvent: {}
+[6.781897] (-) TimerEvent: {}
+[6.791095] (golftrolley) StdoutLine: {'line': b'running egg_info\n'}
+[6.821215] (stereo_camera_split) StdoutLine: {'line': b'running egg_info\n'}
+[6.873616] (golftrolley) StdoutLine: {'line': b'writing ../../build/golftrolley/golftrolley.egg-info/PKG-INFO\n'}
+[6.875511] (golftrolley) StdoutLine: {'line': b'writing dependency_links to ../../build/golftrolley/golftrolley.egg-info/dependency_links.txt\n'}
+[6.876449] (golftrolley) StdoutLine: {'line': b'writing requirements to ../../build/golftrolley/golftrolley.egg-info/requires.txt\n'}
+[6.877431] (golftrolley) StdoutLine: {'line': b'writing top-level names to ../../build/golftrolley/golftrolley.egg-info/top_level.txt\n'}
+[6.882057] (-) TimerEvent: {}
+[6.903803] (stereo_camera_split) StdoutLine: {'line': b'writing ../../build/stereo_camera_split/stereo_camera_split.egg-info/PKG-INFO\n'}
+[6.905036] (stereo_camera_split) StdoutLine: {'line': b'writing dependency_links to ../../build/stereo_camera_split/stereo_camera_split.egg-info/dependency_links.txt\n'}
+[6.906261] (stereo_camera_split) StdoutLine: {'line': b'writing entry points to ../../build/stereo_camera_split/stereo_camera_split.egg-info/entry_points.txt\n'}
+[6.907469] (stereo_camera_split) StdoutLine: {'line': b'writing requirements to ../../build/stereo_camera_split/stereo_camera_split.egg-info/requires.txt\n'}
+[6.908515] (stereo_camera_split) StdoutLine: {'line': b'writing top-level names to ../../build/stereo_camera_split/stereo_camera_split.egg-info/top_level.txt\n'}
+[6.982235] (-) TimerEvent: {}
+[7.050006] (golftrolley) StdoutLine: {'line': b"reading manifest file '../../build/golftrolley/golftrolley.egg-info/SOURCES.txt'\n"}
+[7.053595] (golftrolley) StdoutLine: {'line': b"writing manifest file '../../build/golftrolley/golftrolley.egg-info/SOURCES.txt'\n"}
+[7.054552] (golftrolley) StdoutLine: {'line': b'running build\n'}
+[7.055219] (golftrolley) StdoutLine: {'line': b'running build_py\n'}
+[7.056513] (golftrolley) StdoutLine: {'line': b'running install\n'}
+[7.082292] (golftrolley) StdoutLine: {'line': b'running install_lib\n'}
+[7.083082] (-) TimerEvent: {}
+[7.083834] (stereo_camera_split) StdoutLine: {'line': b"reading manifest file '../../build/stereo_camera_split/stereo_camera_split.egg-info/SOURCES.txt'\n"}
+[7.087050] (stereo_camera_split) StdoutLine: {'line': b"writing manifest file '../../build/stereo_camera_split/stereo_camera_split.egg-info/SOURCES.txt'\n"}
+[7.088584] (stereo_camera_split) StdoutLine: {'line': b'running build\n'}
+[7.089230] (stereo_camera_split) StdoutLine: {'line': b'running build_py\n'}
+[7.090204] (stereo_camera_split) StdoutLine: {'line': b'running install\n'}
+[7.116700] (stereo_camera_split) StdoutLine: {'line': b'running install_lib\n'}
+[7.169124] (golftrolley) StdoutLine: {'line': b'running install_data\n'}
+[7.170103] (golftrolley) StdoutLine: {'line': b'running install_egg_info\n'}
+[7.183245] (-) TimerEvent: {}
+[7.202591] (stereo_camera_split) StdoutLine: {'line': b'running install_data\n'}
+[7.203600] (stereo_camera_split) StdoutLine: {'line': b'running install_egg_info\n'}
+[7.263968] (golftrolley) StdoutLine: {'line': b"removing '/home/golftrolley/robot_ws/install/golftrolley/lib/python3.12/site-packages/golftrolley-0.0.0-py3.12.egg-info' (and everything under it)\n"}
+[7.264835] (golftrolley) StdoutLine: {'line': b'Copying ../../build/golftrolley/golftrolley.egg-info to /home/golftrolley/robot_ws/install/golftrolley/lib/python3.12/site-packages/golftrolley-0.0.0-py3.12.egg-info\n'}
+[7.270111] (golftrolley) StdoutLine: {'line': b'running install_scripts\n'}
+[7.283432] (-) TimerEvent: {}
+[7.300573] (stereo_camera_split) StdoutLine: {'line': b"removing '/home/golftrolley/robot_ws/install/stereo_camera_split/lib/python3.12/site-packages/stereo_camera_split-0.0.0-py3.12.egg-info' (and everything under it)\n"}
+[7.303600] (stereo_camera_split) StdoutLine: {'line': b'Copying ../../build/stereo_camera_split/stereo_camera_split.egg-info to /home/golftrolley/robot_ws/install/stereo_camera_split/lib/python3.12/site-packages/stereo_camera_split-0.0.0-py3.12.egg-info\n'}
+[7.310282] (stereo_camera_split) StdoutLine: {'line': b'running install_scripts\n'}
+[7.383621] (-) TimerEvent: {}
+[7.484291] (-) TimerEvent: {}
+[7.585295] (-) TimerEvent: {}
+[7.685971] (-) TimerEvent: {}
+[7.786648] (-) TimerEvent: {}
+[7.887806] (-) TimerEvent: {}
+[7.896904] (golftrolley) StdoutLine: {'line': b"writing list of installed files to '/home/golftrolley/robot_ws/build/golftrolley/install.log'\n"}
+[7.980013] (stereo_camera_split) StdoutLine: {'line': b'Installing stereo_split_camera_node script to /home/golftrolley/robot_ws/install/stereo_camera_split/lib/stereo_camera_split\n'}
+[7.983208] (stereo_camera_split) StdoutLine: {'line': b"writing list of installed files to '/home/golftrolley/robot_ws/build/stereo_camera_split/install.log'\n"}
+[7.988202] (-) TimerEvent: {}
+[8.081192] (golftrolley) CommandEnded: {'returncode': 0}
+[8.088615] (-) TimerEvent: {}
+[8.134904] (golftrolley) JobEnded: {'identifier': 'golftrolley', 'rc': 0}
+[8.164025] (stereo_camera_split) CommandEnded: {'returncode': 0}
+[8.188742] (-) TimerEvent: {}
+[8.194302] (stereo_camera_split) JobEnded: {'identifier': 'stereo_camera_split', 'rc': 0}
+[8.197199] (-) EventReactorShutdown: {}

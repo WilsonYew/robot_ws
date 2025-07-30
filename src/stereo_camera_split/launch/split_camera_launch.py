@@ -12,8 +12,8 @@ def generate_launch_description():
                 {'width': 1280},
                 {'height': 480},
                 {'frame_rate': 30},
-                {'left_camera_info_path': '/path/to/left.yaml'},
-                {'right_camera_info_path': '/path/to/right.yaml'}
+                {'left_camera_info_path': '/home/golftrolley/robot_ws/src/stereo_camera_split/params/left_camera.yaml'},
+                {'right_camera_info_path': '//home/golftrolley/robot_ws/src/stereo_camera_split/params/right_camera.yaml'}
             ]
         )
     ])
