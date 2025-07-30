@@ -1,0 +1,19 @@
+[41.672s] Invoking command in '/home/golftrolley/robot_ws/src/stereo_camera_split': PYTHONPATH=/home/golftrolley/robot_ws/build/stereo_camera_split/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/golftrolley/robot_ws/install/stereo_camera_split/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/stereo_camera_split build --build-base /home/golftrolley/robot_ws/build/stereo_camera_split/build install --record /home/golftrolley/robot_ws/build/stereo_camera_split/install.log --single-version-externally-managed install_data
+[43.224s] running egg_info
+[43.228s] creating ../../build/stereo_camera_split/stereo_camera_split.egg-info
+[43.319s] writing ../../build/stereo_camera_split/stereo_camera_split.egg-info/PKG-INFO
+[43.327s] writing dependency_links to ../../build/stereo_camera_split/stereo_camera_split.egg-info/dependency_links.txt
+[43.328s] writing entry points to ../../build/stereo_camera_split/stereo_camera_split.egg-info/entry_points.txt
+[43.329s] writing requirements to ../../build/stereo_camera_split/stereo_camera_split.egg-info/requires.txt
+[43.329s] writing top-level names to ../../build/stereo_camera_split/stereo_camera_split.egg-info/top_level.txt
+[43.330s] writing manifest file '../../build/stereo_camera_split/stereo_camera_split.egg-info/SOURCES.txt'
+[43.419s] reading manifest file '../../build/stereo_camera_split/stereo_camera_split.egg-info/SOURCES.txt'
+[43.422s] writing manifest file '../../build/stereo_camera_split/stereo_camera_split.egg-info/SOURCES.txt'
+[43.426s] running build
+[43.427s] running install
+[43.455s] running install_data
+[43.457s] error: can't copy 'resource/stereo_camera_split': doesn't exist or not a regular file
+[43.460s] creating /home/golftrolley/robot_ws/install/stereo_camera_split/share/ament_index
+[43.462s] creating /home/golftrolley/robot_ws/install/stereo_camera_split/share/ament_index/resource_index
+[43.463s] creating /home/golftrolley/robot_ws/install/stereo_camera_split/share/ament_index/resource_index/packages
+[43.578s] Invoked command in '/home/golftrolley/robot_ws/src/stereo_camera_split' returned '1': PYTHONPATH=/home/golftrolley/robot_ws/build/stereo_camera_split/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/golftrolley/robot_ws/install/stereo_camera_split/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/stereo_camera_split build --build-base /home/golftrolley/robot_ws/build/stereo_camera_split/build install --record /home/golftrolley/robot_ws/build/stereo_camera_split/install.log --single-version-externally-managed install_data
