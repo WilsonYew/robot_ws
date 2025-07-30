@@ -1,0 +1,164 @@
+[0.044s] Invoking command in '/home/golftrolley/robot_ws/build/ydlidar_sdk': PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(venv) /usr/bin/cmake --build /home/golftrolley/robot_ws/build/ydlidar_sdk -- -j4 -l4
+[0.421s] [ 38%] Built target ydlidar_sdk
+[0.642s] [ 41%] Built target gs_test
+[0.699s] [ 45%] Built target gs_restart
+[0.708s] [ 49%] Built target gs_ota
+[0.733s] [ 52%] Built target et_test
+[0.842s] [ 56%] Built target gs_test2
+[0.948s] [ 60%] Built target scl_test
+[0.991s] [ 63%] Built target sdm18_test
+[1.039s] [ 67%] Built target sdm_test
+[1.114s] [ 70%] Built target tea_test
+[1.181s] [ 74%] Built target tia_test
+[1.296s] [ 78%] Built target tmini-sh_test
+[1.331s] [ 81%] Built target tmini_test
+[1.390s] [ 85%] Built target tof_test
+[1.502s] [ 89%] Built target tri_and_gs_test
+[1.546s] [ 92%] Built target tri_restart
+[1.594s] [ 96%] Built target tri_test
+[1.641s] [100%] Built target lidar_c_api_test
+[1.733s] Invoked command in '/home/golftrolley/robot_ws/build/ydlidar_sdk' returned '0': PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(venv) /usr/bin/cmake --build /home/golftrolley/robot_ws/build/ydlidar_sdk -- -j4 -l4
+[1.741s] Invoking command in '/home/golftrolley/robot_ws/build/ydlidar_sdk': PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(venv) /usr/bin/cmake --install /home/golftrolley/robot_ws/build/ydlidar_sdk
+[1.790s] -- Install configuration: ""
+[1.792s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/include/core/base/datatype.h
+[1.794s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/include/core/base/locker.h
+[1.796s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/include/core/base/thread.h
+[1.797s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/include/core/base/timer.h
+[1.799s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/include/core/base/typedef.h
+[1.801s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/include/core/base/utils.h
+[1.804s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/include/core/base/v8stdint.h
+[1.804s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/include/core/base/ydlidar.h
+[1.808s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/include/core/common/ChannelDevice.h
+[1.810s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/include/core/common/DriverInterface.h
+[1.811s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/include/core/common/ydlidar_datatype.h
+[1.814s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/include/core/common/ydlidar_def.h
+[1.814s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/include/core/common/ydlidar_help.h
+[1.815s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/include/core/common/ydlidar_protocol.h
+[1.818s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/include/core/json/cJSON.h
+[1.819s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/include/core/math/angles.h
+[1.820s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/include/core/network/ActiveSocket.h
+[1.823s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/include/core/network/PassiveSocket.h
+[1.823s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/include/core/network/SimpleSocket.h
+[1.824s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/include/core/network/StatTimer.h
+[1.827s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/include/core/serial/common.h
+[1.827s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/include/core/serial/serial.h
+[1.830s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/include/core/serial/impl/unix/lock.h
+[1.831s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/include/core/serial/impl/unix/unix.h
+[1.833s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/include/core/serial/impl/unix/unix_serial.h
+[1.835s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/include/src/CYdLidar.h
+[1.836s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/include/src/DTSLidarDriver.h
+[1.838s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/include/src/ETLidarDriver.h
+[1.840s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/include/src/GSLidarDriver.h
+[1.842s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/include/src/SDMLidarDriver.h
+[1.844s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/include/src/TiaLidarDriver.h
+[1.845s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/include/src/YDlidarDriver.h
+[1.848s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/include/src/ydlidar_sdk.h
+[1.849s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/include/src/filters/FilterInterface.h
+[1.852s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/include/src/filters/NoiseFilter.h
+[1.853s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/include/src/filters/StrongLightFilter.h
+[1.854s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/include/ydlidar_config.h
+[1.858s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/lib/libydlidar_sdk.a
+[1.858s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/lib/pkgconfig/YDLIDAR_SDK.pc
+[1.859s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/lib/cmake/ydlidar_sdk/ydlidar_sdkConfig.cmake
+[1.863s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/lib/cmake/ydlidar_sdk/ydlidar_sdkTargets.cmake
+[1.864s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/lib/cmake/ydlidar_sdk/ydlidar_sdkConfigVersion.cmake
+[1.865s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/FindYDLIDAR_SDK.cmake
+[1.865s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK
+[1.870s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/cmake_uninstall.cmake.in
+[1.871s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/common
+[1.871s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/common/ydlidar_base.cmake
+[1.875s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/common/ydlidar_parse.cmake
+[1.876s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/install_package.cmake
+[1.876s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/PackageConfigVersion.cmake.in
+[1.880s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/script_show_final_summary.cmake
+[1.881s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/FindPackage.cmake.in
+[1.881s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/PkgConfig.pc.in
+[1.882s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/PackageConfig.cmake.in
+[1.887s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/LICENSE.txt
+[1.887s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/README.md
+[1.888s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc
+[1.888s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/Diagram.md
+[1.892s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/Dataset.md
+[1.893s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/tutorials
+[1.894s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/tutorials/writing_lidar_tutorial_c++.md
+[1.894s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/tutorials/writing_lidar_tutorial_python.md
+[1.899s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/tutorials/writing_lidar_tutorial_c.md
+[1.899s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/tutorials/writing_lidar_network_adapter_tutorial_c++.md
+[1.900s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/tutorials/examine_the_simple_lidar_tutorial.md
+[1.905s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/SDK.pdf
+[1.905s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/YDLidar-SDK-Communication-Protocol.pdf
+[1.906s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/YDLIDAR_SDK_API_for_Developers.md
+[1.909s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/YDLidar_SDK_Communication_Protocol.pdf
+[1.913s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/Tutorials.md
+[1.914s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/images
+[1.918s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/images/sdk_init.png
+[1.919s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/images/sdk_scanning.png
+[1.923s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/images/angle_q2.png
+[1.924s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/images/communication_mechanism.png
+[1.925s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/images/sequence.png
+[1.929s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/images/YDLidar.jpg
+[1.930s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/images/frame_intensity.png
+[1.931s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/images/EAI.png
+[1.931s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/images/FlowChart.png
+[1.935s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/images/system_workflow.png
+[1.936s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/images/sdk_architecture.png
+[1.936s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/images/frame.png
+[1.937s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/images/YDLidar.png
+[1.941s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/YDLidar-SDK-Communication-Protocol.md
+[1.942s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/README.md
+[1.943s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto
+[1.943s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/how_to_create_a_udev_rules.md
+[1.947s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/how_to_build_and_install.md
+[1.948s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/how_to_create_a_pull.md
+[1.949s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/images
+[1.949s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/images/csharp_library.png
+[1.953s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/images/sdk_init.png
+[1.957s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/images/sdk_scanning.png
+[1.957s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/images/csharp_build.png
+[1.959s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/images/csharp_exception.png
+[1.959s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/images/ydlidar_lidar_monitor.png
+[1.960s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/images/csharp_running.png
+[1.965s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/images/sequence.png
+[1.966s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/images/vscode
+[1.966s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/images/vscode/run_tasks.jpg
+[1.967s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/images/vscode/tasks.png
+[1.967s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/images/csharp_project.png
+[1.971s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/images/ttyUSB0.png
+[1.972s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/images/ttyUSB1.png
+[1.973s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/images/cpack.png
+[1.973s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/how_to_gerenrate_vs_project_by_cmake.md
+[1.973s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/how_to_solve_slow_pull_from_cn.md
+[1.977s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/how_to_build_and_debug_using_vscode.md
+[1.978s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/README.md
+[1.978s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/how_to_create_a_csharp_project.md
+[1.979s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/quickstart
+[1.979s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/quickstart/ydlidar_sdk_software_installation_guide.md
+[1.984s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/quickstart/README.md
+[1.984s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/YDLidar-SDK-Communication-Protocol.html
+[1.985s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/FAQs
+[1.985s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/FAQs/Software_FAQs_cn.md
+[1.991s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/FAQs/General_FAQs_cn.md
+[1.991s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/FAQs/Hardware_FAQs_cn.md
+[1.992s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/FAQs/General_FAQs.md
+[1.992s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/FAQs/Hardware_FAQs.md
+[1.995s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/FAQs/README.md
+[1.995s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/FAQs/Software_FAQs.md
+[1.996s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/startup/initenv.sh
+[1.996s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/bin/et_test
+[2.001s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/bin/gs_ota
+[2.002s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/bin/gs_restart
+[2.003s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/bin/gs_test
+[2.003s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/bin/gs_test2
+[2.006s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/bin/scl_test
+[2.010s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/bin/sdm18_test
+[2.011s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/bin/sdm_test
+[2.016s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/bin/tea_test
+[2.018s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/bin/tia_test
+[2.019s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/bin/tmini-sh_test
+[2.019s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/bin/tmini_test
+[2.020s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/bin/tof_test
+[2.020s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/bin/tri_and_gs_test
+[2.025s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/bin/tri_restart
+[2.026s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/bin/tri_test
+[2.026s] -- Up-to-date: /home/golftrolley/robot_ws/install/ydlidar_sdk/bin/lidar_c_api_test
+[2.027s] Invoked command in '/home/golftrolley/robot_ws/build/ydlidar_sdk' returned '0': PS1=(venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ VIRTUAL_ENV_PROMPT=(venv) /usr/bin/cmake --install /home/golftrolley/robot_ws/build/ydlidar_sdk
