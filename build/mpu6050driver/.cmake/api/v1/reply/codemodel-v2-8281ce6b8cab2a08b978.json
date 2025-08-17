@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-363ef29cb8c42dc2f255.json",
+					"jsonFile" : "directory-.-fd7d547729a0be9c725b.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.15"
@@ -44,7 +44,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "mpu6050driver::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-mpu6050driver-985e09321f949e88fccd.json",
+					"jsonFile" : "target-mpu6050driver-83dee309fcd3f1a82d78.json",
 					"name" : "mpu6050driver",
 					"projectIndex" : 0
 				},
