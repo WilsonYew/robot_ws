@@ -1,0 +1,20 @@
+[7.335s] Invoking command in '/home/golftrolley/robot_ws/src/stereo_camera_split': PYTHONPATH=/home/golftrolley/robot_ws/build/stereo_camera_split/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/golftrolley/robot_ws/install/stereo_camera_split/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/stereo_camera_split build --build-base /home/golftrolley/robot_ws/build/stereo_camera_split/build install --record /home/golftrolley/robot_ws/build/stereo_camera_split/install.log --single-version-externally-managed install_data
+[8.823s] running egg_info
+[8.951s] writing ../../build/stereo_camera_split/stereo_camera_split.egg-info/PKG-INFO
+[8.961s] writing dependency_links to ../../build/stereo_camera_split/stereo_camera_split.egg-info/dependency_links.txt
+[8.964s] writing entry points to ../../build/stereo_camera_split/stereo_camera_split.egg-info/entry_points.txt
+[8.967s] writing requirements to ../../build/stereo_camera_split/stereo_camera_split.egg-info/requires.txt
+[8.968s] writing top-level names to ../../build/stereo_camera_split/stereo_camera_split.egg-info/top_level.txt
+[9.168s] reading manifest file '../../build/stereo_camera_split/stereo_camera_split.egg-info/SOURCES.txt'
+[9.172s] writing manifest file '../../build/stereo_camera_split/stereo_camera_split.egg-info/SOURCES.txt'
+[9.176s] running build
+[9.180s] running build_py
+[9.181s] running install
+[9.209s] running install_lib
+[9.338s] running install_data
+[9.338s] running install_egg_info
+[9.464s] removing '/home/golftrolley/robot_ws/install/stereo_camera_split/lib/python3.12/site-packages/stereo_camera_split-0.0.0-py3.12.egg-info' (and everything under it)
+[9.475s] Copying ../../build/stereo_camera_split/stereo_camera_split.egg-info to /home/golftrolley/robot_ws/install/stereo_camera_split/lib/python3.12/site-packages/stereo_camera_split-0.0.0-py3.12.egg-info
+[9.496s] running install_scripts
+[10.207s] Installing stereo_split_camera_node script to /home/golftrolley/robot_ws/install/stereo_camera_split/lib/stereo_camera_split
+[10.209s] writing list of installed files to '/home/golftrolley/robot_ws/build/stereo_camera_split/install.log'

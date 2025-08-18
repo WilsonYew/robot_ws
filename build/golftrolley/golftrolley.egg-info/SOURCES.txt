@@ -9,6 +9,7 @@ setup.py
 ../../build/golftrolley/golftrolley.egg-info/top_level.txt
 ../../build/golftrolley/golftrolley.egg-info/zip-safe
 golftrolley/__init__.py
+launch/golftrolly_launch.py
 launch/gps_launch.py
 resource/golftrolley
 test/test_copyright.py
