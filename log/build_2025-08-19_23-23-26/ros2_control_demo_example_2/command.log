@@ -1,0 +1,2 @@
+Invoking command in '/home/golftrolley/robot_ws/build/ros2_control_demo_example_2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/golftrolley/robot_ws/src/example_2 -DCMAKE_INSTALL_PREFIX=/home/golftrolley/robot_ws/install/ros2_control_demo_example_2
+Invoked command in '/home/golftrolley/robot_ws/build/ros2_control_demo_example_2' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/golftrolley/robot_ws/src/example_2 -DCMAKE_INSTALL_PREFIX=/home/golftrolley/robot_ws/install/ros2_control_demo_example_2

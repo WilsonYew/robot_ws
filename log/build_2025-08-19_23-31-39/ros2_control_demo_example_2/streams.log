@@ -1,0 +1,43 @@
+[0.045s] Invoking command in '/home/golftrolley/robot_ws/build/ros2_control_demo_example_2': AMENT_PREFIX_PATH=/home/golftrolley/robot_ws/install/ros2_control_cmake:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/golftrolley/robot_ws/install/ros2_control_cmake:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --build /home/golftrolley/robot_ws/build/ros2_control_demo_example_2 -- -j4 -l4
+[0.835s] [100%] Built target ros2_control_demo_example_2
+[0.980s] Invoked command in '/home/golftrolley/robot_ws/build/ros2_control_demo_example_2' returned '0': AMENT_PREFIX_PATH=/home/golftrolley/robot_ws/install/ros2_control_cmake:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/golftrolley/robot_ws/install/ros2_control_cmake:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --build /home/golftrolley/robot_ws/build/ros2_control_demo_example_2 -- -j4 -l4
+[0.982s] Invoking command in '/home/golftrolley/robot_ws/build/ros2_control_demo_example_2': AMENT_PREFIX_PATH=/home/golftrolley/robot_ws/install/ros2_control_cmake:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/golftrolley/robot_ws/install/ros2_control_cmake:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --install /home/golftrolley/robot_ws/build/ros2_control_demo_example_2
+[1.099s] -- Install configuration: ""
+[1.100s] -- Up-to-date: /home/golftrolley/robot_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/ros2_control_demo_example_2.xml
+[1.100s] -- Up-to-date: /home/golftrolley/robot_ws/install/ros2_control_demo_example_2/include/ros2_control_demo_example_2
+[1.110s] -- Up-to-date: /home/golftrolley/robot_ws/install/ros2_control_demo_example_2/include/ros2_control_demo_example_2/ros2_control_demo_example_2
+[1.118s] -- Up-to-date: /home/golftrolley/robot_ws/install/ros2_control_demo_example_2/include/ros2_control_demo_example_2/ros2_control_demo_example_2/diffbot_system.hpp
+[1.130s] -- Up-to-date: /home/golftrolley/robot_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/launch
+[1.131s] -- Up-to-date: /home/golftrolley/robot_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/launch/view_robot.launch.py
+[1.131s] -- Up-to-date: /home/golftrolley/robot_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/ros2_control
+[1.132s] -- Up-to-date: /home/golftrolley/robot_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/ros2_control/diffbot.ros2_control.xacro
+[1.138s] -- Up-to-date: /home/golftrolley/robot_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/urdf
+[1.139s] -- Up-to-date: /home/golftrolley/robot_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/urdf/diffbot.urdf.xacro
+[1.144s] -- Up-to-date: /home/golftrolley/robot_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/launch
+[1.145s] -- Up-to-date: /home/golftrolley/robot_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/launch/diffbot.launch.py
+[1.148s] -- Up-to-date: /home/golftrolley/robot_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/config
+[1.149s] -- Up-to-date: /home/golftrolley/robot_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/config/diffbot_controllers.yaml
+[1.149s] -- Up-to-date: /home/golftrolley/robot_ws/install/ros2_control_demo_example_2/lib/libros2_control_demo_example_2.so
+[1.153s] -- Up-to-date: /home/golftrolley/robot_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/environment/library_path.sh
+[1.157s] -- Up-to-date: /home/golftrolley/robot_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/environment/library_path.dsv
+[1.158s] -- Up-to-date: /home/golftrolley/robot_ws/install/ros2_control_demo_example_2/share/ament_index/resource_index/package_run_dependencies/ros2_control_demo_example_2
+[1.159s] -- Up-to-date: /home/golftrolley/robot_ws/install/ros2_control_demo_example_2/share/ament_index/resource_index/parent_prefix_path/ros2_control_demo_example_2
+[1.172s] -- Up-to-date: /home/golftrolley/robot_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/environment/ament_prefix_path.sh
+[1.172s] -- Up-to-date: /home/golftrolley/robot_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/environment/ament_prefix_path.dsv
+[1.173s] -- Up-to-date: /home/golftrolley/robot_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/environment/path.sh
+[1.174s] -- Up-to-date: /home/golftrolley/robot_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/environment/path.dsv
+[1.179s] -- Up-to-date: /home/golftrolley/robot_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/local_setup.bash
+[1.180s] -- Up-to-date: /home/golftrolley/robot_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/local_setup.sh
+[1.180s] -- Up-to-date: /home/golftrolley/robot_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/local_setup.zsh
+[1.181s] -- Up-to-date: /home/golftrolley/robot_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/local_setup.dsv
+[1.181s] -- Installing: /home/golftrolley/robot_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/package.dsv
+[1.205s] -- Up-to-date: /home/golftrolley/robot_ws/install/ros2_control_demo_example_2/share/ament_index/resource_index/packages/ros2_control_demo_example_2
+[1.206s] -- Up-to-date: /home/golftrolley/robot_ws/install/ros2_control_demo_example_2/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/ros2_control_demo_example_2
+[1.207s] -- Up-to-date: /home/golftrolley/robot_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/cmake/export_ros2_control_demo_example_2Export.cmake
+[1.207s] -- Up-to-date: /home/golftrolley/robot_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/cmake/export_ros2_control_demo_example_2Export-noconfig.cmake
+[1.212s] -- Up-to-date: /home/golftrolley/robot_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/cmake/ament_cmake_export_targets-extras.cmake
+[1.213s] -- Up-to-date: /home/golftrolley/robot_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.214s] -- Up-to-date: /home/golftrolley/robot_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/cmake/ros2_control_demo_example_2Config.cmake
+[1.214s] -- Up-to-date: /home/golftrolley/robot_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/cmake/ros2_control_demo_example_2Config-version.cmake
+[1.224s] -- Up-to-date: /home/golftrolley/robot_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/package.xml
+[1.225s] Invoked command in '/home/golftrolley/robot_ws/build/ros2_control_demo_example_2' returned '0': AMENT_PREFIX_PATH=/home/golftrolley/robot_ws/install/ros2_control_cmake:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/golftrolley/robot_ws/install/ros2_control_cmake:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --install /home/golftrolley/robot_ws/build/ros2_control_demo_example_2

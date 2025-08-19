@@ -1,0 +1,37 @@
+running egg_info
+creating ../../build/stereo_camera_split/stereo_camera_split.egg-info
+writing ../../build/stereo_camera_split/stereo_camera_split.egg-info/PKG-INFO
+writing dependency_links to ../../build/stereo_camera_split/stereo_camera_split.egg-info/dependency_links.txt
+writing entry points to ../../build/stereo_camera_split/stereo_camera_split.egg-info/entry_points.txt
+writing requirements to ../../build/stereo_camera_split/stereo_camera_split.egg-info/requires.txt
+writing top-level names to ../../build/stereo_camera_split/stereo_camera_split.egg-info/top_level.txt
+writing manifest file '../../build/stereo_camera_split/stereo_camera_split.egg-info/SOURCES.txt'
+reading manifest file '../../build/stereo_camera_split/stereo_camera_split.egg-info/SOURCES.txt'
+writing manifest file '../../build/stereo_camera_split/stereo_camera_split.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/golftrolley/robot_ws/build/stereo_camera_split/build
+creating /home/golftrolley/robot_ws/build/stereo_camera_split/build/lib
+creating /home/golftrolley/robot_ws/build/stereo_camera_split/build/lib/stereo_camera_split
+copying stereo_camera_split/stereo_camera_split_node.py -> /home/golftrolley/robot_ws/build/stereo_camera_split/build/lib/stereo_camera_split
+copying stereo_camera_split/__init__.py -> /home/golftrolley/robot_ws/build/stereo_camera_split/build/lib/stereo_camera_split
+running install
+running install_lib
+creating /home/golftrolley/robot_ws/install/stereo_camera_split/lib/python3.12/site-packages/stereo_camera_split
+copying /home/golftrolley/robot_ws/build/stereo_camera_split/build/lib/stereo_camera_split/stereo_camera_split_node.py -> /home/golftrolley/robot_ws/install/stereo_camera_split/lib/python3.12/site-packages/stereo_camera_split
+copying /home/golftrolley/robot_ws/build/stereo_camera_split/build/lib/stereo_camera_split/__init__.py -> /home/golftrolley/robot_ws/install/stereo_camera_split/lib/python3.12/site-packages/stereo_camera_split
+byte-compiling /home/golftrolley/robot_ws/install/stereo_camera_split/lib/python3.12/site-packages/stereo_camera_split/stereo_camera_split_node.py to stereo_camera_split_node.cpython-312.pyc
+byte-compiling /home/golftrolley/robot_ws/install/stereo_camera_split/lib/python3.12/site-packages/stereo_camera_split/__init__.py to __init__.cpython-312.pyc
+running install_data
+creating /home/golftrolley/robot_ws/install/stereo_camera_split/share/ament_index
+creating /home/golftrolley/robot_ws/install/stereo_camera_split/share/ament_index/resource_index
+creating /home/golftrolley/robot_ws/install/stereo_camera_split/share/ament_index/resource_index/packages
+copying resource/stereo_camera_split -> /home/golftrolley/robot_ws/install/stereo_camera_split/share/ament_index/resource_index/packages
+copying package.xml -> /home/golftrolley/robot_ws/install/stereo_camera_split/share/stereo_camera_split
+creating /home/golftrolley/robot_ws/install/stereo_camera_split/share/stereo_camera_split/launch
+copying launch/split_camera_launch.py -> /home/golftrolley/robot_ws/install/stereo_camera_split/share/stereo_camera_split/launch
+running install_egg_info
+Copying ../../build/stereo_camera_split/stereo_camera_split.egg-info to /home/golftrolley/robot_ws/install/stereo_camera_split/lib/python3.12/site-packages/stereo_camera_split-0.0.0-py3.12.egg-info
+running install_scripts
+Installing stereo_split_camera_node script to /home/golftrolley/robot_ws/install/stereo_camera_split/lib/stereo_camera_split
+writing list of installed files to '/home/golftrolley/robot_ws/build/stereo_camera_split/install.log'

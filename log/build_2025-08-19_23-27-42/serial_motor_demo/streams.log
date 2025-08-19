@@ -1,0 +1,41 @@
+[9.346s] Invoking command in '/home/golftrolley/robot_ws/src/serial_motor_demo/serial_motor_demo': AMENT_PREFIX_PATH=/home/golftrolley/robot_ws/install/serial_motor_demo_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/golftrolley/robot_ws/install/serial_motor_demo_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/golftrolley/robot_ws/install/serial_motor_demo_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/golftrolley/robot_ws/build/serial_motor_demo/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/golftrolley/robot_ws/install/serial_motor_demo/lib/python3.12/site-packages:/home/golftrolley/robot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/serial_motor_demo build --build-base /home/golftrolley/robot_ws/build/serial_motor_demo/build install --record /home/golftrolley/robot_ws/build/serial_motor_demo/install.log --single-version-externally-managed install_data
+[12.459s] running egg_info
+[12.466s] creating ../../../build/serial_motor_demo/serial_motor_demo.egg-info
+[12.683s] writing ../../../build/serial_motor_demo/serial_motor_demo.egg-info/PKG-INFO
+[12.692s] writing dependency_links to ../../../build/serial_motor_demo/serial_motor_demo.egg-info/dependency_links.txt
+[12.700s] writing entry points to ../../../build/serial_motor_demo/serial_motor_demo.egg-info/entry_points.txt
+[12.701s] writing requirements to ../../../build/serial_motor_demo/serial_motor_demo.egg-info/requires.txt
+[12.702s] writing top-level names to ../../../build/serial_motor_demo/serial_motor_demo.egg-info/top_level.txt
+[12.703s] writing manifest file '../../../build/serial_motor_demo/serial_motor_demo.egg-info/SOURCES.txt'
+[13.142s] reading manifest file '../../../build/serial_motor_demo/serial_motor_demo.egg-info/SOURCES.txt'
+[13.153s] writing manifest file '../../../build/serial_motor_demo/serial_motor_demo.egg-info/SOURCES.txt'
+[13.154s] running build
+[13.157s] running build_py
+[13.160s] creating /home/golftrolley/robot_ws/build/serial_motor_demo/build
+[13.163s] creating /home/golftrolley/robot_ws/build/serial_motor_demo/build/lib
+[13.165s] creating /home/golftrolley/robot_ws/build/serial_motor_demo/build/lib/serial_motor_demo
+[13.166s] copying serial_motor_demo/driver.py -> /home/golftrolley/robot_ws/build/serial_motor_demo/build/lib/serial_motor_demo
+[13.167s] copying serial_motor_demo/gui.py -> /home/golftrolley/robot_ws/build/serial_motor_demo/build/lib/serial_motor_demo
+[13.177s] copying serial_motor_demo/__init__.py -> /home/golftrolley/robot_ws/build/serial_motor_demo/build/lib/serial_motor_demo
+[13.179s] running install
+[13.216s] running install_lib
+[13.438s] creating /home/golftrolley/robot_ws/install/serial_motor_demo/lib/python3.12/site-packages/serial_motor_demo
+[13.444s] copying /home/golftrolley/robot_ws/build/serial_motor_demo/build/lib/serial_motor_demo/driver.py -> /home/golftrolley/robot_ws/install/serial_motor_demo/lib/python3.12/site-packages/serial_motor_demo
+[13.444s] copying /home/golftrolley/robot_ws/build/serial_motor_demo/build/lib/serial_motor_demo/gui.py -> /home/golftrolley/robot_ws/install/serial_motor_demo/lib/python3.12/site-packages/serial_motor_demo
+[13.448s] copying /home/golftrolley/robot_ws/build/serial_motor_demo/build/lib/serial_motor_demo/__init__.py -> /home/golftrolley/robot_ws/install/serial_motor_demo/lib/python3.12/site-packages/serial_motor_demo
+[13.457s] byte-compiling /home/golftrolley/robot_ws/install/serial_motor_demo/lib/python3.12/site-packages/serial_motor_demo/driver.py to driver.cpython-312.pyc
+[13.471s] byte-compiling /home/golftrolley/robot_ws/install/serial_motor_demo/lib/python3.12/site-packages/serial_motor_demo/gui.py to gui.cpython-312.pyc
+[13.481s] byte-compiling /home/golftrolley/robot_ws/install/serial_motor_demo/lib/python3.12/site-packages/serial_motor_demo/__init__.py to __init__.cpython-312.pyc
+[13.491s] running install_data
+[13.492s] creating /home/golftrolley/robot_ws/install/serial_motor_demo/share/ament_index
+[13.495s] creating /home/golftrolley/robot_ws/install/serial_motor_demo/share/ament_index/resource_index
+[13.499s] creating /home/golftrolley/robot_ws/install/serial_motor_demo/share/ament_index/resource_index/packages
+[13.499s] copying resource/serial_motor_demo -> /home/golftrolley/robot_ws/install/serial_motor_demo/share/ament_index/resource_index/packages
+[13.503s] copying package.xml -> /home/golftrolley/robot_ws/install/serial_motor_demo/share/serial_motor_demo
+[13.510s] running install_egg_info
+[13.746s] Copying ../../../build/serial_motor_demo/serial_motor_demo.egg-info to /home/golftrolley/robot_ws/install/serial_motor_demo/lib/python3.12/site-packages/serial_motor_demo-0.0.0-py3.12.egg-info
+[13.773s] running install_scripts
+[15.199s] Installing driver script to /home/golftrolley/robot_ws/install/serial_motor_demo/lib/serial_motor_demo
+[15.202s] Installing gui script to /home/golftrolley/robot_ws/install/serial_motor_demo/lib/serial_motor_demo
+[15.207s] writing list of installed files to '/home/golftrolley/robot_ws/build/serial_motor_demo/install.log'
+[15.416s] Invoked command in '/home/golftrolley/robot_ws/src/serial_motor_demo/serial_motor_demo' returned '0': AMENT_PREFIX_PATH=/home/golftrolley/robot_ws/install/serial_motor_demo_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/golftrolley/robot_ws/install/serial_motor_demo_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/golftrolley/robot_ws/install/serial_motor_demo_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/golftrolley/robot_ws/build/serial_motor_demo/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/golftrolley/robot_ws/install/serial_motor_demo/lib/python3.12/site-packages:/home/golftrolley/robot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/serial_motor_demo build --build-base /home/golftrolley/robot_ws/build/serial_motor_demo/build install --record /home/golftrolley/robot_ws/build/serial_motor_demo/install.log --single-version-externally-managed install_data

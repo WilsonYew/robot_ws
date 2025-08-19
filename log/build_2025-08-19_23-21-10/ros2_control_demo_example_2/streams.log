@@ -1,0 +1,26 @@
+[1.188s] Invoking command in '/home/golftrolley/robot_ws/build/ros2_control_demo_example_2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/golftrolley/robot_ws/src/example_2 -DCMAKE_INSTALL_PREFIX=/home/golftrolley/robot_ws/install/ros2_control_demo_example_2
+[1.715s] -- The CXX compiler identification is GNU 13.3.0
+[1.854s] -- Detecting CXX compiler ABI info
+[2.616s] -- Detecting CXX compiler ABI info - done
+[2.662s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.668s] -- Detecting CXX compile features
+[2.668s] -- Detecting CXX compile features - done
+[2.811s] [31mCMake Error at CMakeLists.txt:4 (find_package):
+[2.812s]   By not providing "Findros2_control_cmake.cmake" in CMAKE_MODULE_PATH this
+[2.812s]   project has asked CMake to find a package configuration file provided by
+[2.813s]   "ros2_control_cmake", but CMake did not find one.
+[2.819s] 
+[2.820s]   Could not find a package configuration file provided by
+[2.821s]   "ros2_control_cmake" with any of the following names:
+[2.822s] 
+[2.826s]     ros2_control_cmakeConfig.cmake
+[2.826s]     ros2_control_cmake-config.cmake
+[2.827s] 
+[2.828s]   Add the installation prefix of "ros2_control_cmake" to CMAKE_PREFIX_PATH or
+[2.828s]   set "ros2_control_cmake_DIR" to a directory containing one of the above
+[2.832s]   files.  If "ros2_control_cmake" provides a separate development package or
+[2.833s]   SDK, be sure it has been installed.
+[2.833s] -- Configuring incomplete, errors occurred!
+[2.834s] 
+[2.838s] [0m
+[2.846s] Invoked command in '/home/golftrolley/robot_ws/build/ros2_control_demo_example_2' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/golftrolley/robot_ws/src/example_2 -DCMAKE_INSTALL_PREFIX=/home/golftrolley/robot_ws/install/ros2_control_demo_example_2

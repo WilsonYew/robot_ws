@@ -1,0 +1,33 @@
+[0.042s] Invoking command in '/home/golftrolley/robot_ws/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/golftrolley/robot_ws/build/serial -- -j4 -l4
+[0.526s] [ 14%] Built target gtest_main
+[0.611s] [ 42%] Built target serial
+[0.669s] [ 57%] Built target gtest
+[0.946s] [ 71%] Built target serial_example
+[0.984s] [ 85%] Built target serial-test-timer
+[0.999s] [100%] Built target serial-test
+[1.872s] Invoked command in '/home/golftrolley/robot_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/golftrolley/robot_ws/build/serial -- -j4 -l4
+[1.878s] Invoking command in '/home/golftrolley/robot_ws/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/golftrolley/robot_ws/build/serial
+[1.932s] -- Install configuration: ""
+[1.936s] -- Up-to-date: /home/golftrolley/robot_ws/install/serial/lib/libserial.a
+[1.937s] -- Up-to-date: /home/golftrolley/robot_ws/install/serial/include/serial/serial.h
+[1.944s] -- Up-to-date: /home/golftrolley/robot_ws/install/serial/include/serial/v8stdint.h
+[1.945s] -- Up-to-date: /home/golftrolley/robot_ws/install/serial/share/serial/environment/library_path.sh
+[1.946s] -- Up-to-date: /home/golftrolley/robot_ws/install/serial/share/serial/environment/library_path.dsv
+[1.947s] -- Up-to-date: /home/golftrolley/robot_ws/install/serial/share/ament_index/resource_index/package_run_dependencies/serial
+[1.951s] -- Up-to-date: /home/golftrolley/robot_ws/install/serial/share/ament_index/resource_index/parent_prefix_path/serial
+[1.952s] -- Up-to-date: /home/golftrolley/robot_ws/install/serial/share/serial/environment/ament_prefix_path.sh
+[1.952s] -- Up-to-date: /home/golftrolley/robot_ws/install/serial/share/serial/environment/ament_prefix_path.dsv
+[1.953s] -- Up-to-date: /home/golftrolley/robot_ws/install/serial/share/serial/environment/path.sh
+[1.954s] -- Up-to-date: /home/golftrolley/robot_ws/install/serial/share/serial/environment/path.dsv
+[1.955s] -- Up-to-date: /home/golftrolley/robot_ws/install/serial/share/serial/local_setup.bash
+[1.958s] -- Up-to-date: /home/golftrolley/robot_ws/install/serial/share/serial/local_setup.sh
+[1.959s] -- Up-to-date: /home/golftrolley/robot_ws/install/serial/share/serial/local_setup.zsh
+[1.962s] -- Up-to-date: /home/golftrolley/robot_ws/install/serial/share/serial/local_setup.dsv
+[1.967s] -- Installing: /home/golftrolley/robot_ws/install/serial/share/serial/package.dsv
+[1.969s] -- Up-to-date: /home/golftrolley/robot_ws/install/serial/share/ament_index/resource_index/packages/serial
+[1.973s] -- Up-to-date: /home/golftrolley/robot_ws/install/serial/share/serial/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.975s] -- Up-to-date: /home/golftrolley/robot_ws/install/serial/share/serial/cmake/ament_cmake_export_libraries-extras.cmake
+[1.977s] -- Up-to-date: /home/golftrolley/robot_ws/install/serial/share/serial/cmake/serialConfig.cmake
+[1.979s] -- Up-to-date: /home/golftrolley/robot_ws/install/serial/share/serial/cmake/serialConfig-version.cmake
+[1.984s] -- Up-to-date: /home/golftrolley/robot_ws/install/serial/share/serial/package.xml
+[1.989s] Invoked command in '/home/golftrolley/robot_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/golftrolley/robot_ws/build/serial

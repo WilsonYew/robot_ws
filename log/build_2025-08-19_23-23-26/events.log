@@ -1,0 +1,592 @@
+[0.000000] (-) TimerEvent: {}
+[0.000980] (golftrolley) JobQueued: {'identifier': 'golftrolley', 'dependencies': OrderedDict()}
+[0.001975] (mpu6050driver) JobQueued: {'identifier': 'mpu6050driver', 'dependencies': OrderedDict()}
+[0.002443] (ros2_control_demo_example_2) JobQueued: {'identifier': 'ros2_control_demo_example_2', 'dependencies': OrderedDict()}
+[0.002518] (serial) JobQueued: {'identifier': 'serial', 'dependencies': OrderedDict()}
+[0.002587] (serial_motor_demo_msgs) JobQueued: {'identifier': 'serial_motor_demo_msgs', 'dependencies': OrderedDict()}
+[0.002657] (stereo_camera_split) JobQueued: {'identifier': 'stereo_camera_split', 'dependencies': OrderedDict()}
+[0.002724] (ydlidar_ros2_driver) JobQueued: {'identifier': 'ydlidar_ros2_driver', 'dependencies': OrderedDict()}
+[0.002790] (ydlidar_sdk) JobQueued: {'identifier': 'ydlidar_sdk', 'dependencies': OrderedDict()}
+[0.002856] (serial_motor_demo) JobQueued: {'identifier': 'serial_motor_demo', 'dependencies': OrderedDict({'serial_motor_demo_msgs': '/home/golftrolley/robot_ws/install/serial_motor_demo_msgs'})}
+[0.003428] (serial_motor_demo_msgs) JobStarted: {'identifier': 'serial_motor_demo_msgs'}
+[0.027134] (golftrolley) JobStarted: {'identifier': 'golftrolley'}
+[0.051557] (mpu6050driver) JobStarted: {'identifier': 'mpu6050driver'}
+[0.067885] (ros2_control_demo_example_2) JobStarted: {'identifier': 'ros2_control_demo_example_2'}
+[0.090174] (serial_motor_demo_msgs) JobProgress: {'identifier': 'serial_motor_demo_msgs', 'progress': 'cmake'}
+[0.093172] (serial_motor_demo_msgs) JobProgress: {'identifier': 'serial_motor_demo_msgs', 'progress': 'build'}
+[0.095486] (serial_motor_demo_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/golftrolley/robot_ws/build/serial_motor_demo_msgs', '--', '-j4', '-l4'], 'cwd': '/home/golftrolley/robot_ws/build/serial_motor_demo_msgs', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'golftrolley', 'SSH_CLIENT': '10.42.0.1 46558 22', 'LC_TIME': 'ms_MY.UTF-8', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/golftrolley', 'OLDPWD': '/home/golftrolley', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'ms_MY.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'golftrolley', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '2', 'PATH': '/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'ms_MY.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'ms_MY.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'ms_MY.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ms_MY.UTF-8', 'LC_IDENTIFICATION': 'ms_MY.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/golftrolley/robot_ws/build/serial_motor_demo_msgs', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '10.42.0.1 46558 10.42.0.2 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'ms_MY.UTF-8', 'LC_PAPER': 'ms_MY.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.104700] (-) TimerEvent: {}
+[0.206059] (-) TimerEvent: {}
+[0.307678] (-) TimerEvent: {}
+[0.409850] (-) TimerEvent: {}
+[0.511105] (-) TimerEvent: {}
+[0.612837] (-) TimerEvent: {}
+[0.715043] (-) TimerEvent: {}
+[0.817298] (-) TimerEvent: {}
+[0.920295] (-) TimerEvent: {}
+[1.611549] (-) TimerEvent: {}
+[1.704771] (mpu6050driver) JobProgress: {'identifier': 'mpu6050driver', 'progress': 'cmake'}
+[1.705460] (mpu6050driver) JobProgress: {'identifier': 'mpu6050driver', 'progress': 'build'}
+[1.706046] (mpu6050driver) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/golftrolley/robot_ws/build/mpu6050driver', '--', '-j4', '-l4'], 'cwd': '/home/golftrolley/robot_ws/build/mpu6050driver', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'golftrolley', 'SSH_CLIENT': '10.42.0.1 46558 22', 'LC_TIME': 'ms_MY.UTF-8', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/golftrolley', 'OLDPWD': '/home/golftrolley', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'ms_MY.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'golftrolley', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '2', 'PATH': '/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'ms_MY.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'ms_MY.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'ms_MY.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ms_MY.UTF-8', 'LC_IDENTIFICATION': 'ms_MY.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/golftrolley/robot_ws/build/mpu6050driver', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '10.42.0.1 46558 10.42.0.2 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'ms_MY.UTF-8', 'LC_PAPER': 'ms_MY.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[1.737131] (-) TimerEvent: {}
+[1.741742] (serial_motor_demo_msgs) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating type hashes for ROS interfaces\x1b[0m\n'}
+[1.742806] (serial_motor_demo_msgs) StdoutLine: {'line': b'[  1%] Built target ament_cmake_python_copy_serial_motor_demo_msgs\n'}
+[1.806049] (serial_motor_demo_msgs) StdoutLine: {'line': b'[  1%] Built target serial_motor_demo_msgs__rosidl_generator_type_description\n'}
+[1.842143] (-) TimerEvent: {}
+[1.882494] (ros2_control_demo_example_2) JobProgress: {'identifier': 'ros2_control_demo_example_2', 'progress': 'cmake'}
+[1.882737] (ros2_control_demo_example_2) Command: {'cmd': ['/usr/bin/cmake', '/home/golftrolley/robot_ws/src/example_2', '-DCMAKE_INSTALL_PREFIX=/home/golftrolley/robot_ws/install/ros2_control_demo_example_2'], 'cwd': '/home/golftrolley/robot_ws/build/ros2_control_demo_example_2', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'golftrolley', 'SSH_CLIENT': '10.42.0.1 46558 22', 'LC_TIME': 'ms_MY.UTF-8', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/golftrolley', 'OLDPWD': '/home/golftrolley', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'ms_MY.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'golftrolley', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '2', 'PATH': '/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'ms_MY.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'ms_MY.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'ms_MY.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ms_MY.UTF-8', 'LC_IDENTIFICATION': 'ms_MY.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/golftrolley/robot_ws/build/ros2_control_demo_example_2', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '10.42.0.1 46558 10.42.0.2 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'ms_MY.UTF-8', 'LC_PAPER': 'ms_MY.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[1.917507] (serial_motor_demo_msgs) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[1.942828] (-) TimerEvent: {}
+[2.037311] (serial_motor_demo_msgs) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[2.044170] (-) TimerEvent: {}
+[2.147078] (-) TimerEvent: {}
+[2.252135] (-) TimerEvent: {}
+[2.322462] (mpu6050driver) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/mpu6050driver.dir/src/mpu6050sensor.cpp.o\x1b[0m\n'}
+[2.354121] (-) TimerEvent: {}
+[2.384305] (mpu6050driver) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/mpu6050driver.dir/src/mpu6050driver.cpp.o\x1b[0m\n'}
+[2.455133] (-) TimerEvent: {}
+[2.558380] (-) TimerEvent: {}
+[2.648041] (serial_motor_demo_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[2.661064] (serial_motor_demo_msgs) StdoutLine: {'line': b'creating serial_motor_demo_msgs.egg-info\n'}
+[2.661717] (-) TimerEvent: {}
+[2.764044] (-) TimerEvent: {}
+[2.865228] (-) TimerEvent: {}
+[2.947318] (serial_motor_demo_msgs) StdoutLine: {'line': b'writing serial_motor_demo_msgs.egg-info/PKG-INFO\n'}
+[2.953148] (serial_motor_demo_msgs) StdoutLine: {'line': b'writing dependency_links to serial_motor_demo_msgs.egg-info/dependency_links.txt\n'}
+[2.954782] (serial_motor_demo_msgs) StdoutLine: {'line': b'writing top-level names to serial_motor_demo_msgs.egg-info/top_level.txt\n'}
+[2.955317] (serial_motor_demo_msgs) StdoutLine: {'line': b"writing manifest file 'serial_motor_demo_msgs.egg-info/SOURCES.txt'\n"}
+[2.971049] (-) TimerEvent: {}
+[3.072292] (-) TimerEvent: {}
+[3.176080] (-) TimerEvent: {}
+[3.277696] (-) TimerEvent: {}
+[3.380421] (-) TimerEvent: {}
+[3.484614] (-) TimerEvent: {}
+[3.585798] (-) TimerEvent: {}
+[3.655490] (ros2_control_demo_example_2) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[3.687083] (-) TimerEvent: {}
+[3.788147] (-) TimerEvent: {}
+[3.849183] (ros2_control_demo_example_2) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[3.856716] (serial_motor_demo_msgs) StdoutLine: {'line': b"reading manifest file 'serial_motor_demo_msgs.egg-info/SOURCES.txt'\n"}
+[3.862223] (serial_motor_demo_msgs) StdoutLine: {'line': b"writing manifest file 'serial_motor_demo_msgs.egg-info/SOURCES.txt'\n"}
+[3.893161] (-) TimerEvent: {}
+[3.997153] (-) TimerEvent: {}
+[4.099201] (-) TimerEvent: {}
+[4.200486] (-) TimerEvent: {}
+[4.306125] (-) TimerEvent: {}
+[4.313009] (serial_motor_demo_msgs) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_build_serial_motor_demo_msgs_egg\n'}
+[4.408111] (-) TimerEvent: {}
+[4.511082] (-) TimerEvent: {}
+[4.615099] (-) TimerEvent: {}
+[4.716314] (-) TimerEvent: {}
+[4.748542] (serial_motor_demo_msgs) StdoutLine: {'line': b'[  5%] Built target serial_motor_demo_msgs__cpp\n'}
+[4.816566] (-) TimerEvent: {}
+[4.924097] (-) TimerEvent: {}
+[5.026356] (-) TimerEvent: {}
+[5.071765] (ros2_control_demo_example_2) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[5.126563] (-) TimerEvent: {}
+[5.177092] (ros2_control_demo_example_2) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[5.183181] (ros2_control_demo_example_2) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[5.187711] (ros2_control_demo_example_2) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[5.226952] (ros2_control_demo_example_2) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[5.227898] (-) TimerEvent: {}
+[5.331554] (-) TimerEvent: {}
+[5.432745] (-) TimerEvent: {}
+[5.537326] (-) TimerEvent: {}
+[5.641136] (-) TimerEvent: {}
+[5.746154] (-) TimerEvent: {}
+[5.847768] (-) TimerEvent: {}
+[5.952902] (-) TimerEvent: {}
+[6.068123] (-) TimerEvent: {}
+[6.173199] (-) TimerEvent: {}
+[6.274280] (-) TimerEvent: {}
+[6.375103] (-) TimerEvent: {}
+[6.480097] (-) TimerEvent: {}
+[6.511828] (serial_motor_demo_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_command__description.c.o\x1b[0m\n'}
+[6.524080] (serial_motor_demo_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_command__functions.c.o\x1b[0m\n'}
+[6.524894] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_command__type_support.c.o\x1b[0m\n'}
+[6.531673] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_vels__description.c.o\x1b[0m\n'}
+[6.583066] (-) TimerEvent: {}
+[6.686092] (-) TimerEvent: {}
+[6.787112] (-) TimerEvent: {}
+[6.793052] (ros2_control_demo_example_2) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[6.889111] (-) TimerEvent: {}
+[6.976048] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_vels__functions.c.o\x1b[0m\n'}
+[6.991133] (-) TimerEvent: {}
+[7.092762] (-) TimerEvent: {}
+[7.100259] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_vels__type_support.c.o\x1b[0m\n'}
+[7.106083] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/encoder_vals__description.c.o\x1b[0m\n'}
+[7.197083] (-) TimerEvent: {}
+[7.236165] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/encoder_vals__functions.c.o\x1b[0m\n'}
+[7.299134] (-) TimerEvent: {}
+[7.402160] (-) TimerEvent: {}
+[7.506643] (-) TimerEvent: {}
+[7.605177] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/encoder_vals__type_support.c.o\x1b[0m\n'}
+[7.606629] (-) TimerEvent: {}
+[7.710943] (-) TimerEvent: {}
+[7.814068] (-) TimerEvent: {}
+[7.915366] (-) TimerEvent: {}
+[7.921479] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 24%] \x1b[32m\x1b[1mLinking C shared library libserial_motor_demo_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[8.015595] (-) TimerEvent: {}
+[8.116901] (-) TimerEvent: {}
+[8.146228] (ros2_control_demo_example_2) StdoutLine: {'line': b'-- Found rclcpp: 28.1.10 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[8.218072] (-) TimerEvent: {}
+[8.320517] (-) TimerEvent: {}
+[8.403457] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 24%] Built target serial_motor_demo_msgs__rosidl_generator_c\n'}
+[8.420738] (-) TimerEvent: {}
+[8.524712] (-) TimerEvent: {}
+[8.539123] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[8.541093] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[8.548076] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 31%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[8.551514] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 31%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[8.629095] (-) TimerEvent: {}
+[8.687060] (ros2_control_demo_example_2) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[8.732079] (-) TimerEvent: {}
+[8.833362] (-) TimerEvent: {}
+[8.937072] (-) TimerEvent: {}
+[9.041129] (-) TimerEvent: {}
+[9.070865] (ros2_control_demo_example_2) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[9.143149] (-) TimerEvent: {}
+[9.247082] (-) TimerEvent: {}
+[9.348489] (-) TimerEvent: {}
+[9.413040] (ros2_control_demo_example_2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[9.448811] (-) TimerEvent: {}
+[9.550738] (-) TimerEvent: {}
+[9.655178] (-) TimerEvent: {}
+[9.663424] (ros2_control_demo_example_2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[9.758191] (-) TimerEvent: {}
+[9.862360] (-) TimerEvent: {}
+[9.947421] (golftrolley) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/golftrolley', 'build', '--build-base', '/home/golftrolley/robot_ws/build/golftrolley/build', 'install', '--record', '/home/golftrolley/robot_ws/build/golftrolley/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/golftrolley/robot_ws/src/golftrolley', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'golftrolley', 'SSH_CLIENT': '10.42.0.1 46558 22', 'LC_TIME': 'ms_MY.UTF-8', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/golftrolley', 'OLDPWD': '/home/golftrolley', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'ms_MY.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'golftrolley', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '2', 'PATH': '/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'ms_MY.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'ms_MY.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'ms_MY.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ms_MY.UTF-8', 'LC_IDENTIFICATION': 'ms_MY.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/golftrolley/robot_ws/build/golftrolley', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '10.42.0.1 46558 10.42.0.2 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/golftrolley/robot_ws/build/golftrolley/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/golftrolley/robot_ws/install/golftrolley/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'ms_MY.UTF-8', 'LC_PAPER': 'ms_MY.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[9.968164] (-) TimerEvent: {}
+[10.072077] (-) TimerEvent: {}
+[10.178083] (-) TimerEvent: {}
+[10.279864] (-) TimerEvent: {}
+[10.381429] (-) TimerEvent: {}
+[10.486428] (-) TimerEvent: {}
+[10.589669] (-) TimerEvent: {}
+[10.695046] (-) TimerEvent: {}
+[10.798069] (-) TimerEvent: {}
+[10.901045] (-) TimerEvent: {}
+[10.946377] (ros2_control_demo_example_2) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[11.001300] (-) TimerEvent: {}
+[11.021328] (ros2_control_demo_example_2) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[11.101631] (-) TimerEvent: {}
+[11.210136] (-) TimerEvent: {}
+[11.313073] (-) TimerEvent: {}
+[11.416160] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/serial_motor_demo_msgs/msg/motor_command__type_support.cpp.o\x1b[0m\n'}
+[11.417495] (-) TimerEvent: {}
+[11.520071] (-) TimerEvent: {}
+[11.624115] (-) TimerEvent: {}
+[11.667224] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/serial_motor_demo_msgs/msg/motor_command__type_support.cpp.o\x1b[0m\n'}
+[11.724309] (-) TimerEvent: {}
+[11.825480] (-) TimerEvent: {}
+[11.932176] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serial_motor_demo_msgs/msg/detail/motor_command__type_support.c.o\x1b[0m\n'}
+[11.934072] (-) TimerEvent: {}
+[12.040120] (-) TimerEvent: {}
+[12.141608] (-) TimerEvent: {}
+[12.246994] (-) TimerEvent: {}
+[12.252364] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/serial_motor_demo_msgs/msg/motor_vels__type_support.cpp.o\x1b[0m\n'}
+[12.263575] (ros2_control_demo_example_2) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[12.350172] (-) TimerEvent: {}
+[12.407279] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serial_motor_demo_msgs/msg/detail/motor_vels__type_support.c.o\x1b[0m\n'}
+[12.413146] (ros2_control_demo_example_2) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[12.452113] (-) TimerEvent: {}
+[12.556085] (-) TimerEvent: {}
+[12.659257] (-) TimerEvent: {}
+[12.686643] (ros2_control_demo_example_2) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[12.759484] (-) TimerEvent: {}
+[12.793113] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/serial_motor_demo_msgs/msg/encoder_vals__type_support.cpp.o\x1b[0m\n'}
+[12.828963] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serial_motor_demo_msgs/msg/detail/encoder_vals__type_support.c.o\x1b[0m\n'}
+[12.859732] (-) TimerEvent: {}
+[12.967103] (-) TimerEvent: {}
+[13.047335] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/serial_motor_demo_msgs/msg/detail/motor_command__type_support_c.cpp.o\x1b[0m\n'}
+[13.067257] (-) TimerEvent: {}
+[13.128130] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32m\x1b[1mLinking C shared library libserial_motor_demo_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[13.170090] (-) TimerEvent: {}
+[13.197075] (golftrolley) StdoutLine: {'line': b'running egg_info\n'}
+[13.199370] (golftrolley) StdoutLine: {'line': b'creating ../../build/golftrolley/golftrolley.egg-info\n'}
+[13.275098] (-) TimerEvent: {}
+[13.376189] (-) TimerEvent: {}
+[13.425496] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX shared library libserial_motor_demo_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[13.482112] (-) TimerEvent: {}
+[13.531203] (golftrolley) StdoutLine: {'line': b'writing ../../build/golftrolley/golftrolley.egg-info/PKG-INFO\n'}
+[13.539073] (golftrolley) StdoutLine: {'line': b'writing dependency_links to ../../build/golftrolley/golftrolley.egg-info/dependency_links.txt\n'}
+[13.542988] (golftrolley) StdoutLine: {'line': b'writing requirements to ../../build/golftrolley/golftrolley.egg-info/requires.txt\n'}
+[13.549029] (golftrolley) StdoutLine: {'line': b'writing top-level names to ../../build/golftrolley/golftrolley.egg-info/top_level.txt\n'}
+[13.549892] (golftrolley) StdoutLine: {'line': b"writing manifest file '../../build/golftrolley/golftrolley.egg-info/SOURCES.txt'\n"}
+[13.585840] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 50%] Built target serial_motor_demo_msgs__rosidl_typesupport_introspection_c\n'}
+[13.586753] (-) TimerEvent: {}
+[13.675375] (ros2_control_demo_example_2) StdoutLine: {'line': b'-- Found hardware_interface: 4.32.0 (/opt/ros/jazzy/share/hardware_interface/cmake)\n'}
+[13.687055] (-) TimerEvent: {}
+[13.719769] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 51%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[13.791103] (-) TimerEvent: {}
+[13.892137] (-) TimerEvent: {}
+[13.967076] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 51%] Built target serial_motor_demo_msgs__rosidl_typesupport_c\n'}
+[13.995082] (-) TimerEvent: {}
+[14.054734] (golftrolley) StdoutLine: {'line': b"reading manifest file '../../build/golftrolley/golftrolley.egg-info/SOURCES.txt'\n"}
+[14.066058] (golftrolley) StdoutLine: {'line': b"writing manifest file '../../build/golftrolley/golftrolley.egg-info/SOURCES.txt'\n"}
+[14.072112] (golftrolley) StdoutLine: {'line': b'running build\n'}
+[14.073690] (golftrolley) StdoutLine: {'line': b'running build_py\n'}
+[14.084975] (golftrolley) StdoutLine: {'line': b'creating /home/golftrolley/robot_ws/build/golftrolley/build\n'}
+[14.086243] (golftrolley) StdoutLine: {'line': b'creating /home/golftrolley/robot_ws/build/golftrolley/build/lib\n'}
+[14.091118] (golftrolley) StdoutLine: {'line': b'creating /home/golftrolley/robot_ws/build/golftrolley/build/lib/golftrolley\n'}
+[14.096778] (-) TimerEvent: {}
+[14.097979] (golftrolley) StdoutLine: {'line': b'copying golftrolley/__init__.py -> /home/golftrolley/robot_ws/build/golftrolley/build/lib/golftrolley\n'}
+[14.098772] (golftrolley) StdoutLine: {'line': b'running install\n'}
+[14.112319] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 53%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[14.185609] (golftrolley) StdoutLine: {'line': b'running install_lib\n'}
+[14.196998] (-) TimerEvent: {}
+[14.301098] (-) TimerEvent: {}
+[14.400072] (golftrolley) StdoutLine: {'line': b'creating /home/golftrolley/robot_ws/install/golftrolley/lib/python3.12/site-packages/golftrolley\n'}
+[14.405806] (-) TimerEvent: {}
+[14.409004] (golftrolley) StdoutLine: {'line': b'copying /home/golftrolley/robot_ws/build/golftrolley/build/lib/golftrolley/__init__.py -> /home/golftrolley/robot_ws/install/golftrolley/lib/python3.12/site-packages/golftrolley\n'}
+[14.413268] (golftrolley) StdoutLine: {'line': b'byte-compiling /home/golftrolley/robot_ws/install/golftrolley/lib/python3.12/site-packages/golftrolley/__init__.py to __init__.cpython-312.pyc\n'}
+[14.420978] (golftrolley) StdoutLine: {'line': b'running install_data\n'}
+[14.427144] (golftrolley) StdoutLine: {'line': b'creating /home/golftrolley/robot_ws/install/golftrolley/share/ament_index\n'}
+[14.431340] (golftrolley) StdoutLine: {'line': b'creating /home/golftrolley/robot_ws/install/golftrolley/share/ament_index/resource_index\n'}
+[14.432291] (golftrolley) StdoutLine: {'line': b'creating /home/golftrolley/robot_ws/install/golftrolley/share/ament_index/resource_index/packages\n'}
+[14.442688] (golftrolley) StdoutLine: {'line': b'copying resource/golftrolley -> /home/golftrolley/robot_ws/install/golftrolley/share/ament_index/resource_index/packages\n'}
+[14.445507] (golftrolley) StdoutLine: {'line': b'copying package.xml -> /home/golftrolley/robot_ws/install/golftrolley/share/golftrolley\n'}
+[14.451596] (golftrolley) StdoutLine: {'line': b'creating /home/golftrolley/robot_ws/install/golftrolley/share/golftrolley/launch\n'}
+[14.452556] (golftrolley) StdoutLine: {'line': b'copying launch/gps_launch.py -> /home/golftrolley/robot_ws/install/golftrolley/share/golftrolley/launch\n'}
+[14.453362] (golftrolley) StdoutLine: {'line': b'copying launch/golftrolly_launch.py -> /home/golftrolley/robot_ws/install/golftrolley/share/golftrolley/launch\n'}
+[14.462847] (golftrolley) StdoutLine: {'line': b'running install_egg_info\n'}
+[14.506079] (-) TimerEvent: {}
+[14.609165] (-) TimerEvent: {}
+[14.712120] (-) TimerEvent: {}
+[14.816154] (-) TimerEvent: {}
+[14.867537] (golftrolley) StdoutLine: {'line': b'Copying ../../build/golftrolley/golftrolley.egg-info to /home/golftrolley/robot_ws/install/golftrolley/lib/python3.12/site-packages/golftrolley-0.0.0-py3.12.egg-info\n'}
+[14.882805] (golftrolley) StdoutLine: {'line': b'running install_scripts\n'}
+[14.916386] (-) TimerEvent: {}
+[15.023092] (-) TimerEvent: {}
+[15.124887] (-) TimerEvent: {}
+[15.230388] (-) TimerEvent: {}
+[15.333100] (-) TimerEvent: {}
+[15.428227] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/serial_motor_demo_msgs/msg/motor_vels__type_support.cpp.o\x1b[0m\n'}
+[15.436084] (-) TimerEvent: {}
+[15.542080] (-) TimerEvent: {}
+[15.642980] (-) TimerEvent: {}
+[15.744784] (-) TimerEvent: {}
+[15.849058] (-) TimerEvent: {}
+[15.950399] (-) TimerEvent: {}
+[16.052180] (-) TimerEvent: {}
+[16.157156] (-) TimerEvent: {}
+[16.258449] (-) TimerEvent: {}
+[16.361392] (-) TimerEvent: {}
+[16.464149] (-) TimerEvent: {}
+[16.566122] (-) TimerEvent: {}
+[16.670698] (-) TimerEvent: {}
+[16.772426] (-) TimerEvent: {}
+[16.873492] (-) TimerEvent: {}
+[16.919731] (golftrolley) StdoutLine: {'line': b"writing list of installed files to '/home/golftrolley/robot_ws/build/golftrolley/install.log'\n"}
+[16.973851] (-) TimerEvent: {}
+[17.077746] (-) TimerEvent: {}
+[17.185139] (-) TimerEvent: {}
+[17.200277] (golftrolley) CommandEnded: {'returncode': 0}
+[17.291142] (-) TimerEvent: {}
+[17.305791] (golftrolley) JobEnded: {'identifier': 'golftrolley', 'rc': 0}
+[18.424657] (-) TimerEvent: {}
+[18.430350] (serial) JobStarted: {'identifier': 'serial'}
+[18.435330] (serial) JobProgress: {'identifier': 'serial', 'progress': 'cmake'}
+[18.437797] (serial) Command: {'cmd': ['/usr/bin/cmake', '/home/golftrolley/robot_ws/src/serial', '-DCMAKE_INSTALL_PREFIX=/home/golftrolley/robot_ws/install/serial'], 'cwd': '/home/golftrolley/robot_ws/build/serial', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'golftrolley', 'SSH_CLIENT': '10.42.0.1 46558 22', 'LC_TIME': 'ms_MY.UTF-8', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/golftrolley', 'OLDPWD': '/home/golftrolley', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'ms_MY.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'golftrolley', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '2', 'PATH': '/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'ms_MY.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'ms_MY.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'ms_MY.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ms_MY.UTF-8', 'LC_IDENTIFICATION': 'ms_MY.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/golftrolley/robot_ws/build/serial', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '10.42.0.1 46558 10.42.0.2 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'ms_MY.UTF-8', 'LC_PAPER': 'ms_MY.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[18.455141] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/serial_motor_demo_msgs/msg/detail/motor_command__type_support.cpp.o\x1b[0m\n'}
+[18.461244] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/serial_motor_demo_msgs/msg/detail/dds_fastrtps/motor_command__type_support.cpp.o\x1b[0m\n'}
+[18.524929] (-) TimerEvent: {}
+[18.629155] (-) TimerEvent: {}
+[18.651190] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/serial_motor_demo_msgs/msg/detail/motor_vels__type_support_c.cpp.o\x1b[0m\n'}
+[18.731878] (-) TimerEvent: {}
+[18.763248] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/serial_motor_demo_msgs/msg/encoder_vals__type_support.cpp.o\x1b[0m\n'}
+[18.783102] (serial) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[18.838162] (-) TimerEvent: {}
+[18.942080] (-) TimerEvent: {}
+[19.043434] (-) TimerEvent: {}
+[19.147122] (-) TimerEvent: {}
+[19.250154] (-) TimerEvent: {}
+[19.354566] (-) TimerEvent: {}
+[19.458171] (-) TimerEvent: {}
+[19.565163] (-) TimerEvent: {}
+[19.667080] (-) TimerEvent: {}
+[19.715118] (serial) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[19.767431] (-) TimerEvent: {}
+[19.875437] (-) TimerEvent: {}
+[19.981122] (-) TimerEvent: {}
+[20.006138] (serial) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[20.081469] (-) TimerEvent: {}
+[20.186592] (-) TimerEvent: {}
+[20.288140] (-) TimerEvent: {}
+[20.396101] (-) TimerEvent: {}
+[20.497080] (-) TimerEvent: {}
+[20.600179] (-) TimerEvent: {}
+[20.704130] (-) TimerEvent: {}
+[20.743464] (ros2_control_demo_example_2) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/jazzy/share/pluginlib/cmake/pluginlib_export_plugin_description_file.cmake:84 (message):\n'}
+[20.745320] (ros2_control_demo_example_2) StderrLine: {'line': b'  Given plugin description file\n'}
+[20.753464] (ros2_control_demo_example_2) StderrLine: {'line': b"  '/home/golftrolley/robot_ws/src/example_2/hardware_interface_plugin.xml'\n"}
+[20.762230] (ros2_control_demo_example_2) StderrLine: {'line': b'  does not exist\n'}
+[20.768611] (ros2_control_demo_example_2) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[20.770507] (ros2_control_demo_example_2) StderrLine: {'line': b'  CMakeLists.txt:23 (pluginlib_export_plugin_description_file)\n'}
+[20.778789] (ros2_control_demo_example_2) StderrLine: {'line': b'\n'}
+[20.779820] (ros2_control_demo_example_2) StderrLine: {'line': b'\x1b[0m\n'}
+[20.780678] (ros2_control_demo_example_2) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[20.804454] (-) TimerEvent: {}
+[20.891463] (ros2_control_demo_example_2) CommandEnded: {'returncode': 1}
+[20.904665] (-) TimerEvent: {}
+[21.008784] (-) TimerEvent: {}
+[21.033101] (ros2_control_demo_example_2) JobEnded: {'identifier': 'ros2_control_demo_example_2', 'rc': 1}
+[21.110100] (-) TimerEvent: {}
+[21.213575] (-) TimerEvent: {}
+[21.239176] (serial) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[21.316132] (-) TimerEvent: {}
+[21.349603] (serial) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[21.363083] (serial) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[21.363899] (serial) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[21.418135] (-) TimerEvent: {}
+[21.482762] (serial) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[21.520393] (-) TimerEvent: {}
+[21.625117] (-) TimerEvent: {}
+[21.729573] (-) TimerEvent: {}
+[21.834124] (-) TimerEvent: {}
+[21.907127] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/serial_motor_demo_msgs/msg/detail/motor_vels__type_support.cpp.o\x1b[0m\n'}
+[21.935159] (-) TimerEvent: {}
+[22.036080] (-) TimerEvent: {}
+[22.140188] (-) TimerEvent: {}
+[22.245134] (-) TimerEvent: {}
+[22.346663] (-) TimerEvent: {}
+[22.447851] (-) TimerEvent: {}
+[22.468625] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX shared library libserial_motor_demo_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[22.548161] (-) TimerEvent: {}
+[22.650691] (-) TimerEvent: {}
+[22.757367] (-) TimerEvent: {}
+[22.774319] (serial) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[22.836536] (serial) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[22.841112] (serial) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[22.846078] (serial) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[22.857592] (-) TimerEvent: {}
+[22.876260] (serial) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[22.909184] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 66%] Built target serial_motor_demo_msgs__rosidl_typesupport_cpp\n'}
+[22.960135] (-) TimerEvent: {}
+[23.045320] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/serial_motor_demo_msgs/msg/detail/encoder_vals__type_support_c.cpp.o\x1b[0m\n'}
+[23.065133] (-) TimerEvent: {}
+[23.166761] (-) TimerEvent: {}
+[23.271461] (-) TimerEvent: {}
+[23.373328] (-) TimerEvent: {}
+[23.477630] (-) TimerEvent: {}
+[23.579187] (-) TimerEvent: {}
+[23.683414] (-) TimerEvent: {}
+[23.785454] (-) TimerEvent: {}
+[23.890018] (-) TimerEvent: {}
+[23.994164] (-) TimerEvent: {}
+[24.019308] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/serial_motor_demo_msgs/msg/detail/dds_fastrtps/motor_vels__type_support.cpp.o\x1b[0m\n'}
+[24.096263] (-) TimerEvent: {}
+[24.129189] (serial) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[24.198823] (-) TimerEvent: {}
+[24.305167] (-) TimerEvent: {}
+[24.333788] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/serial_motor_demo_msgs/msg/detail/dds_fastrtps/encoder_vals__type_support.cpp.o\x1b[0m\n'}
+[24.411081] (-) TimerEvent: {}
+[24.512017] (-) TimerEvent: {}
+[24.613015] (-) TimerEvent: {}
+[24.721139] (-) TimerEvent: {}
+[24.822585] (-) TimerEvent: {}
+[24.925202] (-) TimerEvent: {}
+[25.027095] (-) TimerEvent: {}
+[25.131537] (-) TimerEvent: {}
+[25.232306] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/serial_motor_demo_msgs/msg/detail/encoder_vals__type_support.cpp.o\x1b[0m\n'}
+[25.233419] (-) TimerEvent: {}
+[25.341106] (-) TimerEvent: {}
+[25.445118] (-) TimerEvent: {}
+[25.546177] (-) TimerEvent: {}
+[25.550511] (serial) StdoutLine: {'line': b'-- Found ament_cmake_gtest: 2.5.4 (/opt/ros/jazzy/share/ament_cmake_gtest/cmake)\n'}
+[25.646466] (-) TimerEvent: {}
+[25.705104] (serial) StdoutLine: {'line': b'-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0")  \n'}
+[25.746719] (-) TimerEvent: {}
+[25.769422] (serial) StdoutLine: {'line': b"-- Found gtest sources under '/opt/ros/jazzy/src/gtest_vendor': C++ tests using 'Google Test' will be built\n"}
+[25.791879] (serial) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[25.847000] (-) TimerEvent: {}
+[25.948544] (-) TimerEvent: {}
+[26.050141] (-) TimerEvent: {}
+[26.153069] (-) TimerEvent: {}
+[26.257219] (-) TimerEvent: {}
+[26.367127] (-) TimerEvent: {}
+[26.469113] (-) TimerEvent: {}
+[26.570667] (-) TimerEvent: {}
+[26.677124] (-) TimerEvent: {}
+[26.778164] (-) TimerEvent: {}
+[26.879198] (-) TimerEvent: {}
+[26.902157] (serial) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[26.906377] (serial) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[26.985086] (-) TimerEvent: {}
+[27.086345] (-) TimerEvent: {}
+[27.188733] (-) TimerEvent: {}
+[27.293134] (-) TimerEvent: {}
+[27.397154] (-) TimerEvent: {}
+[27.499020] (-) TimerEvent: {}
+[27.602765] (-) TimerEvent: {}
+[27.708516] (-) TimerEvent: {}
+[27.810104] (-) TimerEvent: {}
+[27.919120] (-) TimerEvent: {}
+[28.011069] (serial) StdoutLine: {'line': b'-- Configuring done (10.5s)\n'}
+[28.022158] (-) TimerEvent: {}
+[28.123632] (-) TimerEvent: {}
+[28.228430] (-) TimerEvent: {}
+[28.279267] (serial) StdoutLine: {'line': b'-- Generating done (0.2s)\n'}
+[28.334109] (-) TimerEvent: {}
+[28.365376] (serial) StdoutLine: {'line': b'-- Build files have been written to: /home/golftrolley/robot_ws/build/serial\n'}
+[28.400866] (serial) JobEnded: {'identifier': 'serial', 'rc': 'SIGINT'}
+[28.434379] (-) TimerEvent: {}
+[28.537507] (-) TimerEvent: {}
+[28.640813] (-) TimerEvent: {}
+[28.659278] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX shared library libserial_motor_demo_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[28.681125] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32m\x1b[1mLinking CXX shared library libserial_motor_demo_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[28.741197] (-) TimerEvent: {}
+[28.844844] (-) TimerEvent: {}
+[28.946221] (-) TimerEvent: {}
+[29.034208] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 77%] Built target serial_motor_demo_msgs__rosidl_typesupport_introspection_cpp\n'}
+[29.048115] (-) TimerEvent: {}
+[29.065523] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 77%] Built target serial_motor_demo_msgs__rosidl_typesupport_fastrtps_c\n'}
+[29.148361] (-) TimerEvent: {}
+[29.250376] (-) TimerEvent: {}
+[29.339519] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 79%] \x1b[32m\x1b[1mLinking CXX shared library libserial_motor_demo_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[29.350596] (-) TimerEvent: {}
+[29.451597] (-) TimerEvent: {}
+[29.553644] (-) TimerEvent: {}
+[29.598547] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 79%] Built target serial_motor_demo_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[29.653895] (-) TimerEvent: {}
+[29.711864] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 79%] Built target serial_motor_demo_msgs\n'}
+[29.754146] (-) TimerEvent: {}
+[29.831625] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 81%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[29.854385] (-) TimerEvent: {}
+[29.955529] (-) TimerEvent: {}
+[30.056706] (-) TimerEvent: {}
+[30.157623] (-) TimerEvent: {}
+[30.258676] (-) TimerEvent: {}
+[30.359472] (-) TimerEvent: {}
+[30.460246] (-) TimerEvent: {}
+[30.561056] (-) TimerEvent: {}
+[30.661759] (-) TimerEvent: {}
+[30.762509] (-) TimerEvent: {}
+[30.863310] (-) TimerEvent: {}
+[30.964572] (-) TimerEvent: {}
+[31.065441] (-) TimerEvent: {}
+[31.166333] (-) TimerEvent: {}
+[31.267368] (-) TimerEvent: {}
+[31.368255] (-) TimerEvent: {}
+[31.469111] (-) TimerEvent: {}
+[31.569978] (-) TimerEvent: {}
+[31.670788] (-) TimerEvent: {}
+[31.774114] (-) TimerEvent: {}
+[31.875095] (-) TimerEvent: {}
+[31.976423] (-) TimerEvent: {}
+[31.985533] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 81%] Built target serial_motor_demo_msgs__py\n'}
+[32.079095] (-) TimerEvent: {}
+[32.109362] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_generator_py.dir/rosidl_generator_py/serial_motor_demo_msgs/msg/_motor_command_s.c.o\x1b[0m\n'}
+[32.111369] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_generator_py.dir/rosidl_generator_py/serial_motor_demo_msgs/msg/_motor_vels_s.c.o\x1b[0m\n'}
+[32.114995] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_generator_py.dir/rosidl_generator_py/serial_motor_demo_msgs/msg/_encoder_vals_s.c.o\x1b[0m\n'}
+[32.180806] (-) TimerEvent: {}
+[32.281655] (-) TimerEvent: {}
+[32.384498] (-) TimerEvent: {}
+[32.485491] (-) TimerEvent: {}
+[32.589682] (-) TimerEvent: {}
+[32.691269] (-) TimerEvent: {}
+[32.793562] (-) TimerEvent: {}
+[32.814553] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 88%] \x1b[32m\x1b[1mLinking C shared library libserial_motor_demo_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[32.893764] (-) TimerEvent: {}
+[32.994639] (-) TimerEvent: {}
+[33.045079] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 88%] Built target serial_motor_demo_msgs__rosidl_generator_py\n'}
+[33.097151] (-) TimerEvent: {}
+[33.185340] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/serial_motor_demo_msgs_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/serial_motor_demo_msgs/_serial_motor_demo_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[33.187650] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/serial_motor_demo_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/serial_motor_demo_msgs/_serial_motor_demo_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[33.191807] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/serial_motor_demo_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/serial_motor_demo_msgs/_serial_motor_demo_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[33.197339] (-) TimerEvent: {}
+[33.301308] (-) TimerEvent: {}
+[33.402269] (-) TimerEvent: {}
+[33.504119] (-) TimerEvent: {}
+[33.608525] (-) TimerEvent: {}
+[33.709684] (-) TimerEvent: {}
+[33.810807] (-) TimerEvent: {}
+[33.876175] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/serial_motor_demo_msgs/serial_motor_demo_msgs_s__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[33.886211] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/serial_motor_demo_msgs/serial_motor_demo_msgs_s__rosidl_typesupport_c.so\x1b[0m\n'}
+[33.911067] (-) TimerEvent: {}
+[33.960046] (serial_motor_demo_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/serial_motor_demo_msgs/serial_motor_demo_msgs_s__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[34.013628] (-) TimerEvent: {}
+[34.085142] (serial_motor_demo_msgs) StdoutLine: {'line': b'[100%] Built target serial_motor_demo_msgs_s__rosidl_typesupport_fastrtps_c\n'}
+[34.099092] (serial_motor_demo_msgs) StdoutLine: {'line': b'[100%] Built target serial_motor_demo_msgs_s__rosidl_typesupport_c\n'}
+[34.113844] (-) TimerEvent: {}
+[34.174181] (serial_motor_demo_msgs) StdoutLine: {'line': b'[100%] Built target serial_motor_demo_msgs_s__rosidl_typesupport_introspection_c\n'}
+[34.214087] (-) TimerEvent: {}
+[34.242645] (serial_motor_demo_msgs) JobEnded: {'identifier': 'serial_motor_demo_msgs', 'rc': 'SIGINT'}
+[34.314284] (-) TimerEvent: {}
+[34.415092] (-) TimerEvent: {}
+[34.515988] (-) TimerEvent: {}
+[34.616751] (-) TimerEvent: {}
+[34.717545] (-) TimerEvent: {}
+[34.818335] (-) TimerEvent: {}
+[34.919191] (-) TimerEvent: {}
+[35.019996] (-) TimerEvent: {}
+[35.120744] (-) TimerEvent: {}
+[35.221521] (-) TimerEvent: {}
+[35.322368] (-) TimerEvent: {}
+[35.423116] (-) TimerEvent: {}
+[35.523854] (-) TimerEvent: {}
+[35.624634] (-) TimerEvent: {}
+[35.725414] (-) TimerEvent: {}
+[35.826128] (-) TimerEvent: {}
+[35.926848] (-) TimerEvent: {}
+[36.027729] (-) TimerEvent: {}
+[36.128518] (-) TimerEvent: {}
+[36.229376] (-) TimerEvent: {}
+[36.330497] (-) TimerEvent: {}
+[36.431478] (-) TimerEvent: {}
+[36.532265] (-) TimerEvent: {}
+[36.633030] (-) TimerEvent: {}
+[36.733740] (-) TimerEvent: {}
+[36.834519] (-) TimerEvent: {}
+[36.935306] (-) TimerEvent: {}
+[37.036067] (-) TimerEvent: {}
+[37.136831] (-) TimerEvent: {}
+[37.237596] (-) TimerEvent: {}
+[37.338359] (-) TimerEvent: {}
+[37.439072] (-) TimerEvent: {}
+[37.539791] (-) TimerEvent: {}
+[37.640554] (-) TimerEvent: {}
+[37.741346] (-) TimerEvent: {}
+[37.842062] (-) TimerEvent: {}
+[37.942793] (-) TimerEvent: {}
+[38.043573] (-) TimerEvent: {}
+[38.144359] (-) TimerEvent: {}
+[38.245095] (-) TimerEvent: {}
+[38.345803] (-) TimerEvent: {}
+[38.446583] (-) TimerEvent: {}
+[38.547405] (-) TimerEvent: {}
+[38.648186] (-) TimerEvent: {}
+[38.749030] (-) TimerEvent: {}
+[38.850105] (-) TimerEvent: {}
+[38.951166] (-) TimerEvent: {}
+[39.052400] (-) TimerEvent: {}
+[39.153649] (-) TimerEvent: {}
+[39.254854] (-) TimerEvent: {}
+[39.355985] (-) TimerEvent: {}
+[39.456833] (-) TimerEvent: {}
+[39.557593] (-) TimerEvent: {}
+[39.658381] (-) TimerEvent: {}
+[39.759118] (-) TimerEvent: {}
+[39.859849] (-) TimerEvent: {}
+[39.960625] (-) TimerEvent: {}
+[40.061661] (-) TimerEvent: {}
+[40.155006] (mpu6050driver) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable mpu6050driver\x1b[0m\n'}
+[40.161787] (-) TimerEvent: {}
+[40.262521] (-) TimerEvent: {}
+[40.363391] (-) TimerEvent: {}
+[40.464305] (-) TimerEvent: {}
+[40.565230] (-) TimerEvent: {}
+[40.666068] (-) TimerEvent: {}
+[40.766788] (-) TimerEvent: {}
+[40.867836] (-) TimerEvent: {}
+[40.968732] (-) TimerEvent: {}
+[41.069573] (-) TimerEvent: {}
+[41.170396] (-) TimerEvent: {}
+[41.212840] (mpu6050driver) StdoutLine: {'line': b'[100%] Built target mpu6050driver\n'}
+[41.266020] (mpu6050driver) JobEnded: {'identifier': 'mpu6050driver', 'rc': 'SIGINT'}
+[41.270508] (-) TimerEvent: {}
+[41.278147] (stereo_camera_split) JobSkipped: {'identifier': 'stereo_camera_split'}
+[41.278527] (ydlidar_ros2_driver) JobSkipped: {'identifier': 'ydlidar_ros2_driver'}
+[41.278640] (ydlidar_sdk) JobSkipped: {'identifier': 'ydlidar_sdk'}
+[41.278995] (serial_motor_demo) JobSkipped: {'identifier': 'serial_motor_demo'}
+[41.279229] (-) EventReactorShutdown: {}

@@ -1,0 +1,272 @@
+[0.000000] (-) TimerEvent: {}
+[0.000447] (golftrolley) JobQueued: {'identifier': 'golftrolley', 'dependencies': OrderedDict()}
+[0.000738] (mpu6050driver) JobQueued: {'identifier': 'mpu6050driver', 'dependencies': OrderedDict()}
+[0.000817] (ros2_control_demo_example_2) JobQueued: {'identifier': 'ros2_control_demo_example_2', 'dependencies': OrderedDict()}
+[0.000881] (serial) JobQueued: {'identifier': 'serial', 'dependencies': OrderedDict()}
+[0.000945] (serial_motor_demo_msgs) JobQueued: {'identifier': 'serial_motor_demo_msgs', 'dependencies': OrderedDict()}
+[0.001008] (stereo_camera_split) JobQueued: {'identifier': 'stereo_camera_split', 'dependencies': OrderedDict()}
+[0.001097] (ydlidar_ros2_driver) JobQueued: {'identifier': 'ydlidar_ros2_driver', 'dependencies': OrderedDict()}
+[0.001475] (ydlidar_sdk) JobQueued: {'identifier': 'ydlidar_sdk', 'dependencies': OrderedDict()}
+[0.001541] (serial_motor_demo) JobQueued: {'identifier': 'serial_motor_demo', 'dependencies': OrderedDict({'serial_motor_demo_msgs': '/home/golftrolley/robot_ws/install/serial_motor_demo_msgs'})}
+[0.002393] (serial_motor_demo_msgs) JobStarted: {'identifier': 'serial_motor_demo_msgs'}
+[0.027115] (golftrolley) JobStarted: {'identifier': 'golftrolley'}
+[0.051777] (mpu6050driver) JobStarted: {'identifier': 'mpu6050driver'}
+[0.067947] (ros2_control_demo_example_2) JobStarted: {'identifier': 'ros2_control_demo_example_2'}
+[0.089546] (serial_motor_demo_msgs) JobProgress: {'identifier': 'serial_motor_demo_msgs', 'progress': 'cmake'}
+[0.091990] (serial_motor_demo_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/golftrolley/robot_ws/src/serial_motor_demo/serial_motor_demo_msgs', '-DCMAKE_INSTALL_PREFIX=/home/golftrolley/robot_ws/install/serial_motor_demo_msgs'], 'cwd': '/home/golftrolley/robot_ws/build/serial_motor_demo_msgs', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'golftrolley', 'SSH_CLIENT': '10.42.0.1 46558 22', 'LC_TIME': 'ms_MY.UTF-8', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/golftrolley', 'OLDPWD': '/home/golftrolley', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'ms_MY.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'golftrolley', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '2', 'PATH': '/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'ms_MY.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'ms_MY.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'ms_MY.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ms_MY.UTF-8', 'LC_IDENTIFICATION': 'ms_MY.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/golftrolley/robot_ws/build/serial_motor_demo_msgs', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '10.42.0.1 46558 10.42.0.2 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'ms_MY.UTF-8', 'LC_PAPER': 'ms_MY.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.100989] (-) TimerEvent: {}
+[0.204241] (-) TimerEvent: {}
+[0.304971] (-) TimerEvent: {}
+[0.405734] (-) TimerEvent: {}
+[0.506451] (-) TimerEvent: {}
+[0.607206] (-) TimerEvent: {}
+[0.707995] (-) TimerEvent: {}
+[0.808852] (-) TimerEvent: {}
+[0.909929] (-) TimerEvent: {}
+[1.013515] (-) TimerEvent: {}
+[1.114884] (-) TimerEvent: {}
+[1.216740] (-) TimerEvent: {}
+[1.223159] (mpu6050driver) JobProgress: {'identifier': 'mpu6050driver', 'progress': 'cmake'}
+[1.225785] (mpu6050driver) Command: {'cmd': ['/usr/bin/cmake', '/home/golftrolley/robot_ws/src/ros2_mpu6050_driver', '-DCMAKE_INSTALL_PREFIX=/home/golftrolley/robot_ws/install/mpu6050driver'], 'cwd': '/home/golftrolley/robot_ws/build/mpu6050driver', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'golftrolley', 'SSH_CLIENT': '10.42.0.1 46558 22', 'LC_TIME': 'ms_MY.UTF-8', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/golftrolley', 'OLDPWD': '/home/golftrolley', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'ms_MY.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'golftrolley', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '2', 'PATH': '/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'ms_MY.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'ms_MY.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'ms_MY.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ms_MY.UTF-8', 'LC_IDENTIFICATION': 'ms_MY.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/golftrolley/robot_ws/build/mpu6050driver', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '10.42.0.1 46558 10.42.0.2 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'ms_MY.UTF-8', 'LC_PAPER': 'ms_MY.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[1.237825] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[1.238618] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[1.239042] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.251114] (ros2_control_demo_example_2) JobProgress: {'identifier': 'ros2_control_demo_example_2', 'progress': 'cmake'}
+[1.251326] (ros2_control_demo_example_2) Command: {'cmd': ['/usr/bin/cmake', '/home/golftrolley/robot_ws/src/example_2', '-DCMAKE_INSTALL_PREFIX=/home/golftrolley/robot_ws/install/ros2_control_demo_example_2'], 'cwd': '/home/golftrolley/robot_ws/build/ros2_control_demo_example_2', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'golftrolley', 'SSH_CLIENT': '10.42.0.1 46558 22', 'LC_TIME': 'ms_MY.UTF-8', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/golftrolley', 'OLDPWD': '/home/golftrolley', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'ms_MY.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'golftrolley', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '2', 'PATH': '/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'ms_MY.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'ms_MY.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'ms_MY.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ms_MY.UTF-8', 'LC_IDENTIFICATION': 'ms_MY.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/golftrolley/robot_ws/build/ros2_control_demo_example_2', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '10.42.0.1 46558 10.42.0.2 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'ms_MY.UTF-8', 'LC_PAPER': 'ms_MY.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[1.317004] (-) TimerEvent: {}
+[1.351161] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.396805] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.400253] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.402733] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.418560] (-) TimerEvent: {}
+[1.493834] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.518734] (-) TimerEvent: {}
+[1.600414] (mpu6050driver) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[1.621270] (-) TimerEvent: {}
+[1.722245] (-) TimerEvent: {}
+[1.782007] (ros2_control_demo_example_2) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[1.824465] (-) TimerEvent: {}
+[1.921429] (ros2_control_demo_example_2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.924711] (-) TimerEvent: {}
+[2.020753] (mpu6050driver) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[2.026269] (-) TimerEvent: {}
+[2.129420] (-) TimerEvent: {}
+[2.134406] (mpu6050driver) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[2.231263] (-) TimerEvent: {}
+[2.289590] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.333243] (-) TimerEvent: {}
+[2.369556] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.370767] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.373059] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.401393] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[2.433422] (-) TimerEvent: {}
+[2.537310] (-) TimerEvent: {}
+[2.638390] (-) TimerEvent: {}
+[2.683491] (ros2_control_demo_example_2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.729737] (ros2_control_demo_example_2) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.735216] (ros2_control_demo_example_2) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.735907] (ros2_control_demo_example_2) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.738540] (-) TimerEvent: {}
+[2.839335] (-) TimerEvent: {}
+[2.842803] (mpu6050driver) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.878604] (ros2_control_demo_example_2) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:4 (find_package):\n'}
+[2.879456] (ros2_control_demo_example_2) StderrLine: {'line': b'  By not providing "Findros2_control_cmake.cmake" in CMAKE_MODULE_PATH this\n'}
+[2.879914] (ros2_control_demo_example_2) StderrLine: {'line': b'  project has asked CMake to find a package configuration file provided by\n'}
+[2.880460] (ros2_control_demo_example_2) StderrLine: {'line': b'  "ros2_control_cmake", but CMake did not find one.\n'}
+[2.880980] (ros2_control_demo_example_2) StderrLine: {'line': b'\n'}
+[2.887541] (ros2_control_demo_example_2) StderrLine: {'line': b'  Could not find a package configuration file provided by\n'}
+[2.888358] (ros2_control_demo_example_2) StderrLine: {'line': b'  "ros2_control_cmake" with any of the following names:\n'}
+[2.889150] (ros2_control_demo_example_2) StderrLine: {'line': b'\n'}
+[2.889858] (ros2_control_demo_example_2) StderrLine: {'line': b'    ros2_control_cmakeConfig.cmake\n'}
+[2.893948] (ros2_control_demo_example_2) StderrLine: {'line': b'    ros2_control_cmake-config.cmake\n'}
+[2.894588] (ros2_control_demo_example_2) StderrLine: {'line': b'\n'}
+[2.895123] (ros2_control_demo_example_2) StderrLine: {'line': b'  Add the installation prefix of "ros2_control_cmake" to CMAKE_PREFIX_PATH or\n'}
+[2.895701] (ros2_control_demo_example_2) StderrLine: {'line': b'  set "ros2_control_cmake_DIR" to a directory containing one of the above\n'}
+[2.899491] (ros2_control_demo_example_2) StderrLine: {'line': b'  files.  If "ros2_control_cmake" provides a separate development package or\n'}
+[2.900262] (ros2_control_demo_example_2) StderrLine: {'line': b'  SDK, be sure it has been installed.\n'}
+[2.900803] (ros2_control_demo_example_2) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[2.901374] (ros2_control_demo_example_2) StderrLine: {'line': b'\n'}
+[2.901893] (ros2_control_demo_example_2) StderrLine: {'line': b'\x1b[0m\n'}
+[2.905862] (mpu6050driver) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[2.906448] (mpu6050driver) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.906945] (mpu6050driver) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.913348] (ros2_control_demo_example_2) CommandEnded: {'returncode': 1}
+[2.942232] (-) TimerEvent: {}
+[2.971309] (mpu6050driver) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[3.038519] (ros2_control_demo_example_2) JobEnded: {'identifier': 'ros2_control_demo_example_2', 'rc': 1}
+[3.044300] (-) TimerEvent: {}
+[3.145724] (-) TimerEvent: {}
+[3.249295] (-) TimerEvent: {}
+[3.350474] (-) TimerEvent: {}
+[3.381556] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[3.451305] (-) TimerEvent: {}
+[3.554273] (-) TimerEvent: {}
+[3.654956] (-) TimerEvent: {}
+[3.684969] (mpu6050driver) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[3.729329] (mpu6050driver) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[3.730939] (mpu6050driver) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[3.733284] (mpu6050driver) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[3.755294] (-) TimerEvent: {}
+[3.764407] (mpu6050driver) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[3.855451] (-) TimerEvent: {}
+[3.956275] (-) TimerEvent: {}
+[4.057534] (-) TimerEvent: {}
+[4.138669] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.2 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[4.159225] (-) TimerEvent: {}
+[4.259903] (-) TimerEvent: {}
+[4.361574] (-) TimerEvent: {}
+[4.463396] (-) TimerEvent: {}
+[4.564611] (-) TimerEvent: {}
+[4.639961] (mpu6050driver) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[4.667378] (-) TimerEvent: {}
+[4.768154] (-) TimerEvent: {}
+[4.869207] (-) TimerEvent: {}
+[4.877594] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[4.932613] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.969419] (-) TimerEvent: {}
+[5.073236] (-) TimerEvent: {}
+[5.174017] (-) TimerEvent: {}
+[5.274855] (-) TimerEvent: {}
+[5.351886] (mpu6050driver) StdoutLine: {'line': b'-- Found rclcpp: 28.1.10 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[5.375129] (-) TimerEvent: {}
+[5.377748] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[5.456654] (golftrolley) JobEnded: {'identifier': 'golftrolley', 'rc': 'SIGINT'}
+[5.475236] (-) TimerEvent: {}
+[5.575847] (-) TimerEvent: {}
+[5.676624] (-) TimerEvent: {}
+[5.685139] (mpu6050driver) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[5.695794] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.5 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[5.776770] (-) TimerEvent: {}
+[5.788038] (mpu6050driver) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[5.876948] (-) TimerEvent: {}
+[5.909563] (mpu6050driver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[5.977128] (-) TimerEvent: {}
+[6.040239] (mpu6050driver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[6.077289] (-) TimerEvent: {}
+[6.177852] (-) TimerEvent: {}
+[6.278469] (-) TimerEvent: {}
+[6.379159] (-) TimerEvent: {}
+[6.479929] (-) TimerEvent: {}
+[6.523473] (mpu6050driver) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[6.549626] (mpu6050driver) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[6.580148] (-) TimerEvent: {}
+[6.680893] (-) TimerEvent: {}
+[6.781803] (-) TimerEvent: {}
+[6.882666] (-) TimerEvent: {}
+[6.983362] (-) TimerEvent: {}
+[7.051401] (mpu6050driver) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[7.083520] (-) TimerEvent: {}
+[7.141247] (mpu6050driver) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[7.183744] (-) TimerEvent: {}
+[7.241452] (mpu6050driver) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[7.283930] (-) TimerEvent: {}
+[7.384604] (-) TimerEvent: {}
+[7.485249] (-) TimerEvent: {}
+[7.585936] (-) TimerEvent: {}
+[7.657070] (mpu6050driver) StdoutLine: {'line': b'-- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)\n'}
+[7.686157] (-) TimerEvent: {}
+[7.786791] (-) TimerEvent: {}
+[7.887576] (-) TimerEvent: {}
+[7.988206] (-) TimerEvent: {}
+[8.089059] (-) TimerEvent: {}
+[8.110826] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)\n'}
+[8.189230] (-) TimerEvent: {}
+[8.289976] (-) TimerEvent: {}
+[8.391249] (-) TimerEvent: {}
+[8.403149] (mpu6050driver) StdoutLine: {'line': b'-- Configuring done (7.1s)\n'}
+[8.482618] (mpu6050driver) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[8.491708] (-) TimerEvent: {}
+[8.501448] (mpu6050driver) StdoutLine: {'line': b'-- Build files have been written to: /home/golftrolley/robot_ws/build/mpu6050driver\n'}
+[8.544290] (mpu6050driver) JobEnded: {'identifier': 'mpu6050driver', 'rc': 'SIGINT'}
+[8.591929] (-) TimerEvent: {}
+[8.692688] (-) TimerEvent: {}
+[8.793504] (-) TimerEvent: {}
+[8.894422] (-) TimerEvent: {}
+[8.995230] (-) TimerEvent: {}
+[9.095789] (-) TimerEvent: {}
+[9.196389] (-) TimerEvent: {}
+[9.296926] (-) TimerEvent: {}
+[9.397493] (-) TimerEvent: {}
+[9.498034] (-) TimerEvent: {}
+[9.598669] (-) TimerEvent: {}
+[9.699387] (-) TimerEvent: {}
+[9.800175] (-) TimerEvent: {}
+[9.900883] (-) TimerEvent: {}
+[10.001722] (-) TimerEvent: {}
+[10.102568] (-) TimerEvent: {}
+[10.203419] (-) TimerEvent: {}
+[10.211001] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[10.303589] (-) TimerEvent: {}
+[10.404214] (-) TimerEvent: {}
+[10.504789] (-) TimerEvent: {}
+[10.605407] (-) TimerEvent: {}
+[10.705975] (-) TimerEvent: {}
+[10.806647] (-) TimerEvent: {}
+[10.907471] (-) TimerEvent: {}
+[11.008273] (-) TimerEvent: {}
+[11.108958] (-) TimerEvent: {}
+[11.209814] (-) TimerEvent: {}
+[11.310593] (-) TimerEvent: {}
+[11.411289] (-) TimerEvent: {}
+[11.511941] (-) TimerEvent: {}
+[11.612602] (-) TimerEvent: {}
+[11.713325] (-) TimerEvent: {}
+[11.814365] (-) TimerEvent: {}
+[11.914913] (-) TimerEvent: {}
+[12.015546] (-) TimerEvent: {}
+[12.116176] (-) TimerEvent: {}
+[12.216735] (-) TimerEvent: {}
+[12.317337] (-) TimerEvent: {}
+[12.417913] (-) TimerEvent: {}
+[12.518517] (-) TimerEvent: {}
+[12.619130] (-) TimerEvent: {}
+[12.719756] (-) TimerEvent: {}
+[12.799101] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[12.819931] (-) TimerEvent: {}
+[12.824754] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)\n'}
+[12.920235] (-) TimerEvent: {}
+[13.021046] (-) TimerEvent: {}
+[13.121939] (-) TimerEvent: {}
+[13.222995] (-) TimerEvent: {}
+[13.324007] (-) TimerEvent: {}
+[13.424805] (-) TimerEvent: {}
+[13.458280] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Found PythonExtra: /usr/bin/python3  \n'}
+[13.524942] (-) TimerEvent: {}
+[13.625494] (-) TimerEvent: {}
+[13.726013] (-) TimerEvent: {}
+[13.826602] (-) TimerEvent: {}
+[13.927163] (-) TimerEvent: {}
+[14.027686] (-) TimerEvent: {}
+[14.128221] (-) TimerEvent: {}
+[14.228769] (-) TimerEvent: {}
+[14.329408] (-) TimerEvent: {}
+[14.429942] (-) TimerEvent: {}
+[14.530514] (-) TimerEvent: {}
+[14.631155] (-) TimerEvent: {}
+[14.731730] (-) TimerEvent: {}
+[14.832315] (-) TimerEvent: {}
+[14.932984] (-) TimerEvent: {}
+[15.033925] (-) TimerEvent: {}
+[15.134598] (-) TimerEvent: {}
+[15.235299] (-) TimerEvent: {}
+[15.335814] (-) TimerEvent: {}
+[15.436461] (-) TimerEvent: {}
+[15.471497] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed \n'}
+[15.536607] (-) TimerEvent: {}
+[15.633505] (serial_motor_demo_msgs) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[15.636778] (-) TimerEvent: {}
+[15.646835] (serial_motor_demo_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[15.654621] (serial_motor_demo_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[15.688399] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Configuring done (15.5s)\n'}
+[15.736952] (-) TimerEvent: {}
+[15.837583] (-) TimerEvent: {}
+[15.888149] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Generating done (0.2s)\n'}
+[15.937257] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/golftrolley/robot_ws/build/serial_motor_demo_msgs\n'}
+[15.937865] (-) TimerEvent: {}
+[15.961427] (serial_motor_demo_msgs) JobEnded: {'identifier': 'serial_motor_demo_msgs', 'rc': 'SIGINT'}
+[15.973203] (serial) JobSkipped: {'identifier': 'serial'}
+[15.973338] (stereo_camera_split) JobSkipped: {'identifier': 'stereo_camera_split'}
+[15.973416] (ydlidar_ros2_driver) JobSkipped: {'identifier': 'ydlidar_ros2_driver'}
+[15.973492] (ydlidar_sdk) JobSkipped: {'identifier': 'ydlidar_sdk'}
+[15.973567] (serial_motor_demo) JobSkipped: {'identifier': 'serial_motor_demo'}
+[15.973642] (-) EventReactorShutdown: {}

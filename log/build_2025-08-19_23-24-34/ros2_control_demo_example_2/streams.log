@@ -1,0 +1,20 @@
+[1.523s] Invoking command in '/home/golftrolley/robot_ws/build/ros2_control_demo_example_2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/golftrolley/robot_ws/src/example_2 -DCMAKE_INSTALL_PREFIX=/home/golftrolley/robot_ws/install/ros2_control_demo_example_2
+[1.809s] [31mCMake Error at CMakeLists.txt:4 (find_package):
+[1.812s]   By not providing "Findros2_control_cmake.cmake" in CMAKE_MODULE_PATH this
+[1.812s]   project has asked CMake to find a package configuration file provided by
+[1.812s]   "ros2_control_cmake", but CMake did not find one.
+[1.813s] 
+[1.813s]   Could not find a package configuration file provided by
+[1.819s]   "ros2_control_cmake" with any of the following names:
+[1.823s] 
+[1.826s]     ros2_control_cmakeConfig.cmake
+[1.827s]     ros2_control_cmake-config.cmake
+[1.829s] 
+[1.830s]   Add the installation prefix of "ros2_control_cmake" to CMAKE_PREFIX_PATH or
+[1.830s]   set "ros2_control_cmake_DIR" to a directory containing one of the above
+[1.831s]   files.  If "ros2_control_cmake" provides a separate development package or
+[1.836s]   SDK, be sure it has been installed.
+[1.837s] 
+[1.837s] [0m
+[1.845s] -- Configuring incomplete, errors occurred!
+[1.845s] Invoked command in '/home/golftrolley/robot_ws/build/ros2_control_demo_example_2' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/golftrolley/robot_ws/src/example_2 -DCMAKE_INSTALL_PREFIX=/home/golftrolley/robot_ws/install/ros2_control_demo_example_2

@@ -1,0 +1,5 @@
+[1.681s] Invoking command in '/home/golftrolley/robot_ws/build/mpu6050driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/golftrolley/robot_ws/build/mpu6050driver -- -j4 -l4
+[2.271s] [ 33%] [32mBuilding CXX object CMakeFiles/mpu6050driver.dir/src/mpu6050sensor.cpp.o[0m
+[2.333s] [ 66%] [32mBuilding CXX object CMakeFiles/mpu6050driver.dir/src/mpu6050driver.cpp.o[0m
+[40.104s] [100%] [32m[1mLinking CXX executable mpu6050driver[0m
+[41.162s] [100%] Built target mpu6050driver

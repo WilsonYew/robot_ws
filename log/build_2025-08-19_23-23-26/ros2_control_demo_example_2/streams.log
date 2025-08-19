@@ -1,0 +1,30 @@
+[1.828s] Invoking command in '/home/golftrolley/robot_ws/build/ros2_control_demo_example_2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/golftrolley/robot_ws/src/example_2 -DCMAKE_INSTALL_PREFIX=/home/golftrolley/robot_ws/install/ros2_control_demo_example_2
+[3.592s] -- The C compiler identification is GNU 13.3.0
+[3.782s] -- Detecting C compiler ABI info
+[5.004s] -- Detecting C compiler ABI info - done
+[5.110s] -- Check for working C compiler: /usr/bin/cc - skipped
+[5.116s] -- Detecting C compile features
+[5.121s] -- Detecting C compile features - done
+[5.160s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[6.726s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[8.080s] -- Found rclcpp: 28.1.10 (/opt/ros/jazzy/share/rclcpp/cmake)
+[8.621s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[9.007s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[9.350s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[9.597s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[10.883s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[10.957s] -- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[12.196s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[12.346s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[12.621s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[13.608s] -- Found hardware_interface: 4.32.0 (/opt/ros/jazzy/share/hardware_interface/cmake)
+[20.677s] [31mCMake Error at /opt/ros/jazzy/share/pluginlib/cmake/pluginlib_export_plugin_description_file.cmake:84 (message):
+[20.685s]   Given plugin description file
+[20.692s]   '/home/golftrolley/robot_ws/src/example_2/hardware_interface_plugin.xml'
+[20.700s]   does not exist
+[20.702s] Call Stack (most recent call first):
+[20.711s]   CMakeLists.txt:23 (pluginlib_export_plugin_description_file)
+[20.712s] 
+[20.713s] [0m
+[20.720s] -- Configuring incomplete, errors occurred!
+[20.825s] Invoked command in '/home/golftrolley/robot_ws/build/ros2_control_demo_example_2' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/golftrolley/robot_ws/src/example_2 -DCMAKE_INSTALL_PREFIX=/home/golftrolley/robot_ws/install/ros2_control_demo_example_2
