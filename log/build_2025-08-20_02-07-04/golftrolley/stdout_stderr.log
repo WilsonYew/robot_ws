@@ -1,0 +1,23 @@
+running develop
+running egg_info
+creating golftrolley.egg-info
+writing golftrolley.egg-info/PKG-INFO
+writing dependency_links to golftrolley.egg-info/dependency_links.txt
+writing requirements to golftrolley.egg-info/requires.txt
+writing top-level names to golftrolley.egg-info/top_level.txt
+writing manifest file 'golftrolley.egg-info/SOURCES.txt'
+reading manifest file 'golftrolley.egg-info/SOURCES.txt'
+writing manifest file 'golftrolley.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/golftrolley/robot_ws/install/golftrolley/lib/python3.12/site-packages/golftrolley.egg-link (link to .)
+
+Installed /home/golftrolley/robot_ws/build/golftrolley
+running symlink_data
+creating /home/golftrolley/robot_ws/install/golftrolley/share/ament_index
+creating /home/golftrolley/robot_ws/install/golftrolley/share/ament_index/resource_index
+creating /home/golftrolley/robot_ws/install/golftrolley/share/ament_index/resource_index/packages
+symbolically linking /home/golftrolley/robot_ws/build/golftrolley/resource/golftrolley -> /home/golftrolley/robot_ws/install/golftrolley/share/ament_index/resource_index/packages
+symbolically linking /home/golftrolley/robot_ws/build/golftrolley/package.xml -> /home/golftrolley/robot_ws/install/golftrolley/share/golftrolley
+creating /home/golftrolley/robot_ws/install/golftrolley/share/golftrolley/launch
+symbolically linking /home/golftrolley/robot_ws/build/golftrolley/launch/gps_launch.py -> /home/golftrolley/robot_ws/install/golftrolley/share/golftrolley/launch
+symbolically linking /home/golftrolley/robot_ws/build/golftrolley/launch/golftrolly_launch.py -> /home/golftrolley/robot_ws/install/golftrolley/share/golftrolley/launch

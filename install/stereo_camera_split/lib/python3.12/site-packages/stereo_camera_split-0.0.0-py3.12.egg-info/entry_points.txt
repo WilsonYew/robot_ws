@@ -1,2 +1,0 @@
-[console_scripts]
-stereo_split_camera_node = stereo_camera_split.stereo_camera_split_node:main

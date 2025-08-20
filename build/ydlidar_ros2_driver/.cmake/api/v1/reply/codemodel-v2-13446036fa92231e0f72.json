@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-87b78937dee18f1142c0.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "ydlidar_ros2_driver",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-3ede50d8f439fa7cc99b.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ydlidar_ros2_driver_client::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ydlidar_ros2_driver_client-b33a2b7cd6982c1bd140.json",
+					"name" : "ydlidar_ros2_driver_client",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ydlidar_ros2_driver_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ydlidar_ros2_driver_node-40d44e84ae5afb13a1bd.json",
+					"name" : "ydlidar_ros2_driver_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ydlidar_ros2_driver_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ydlidar_ros2_driver_uninstall-318a7eb8eb105ce72056.json",
+					"name" : "ydlidar_ros2_driver_uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/golftrolley/robot_ws/build/ydlidar_ros2_driver",
+		"source" : "/home/golftrolley/robot_ws/src/ydlidar_ros2_driver"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

@@ -1,0 +1,24 @@
+running develop
+running egg_info
+creating stereo_camera_split.egg-info
+writing stereo_camera_split.egg-info/PKG-INFO
+writing dependency_links to stereo_camera_split.egg-info/dependency_links.txt
+writing entry points to stereo_camera_split.egg-info/entry_points.txt
+writing requirements to stereo_camera_split.egg-info/requires.txt
+writing top-level names to stereo_camera_split.egg-info/top_level.txt
+writing manifest file 'stereo_camera_split.egg-info/SOURCES.txt'
+reading manifest file 'stereo_camera_split.egg-info/SOURCES.txt'
+writing manifest file 'stereo_camera_split.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/golftrolley/robot_ws/install/stereo_camera_split/lib/python3.12/site-packages/stereo-camera-split.egg-link (link to .)
+Installing stereo_split_camera_node script to /home/golftrolley/robot_ws/install/stereo_camera_split/lib/stereo_camera_split
+
+Installed /home/golftrolley/robot_ws/build/stereo_camera_split
+running symlink_data
+creating /home/golftrolley/robot_ws/install/stereo_camera_split/share/ament_index
+creating /home/golftrolley/robot_ws/install/stereo_camera_split/share/ament_index/resource_index
+creating /home/golftrolley/robot_ws/install/stereo_camera_split/share/ament_index/resource_index/packages
+symbolically linking /home/golftrolley/robot_ws/build/stereo_camera_split/resource/stereo_camera_split -> /home/golftrolley/robot_ws/install/stereo_camera_split/share/ament_index/resource_index/packages
+symbolically linking /home/golftrolley/robot_ws/build/stereo_camera_split/package.xml -> /home/golftrolley/robot_ws/install/stereo_camera_split/share/stereo_camera_split
+creating /home/golftrolley/robot_ws/install/stereo_camera_split/share/stereo_camera_split/launch
+symbolically linking /home/golftrolley/robot_ws/build/stereo_camera_split/launch/split_camera_launch.py -> /home/golftrolley/robot_ws/install/stereo_camera_split/share/stereo_camera_split/launch
