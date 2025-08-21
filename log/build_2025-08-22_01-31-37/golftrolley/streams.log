@@ -1,0 +1,18 @@
+[10.615s] Invoking command in '/home/golftrolley/robot_ws/src/golftrolley': PYTHONPATH=/home/golftrolley/robot_ws/build/golftrolley/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/golftrolley/robot_ws/install/golftrolley/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/golftrolley build --build-base /home/golftrolley/robot_ws/build/golftrolley/build install --record /home/golftrolley/robot_ws/build/golftrolley/install.log --single-version-externally-managed install_data
+[13.412s] running egg_info
+[14.963s] writing ../../build/golftrolley/golftrolley.egg-info/PKG-INFO
+[15.393s] writing dependency_links to ../../build/golftrolley/golftrolley.egg-info/dependency_links.txt
+[15.397s] writing requirements to ../../build/golftrolley/golftrolley.egg-info/requires.txt
+[15.398s] writing top-level names to ../../build/golftrolley/golftrolley.egg-info/top_level.txt
+[15.807s] reading manifest file '../../build/golftrolley/golftrolley.egg-info/SOURCES.txt'
+[15.813s] writing manifest file '../../build/golftrolley/golftrolley.egg-info/SOURCES.txt'
+[16.438s] running build
+[16.439s] running build_py
+[16.446s] running install
+[16.483s] running install_lib
+[16.668s] running install_data
+[16.668s] running install_egg_info
+[17.182s] removing '/home/golftrolley/robot_ws/install/golftrolley/lib/python3.12/site-packages/golftrolley-0.0.0-py3.12.egg-info' (and everything under it)
+[17.196s] Copying ../../build/golftrolley/golftrolley.egg-info to /home/golftrolley/robot_ws/install/golftrolley/lib/python3.12/site-packages/golftrolley-0.0.0-py3.12.egg-info
+[17.214s] running install_scripts
+[21.180s] writing list of installed files to '/home/golftrolley/robot_ws/build/golftrolley/install.log'

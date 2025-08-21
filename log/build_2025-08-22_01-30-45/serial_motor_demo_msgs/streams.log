@@ -1,0 +1,32 @@
+[0.126s] Invoking command in '/home/golftrolley/robot_ws/build/serial_motor_demo_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/golftrolley/robot_ws/install/stereo_camera_split:/home/golftrolley/robot_ws/install/serial_motor_demo:/home/golftrolley/robot_ws/install/golftrolley:/opt/ros/jazzy /usr/bin/cmake /home/golftrolley/robot_ws/src/serial_motor_demo/serial_motor_demo_msgs -DCMAKE_INSTALL_PREFIX=/home/golftrolley/robot_ws/install/serial_motor_demo_msgs
+[0.556s] -- The C compiler identification is GNU 13.3.0
+[1.219s] -- The CXX compiler identification is GNU 13.3.0
+[1.341s] -- Detecting C compiler ABI info
+[2.163s] -- Detecting C compiler ABI info - done
+[2.229s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.230s] -- Detecting C compile features
+[2.230s] -- Detecting C compile features - done
+[2.303s] -- Detecting CXX compiler ABI info
+[3.183s] -- Detecting CXX compiler ABI info - done
+[3.260s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.261s] -- Detecting CXX compile features
+[3.265s] -- Detecting CXX compile features - done
+[3.298s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[4.670s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[5.559s] -- Found ament_lint_auto: 0.17.2 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[6.449s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[6.542s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[7.099s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[7.686s] -- Found rosidl_adapter: 4.6.5 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[11.595s] -- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[15.049s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[19.650s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[19.711s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[20.774s] -- Found PythonExtra: /usr/bin/python3  
+[29.507s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[29.797s] -- Added test 'copyright' to check source files copyright and LICENSE
+[29.818s] -- Added test 'lint_cmake' to check CMake code style
+[29.833s] -- Added test 'xmllint' to check XML markup files
+[29.926s] -- Configuring done (29.7s)
+[30.304s] -- Generating done (0.3s)
+[30.405s] -- Build files have been written to: /home/golftrolley/robot_ws/build/serial_motor_demo_msgs

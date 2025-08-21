@@ -1,0 +1,42 @@
+[0.122s] Invoking command in '/home/golftrolley/robot_ws/build/dd_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/golftrolley/robot_ws/install/stereo_camera_split:/home/golftrolley/robot_ws/install/serial_motor_demo:/home/golftrolley/robot_ws/install/golftrolley:/opt/ros/jazzy /usr/bin/cmake --build /home/golftrolley/robot_ws/build/dd_bot -- -j4 -l4
+[1.997s] Invoked command in '/home/golftrolley/robot_ws/build/dd_bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/golftrolley/robot_ws/install/stereo_camera_split:/home/golftrolley/robot_ws/install/serial_motor_demo:/home/golftrolley/robot_ws/install/golftrolley:/opt/ros/jazzy /usr/bin/cmake --build /home/golftrolley/robot_ws/build/dd_bot -- -j4 -l4
+[1.998s] Invoking command in '/home/golftrolley/robot_ws/build/dd_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/golftrolley/robot_ws/install/stereo_camera_split:/home/golftrolley/robot_ws/install/serial_motor_demo:/home/golftrolley/robot_ws/install/golftrolley:/opt/ros/jazzy /usr/bin/cmake --install /home/golftrolley/robot_ws/build/dd_bot
+[2.209s] -- Install configuration: ""
+[2.209s] -- Up-to-date: /home/golftrolley/robot_ws/install/dd_bot/share/dd_bot/config
+[2.210s] -- Up-to-date: /home/golftrolley/robot_ws/install/dd_bot/share/dd_bot/config/twist_mux.yaml
+[2.210s] -- Up-to-date: /home/golftrolley/robot_ws/install/dd_bot/share/dd_bot/config/gz_bridge.yaml
+[2.227s] -- Up-to-date: /home/golftrolley/robot_ws/install/dd_bot/share/dd_bot/config/view_bot.rviz
+[2.228s] -- Up-to-date: /home/golftrolley/robot_ws/install/dd_bot/share/dd_bot/config/my_controllers.yaml
+[2.229s] -- Up-to-date: /home/golftrolley/robot_ws/install/dd_bot/share/dd_bot/config/joystick.yaml
+[2.229s] -- Up-to-date: /home/golftrolley/robot_ws/install/dd_bot/share/dd_bot/config/empty.yaml
+[2.233s] -- Up-to-date: /home/golftrolley/robot_ws/install/dd_bot/share/dd_bot/description
+[2.233s] -- Up-to-date: /home/golftrolley/robot_ws/install/dd_bot/share/dd_bot/description/ros2_control.xacro
+[2.234s] -- Up-to-date: /home/golftrolley/robot_ws/install/dd_bot/share/dd_bot/description/robot.urdf.xacro
+[2.239s] -- Up-to-date: /home/golftrolley/robot_ws/install/dd_bot/share/dd_bot/description/inertial_macros.xacro
+[2.243s] -- Up-to-date: /home/golftrolley/robot_ws/install/dd_bot/share/dd_bot/description/left_camera.xacro
+[2.243s] -- Up-to-date: /home/golftrolley/robot_ws/install/dd_bot/share/dd_bot/description/robot_core.xacro
+[2.246s] -- Up-to-date: /home/golftrolley/robot_ws/install/dd_bot/share/dd_bot/description/gazebo_control.xacro
+[2.264s] -- Up-to-date: /home/golftrolley/robot_ws/install/dd_bot/share/dd_bot/description/lidar.xacro
+[2.272s] -- Up-to-date: /home/golftrolley/robot_ws/install/dd_bot/share/dd_bot/description/right_camera.xacro
+[2.273s] -- Up-to-date: /home/golftrolley/robot_ws/install/dd_bot/share/dd_bot/launch
+[2.292s] -- Up-to-date: /home/golftrolley/robot_ws/install/dd_bot/share/dd_bot/launch/rsp.launch.py
+[2.293s] -- Up-to-date: /home/golftrolley/robot_ws/install/dd_bot/share/dd_bot/launch/launch_robot.launch.py
+[2.294s] -- Up-to-date: /home/golftrolley/robot_ws/install/dd_bot/share/dd_bot/launch/launch_sim.launch.py
+[2.304s] -- Up-to-date: /home/golftrolley/robot_ws/install/dd_bot/share/dd_bot/worlds
+[2.309s] -- Up-to-date: /home/golftrolley/robot_ws/install/dd_bot/share/dd_bot/worlds/empty.world
+[2.316s] -- Up-to-date: /home/golftrolley/robot_ws/install/dd_bot/share/ament_index/resource_index/package_run_dependencies/dd_bot
+[2.317s] -- Up-to-date: /home/golftrolley/robot_ws/install/dd_bot/share/ament_index/resource_index/parent_prefix_path/dd_bot
+[2.317s] -- Up-to-date: /home/golftrolley/robot_ws/install/dd_bot/share/dd_bot/environment/ament_prefix_path.sh
+[2.318s] -- Up-to-date: /home/golftrolley/robot_ws/install/dd_bot/share/dd_bot/environment/ament_prefix_path.dsv
+[2.323s] -- Up-to-date: /home/golftrolley/robot_ws/install/dd_bot/share/dd_bot/environment/path.sh
+[2.324s] -- Up-to-date: /home/golftrolley/robot_ws/install/dd_bot/share/dd_bot/environment/path.dsv
+[2.324s] -- Up-to-date: /home/golftrolley/robot_ws/install/dd_bot/share/dd_bot/local_setup.bash
+[2.334s] -- Up-to-date: /home/golftrolley/robot_ws/install/dd_bot/share/dd_bot/local_setup.sh
+[2.366s] -- Up-to-date: /home/golftrolley/robot_ws/install/dd_bot/share/dd_bot/local_setup.zsh
+[2.367s] -- Up-to-date: /home/golftrolley/robot_ws/install/dd_bot/share/dd_bot/local_setup.dsv
+[2.368s] -- Installing: /home/golftrolley/robot_ws/install/dd_bot/share/dd_bot/package.dsv
+[2.374s] -- Up-to-date: /home/golftrolley/robot_ws/install/dd_bot/share/ament_index/resource_index/packages/dd_bot
+[2.375s] -- Up-to-date: /home/golftrolley/robot_ws/install/dd_bot/share/dd_bot/cmake/dd_botConfig.cmake
+[2.375s] -- Up-to-date: /home/golftrolley/robot_ws/install/dd_bot/share/dd_bot/cmake/dd_botConfig-version.cmake
+[2.376s] -- Up-to-date: /home/golftrolley/robot_ws/install/dd_bot/share/dd_bot/package.xml
+[2.414s] Invoked command in '/home/golftrolley/robot_ws/build/dd_bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/golftrolley/robot_ws/install/stereo_camera_split:/home/golftrolley/robot_ws/install/serial_motor_demo:/home/golftrolley/robot_ws/install/golftrolley:/opt/ros/jazzy /usr/bin/cmake --install /home/golftrolley/robot_ws/build/dd_bot

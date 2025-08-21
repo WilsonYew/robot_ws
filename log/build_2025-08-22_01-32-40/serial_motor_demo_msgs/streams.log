@@ -1,0 +1,35 @@
+[0.141s] Invoking command in '/home/golftrolley/robot_ws/build/serial_motor_demo_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/golftrolley/robot_ws/install/stereo_camera_split:/home/golftrolley/robot_ws/install/serial_motor_demo:/home/golftrolley/robot_ws/install/golftrolley:/opt/ros/jazzy /usr/bin/cmake --build /home/golftrolley/robot_ws/build/serial_motor_demo_msgs -- -j4 -l4
+[0.564s] [  1%] Built target serial_motor_demo_msgs__rosidl_generator_type_description
+[0.783s] [  1%] Built target ament_cmake_python_copy_serial_motor_demo_msgs
+[0.949s] [ 22%] Built target serial_motor_demo_msgs__rosidl_generator_c
+[2.018s] Traceback (most recent call last):
+[2.022s]   File "/home/golftrolley/robot_ws/build/serial_motor_demo_msgs/ament_cmake_python/serial_motor_demo_msgs/setup.py", line 4, in <module>
+[2.023s]     setup(
+[2.024s]   File "/usr/lib/python3/dist-packages/setuptools/__init__.py", line 107, in setup
+[2.028s]     return distutils.core.setup(**attrs)
+[2.029s]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2.031s]   File "/usr/lib/python3/dist-packages/setuptools/_distutils/core.py", line 147, in setup
+[2.039s]     _setup_distribution = dist = klass(attrs)
+[2.040s]                                  ^^^^^^^^^^^^
+[2.040s]   File "/usr/lib/python3/dist-packages/setuptools/dist.py", line 485, in __init__
+[2.043s]     _Distribution.__init__(
+[2.045s]   File "/usr/lib/python3/dist-packages/setuptools/_distutils/dist.py", line 283, in __init__
+[2.047s]     self.finalize_options()
+[2.047s]   File "/usr/lib/python3/dist-packages/setuptools/dist.py", line 922, in finalize_options
+[2.050s]     defined = metadata.entry_points(group=group)
+[2.052s]               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2.054s]   File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 913, in entry_points
+[2.056s]     return EntryPoints(eps).select(**params)
+[2.060s]            ^^^^^^^^^^^^^^^^
+[2.063s]   File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 910, in <genexpr>
+[2.066s]     eps = itertools.chain.from_iterable(
+[2.070s]                                        ^
+[2.074s]   File "/usr/lib/python3.12/importlib/metadata/_itertools.py", line 15, in unique_everseen
+[2.078s]     for element in iterable:
+[2.081s]   File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 354, in __new__
+[2.083s]     if getattr(getattr(cls, name), '__isabstractmethod__', False)
+[2.085s]                ^^^^^^^^^^^^^^^^^^
+[2.087s] KeyboardInterrupt
+[2.196s] gmake[2]: *** [CMakeFiles/ament_cmake_python_build_serial_motor_demo_msgs_egg.dir/build.make:70: CMakeFiles/ament_cmake_python_build_serial_motor_demo_msgs_egg] Interrupt
+[2.197s] gmake[1]: *** [CMakeFiles/Makefile2:478: CMakeFiles/ament_cmake_python_build_serial_motor_demo_msgs_egg.dir/all] Interrupt
+[2.199s] gmake: *** [Makefile:146: all] Interrupt

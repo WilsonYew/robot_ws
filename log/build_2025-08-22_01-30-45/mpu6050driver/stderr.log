@@ -1,0 +1,4 @@
+gmake[2]: *** Deleting file 'mpu6050driver'
+gmake[2]: *** [CMakeFiles/mpu6050driver.dir/build.make:201: mpu6050driver] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/mpu6050driver.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

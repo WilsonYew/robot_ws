@@ -1,0 +1,41 @@
+[8.629s] Invoking command in '/home/golftrolley/robot_ws/src/serial_motor_demo/serial_motor_demo': CMAKE_PREFIX_PATH=/home/golftrolley/robot_ws/install/serial_motor_demo_msgs:/home/golftrolley/robot_ws/install/ydlidar_sdk:/home/golftrolley/robot_ws/install/ydlidar_ros2_driver:/home/golftrolley/robot_ws/install/stereo_camera_node:/home/golftrolley/robot_ws/install/serial:/home/golftrolley/robot_ws/install/ros2_control_cmake:/home/golftrolley/robot_ws/install/my_v4l2_camera:/home/golftrolley/robot_ws/install/mpu6050driver:/home/golftrolley/robot_ws/install/diffdrive_arduino:/home/golftrolley/robot_ws/install/dd_bot:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor PYTHONPATH=/home/golftrolley/robot_ws/build/serial_motor_demo/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/golftrolley/robot_ws/install/serial_motor_demo/lib/python3.12/site-packages:/home/golftrolley/robot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages:/home/golftrolley/robot_ws/build/stereo_camera_split:/home/golftrolley/robot_ws/install/stereo_camera_split/lib/python3.12/site-packages:/home/golftrolley/robot_ws/build/serial_motor_demo:/home/golftrolley/robot_ws/install/serial_motor_demo/lib/python3.12/site-packages:/home/golftrolley/robot_ws/build/golftrolley:/home/golftrolley/robot_ws/install/golftrolley/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/serial_motor_demo build --build-base /home/golftrolley/robot_ws/build/serial_motor_demo/build install --record /home/golftrolley/robot_ws/build/serial_motor_demo/install.log --single-version-externally-managed install_data
+[11.079s] running egg_info
+[11.082s] creating ../../../build/serial_motor_demo/serial_motor_demo.egg-info
+[11.307s] writing ../../../build/serial_motor_demo/serial_motor_demo.egg-info/PKG-INFO
+[11.316s] writing dependency_links to ../../../build/serial_motor_demo/serial_motor_demo.egg-info/dependency_links.txt
+[11.319s] writing entry points to ../../../build/serial_motor_demo/serial_motor_demo.egg-info/entry_points.txt
+[11.320s] writing requirements to ../../../build/serial_motor_demo/serial_motor_demo.egg-info/requires.txt
+[11.321s] writing top-level names to ../../../build/serial_motor_demo/serial_motor_demo.egg-info/top_level.txt
+[11.322s] writing manifest file '../../../build/serial_motor_demo/serial_motor_demo.egg-info/SOURCES.txt'
+[11.627s] reading manifest file '../../../build/serial_motor_demo/serial_motor_demo.egg-info/SOURCES.txt'
+[11.632s] writing manifest file '../../../build/serial_motor_demo/serial_motor_demo.egg-info/SOURCES.txt'
+[13.344s] running build
+[13.345s] running build_py
+[13.346s] creating /home/golftrolley/robot_ws/build/serial_motor_demo/build
+[13.356s] creating /home/golftrolley/robot_ws/build/serial_motor_demo/build/lib
+[13.359s] creating /home/golftrolley/robot_ws/build/serial_motor_demo/build/lib/serial_motor_demo
+[13.362s] copying serial_motor_demo/driver.py -> /home/golftrolley/robot_ws/build/serial_motor_demo/build/lib/serial_motor_demo
+[13.371s] copying serial_motor_demo/gui.py -> /home/golftrolley/robot_ws/build/serial_motor_demo/build/lib/serial_motor_demo
+[13.386s] copying serial_motor_demo/__init__.py -> /home/golftrolley/robot_ws/build/serial_motor_demo/build/lib/serial_motor_demo
+[13.395s] running install
+[13.441s] running install_lib
+[13.668s] creating /home/golftrolley/robot_ws/install/serial_motor_demo/lib/python3.12/site-packages/serial_motor_demo
+[13.672s] copying /home/golftrolley/robot_ws/build/serial_motor_demo/build/lib/serial_motor_demo/driver.py -> /home/golftrolley/robot_ws/install/serial_motor_demo/lib/python3.12/site-packages/serial_motor_demo
+[13.673s] copying /home/golftrolley/robot_ws/build/serial_motor_demo/build/lib/serial_motor_demo/gui.py -> /home/golftrolley/robot_ws/install/serial_motor_demo/lib/python3.12/site-packages/serial_motor_demo
+[13.685s] copying /home/golftrolley/robot_ws/build/serial_motor_demo/build/lib/serial_motor_demo/__init__.py -> /home/golftrolley/robot_ws/install/serial_motor_demo/lib/python3.12/site-packages/serial_motor_demo
+[13.686s] byte-compiling /home/golftrolley/robot_ws/install/serial_motor_demo/lib/python3.12/site-packages/serial_motor_demo/driver.py to driver.cpython-312.pyc
+[13.688s] byte-compiling /home/golftrolley/robot_ws/install/serial_motor_demo/lib/python3.12/site-packages/serial_motor_demo/gui.py to gui.cpython-312.pyc
+[13.701s] byte-compiling /home/golftrolley/robot_ws/install/serial_motor_demo/lib/python3.12/site-packages/serial_motor_demo/__init__.py to __init__.cpython-312.pyc
+[13.703s] running install_data
+[13.704s] creating /home/golftrolley/robot_ws/install/serial_motor_demo/share/ament_index
+[13.705s] creating /home/golftrolley/robot_ws/install/serial_motor_demo/share/ament_index/resource_index
+[13.712s] creating /home/golftrolley/robot_ws/install/serial_motor_demo/share/ament_index/resource_index/packages
+[13.713s] copying resource/serial_motor_demo -> /home/golftrolley/robot_ws/install/serial_motor_demo/share/ament_index/resource_index/packages
+[13.714s] copying package.xml -> /home/golftrolley/robot_ws/install/serial_motor_demo/share/serial_motor_demo
+[13.719s] running install_egg_info
+[13.901s] Copying ../../../build/serial_motor_demo/serial_motor_demo.egg-info to /home/golftrolley/robot_ws/install/serial_motor_demo/lib/python3.12/site-packages/serial_motor_demo-0.0.0-py3.12.egg-info
+[13.913s] running install_scripts
+[15.417s] Installing driver script to /home/golftrolley/robot_ws/install/serial_motor_demo/lib/serial_motor_demo
+[15.420s] Installing gui script to /home/golftrolley/robot_ws/install/serial_motor_demo/lib/serial_motor_demo
+[15.427s] writing list of installed files to '/home/golftrolley/robot_ws/build/serial_motor_demo/install.log'
+[15.672s] Invoked command in '/home/golftrolley/robot_ws/src/serial_motor_demo/serial_motor_demo' returned '0': CMAKE_PREFIX_PATH=/home/golftrolley/robot_ws/install/serial_motor_demo_msgs:/home/golftrolley/robot_ws/install/ydlidar_sdk:/home/golftrolley/robot_ws/install/ydlidar_ros2_driver:/home/golftrolley/robot_ws/install/stereo_camera_node:/home/golftrolley/robot_ws/install/serial:/home/golftrolley/robot_ws/install/ros2_control_cmake:/home/golftrolley/robot_ws/install/my_v4l2_camera:/home/golftrolley/robot_ws/install/mpu6050driver:/home/golftrolley/robot_ws/install/diffdrive_arduino:/home/golftrolley/robot_ws/install/dd_bot:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor PYTHONPATH=/home/golftrolley/robot_ws/build/serial_motor_demo/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/golftrolley/robot_ws/install/serial_motor_demo/lib/python3.12/site-packages:/home/golftrolley/robot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages:/home/golftrolley/robot_ws/build/stereo_camera_split:/home/golftrolley/robot_ws/install/stereo_camera_split/lib/python3.12/site-packages:/home/golftrolley/robot_ws/build/serial_motor_demo:/home/golftrolley/robot_ws/install/serial_motor_demo/lib/python3.12/site-packages:/home/golftrolley/robot_ws/build/golftrolley:/home/golftrolley/robot_ws/install/golftrolley/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/serial_motor_demo build --build-base /home/golftrolley/robot_ws/build/serial_motor_demo/build install --record /home/golftrolley/robot_ws/build/serial_motor_demo/install.log --single-version-externally-managed install_data

@@ -1,0 +1,28 @@
+[0.104s] Invoking command in '/home/golftrolley/robot_ws/build/mpu6050driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/golftrolley/robot_ws/install/stereo_camera_split:/home/golftrolley/robot_ws/install/serial_motor_demo:/home/golftrolley/robot_ws/install/golftrolley:/opt/ros/jazzy /usr/bin/cmake --build /home/golftrolley/robot_ws/build/mpu6050driver -- -j4 -l4
+[0.839s] [ 33%] [32m[1mLinking CXX executable mpu6050driver[0m
+[2.934s] [100%] Built target mpu6050driver
+[3.089s] Invoked command in '/home/golftrolley/robot_ws/build/mpu6050driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/golftrolley/robot_ws/install/stereo_camera_split:/home/golftrolley/robot_ws/install/serial_motor_demo:/home/golftrolley/robot_ws/install/golftrolley:/opt/ros/jazzy /usr/bin/cmake --build /home/golftrolley/robot_ws/build/mpu6050driver -- -j4 -l4
+[3.102s] Invoking command in '/home/golftrolley/robot_ws/build/mpu6050driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/golftrolley/robot_ws/install/stereo_camera_split:/home/golftrolley/robot_ws/install/serial_motor_demo:/home/golftrolley/robot_ws/install/golftrolley:/opt/ros/jazzy /usr/bin/cmake --install /home/golftrolley/robot_ws/build/mpu6050driver
+[3.204s] -- Install configuration: ""
+[3.205s] -- Installing: /home/golftrolley/robot_ws/install/mpu6050driver/lib/mpu6050driver/mpu6050driver
+[3.229s] -- Set non-toolchain portion of runtime path of "/home/golftrolley/robot_ws/install/mpu6050driver/lib/mpu6050driver/mpu6050driver" to ""
+[3.235s] -- Installing: /home/golftrolley/robot_ws/install/mpu6050driver/share/mpu6050driver//launch
+[3.240s] -- Installing: /home/golftrolley/robot_ws/install/mpu6050driver/share/mpu6050driver//launch/mpu6050driver_launch.py
+[3.244s] -- Installing: /home/golftrolley/robot_ws/install/mpu6050driver/share/mpu6050driver//params
+[3.245s] -- Installing: /home/golftrolley/robot_ws/install/mpu6050driver/share/mpu6050driver//params/mpu6050.yaml
+[3.245s] -- Installing: /home/golftrolley/robot_ws/install/mpu6050driver/share/ament_index/resource_index/package_run_dependencies/mpu6050driver
+[3.253s] -- Installing: /home/golftrolley/robot_ws/install/mpu6050driver/share/ament_index/resource_index/parent_prefix_path/mpu6050driver
+[3.254s] -- Installing: /home/golftrolley/robot_ws/install/mpu6050driver/share/mpu6050driver/environment/ament_prefix_path.sh
+[3.255s] -- Installing: /home/golftrolley/robot_ws/install/mpu6050driver/share/mpu6050driver/environment/ament_prefix_path.dsv
+[3.266s] -- Installing: /home/golftrolley/robot_ws/install/mpu6050driver/share/mpu6050driver/environment/path.sh
+[3.267s] -- Installing: /home/golftrolley/robot_ws/install/mpu6050driver/share/mpu6050driver/environment/path.dsv
+[3.267s] -- Installing: /home/golftrolley/robot_ws/install/mpu6050driver/share/mpu6050driver/local_setup.bash
+[3.268s] -- Installing: /home/golftrolley/robot_ws/install/mpu6050driver/share/mpu6050driver/local_setup.sh
+[3.278s] -- Installing: /home/golftrolley/robot_ws/install/mpu6050driver/share/mpu6050driver/local_setup.zsh
+[3.295s] -- Installing: /home/golftrolley/robot_ws/install/mpu6050driver/share/mpu6050driver/local_setup.dsv
+[3.295s] -- Installing: /home/golftrolley/robot_ws/install/mpu6050driver/share/mpu6050driver/package.dsv
+[3.296s] -- Installing: /home/golftrolley/robot_ws/install/mpu6050driver/share/ament_index/resource_index/packages/mpu6050driver
+[3.297s] -- Installing: /home/golftrolley/robot_ws/install/mpu6050driver/share/mpu6050driver/cmake/mpu6050driverConfig.cmake
+[3.311s] -- Installing: /home/golftrolley/robot_ws/install/mpu6050driver/share/mpu6050driver/cmake/mpu6050driverConfig-version.cmake
+[3.312s] -- Installing: /home/golftrolley/robot_ws/install/mpu6050driver/share/mpu6050driver/package.xml
+[3.331s] Invoked command in '/home/golftrolley/robot_ws/build/mpu6050driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/golftrolley/robot_ws/install/stereo_camera_split:/home/golftrolley/robot_ws/install/serial_motor_demo:/home/golftrolley/robot_ws/install/golftrolley:/opt/ros/jazzy /usr/bin/cmake --install /home/golftrolley/robot_ws/build/mpu6050driver
