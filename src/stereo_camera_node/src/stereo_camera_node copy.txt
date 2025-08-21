@@ -1,0 +1,70 @@
+#include <rclcpp/rclcpp.hpp>
+#include <sensor_msgs/msg/image.hpp>
+#include <cv_bridge/cv_bridge.hpp>
+#include <opencv2/opencv.hpp>
+
+class StereoCameraNode : public rclcpp::Node
+{
+public:
+    StereoCameraNode() : Node("stereo_camera_node_pi")
+    {
+        this->declare_parameter<std::string>("device", "/dev/video0");
+        this->declare_parameter<int>("width", 640);  // full side-by-side width
+        this->declare_parameter<int>("height", 240); // full height
+
+        std::string device = this->get_parameter("device").as_string();
+        int width = this->get_parameter("width").as_int();
+        int height = this->get_parameter("height").as_int();
+
+        cap_.open(device, cv::CAP_V4L2);
+        if (!cap_.isOpened()) {
+            RCLCPP_ERROR(this->get_logger(), "Failed to open device: %s", device.c_str());
+            rclcpp::shutdown();
+            return;
+        }
+
+        cap_.set(cv::CAP_PROP_FRAME_WIDTH, width);
+        cap_.set(cv::CAP_PROP_FRAME_HEIGHT, height);
+        cap_.set(cv::CAP_PROP_FPS, 15); // limit FPS to reduce CPU load
+
+        left_pub_ = this->create_publisher<sensor_msgs::msg::Image>("camera/left/image_raw", 10);
+        right_pub_ = this->create_publisher<sensor_msgs::msg::Image>("camera/right/image_raw", 10);
+
+        timer_ = this->create_wall_timer(
+            std::chrono::milliseconds(66), // ~15 FPS
+            std::bind(&StereoCameraNode::captureFrame, this));
+    }
+
+private:
+    void captureFrame()
+    {
+        cv::Mat frame;
+        cap_ >> frame;
+        if (frame.empty()) return;
+
+        int width_half = frame.cols / 2;
+
+        // Split left/right
+        cv::Mat left = frame(cv::Rect(0, 0, width_half, frame.rows));
+        cv::Mat right = frame(cv::Rect(width_half, 0, width_half, frame.rows));
+
+        auto header = std_msgs::msg::Header();
+        header.stamp = this->now();
+        header.frame_id = "camera_frame";
+
+        left_pub_->publish(*cv_bridge::CvImage(header, "bgr8", left).toImageMsg());
+        right_pub_->publish(*cv_bridge::CvImage(header, "bgr8", right).toImageMsg());
+    }
+
+    cv::VideoCapture cap_;
+    rclcpp::Publisher<sensor_msgs::msg::Image>::SharedPtr left_pub_, right_pub_;
+    rclcpp::TimerBase::SharedPtr timer_;
+};
+
+int main(int argc, char **argv)
+{
+    rclcpp::init(argc, argv);
+    rclcpp::spin(std::make_shared<StereoCameraNode>());
+    rclcpp::shutdown();
+    return 0;
+}
