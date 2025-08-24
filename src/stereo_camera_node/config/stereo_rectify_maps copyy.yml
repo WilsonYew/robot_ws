@@ -1,0 +1,87 @@
+%YAML:1.0
+---
+image_width: 320
+image_height: 240
+
+K1: !!opencv-matrix
+   rows: 3
+   cols: 3
+   dt: d
+   data: [ 250., 0., 160.,
+           0., 250., 120.,
+           0., 0., 1. ]
+D1: !!opencv-matrix
+   rows: 1
+   cols: 5
+   dt: d
+   data: [ 0., 0., 0., 0., 0. ]
+
+K2: !!opencv-matrix
+   rows: 3
+   cols: 3
+   dt: d
+   data: [ 250., 0., 160.,
+           0., 250., 120.,
+           0., 0., 1. ]
+D2: !!opencv-matrix
+   rows: 1
+   cols: 5
+   dt: d
+   data: [ 0., 0., 0., 0., 0. ]
+
+R: !!opencv-matrix
+   rows: 3
+   cols: 3
+   dt: d
+   data: [ 1., 0., 0.,
+           0., 1., 0.,
+           0., 0., 1. ]
+
+# baseline: 6cm along x-axis
+T: !!opencv-matrix
+   rows: 3
+   cols: 1
+   dt: d
+   data: [ -0.06, 0., 0. ]
+
+# These will be recomputed by cv::stereoRectify
+R1: !!opencv-matrix
+   rows: 3
+   cols: 3
+   dt: d
+   data: [ 1., 0., 0.,
+           0., 1., 0.,
+           0., 0., 1. ]
+
+R2: !!opencv-matrix
+   rows: 3
+   cols: 3
+   dt: d
+   data: [ 1., 0., 0.,
+           0., 1., 0.,
+           0., 0., 1. ]
+
+P1: !!opencv-matrix
+   rows: 3
+   cols: 4
+   dt: d
+   data: [ 250., 0., 160., 0.,
+           0., 250., 120., 0.,
+           0., 0., 1., 0. ]
+
+P2: !!opencv-matrix
+   rows: 3
+   cols: 4
+   dt: d
+   data: [ 250., 0., 160., -15.,
+           0., 250., 120., 0.,
+           0., 0., 1., 0. ]
+
+Q: !!opencv-matrix
+   rows: 4
+   cols: 4
+   dt: d
+   data: [ 1., 0., 0., -160.,
+           0., 1., 0., -120.,
+           0., 0., 0., 250.,
+           0., 0., -1./0.06, 0. ]
