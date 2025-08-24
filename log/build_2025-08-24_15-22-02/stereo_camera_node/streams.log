@@ -1,0 +1,27 @@
+[0.061s] Invoking command in '/home/golftrolley/robot_ws/build/stereo_camera_node': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/golftrolley/robot_ws/install/stereo_camera_split:/home/golftrolley/robot_ws/install/serial_motor_demo:/home/golftrolley/robot_ws/install/golftrolley:/opt/ros/jazzy /usr/bin/cmake --build /home/golftrolley/robot_ws/build/stereo_camera_node -- -j4 -l4
+[0.403s] [ 75%] [32mBuilding CXX object CMakeFiles/stereo_camera_node.dir/src/stereo_camera_node.cpp.o[0m
+[0.404s] [ 75%] Built target stereo_calibration_capture
+[33.740s] [100%] [32m[1mLinking CXX executable stereo_camera_node[0m
+[38.150s] [100%] Built target stereo_camera_node
+[38.208s] Invoked command in '/home/golftrolley/robot_ws/build/stereo_camera_node' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/golftrolley/robot_ws/install/stereo_camera_split:/home/golftrolley/robot_ws/install/serial_motor_demo:/home/golftrolley/robot_ws/install/golftrolley:/opt/ros/jazzy /usr/bin/cmake --build /home/golftrolley/robot_ws/build/stereo_camera_node -- -j4 -l4
+[38.267s] Invoking command in '/home/golftrolley/robot_ws/build/stereo_camera_node': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/golftrolley/robot_ws/install/stereo_camera_split:/home/golftrolley/robot_ws/install/serial_motor_demo:/home/golftrolley/robot_ws/install/golftrolley:/opt/ros/jazzy /usr/bin/cmake --install /home/golftrolley/robot_ws/build/stereo_camera_node
+[38.310s] -- Install configuration: ""
+[38.317s] -- Installing: /home/golftrolley/robot_ws/install/stereo_camera_node/lib/stereo_camera_node/stereo_camera_node
+[38.344s] -- Set non-toolchain portion of runtime path of "/home/golftrolley/robot_ws/install/stereo_camera_node/lib/stereo_camera_node/stereo_camera_node" to ""
+[38.345s] -- Up-to-date: /home/golftrolley/robot_ws/install/stereo_camera_node/lib/stereo_camera_node/stereo_calibration_capture
+[38.346s] -- Up-to-date: /home/golftrolley/robot_ws/install/stereo_camera_node/share/ament_index/resource_index/package_run_dependencies/stereo_camera_node
+[38.348s] -- Up-to-date: /home/golftrolley/robot_ws/install/stereo_camera_node/share/ament_index/resource_index/parent_prefix_path/stereo_camera_node
+[38.349s] -- Up-to-date: /home/golftrolley/robot_ws/install/stereo_camera_node/share/stereo_camera_node/environment/ament_prefix_path.sh
+[38.351s] -- Up-to-date: /home/golftrolley/robot_ws/install/stereo_camera_node/share/stereo_camera_node/environment/ament_prefix_path.dsv
+[38.351s] -- Up-to-date: /home/golftrolley/robot_ws/install/stereo_camera_node/share/stereo_camera_node/environment/path.sh
+[38.352s] -- Up-to-date: /home/golftrolley/robot_ws/install/stereo_camera_node/share/stereo_camera_node/environment/path.dsv
+[38.353s] -- Up-to-date: /home/golftrolley/robot_ws/install/stereo_camera_node/share/stereo_camera_node/local_setup.bash
+[38.354s] -- Up-to-date: /home/golftrolley/robot_ws/install/stereo_camera_node/share/stereo_camera_node/local_setup.sh
+[38.355s] -- Up-to-date: /home/golftrolley/robot_ws/install/stereo_camera_node/share/stereo_camera_node/local_setup.zsh
+[38.356s] -- Up-to-date: /home/golftrolley/robot_ws/install/stereo_camera_node/share/stereo_camera_node/local_setup.dsv
+[38.357s] -- Installing: /home/golftrolley/robot_ws/install/stereo_camera_node/share/stereo_camera_node/package.dsv
+[38.358s] -- Up-to-date: /home/golftrolley/robot_ws/install/stereo_camera_node/share/ament_index/resource_index/packages/stereo_camera_node
+[38.359s] -- Up-to-date: /home/golftrolley/robot_ws/install/stereo_camera_node/share/stereo_camera_node/cmake/stereo_camera_nodeConfig.cmake
+[38.360s] -- Up-to-date: /home/golftrolley/robot_ws/install/stereo_camera_node/share/stereo_camera_node/cmake/stereo_camera_nodeConfig-version.cmake
+[38.361s] -- Up-to-date: /home/golftrolley/robot_ws/install/stereo_camera_node/share/stereo_camera_node/package.xml
+[38.363s] Invoked command in '/home/golftrolley/robot_ws/build/stereo_camera_node' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/golftrolley/robot_ws/install/stereo_camera_split:/home/golftrolley/robot_ws/install/serial_motor_demo:/home/golftrolley/robot_ws/install/golftrolley:/opt/ros/jazzy /usr/bin/cmake --install /home/golftrolley/robot_ws/build/stereo_camera_node

@@ -11,6 +11,7 @@ find_package(rclcpp REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(cv_bridge REQUIRED)
 find_package(OpenCV REQUIRED)
+find_package(yaml-cpp REQUIRED)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
@@ -23,9 +24,10 @@ endif()
 add_executable(stereo_calibration_capture src/stereo_calibration_capture.cpp)
 ament_target_dependencies(stereo_calibration_capture rclcpp cv_bridge OpenCV)
 
+# Only compile stereo_camera_node.cpp now
 add_executable(stereo_camera_node src/stereo_camera_node.cpp)
 ament_target_dependencies(stereo_camera_node rclcpp sensor_msgs cv_bridge)
-target_link_libraries(stereo_camera_node ${OpenCV_LIBS})
+target_link_libraries(stereo_camera_node yaml-cpp ${OpenCV_LIBS})
 
 # --- Install ---
 install(TARGETS

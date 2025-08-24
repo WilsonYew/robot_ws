@@ -11,7 +11,7 @@ public:
         this->declare_parameter<int>("width", 640);
         this->declare_parameter<int>("height", 240);
         this->declare_parameter<int>("fps", 15);
-        this->declare_parameter<int>("num_frames", 50);
+        this->declare_parameter<int>("num_frames", 30);
 
         device_ = this->get_parameter("device").as_string();
         width_ = this->get_parameter("width").as_int();

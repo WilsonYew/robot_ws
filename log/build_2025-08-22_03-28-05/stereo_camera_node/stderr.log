@@ -1,0 +1,10 @@
+[01m[K/home/golftrolley/robot_ws/src/stereo_camera_node/src/stereo_camera_node.cpp:1:1:[m[K [01;31m[Kerror: [m[Kstray ‘[01m[K##[m[K’ in program
+    1 | [01;31m[K##[m[Kinclude <rclcpp/rclcpp.hpp>
+      | [01;31m[K^~[m[K
+[01m[K/home/golftrolley/robot_ws/src/stereo_camera_node/src/stereo_camera_node.cpp:4:10:[m[K [01;31m[Kfatal error: [m[Kcv_bridge/cv_bridge.h: No such file or directory
+    4 | #include [01;31m[K<cv_bridge/cv_bridge.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/stereo_camera_node.dir/build.make:76: CMakeFiles/stereo_camera_node.dir/src/stereo_camera_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/stereo_camera_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

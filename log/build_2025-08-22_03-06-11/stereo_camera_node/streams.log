@@ -1,0 +1,90 @@
+[0.059s] Invoking command in '/home/golftrolley/robot_ws/build/stereo_camera_node': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/golftrolley/robot_ws/install/stereo_camera_split:/home/golftrolley/robot_ws/install/serial_motor_demo:/home/golftrolley/robot_ws/install/golftrolley:/opt/ros/jazzy /usr/bin/cmake --build /home/golftrolley/robot_ws/build/stereo_camera_node -- -j4 -l4
+[0.420s] [ 40%] Built target stereo_calibration_capture
+[0.482s] [ 60%] [32m[1mLinking CXX executable stereo_camera_node[0m
+[1.919s] /usr/bin/ld: CMakeFiles/stereo_camera_node.dir/src/main.cpp.o: in function `YAML::Exception::Exception(YAML::Mark const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+[1.921s] main.cpp:(.text._ZN4YAML9ExceptionC2ERKNS_4MarkERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE[_ZN4YAML9ExceptionC5ERKNS_4MarkERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE]+0x60): undefined reference to `vtable for YAML::Exception'
+[1.923s] /usr/bin/ld: main.cpp:(.text._ZN4YAML9ExceptionC2ERKNS_4MarkERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE[_ZN4YAML9ExceptionC5ERKNS_4MarkERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE]+0x64): undefined reference to `vtable for YAML::Exception'
+[1.924s] /usr/bin/ld: CMakeFiles/stereo_camera_node.dir/src/main.cpp.o: in function `YAML::RepresentationException::RepresentationException(YAML::Mark const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+[1.926s] main.cpp:(.text._ZN4YAML23RepresentationExceptionC2ERKNS_4MarkERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE[_ZN4YAML23RepresentationExceptionC5ERKNS_4MarkERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE]+0x24): undefined reference to `vtable for YAML::RepresentationException'
+[1.927s] /usr/bin/ld: main.cpp:(.text._ZN4YAML23RepresentationExceptionC2ERKNS_4MarkERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE[_ZN4YAML23RepresentationExceptionC5ERKNS_4MarkERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE]+0x28): undefined reference to `vtable for YAML::RepresentationException'
+[1.928s] /usr/bin/ld: CMakeFiles/stereo_camera_node.dir/src/main.cpp.o: in function `YAML::InvalidNode::InvalidNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+[1.930s] main.cpp:(.text._ZN4YAML11InvalidNodeC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE[_ZN4YAML11InvalidNodeC5ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE]+0x7c): undefined reference to `vtable for YAML::InvalidNode'
+[1.932s] /usr/bin/ld: main.cpp:(.text._ZN4YAML11InvalidNodeC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE[_ZN4YAML11InvalidNodeC5ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE]+0x80): undefined reference to `vtable for YAML::InvalidNode'
+[1.933s] /usr/bin/ld: CMakeFiles/stereo_camera_node.dir/src/main.cpp.o: in function `YAML::BadConversion::BadConversion(YAML::Mark const&)':
+[1.935s] main.cpp:(.text._ZN4YAML13BadConversionC2ERKNS_4MarkE[_ZN4YAML13BadConversionC5ERKNS_4MarkE]+0x84): undefined reference to `vtable for YAML::BadConversion'
+[1.938s] /usr/bin/ld: main.cpp:(.text._ZN4YAML13BadConversionC2ERKNS_4MarkE[_ZN4YAML13BadConversionC5ERKNS_4MarkE]+0x88): undefined reference to `vtable for YAML::BadConversion'
+[1.939s] /usr/bin/ld: CMakeFiles/stereo_camera_node.dir/src/main.cpp.o: in function `YAML::detail::memory_holder::create_node()':
+[1.941s] main.cpp:(.text._ZN4YAML6detail13memory_holder11create_nodeEv[_ZN4YAML6detail13memory_holder11create_nodeEv]+0x14): undefined reference to `YAML::detail::memory::create_node()'
+[1.943s] /usr/bin/ld: CMakeFiles/stereo_camera_node.dir/src/main.cpp.o: in function `YAML::detail::node_ref::mark_defined()':
+[1.944s] main.cpp:(.text._ZN4YAML6detail8node_ref12mark_definedEv[_ZN4YAML6detail8node_ref12mark_definedEv]+0x14): undefined reference to `YAML::detail::node_data::mark_defined()'
+[1.946s] /usr/bin/ld: CMakeFiles/stereo_camera_node.dir/src/main.cpp.o: in function `YAML::detail::node_ref::set_null()':
+[1.947s] main.cpp:(.text._ZN4YAML6detail8node_ref8set_nullEv[_ZN4YAML6detail8node_ref8set_nullEv]+0x14): undefined reference to `YAML::detail::node_data::set_null()'
+[1.949s] /usr/bin/ld: CMakeFiles/stereo_camera_node.dir/src/main.cpp.o: in function `YAML::detail::node_ref::set_scalar(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+[1.950s] main.cpp:(.text._ZN4YAML6detail8node_ref10set_scalarERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE[_ZN4YAML6detail8node_ref10set_scalarERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE]+0x1c): undefined reference to `YAML::detail::node_data::set_scalar(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+[1.952s] /usr/bin/ld: CMakeFiles/stereo_camera_node.dir/src/main.cpp.o: in function `YAML::detail::node_ref::size() const':
+[1.953s] main.cpp:(.text._ZNK4YAML6detail8node_ref4sizeEv[_ZNK4YAML6detail8node_ref4sizeEv]+0x14): undefined reference to `YAML::detail::node_data::size() const'
+[1.955s] /usr/bin/ld: CMakeFiles/stereo_camera_node.dir/src/main.cpp.o: in function `YAML::detail::node_ref::begin()':
+[1.956s] main.cpp:(.text._ZN4YAML6detail8node_ref5beginEv[_ZN4YAML6detail8node_ref5beginEv]+0x38): undefined reference to `YAML::detail::node_data::begin()'
+[1.957s] /usr/bin/ld: CMakeFiles/stereo_camera_node.dir/src/main.cpp.o: in function `YAML::detail::node_ref::end()':
+[1.959s] main.cpp:(.text._ZN4YAML6detail8node_ref3endEv[_ZN4YAML6detail8node_ref3endEv]+0x38): undefined reference to `YAML::detail::node_data::end()'
+[1.960s] /usr/bin/ld: CMakeFiles/stereo_camera_node.dir/src/main.cpp.o: in function `YAML::Node::EnsureNodeExists() const':
+[1.961s] main.cpp:(.text._ZNK4YAML4Node16EnsureNodeExistsEv[_ZNK4YAML4Node16EnsureNodeExistsEv]+0x50): undefined reference to `YAML::InvalidNode::~InvalidNode()'
+[1.962s] /usr/bin/ld: main.cpp:(.text._ZNK4YAML4Node16EnsureNodeExistsEv[_ZNK4YAML4Node16EnsureNodeExistsEv]+0x54): undefined reference to `YAML::InvalidNode::~InvalidNode()'
+[1.962s] /usr/bin/ld: main.cpp:(.text._ZNK4YAML4Node16EnsureNodeExistsEv[_ZNK4YAML4Node16EnsureNodeExistsEv]+0x58): undefined reference to `typeinfo for YAML::InvalidNode'
+[1.963s] /usr/bin/ld: main.cpp:(.text._ZNK4YAML4Node16EnsureNodeExistsEv[_ZNK4YAML4Node16EnsureNodeExistsEv]+0x5c): undefined reference to `typeinfo for YAML::InvalidNode'
+[1.964s] /usr/bin/ld: CMakeFiles/stereo_camera_node.dir/src/main.cpp.o: in function `YAML::Node::Mark() const':
+[1.964s] main.cpp:(.text._ZNK4YAML4Node4MarkEv[_ZNK4YAML4Node4MarkEv]+0x50): undefined reference to `YAML::InvalidNode::~InvalidNode()'
+[1.965s] /usr/bin/ld: main.cpp:(.text._ZNK4YAML4Node4MarkEv[_ZNK4YAML4Node4MarkEv]+0x54): undefined reference to `YAML::InvalidNode::~InvalidNode()'
+[1.965s] /usr/bin/ld: main.cpp:(.text._ZNK4YAML4Node4MarkEv[_ZNK4YAML4Node4MarkEv]+0x58): undefined reference to `typeinfo for YAML::InvalidNode'
+[1.966s] /usr/bin/ld: main.cpp:(.text._ZNK4YAML4Node4MarkEv[_ZNK4YAML4Node4MarkEv]+0x5c): undefined reference to `typeinfo for YAML::InvalidNode'
+[1.966s] /usr/bin/ld: CMakeFiles/stereo_camera_node.dir/src/main.cpp.o: in function `YAML::Node::Type() const':
+[1.968s] main.cpp:(.text._ZNK4YAML4Node4TypeEv[_ZNK4YAML4Node4TypeEv]+0x4c): undefined reference to `YAML::InvalidNode::~InvalidNode()'
+[1.969s] /usr/bin/ld: main.cpp:(.text._ZNK4YAML4Node4TypeEv[_ZNK4YAML4Node4TypeEv]+0x50): undefined reference to `YAML::InvalidNode::~InvalidNode()'
+[1.970s] /usr/bin/ld: main.cpp:(.text._ZNK4YAML4Node4TypeEv[_ZNK4YAML4Node4TypeEv]+0x54): undefined reference to `typeinfo for YAML::InvalidNode'
+[1.970s] /usr/bin/ld: main.cpp:(.text._ZNK4YAML4Node4TypeEv[_ZNK4YAML4Node4TypeEv]+0x58): undefined reference to `typeinfo for YAML::InvalidNode'
+[1.971s] /usr/bin/ld: CMakeFiles/stereo_camera_node.dir/src/main.cpp.o: in function `YAML::Node::Scalar[abi:cxx11]() const':
+[1.971s] main.cpp:(.text._ZNK4YAML4Node6ScalarB5cxx11Ev[_ZNK4YAML4Node6ScalarB5cxx11Ev]+0x4c): undefined reference to `YAML::InvalidNode::~InvalidNode()'
+[1.971s] /usr/bin/ld: main.cpp:(.text._ZNK4YAML4Node6ScalarB5cxx11Ev[_ZNK4YAML4Node6ScalarB5cxx11Ev]+0x50): undefined reference to `YAML::InvalidNode::~InvalidNode()'
+[1.972s] /usr/bin/ld: main.cpp:(.text._ZNK4YAML4Node6ScalarB5cxx11Ev[_ZNK4YAML4Node6ScalarB5cxx11Ev]+0x54): undefined reference to `typeinfo for YAML::InvalidNode'
+[1.974s] /usr/bin/ld: main.cpp:(.text._ZNK4YAML4Node6ScalarB5cxx11Ev[_ZNK4YAML4Node6ScalarB5cxx11Ev]+0x58): undefined reference to `typeinfo for YAML::InvalidNode'
+[1.974s] /usr/bin/ld: main.cpp:(.text._ZNK4YAML4Node6ScalarB5cxx11Ev[_ZNK4YAML4Node6ScalarB5cxx11Ev]+0x84): undefined reference to `YAML::detail::node_data::empty_scalar[abi:cxx11]()'
+[1.975s] /usr/bin/ld: CMakeFiles/stereo_camera_node.dir/src/main.cpp.o: in function `YAML::Node::size() const':
+[1.975s] main.cpp:(.text._ZNK4YAML4Node4sizeEv[_ZNK4YAML4Node4sizeEv]+0x4c): undefined reference to `YAML::InvalidNode::~InvalidNode()'
+[1.975s] /usr/bin/ld: main.cpp:(.text._ZNK4YAML4Node4sizeEv[_ZNK4YAML4Node4sizeEv]+0x50): undefined reference to `YAML::InvalidNode::~InvalidNode()'
+[1.976s] /usr/bin/ld: main.cpp:(.text._ZNK4YAML4Node4sizeEv[_ZNK4YAML4Node4sizeEv]+0x54): undefined reference to `typeinfo for YAML::InvalidNode'
+[1.976s] /usr/bin/ld: main.cpp:(.text._ZNK4YAML4Node4sizeEv[_ZNK4YAML4Node4sizeEv]+0x58): undefined reference to `typeinfo for YAML::InvalidNode'
+[1.977s] /usr/bin/ld: CMakeFiles/stereo_camera_node.dir/src/main.cpp.o: in function `StereoCameraNode::loadRectifyMaps(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+[1.980s] main.cpp:(.text._ZN16StereoCameraNode15loadRectifyMapsERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE[_ZN16StereoCameraNode15loadRectifyMapsERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE]+0x3c): undefined reference to `YAML::LoadFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+[1.982s] /usr/bin/ld: CMakeFiles/stereo_camera_node.dir/src/main.cpp.o: in function `float YAML::Node::as<float>() const':
+[1.984s] main.cpp:(.text._ZNK4YAML4Node2asIfEET_v[_ZNK4YAML4Node2asIfEET_v]+0x84): undefined reference to `YAML::InvalidNode::~InvalidNode()'
+[1.987s] /usr/bin/ld: main.cpp:(.text._ZNK4YAML4Node2asIfEET_v[_ZNK4YAML4Node2asIfEET_v]+0x88): undefined reference to `YAML::InvalidNode::~InvalidNode()'
+[1.988s] /usr/bin/ld: main.cpp:(.text._ZNK4YAML4Node2asIfEET_v[_ZNK4YAML4Node2asIfEET_v]+0x8c): undefined reference to `typeinfo for YAML::InvalidNode'
+[1.989s] /usr/bin/ld: main.cpp:(.text._ZNK4YAML4Node2asIfEET_v[_ZNK4YAML4Node2asIfEET_v]+0x90): undefined reference to `typeinfo for YAML::InvalidNode'
+[1.989s] /usr/bin/ld: CMakeFiles/stereo_camera_node.dir/src/main.cpp.o: in function `YAML::TypedBadConversion<float>::~TypedBadConversion()':
+[1.991s] main.cpp:(.text._ZN4YAML18TypedBadConversionIfED2Ev[_ZN4YAML18TypedBadConversionIfED5Ev]+0x20): undefined reference to `YAML::BadConversion::~BadConversion()'
+[1.992s] /usr/bin/ld: CMakeFiles/stereo_camera_node.dir/src/main.cpp.o: in function `YAML::detail::node* YAML::detail::node_data::get<int>(int const&, std::shared_ptr<YAML::detail::memory_holder>) const':
+[1.993s] main.cpp:(.text._ZNK4YAML6detail9node_data3getIiEEPNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZNK4YAML6detail9node_data3getIiEEPNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x118): undefined reference to `YAML::BadSubscript::~BadSubscript()'
+[1.995s] /usr/bin/ld: main.cpp:(.text._ZNK4YAML6detail9node_data3getIiEEPNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZNK4YAML6detail9node_data3getIiEEPNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x11c): undefined reference to `YAML::BadSubscript::~BadSubscript()'
+[1.996s] /usr/bin/ld: main.cpp:(.text._ZNK4YAML6detail9node_data3getIiEEPNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZNK4YAML6detail9node_data3getIiEEPNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x120): undefined reference to `typeinfo for YAML::BadSubscript'
+[1.997s] /usr/bin/ld: main.cpp:(.text._ZNK4YAML6detail9node_data3getIiEEPNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZNK4YAML6detail9node_data3getIiEEPNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x124): undefined reference to `typeinfo for YAML::BadSubscript'
+[1.997s] /usr/bin/ld: CMakeFiles/stereo_camera_node.dir/src/main.cpp.o: in function `YAML::detail::node& YAML::detail::node_data::get<char [7]>(char const (&) [7], std::shared_ptr<YAML::detail::memory_holder>)':
+[1.997s] main.cpp:(.text._ZN4YAML6detail9node_data3getIA7_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIA7_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0xd8): undefined reference to `YAML::detail::node_data::convert_to_map(std::shared_ptr<YAML::detail::memory_holder> const&)'
+[1.998s] /usr/bin/ld: main.cpp:(.text._ZN4YAML6detail9node_data3getIA7_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIA7_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x124): undefined reference to `YAML::BadSubscript::~BadSubscript()'
+[1.998s] /usr/bin/ld: main.cpp:(.text._ZN4YAML6detail9node_data3getIA7_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIA7_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x128): undefined reference to `YAML::BadSubscript::~BadSubscript()'
+[1.999s] /usr/bin/ld: main.cpp:(.text._ZN4YAML6detail9node_data3getIA7_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIA7_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x12c): undefined reference to `typeinfo for YAML::BadSubscript'
+[1.999s] /usr/bin/ld: main.cpp:(.text._ZN4YAML6detail9node_data3getIA7_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIA7_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x130): undefined reference to `typeinfo for YAML::BadSubscript'
+[1.999s] /usr/bin/ld: main.cpp:(.text._ZN4YAML6detail9node_data3getIA7_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIA7_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x1fc): undefined reference to `YAML::detail::node_data::insert_map_pair(YAML::detail::node&, YAML::detail::node&)'
+[2.000s] /usr/bin/ld: CMakeFiles/stereo_camera_node.dir/src/main.cpp.o: in function `YAML::BadSubscript::BadSubscript<int>(YAML::Mark const&, int const&)':
+[2.000s] main.cpp:(.text._ZN4YAML12BadSubscriptC2IiEERKNS_4MarkERKT_[_ZN4YAML12BadSubscriptC5IiEERKNS_4MarkERKT_]+0x64): undefined reference to `vtable for YAML::BadSubscript'
+[2.001s] /usr/bin/ld: main.cpp:(.text._ZN4YAML12BadSubscriptC2IiEERKNS_4MarkERKT_[_ZN4YAML12BadSubscriptC5IiEERKNS_4MarkERKT_]+0x68): undefined reference to `vtable for YAML::BadSubscript'
+[2.001s] /usr/bin/ld: CMakeFiles/stereo_camera_node.dir/src/main.cpp.o: in function `YAML::BadSubscript::BadSubscript<char [7]>(YAML::Mark const&, char const (&) [7])':
+[2.011s] main.cpp:(.text._ZN4YAML12BadSubscriptC2IA7_cEERKNS_4MarkERKT_[_ZN4YAML12BadSubscriptC5IA7_cEERKNS_4MarkERKT_]+0x60): undefined reference to `vtable for YAML::BadSubscript'
+[2.012s] /usr/bin/ld: main.cpp:(.text._ZN4YAML12BadSubscriptC2IA7_cEERKNS_4MarkERKT_[_ZN4YAML12BadSubscriptC5IA7_cEERKNS_4MarkERKT_]+0x64): undefined reference to `vtable for YAML::BadSubscript'
+[2.012s] /usr/bin/ld: CMakeFiles/stereo_camera_node.dir/src/main.cpp.o: in function `YAML::detail::node& YAML::detail::node_data::convert_to_node<char [7]>(char const (&) [7], std::shared_ptr<YAML::detail::memory_holder>)':
+[2.014s] main.cpp:(.text._ZN4YAML6detail9node_data15convert_to_nodeIA7_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data15convert_to_nodeIA7_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x64): undefined reference to `YAML::detail::memory_holder::merge(YAML::detail::memory_holder&)'
+[2.037s] /usr/bin/ld: CMakeFiles/stereo_camera_node.dir/src/main.cpp.o:(.data.rel.ro._ZTIN4YAML18TypedBadConversionIfEE[_ZTIN4YAML18TypedBadConversionIfEE]+0x10): undefined reference to `typeinfo for YAML::BadConversion'
+[2.110s] collect2: error: ld returned 1 exit status
+[2.117s] gmake[2]: *** [CMakeFiles/stereo_camera_node.dir/build.make:257: stereo_camera_node] Error 1
+[2.119s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/stereo_camera_node.dir/all] Error 2
+[2.120s] gmake: *** [Makefile:146: all] Error 2
+[2.139s] Invoked command in '/home/golftrolley/robot_ws/build/stereo_camera_node' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/golftrolley/robot_ws/install/stereo_camera_split:/home/golftrolley/robot_ws/install/serial_motor_demo:/home/golftrolley/robot_ws/install/golftrolley:/opt/ros/jazzy /usr/bin/cmake --build /home/golftrolley/robot_ws/build/stereo_camera_node -- -j4 -l4

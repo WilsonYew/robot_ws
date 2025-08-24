@@ -1,0 +1,937 @@
+[0.000000] (-) TimerEvent: {}
+[0.000925] (-) JobUnselected: {'identifier': 'dd_bot'}
+[0.001834] (-) JobUnselected: {'identifier': 'diffdrive_arduino'}
+[0.001933] (-) JobUnselected: {'identifier': 'golftrolley'}
+[0.002421] (-) JobUnselected: {'identifier': 'mpu6050driver'}
+[0.002500] (-) JobUnselected: {'identifier': 'ros2_control_cmake'}
+[0.002571] (-) JobUnselected: {'identifier': 'serial'}
+[0.002636] (-) JobUnselected: {'identifier': 'serial_motor_demo'}
+[0.002704] (-) JobUnselected: {'identifier': 'serial_motor_demo_msgs'}
+[0.002771] (-) JobUnselected: {'identifier': 'stereo_camera_split'}
+[0.002834] (-) JobUnselected: {'identifier': 'ydlidar_ros2_driver'}
+[0.002899] (-) JobUnselected: {'identifier': 'ydlidar_sdk'}
+[0.003002] (stereo_camera_node) JobQueued: {'identifier': 'stereo_camera_node', 'dependencies': OrderedDict()}
+[0.003546] (stereo_camera_node) JobStarted: {'identifier': 'stereo_camera_node'}
+[0.048447] (stereo_camera_node) JobProgress: {'identifier': 'stereo_camera_node', 'progress': 'cmake'}
+[0.051732] (stereo_camera_node) JobProgress: {'identifier': 'stereo_camera_node', 'progress': 'build'}
+[0.054862] (stereo_camera_node) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/golftrolley/robot_ws/build/stereo_camera_node', '--', '-j4', '-l4'], 'cwd': '/home/golftrolley/robot_ws/build/stereo_camera_node', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'golftrolley', 'SSH_CLIENT': '10.42.0.1 41114 22', 'LC_TIME': 'ms_MY.UTF-8', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/golftrolley/.vscode-server/cli/servers/Stable-360a4e4fd251bfce169a4ddf857c7d25d1ad40da/server/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/golftrolley/robot_ws/install/serial_motor_demo_msgs/lib:/home/golftrolley/robot_ws/install/serial/lib:/home/golftrolley/robot_ws/install/diffdrive_arduino/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'BROWSER': '/home/golftrolley/.vscode-server/cli/servers/Stable-360a4e4fd251bfce169a4ddf857c7d25d1ad40da/server/bin/helpers/browser.sh', 'HOME': '/home/golftrolley', 'OLDPWD': '/home/golftrolley/robot_ws', 'TERM_PROGRAM_VERSION': '1.103.1', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-514271e3-cd22-446c-8e9f-d6ac4a05e617.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/golftrolley/.vscode-server/cli/servers/Stable-360a4e4fd251bfce169a4ddf857c7d25d1ad40da/server/extensions/git/dist/askpass-main.js', 'LC_MONETARY': 'ms_MY.UTF-8', 'VSCODE_GIT_ASKPASS_NODE': '/home/golftrolley/.vscode-server/cli/servers/Stable-360a4e4fd251bfce169a4ddf857c7d25d1ad40da/server/node', 'SSL_CERT_FILE': '/usr/lib/ssl/cert.pem', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/golftrolley/robot_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'golftrolley', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '4', 'PATH': '/home/golftrolley/.vscode-server/cli/servers/Stable-360a4e4fd251bfce169a4ddf857c7d25d1ad40da/server/bin/remote-cli:/home/golftrolley/robot_ws/install/ydlidar_sdk/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/golftrolley/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand', 'LC_ADDRESS': 'ms_MY.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'SSL_CERT_DIR': '/usr/lib/ssl/certs', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'ms_MY.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-81043886d8.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/golftrolley/robot_ws/install/ydlidar_ros2_driver:/home/golftrolley/robot_ws/install/stereo_camera_split:/home/golftrolley/robot_ws/install/stereo_camera_node:/home/golftrolley/robot_ws/install/serial_motor_demo:/home/golftrolley/robot_ws/install/serial_motor_demo_msgs:/home/golftrolley/robot_ws/install/serial:/home/golftrolley/robot_ws/install/ros2_control_cmake:/home/golftrolley/robot_ws/install/my_v4l2_camera:/home/golftrolley/robot_ws/install/mpu6050driver:/home/golftrolley/robot_ws/install/golftrolley:/home/golftrolley/robot_ws/install/diffdrive_arduino:/home/golftrolley/robot_ws/install/dd_bot:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'ms_MY.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ms_MY.UTF-8', 'LC_IDENTIFICATION': 'ms_MY.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/golftrolley/robot_ws/build/stereo_camera_node', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '10.42.0.1 41114 10.42.0.2 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/golftrolley/robot_ws/build/stereo_camera_split:/home/golftrolley/robot_ws/install/stereo_camera_split/lib/python3.12/site-packages:/home/golftrolley/robot_ws/build/serial_motor_demo:/home/golftrolley/robot_ws/install/serial_motor_demo/lib/python3.12/site-packages:/home/golftrolley/robot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages:/home/golftrolley/robot_ws/build/golftrolley:/home/golftrolley/robot_ws/install/golftrolley/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'ms_MY.UTF-8', 'LC_PAPER': 'ms_MY.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/golftrolley/robot_ws/install/ydlidar_sdk:/home/golftrolley/robot_ws/install/ydlidar_ros2_driver:/home/golftrolley/robot_ws/install/stereo_camera_node:/home/golftrolley/robot_ws/install/serial_motor_demo_msgs:/home/golftrolley/robot_ws/install/serial:/home/golftrolley/robot_ws/install/ros2_control_cmake:/home/golftrolley/robot_ws/install/my_v4l2_camera:/home/golftrolley/robot_ws/install/mpu6050driver:/home/golftrolley/robot_ws/install/diffdrive_arduino:/home/golftrolley/robot_ws/install/dd_bot:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/golftrolley/robot_ws/install/stereo_camera_split:/home/golftrolley/robot_ws/install/serial_motor_demo:/home/golftrolley/robot_ws/install/golftrolley:/opt/ros/jazzy'}), 'shell': False}
+[0.099212] (-) TimerEvent: {}
+[0.199893] (-) TimerEvent: {}
+[0.300705] (-) TimerEvent: {}
+[0.401666] (-) TimerEvent: {}
+[0.408471] (stereo_camera_node) StdoutLine: {'line': b'[ 50%] Built target stereo_calibration_capture\n'}
+[0.411339] (stereo_camera_node) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/stereo_camera_node.dir/src/stereo_camera_node.cpp.o\x1b[0m\n'}
+[0.469220] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/home/golftrolley/robot_ws/src/stereo_camera_node/src/stereo_camera_node.cpp:1:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kstray \xe2\x80\x98\x1b[01m\x1b[K##\x1b[m\x1b[K\xe2\x80\x99 in program\n'}
+[0.470098] (stereo_camera_node) StderrLine: {'line': b'    1 | \x1b[01;31m\x1b[K##\x1b[m\x1b[Kinclude <rclcpp/rclcpp.hpp>\n'}
+[0.470580] (stereo_camera_node) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[0.501819] (-) TimerEvent: {}
+[0.602487] (-) TimerEvent: {}
+[0.703154] (-) TimerEvent: {}
+[0.803799] (-) TimerEvent: {}
+[0.904461] (-) TimerEvent: {}
+[1.005110] (-) TimerEvent: {}
+[1.105767] (-) TimerEvent: {}
+[1.206539] (-) TimerEvent: {}
+[1.307263] (-) TimerEvent: {}
+[1.407937] (-) TimerEvent: {}
+[1.508687] (-) TimerEvent: {}
+[1.609521] (-) TimerEvent: {}
+[1.710238] (-) TimerEvent: {}
+[1.811180] (-) TimerEvent: {}
+[1.911847] (-) TimerEvent: {}
+[1.920162] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/home/golftrolley/robot_ws/src/stereo_camera_node/src/stereo_camera_node.cpp:1:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kinclude\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[1.920852] (stereo_camera_node) StderrLine: {'line': b'    1 | ##\x1b[01;31m\x1b[Kinclude\x1b[m\x1b[K <rclcpp/rclcpp.hpp>\n'}
+[1.921371] (stereo_camera_node) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[1.927998] (stereo_camera_node) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/13/bits/stl_algobase.h:62\x1b[m\x1b[K,\n'}
+[1.928797] (stereo_camera_node) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/13/algorithm:60\x1b[m\x1b[K,\n'}
+[1.929320] (stereo_camera_node) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/image__struct.hpp:11\x1b[m\x1b[K,\n'}
+[1.929736] (stereo_camera_node) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/image.hpp:7\x1b[m\x1b[K,\n'}
+[1.930212] (stereo_camera_node) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/golftrolley/robot_ws/src/stereo_camera_node/src/stereo_camera_node.cpp:2\x1b[m\x1b[K:\n'}
+[1.930637] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/ext/type_traits.h:164:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconstexpr const bool __gnu_cxx::__is_null_pointer\x1b[m\x1b[K\xe2\x80\x99 redeclared as different kind of entity\n'}
+[1.931086] (stereo_camera_node) StderrLine: {'line': b'  164 |   __is_null_pointer(std::nullptr_t\x1b[01;31m\x1b[K)\x1b[m\x1b[K\n'}
+[1.931517] (stereo_camera_node) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.931901] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/ext/type_traits.h:159:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious declaration \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Type> constexpr bool __gnu_cxx::\x1b[01;32m\x1b[K__is_null_pointer\x1b[m\x1b[K(_Type)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.932386] (stereo_camera_node) StderrLine: {'line': b'  159 |     \x1b[01;36m\x1b[K__is_null_pointer\x1b[m\x1b[K(_Type)\n'}
+[1.932818] (stereo_camera_node) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.933353] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/ext/type_traits.h:164:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Knullptr_t\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kstd\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.933907] (stereo_camera_node) StderrLine: {'line': b'  164 |   __is_null_pointer(std::\x1b[01;31m\x1b[Knullptr_t\x1b[m\x1b[K)\n'}
+[1.934434] (stereo_camera_node) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.937015] (stereo_camera_node) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/13/bits/stl_pair.h:60\x1b[m\x1b[K,\n'}
+[1.937770] (stereo_camera_node) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/13/bits/stl_algobase.h:64\x1b[m\x1b[K:\n'}
+[1.938570] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:275:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[1.940419] (stereo_camera_node) StderrLine: {'line': b'  275 |   template <typename _Tp, \x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K = sizeof(_Tp)>\n'}
+[1.941154] (stereo_camera_node) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[1.941684] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:510:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::size_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[1.942380] (stereo_camera_node) StderrLine: {'line': b'  510 |   template<typename _Tp, \x1b[01;31m\x1b[Kstd\x1b[m\x1b[K::size_t _Size>\n'}
+[1.942916] (stereo_camera_node) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.945937] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:511:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_Size\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.946922] (stereo_camera_node) StderrLine: {'line': b'  511 |     struct is_array<_Tp[\x1b[01;31m\x1b[K_Size\x1b[m\x1b[K]>\n'}
+[1.947821] (stereo_camera_node) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[1.948904] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:511:31:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.949463] (stereo_camera_node) StderrLine: {'line': b'  511 |     struct is_array<_Tp[_Size]\x1b[01;31m\x1b[K>\x1b[m\x1b[K\n'}
+[1.949895] (stereo_camera_node) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.950431] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:617:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Knullptr_t\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kstd\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.950871] (stereo_camera_node) StderrLine: {'line': b'  617 |     struct is_null_pointer<std::\x1b[01;31m\x1b[Knullptr_t\x1b[m\x1b[K>\n'}
+[1.951415] (stereo_camera_node) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.951830] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:617:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.952331] (stereo_camera_node) StderrLine: {'line': b'  617 |     struct is_null_pointer<std::nullptr_t\x1b[01;31m\x1b[K>\x1b[m\x1b[K\n'}
+[1.953113] (stereo_camera_node) StderrLine: {'line': b'      |                                          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.953621] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:621:48:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.954120] (stereo_camera_node) StderrLine: {'line': b'  621 |     struct is_null_pointer<const std::nullptr_t\x1b[01;31m\x1b[K>\x1b[m\x1b[K\n'}
+[1.954648] (stereo_camera_node) StderrLine: {'line': b'      |                                                \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.955230] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:625:51:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.955840] (stereo_camera_node) StderrLine: {'line': b'  625 |     struct is_null_pointer<volatile std::nullptr_t\x1b[01;31m\x1b[K>\x1b[m\x1b[K\n'}
+[1.956505] (stereo_camera_node) StderrLine: {'line': b'      |                                                   \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.957026] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:629:57:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.957652] (stereo_camera_node) StderrLine: {'line': b'  629 |     struct is_null_pointer<const volatile std::nullptr_t\x1b[01;31m\x1b[K>\x1b[m\x1b[K\n'}
+[1.958173] (stereo_camera_node) StderrLine: {'line': b'      |                                                         \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.958672] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:914:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[1.959335] (stereo_camera_node) StderrLine: {'line': b'  914 |   template<typename _Tp, \x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K _Size>\n'}
+[1.960001] (stereo_camera_node) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[1.960508] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:915:40:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_Size\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.960947] (stereo_camera_node) StderrLine: {'line': b'  915 |     struct __is_array_known_bounds<_Tp[\x1b[01;31m\x1b[K_Size\x1b[m\x1b[K]>\n'}
+[1.961457] (stereo_camera_node) StderrLine: {'line': b'      |                                        \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[1.961910] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:915:46:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.962465] (stereo_camera_node) StderrLine: {'line': b'  915 |     struct __is_array_known_bounds<_Tp[_Size]\x1b[01;31m\x1b[K>\x1b[m\x1b[K\n'}
+[1.962919] (stereo_camera_node) StderrLine: {'line': b'      |                                              \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.968630] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:1348:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kstd\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.969884] (stereo_camera_node) StderrLine: {'line': b' 1348 |     : public integral_constant<std::\x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K, alignof(_Tp)>\n'}
+[1.970543] (stereo_camera_node) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[1.971040] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:1348:57:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.971574] (stereo_camera_node) StderrLine: {'line': b' 1348 |     : public integral_constant<std::size_t, alignof(_Tp)\x1b[01;31m\x1b[K>\x1b[m\x1b[K\n'}
+[1.972109] (stereo_camera_node) StderrLine: {'line': b'      |                                                         \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.972696] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:1348:57:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kinvalid template non-type parameter\n'}
+[1.973327] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:1357:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kstd\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.973912] (stereo_camera_node) StderrLine: {'line': b' 1357 |     : public integral_constant<std::\x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K, 0> { };\n'}
+[1.974482] (stereo_camera_node) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[1.974946] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:1357:46:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.975541] (stereo_camera_node) StderrLine: {'line': b' 1357 |     : public integral_constant<std::size_t, 0\x1b[01;31m\x1b[K>\x1b[m\x1b[K { };\n'}
+[1.976009] (stereo_camera_node) StderrLine: {'line': b'      |                                              \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.977192] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:1357:46:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kinvalid template non-type parameter\n'}
+[1.977799] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:1359:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::size_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[1.979061] (stereo_camera_node) StderrLine: {'line': b' 1359 |   template<typename _Tp, \x1b[01;31m\x1b[Kstd\x1b[m\x1b[K::size_t _Size>\n'}
+[1.979648] (stereo_camera_node) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.980162] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:1360:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_Size\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.980623] (stereo_camera_node) StderrLine: {'line': b' 1360 |     struct rank<_Tp[\x1b[01;31m\x1b[K_Size\x1b[m\x1b[K]>\n'}
+[1.981140] (stereo_camera_node) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[1.981676] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:1360:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.982376] (stereo_camera_node) StderrLine: {'line': b' 1360 |     struct rank<_Tp[_Size]\x1b[01;31m\x1b[K>\x1b[m\x1b[K\n'}
+[1.983025] (stereo_camera_node) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.983759] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:1361:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kstd\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.984543] (stereo_camera_node) StderrLine: {'line': b' 1361 |     : public integral_constant<std::\x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K, 1 + rank<_Tp>::value> { };\n'}
+[1.985144] (stereo_camera_node) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[1.985669] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:1361:65:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.986428] (stereo_camera_node) StderrLine: {'line': b' 1361 |     : public integral_constant<std::size_t, 1 + rank<_Tp>::value\x1b[01;31m\x1b[K>\x1b[m\x1b[K { };\n'}
+[1.987437] (stereo_camera_node) StderrLine: {'line': b'      |                                                                 \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.987984] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:1361:65:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kinvalid template non-type parameter\n'}
+[1.988538] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:1365:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kstd\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.989175] (stereo_camera_node) StderrLine: {'line': b' 1365 |     : public integral_constant<std::\x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K, 1 + rank<_Tp>::value> { };\n'}
+[1.989816] (stereo_camera_node) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[1.990621] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:1365:65:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.991229] (stereo_camera_node) StderrLine: {'line': b' 1365 |     : public integral_constant<std::size_t, 1 + rank<_Tp>::value\x1b[01;31m\x1b[K>\x1b[m\x1b[K { };\n'}
+[1.991727] (stereo_camera_node) StderrLine: {'line': b'      |                                                                 \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.992266] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:1365:65:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kinvalid template non-type parameter\n'}
+[1.992752] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:1370:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.993461] (stereo_camera_node) StderrLine: {'line': b' 1370 |     : public integral_constant<\x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K, 0> { };\n'}
+[1.994410] (stereo_camera_node) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[1.994893] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:1:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 is defined in header \xe2\x80\x98\x1b[01m\x1b[K<cstddef>\x1b[m\x1b[K\xe2\x80\x99; did you forget to \xe2\x80\x98\x1b[01m\x1b[K#include <cstddef>\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.995487] (stereo_camera_node) StderrLine: {'line': b'  +++ |+\x1b[32m\x1b[K#include <cstddef>\x1b[m\x1b[K\n'}
+[1.996009] (stereo_camera_node) StderrLine: {'line': b'    1 | // C++11 <type_traits> -*- C++ -*-\n'}
+[1.996590] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:1370:41:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.997202] (stereo_camera_node) StderrLine: {'line': b' 1370 |     : public integral_constant<size_t, 0\x1b[01;31m\x1b[K>\x1b[m\x1b[K { };\n'}
+[1.997733] (stereo_camera_node) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.998291] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:1370:41:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kinvalid template non-type parameter\n'}
+[1.998794] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:1372:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[1.999361] (stereo_camera_node) StderrLine: {'line': b' 1372 |   template<typename _Tp, \x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K _Size>\n'}
+[1.999838] (stereo_camera_node) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.000657] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:1373:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_Size\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.001507] (stereo_camera_node) StderrLine: {'line': b' 1373 |     struct extent<_Tp[\x1b[01;31m\x1b[K_Size\x1b[m\x1b[K], 0>\n'}
+[2.002053] (stereo_camera_node) StderrLine: {'line': b'      |                       \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.002516] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:1373:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.002902] (stereo_camera_node) StderrLine: {'line': b' 1373 |     struct extent<_Tp[_Size], 0\x1b[01;31m\x1b[K>\x1b[m\x1b[K\n'}
+[2.003417] (stereo_camera_node) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.003811] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:1374:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.004672] (stereo_camera_node) StderrLine: {'line': b' 1374 |     : public integral_constant<\x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K, _Size> { };\n'}
+[2.005068] (stereo_camera_node) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.005399] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:1374:32:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 is defined in header \xe2\x80\x98\x1b[01m\x1b[K<cstddef>\x1b[m\x1b[K\xe2\x80\x99; did you forget to \xe2\x80\x98\x1b[01m\x1b[K#include <cstddef>\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.005745] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:1374:40:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_Size\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.006082] (stereo_camera_node) StderrLine: {'line': b' 1374 |     : public integral_constant<size_t, \x1b[01;31m\x1b[K_Size\x1b[m\x1b[K> { };\n'}
+[2.006405] (stereo_camera_node) StderrLine: {'line': b'      |                                        \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.006702] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:1374:45:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.007020] (stereo_camera_node) StderrLine: {'line': b' 1374 |     : public integral_constant<size_t, _Size\x1b[01;31m\x1b[K>\x1b[m\x1b[K { };\n'}
+[2.007338] (stereo_camera_node) StderrLine: {'line': b'      |                                             \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.007634] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:1374:45:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 2 is invalid\n'}
+[2.007930] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:1376:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.008276] (stereo_camera_node) StderrLine: {'line': b' 1376 |   template<typename _Tp, unsigned _Uint, \x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K _Size>\n'}
+[2.008648] (stereo_camera_node) StderrLine: {'line': b'      |                                          \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.009128] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:1377:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_Size\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.009608] (stereo_camera_node) StderrLine: {'line': b' 1377 |     struct extent<_Tp[\x1b[01;31m\x1b[K_Size\x1b[m\x1b[K], _Uint>\n'}
+[2.010058] (stereo_camera_node) StderrLine: {'line': b'      |                       \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.010623] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:1377:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.011162] (stereo_camera_node) StderrLine: {'line': b' 1377 |     struct extent<_Tp[_Size], _Uint\x1b[01;31m\x1b[K>\x1b[m\x1b[K\n'}
+[2.011842] (-) TimerEvent: {}
+[2.012248] (stereo_camera_node) StderrLine: {'line': b'      |                                    \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.012839] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:1382:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.014123] (stereo_camera_node) StderrLine: {'line': b' 1382 |     : public integral_constant<\x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K, 0> { };\n'}
+[2.014741] (stereo_camera_node) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.015455] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:1382:32:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 is defined in header \xe2\x80\x98\x1b[01m\x1b[K<cstddef>\x1b[m\x1b[K\xe2\x80\x99; did you forget to \xe2\x80\x98\x1b[01m\x1b[K#include <cstddef>\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.016058] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:1382:41:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.016665] (stereo_camera_node) StderrLine: {'line': b' 1382 |     : public integral_constant<size_t, 0\x1b[01;31m\x1b[K>\x1b[m\x1b[K { };\n'}
+[2.017279] (stereo_camera_node) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.017799] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:1382:41:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kinvalid template non-type parameter\n'}
+[2.018823] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:1764:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.019595] (stereo_camera_node) StderrLine: {'line': b' 1764 |       { static constexpr \x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K __size = sizeof(_Tp); };\n'}
+[2.020256] (stereo_camera_node) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.020932] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:1764:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 is defined in header \xe2\x80\x98\x1b[01m\x1b[K<cstddef>\x1b[m\x1b[K\xe2\x80\x99; did you forget to \xe2\x80\x98\x1b[01m\x1b[K#include <cstddef>\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.021757] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:1766:14:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.022337] (stereo_camera_node) StderrLine: {'line': b' 1766 |     template<\x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K _Sz, typename _Tp, bool = (_Sz <= _Tp::__size)>\n'}
+[2.022789] (stereo_camera_node) StderrLine: {'line': b'      |              \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.023349] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:1766:48:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_Sz\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.023844] (stereo_camera_node) StderrLine: {'line': b' 1766 |     template<size_t _Sz, typename _Tp, bool = (\x1b[01;31m\x1b[K_Sz\x1b[m\x1b[K <= _Tp::__size)>\n'}
+[2.024494] (stereo_camera_node) StderrLine: {'line': b'      |                                                \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.025248] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:1767:14:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno default argument for \xe2\x80\x98\x1b[01m\x1b[K_Tp\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.025842] (stereo_camera_node) StderrLine: {'line': b' 1767 |       struct \x1b[01;31m\x1b[K__select\x1b[m\x1b[K;\n'}
+[2.026461] (stereo_camera_node) StderrLine: {'line': b'      |              \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.027022] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:1769:14:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.027697] (stereo_camera_node) StderrLine: {'line': b' 1769 |     template<\x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K _Sz, typename _Uint, typename... _UInts>\n'}
+[2.028711] (stereo_camera_node) StderrLine: {'line': b'      |              \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.029355] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:1770:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_Sz\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.029824] (stereo_camera_node) StderrLine: {'line': b' 1770 |       struct __select<\x1b[01;31m\x1b[K_Sz\x1b[m\x1b[K, _List<_Uint, _UInts...>, true>\n'}
+[2.030388] (stereo_camera_node) StderrLine: {'line': b'      |                       \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.030859] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:1770:57:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.031440] (stereo_camera_node) StderrLine: {'line': b' 1770 |       struct __select<_Sz, _List<_Uint, _UInts...>, true\x1b[01;31m\x1b[K>\x1b[m\x1b[K\n'}
+[2.032034] (stereo_camera_node) StderrLine: {'line': b'      |                                                         \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.032666] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:1773:14:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.033215] (stereo_camera_node) StderrLine: {'line': b' 1773 |     template<\x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K _Sz, typename _Uint, typename... _UInts>\n'}
+[2.033689] (stereo_camera_node) StderrLine: {'line': b'      |              \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.038065] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:1774:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_Sz\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.038894] (stereo_camera_node) StderrLine: {'line': b' 1774 |       struct __select<\x1b[01;31m\x1b[K_Sz\x1b[m\x1b[K, _List<_Uint, _UInts...>, false>\n'}
+[2.039469] (stereo_camera_node) StderrLine: {'line': b'      |                       \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.039931] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:1774:58:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.040549] (stereo_camera_node) StderrLine: {'line': b' 1774 |       struct __select<_Sz, _List<_Uint, _UInts...>, false\x1b[01;31m\x1b[K>\x1b[m\x1b[K\n'}
+[2.041051] (stereo_camera_node) StderrLine: {'line': b'      |                                                          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.047130] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:1775:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_Sz\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.047875] (stereo_camera_node) StderrLine: {'line': b' 1775 |       : __select<\x1b[01;31m\x1b[K_Sz\x1b[m\x1b[K, _List<_UInts...>>\n'}
+[2.048737] (stereo_camera_node) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.049171] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:1775:38:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.049683] (stereo_camera_node) StderrLine: {'line': b' 1775 |       : __select<_Sz, _List<_UInts...\x1b[01;31m\x1b[K>>\x1b[m\x1b[K\n'}
+[2.050194] (stereo_camera_node) StderrLine: {'line': b'      |                                      \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[2.050773] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:1766:60:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K__size\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kstd::__make_unsigned_selector_base::_List<unsigned char, short unsigned int, unsigned int, long unsigned int, long long unsigned int>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.051414] (stereo_camera_node) StderrLine: {'line': b' 1766 |     template<size_t _Sz, typename _Tp, bool = (_Sz <= _Tp::\x1b[01;31m\x1b[K__size\x1b[m\x1b[K)>\n'}
+[2.052009] (stereo_camera_node) StderrLine: {'line': b'      |                                                            \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.052437] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:1788:68:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 3 is invalid\n'}
+[2.052749] (stereo_camera_node) StderrLine: {'line': b' 1788 |       using __unsigned_type = typename __select<sizeof(_Tp), _UInts\x1b[01;31m\x1b[K>\x1b[m\x1b[K::__type;\n'}
+[2.053084] (stereo_camera_node) StderrLine: {'line': b'      |                                                                    \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.072866] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:1792:47:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K__unsigned_type\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.073923] (stereo_camera_node) StderrLine: {'line': b' 1792 |         = typename __match_cv_qualifiers<_Tp, \x1b[01;31m\x1b[K__unsigned_type\x1b[m\x1b[K>::__type;\n'}
+[2.074741] (stereo_camera_node) StderrLine: {'line': b'      |                                               \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.075358] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:1792:62:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 2 is invalid\n'}
+[2.075778] (stereo_camera_node) StderrLine: {'line': b' 1792 |         = typename __match_cv_qualifiers<_Tp, __unsigned_type\x1b[01;31m\x1b[K>\x1b[m\x1b[K::__type;\n'}
+[2.076303] (stereo_camera_node) StderrLine: {'line': b'      |                                                              \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.076750] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:1803:68:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K__type\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kclass std::__make_unsigned_selector<wchar_t, false, true>\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.077654] (stereo_camera_node) StderrLine: {'line': b' 1803 |         = typename __make_unsigned_selector<wchar_t, false, true>::\x1b[01;31m\x1b[K__type\x1b[m\x1b[K;\n'}
+[2.078350] (stereo_camera_node) StderrLine: {'line': b'      |                                                                    \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.078839] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:1819:69:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K__type\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kclass std::__make_unsigned_selector<char16_t, false, true>\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.080003] (stereo_camera_node) StderrLine: {'line': b' 1819 |         = typename __make_unsigned_selector<char16_t, false, true>::\x1b[01;31m\x1b[K__type\x1b[m\x1b[K;\n'}
+[2.080741] (stereo_camera_node) StderrLine: {'line': b'      |                                                                     \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.081456] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:1826:69:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K__type\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kclass std::__make_unsigned_selector<char32_t, false, true>\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.081931] (stereo_camera_node) StderrLine: {'line': b' 1826 |         = typename __make_unsigned_selector<char32_t, false, true>::\x1b[01;31m\x1b[K__type\x1b[m\x1b[K;\n'}
+[2.082621] (stereo_camera_node) StderrLine: {'line': b'      |                                                                     \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.083624] (stereo_camera_node) StderrLine: {'line': b'/usr/include/c++/13/type_traits: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kclass std::__make_unsigned_selector<wchar_t, true, false>\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.084353] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:1921:62:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kclass std::__make_signed_selector<wchar_t, false, true>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.084872] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:1935:57:\x1b[m\x1b[K   required from here\n'}
+[2.085423] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:1749:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno type named \xe2\x80\x98\x1b[01m\x1b[K__type\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kstruct std::__make_unsigned<wchar_t>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.085910] (stereo_camera_node) StderrLine: {'line': b' 1749 |       using \x1b[01;31m\x1b[K__unsigned_type\x1b[m\x1b[K\n'}
+[2.086491] (stereo_camera_node) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.086976] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:1753:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno type named \xe2\x80\x98\x1b[01m\x1b[K__type\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kstruct std::__make_unsigned<wchar_t>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.088048] (stereo_camera_node) StderrLine: {'line': b' 1753 |       using \x1b[01;31m\x1b[K__type\x1b[m\x1b[K\n'}
+[2.088563] (stereo_camera_node) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.089024] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:1935:66:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid combination of multiple type-specifiers\n'}
+[2.089530] (stereo_camera_node) StderrLine: {'line': b' 1935 |         = typename __make_signed_selector<wchar_t, false, true>::\x1b[01;31m\x1b[K__type\x1b[m\x1b[K;\n'}
+[2.090017] (stereo_camera_node) StderrLine: {'line': b'      |                                                                  \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.090547] (stereo_camera_node) StderrLine: {'line': b'/usr/include/c++/13/type_traits: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kclass std::__make_unsigned_selector<char16_t, true, false>\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.091264] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:1921:62:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kclass std::__make_signed_selector<char16_t, false, true>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.091914] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:1951:58:\x1b[m\x1b[K   required from here\n'}
+[2.092485] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:1749:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno type named \xe2\x80\x98\x1b[01m\x1b[K__type\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kstruct std::__make_unsigned<char16_t>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.092997] (stereo_camera_node) StderrLine: {'line': b' 1749 |       using \x1b[01;31m\x1b[K__unsigned_type\x1b[m\x1b[K\n'}
+[2.093540] (stereo_camera_node) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.094027] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:1753:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno type named \xe2\x80\x98\x1b[01m\x1b[K__type\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kstruct std::__make_unsigned<char16_t>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.094543] (stereo_camera_node) StderrLine: {'line': b' 1753 |       using \x1b[01;31m\x1b[K__type\x1b[m\x1b[K\n'}
+[2.094994] (stereo_camera_node) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.095761] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:1951:67:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid combination of multiple type-specifiers\n'}
+[2.096532] (stereo_camera_node) StderrLine: {'line': b' 1951 |         = typename __make_signed_selector<char16_t, false, true>::\x1b[01;31m\x1b[K__type\x1b[m\x1b[K;\n'}
+[2.097050] (stereo_camera_node) StderrLine: {'line': b'      |                                                                   \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.097557] (stereo_camera_node) StderrLine: {'line': b'/usr/include/c++/13/type_traits: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kclass std::__make_unsigned_selector<char32_t, true, false>\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.098010] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:1921:62:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kclass std::__make_signed_selector<char32_t, false, true>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.098766] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:1958:58:\x1b[m\x1b[K   required from here\n'}
+[2.099595] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:1749:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno type named \xe2\x80\x98\x1b[01m\x1b[K__type\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kstruct std::__make_unsigned<char32_t>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.100471] (stereo_camera_node) StderrLine: {'line': b' 1749 |       using \x1b[01;31m\x1b[K__unsigned_type\x1b[m\x1b[K\n'}
+[2.101081] (stereo_camera_node) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.101700] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:1753:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno type named \xe2\x80\x98\x1b[01m\x1b[K__type\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kstruct std::__make_unsigned<char32_t>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.102475] (stereo_camera_node) StderrLine: {'line': b' 1753 |       using \x1b[01;31m\x1b[K__type\x1b[m\x1b[K\n'}
+[2.103195] (stereo_camera_node) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.104060] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:1958:67:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid combination of multiple type-specifiers\n'}
+[2.104857] (stereo_camera_node) StderrLine: {'line': b' 1958 |         = typename __make_signed_selector<char32_t, false, true>::\x1b[01;31m\x1b[K__type\x1b[m\x1b[K;\n'}
+[2.105757] (stereo_camera_node) StderrLine: {'line': b'      |                                                                   \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.106538] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:1993:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::size_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.107176] (stereo_camera_node) StderrLine: {'line': b' 1993 |   template<typename _Tp, \x1b[01;31m\x1b[Kstd\x1b[m\x1b[K::size_t _Size>\n'}
+[2.108102] (stereo_camera_node) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.109069] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:1994:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_Size\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.109699] (stereo_camera_node) StderrLine: {'line': b' 1994 |     struct remove_extent<_Tp[\x1b[01;31m\x1b[K_Size\x1b[m\x1b[K]>\n'}
+[2.110382] (stereo_camera_node) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.111327] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:1994:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.112197] (-) TimerEvent: {}
+[2.112792] (stereo_camera_node) StderrLine: {'line': b' 1994 |     struct remove_extent<_Tp[_Size]\x1b[01;31m\x1b[K>\x1b[m\x1b[K\n'}
+[2.113799] (stereo_camera_node) StderrLine: {'line': b'      |                                    \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.114611] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:2006:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::size_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.115619] (stereo_camera_node) StderrLine: {'line': b' 2006 |   template<typename _Tp, \x1b[01;31m\x1b[Kstd\x1b[m\x1b[K::size_t _Size>\n'}
+[2.116393] (stereo_camera_node) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.117042] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:2007:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_Size\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.117725] (stereo_camera_node) StderrLine: {'line': b' 2007 |     struct remove_all_extents<_Tp[\x1b[01;31m\x1b[K_Size\x1b[m\x1b[K]>\n'}
+[2.118789] (stereo_camera_node) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.119708] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:2007:41:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.120800] (stereo_camera_node) StderrLine: {'line': b' 2007 |     struct remove_all_extents<_Tp[_Size]\x1b[01;31m\x1b[K>\x1b[m\x1b[K\n'}
+[2.121548] (stereo_camera_node) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.122243] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:2072:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::size_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.123070] (stereo_camera_node) StderrLine: {'line': b' 2072 |   template<\x1b[01;31m\x1b[Kstd\x1b[m\x1b[K::size_t _Len>\n'}
+[2.124205] (stereo_camera_node) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.125319] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:2077:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_Len\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.126259] (stereo_camera_node) StderrLine: {'line': b' 2077 |         unsigned char __data[\x1b[01;31m\x1b[K_Len\x1b[m\x1b[K];\n'}
+[2.127091] (stereo_camera_node) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.127909] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:2095:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::size_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.128930] (stereo_camera_node) StderrLine: {'line': b' 2095 |   template<\x1b[01;31m\x1b[Kstd\x1b[m\x1b[K::size_t _Len, std::size_t _Align =\n'}
+[2.129812] (stereo_camera_node) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.130652] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:2095:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::size_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.131485] (stereo_camera_node) StderrLine: {'line': b' 2095 |   template<std::size_t _Len, \x1b[01;31m\x1b[Kstd\x1b[m\x1b[K::size_t _Align =\n'}
+[2.132436] (stereo_camera_node) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.133331] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:2096:55:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_Len\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.133908] (stereo_camera_node) StderrLine: {'line': b' 2096 |            __alignof__(typename __aligned_storage_msa<\x1b[01;31m\x1b[K_Len\x1b[m\x1b[K>::__type)>\n'}
+[2.134576] (stereo_camera_node) StderrLine: {'line': b'      |                                                       \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.135343] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:2096:59:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.136372] (stereo_camera_node) StderrLine: {'line': b' 2096 |            __alignof__(typename __aligned_storage_msa<_Len\x1b[01;31m\x1b[K>\x1b[m\x1b[K::__type)>\n'}
+[2.137751] (stereo_camera_node) StderrLine: {'line': b'      |                                                           \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.138603] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:2103:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_Len\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.139322] (stereo_camera_node) StderrLine: {'line': b' 2103 |         unsigned char __data[\x1b[01;31m\x1b[K_Len\x1b[m\x1b[K];\n'}
+[2.140027] (stereo_camera_node) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.141038] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:2104:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_Align\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.142126] (stereo_camera_node) StderrLine: {'line': b' 2104 |         struct __attribute__((__aligned__((\x1b[01;31m\x1b[K_Align\x1b[m\x1b[K)))) { } __align;\n'}
+[2.143140] (stereo_camera_node) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.144048] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:2111:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.144920] (stereo_camera_node) StderrLine: {'line': b' 2111 |       static const \x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K _S_alignment = 0;\n'}
+[2.145831] (stereo_camera_node) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.146741] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:2111:20:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 is defined in header \xe2\x80\x98\x1b[01m\x1b[K<cstddef>\x1b[m\x1b[K\xe2\x80\x99; did you forget to \xe2\x80\x98\x1b[01m\x1b[K#include <cstddef>\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.147673] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:2112:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.148435] (stereo_camera_node) StderrLine: {'line': b' 2112 |       static const \x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K _S_size = 0;\n'}
+[2.149088] (stereo_camera_node) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.149880] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:2112:20:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 is defined in header \xe2\x80\x98\x1b[01m\x1b[K<cstddef>\x1b[m\x1b[K\xe2\x80\x99; did you forget to \xe2\x80\x98\x1b[01m\x1b[K#include <cstddef>\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.150738] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:2118:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.151472] (stereo_camera_node) StderrLine: {'line': b' 2118 |       static const \x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K _S_alignment =\n'}
+[2.152132] (stereo_camera_node) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.152893] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:2118:20:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 is defined in header \xe2\x80\x98\x1b[01m\x1b[K<cstddef>\x1b[m\x1b[K\xe2\x80\x99; did you forget to \xe2\x80\x98\x1b[01m\x1b[K#include <cstddef>\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.153690] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:2121:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.154611] (stereo_camera_node) StderrLine: {'line': b' 2121 |       static const \x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K _S_size =\n'}
+[2.155518] (stereo_camera_node) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.156312] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:2121:20:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 is defined in header \xe2\x80\x98\x1b[01m\x1b[K<cstddef>\x1b[m\x1b[K\xe2\x80\x99; did you forget to \xe2\x80\x98\x1b[01m\x1b[K#include <cstddef>\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.157021] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:2141:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.157743] (stereo_camera_node) StderrLine: {'line': b' 2141 |   template <\x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K _Len, typename... _Types>\n'}
+[2.158439] (stereo_camera_node) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.159509] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:2150:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.160207] (stereo_camera_node) StderrLine: {'line': b' 2150 |       static const \x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K _S_len = _Len > __strictest::_S_size\n'}
+[2.160838] (stereo_camera_node) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.161607] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:2150:20:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 is defined in header \xe2\x80\x98\x1b[01m\x1b[K<cstddef>\x1b[m\x1b[K\xe2\x80\x99; did you forget to \xe2\x80\x98\x1b[01m\x1b[K#include <cstddef>\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.162404] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:2154:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.163424] (stereo_camera_node) StderrLine: {'line': b' 2154 |       static const \x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K alignment_value = __strictest::_S_alignment;\n'}
+[2.164043] (stereo_camera_node) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.164702] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:2154:20:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 is defined in header \xe2\x80\x98\x1b[01m\x1b[K<cstddef>\x1b[m\x1b[K\xe2\x80\x99; did you forget to \xe2\x80\x98\x1b[01m\x1b[K#include <cstddef>\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.165534] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:2156:40:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_S_len\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.166388] (stereo_camera_node) StderrLine: {'line': b' 2156 |       typedef typename aligned_storage<\x1b[01;31m\x1b[K_S_len\x1b[m\x1b[K, alignment_value>::type type;\n'}
+[2.167502] (stereo_camera_node) StderrLine: {'line': b'      |                                        \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.172872] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:2156:48:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kalignment_value\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kalignment_of\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.175695] (stereo_camera_node) StderrLine: {'line': b' 2156 |       typedef typename aligned_storage<_S_len, \x1b[01;31m\x1b[Kalignment_value\x1b[m\x1b[K>::type type;\n'}
+[2.176348] (stereo_camera_node) StderrLine: {'line': b'      |                                                \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.176819] (stereo_camera_node) StderrLine: {'line': b'      |                                                \x1b[32m\x1b[Kalignment_of\x1b[m\x1b[K\n'}
+[2.177407] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:2156:63:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.177899] (stereo_camera_node) StderrLine: {'line': b' 2156 |       typedef typename aligned_storage<_S_len, alignment_value\x1b[01;31m\x1b[K>\x1b[m\x1b[K::type type;\n'}
+[2.179783] (stereo_camera_node) StderrLine: {'line': b'      |                                                               \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.180557] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:2156:63:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 2 is invalid\n'}
+[2.181417] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:2159:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.182904] (stereo_camera_node) StderrLine: {'line': b' 2159 |   template <\x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K _Len, typename... _Types>\n'}
+[2.183754] (stereo_camera_node) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.184673] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:2160:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.185545] (stereo_camera_node) StderrLine: {'line': b' 2160 |     const \x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K aligned_union<_Len, _Types...>::alignment_value;\n'}
+[2.186481] (stereo_camera_node) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.187209] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:2160:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 is defined in header \xe2\x80\x98\x1b[01m\x1b[K<cstddef>\x1b[m\x1b[K\xe2\x80\x99; did you forget to \xe2\x80\x98\x1b[01m\x1b[K#include <cstddef>\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.187781] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:2174:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.188424] (stereo_camera_node) StderrLine: {'line': b' 2174 |   template<typename _Up, \x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K _Nm>\n'}
+[2.188905] (stereo_camera_node) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.189506] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:2175:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_Nm\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.190186] (stereo_camera_node) StderrLine: {'line': b' 2175 |     struct __decay_selector<_Up[\x1b[01;31m\x1b[K_Nm\x1b[m\x1b[K]>\n'}
+[2.190804] (stereo_camera_node) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.191531] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:2175:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.192279] (stereo_camera_node) StderrLine: {'line': b' 2175 |     struct __decay_selector<_Up[_Nm]\x1b[01;31m\x1b[K>\x1b[m\x1b[K\n'}
+[2.192847] (stereo_camera_node) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.193733] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:2596:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.194804] (stereo_camera_node) StderrLine: {'line': b' 2596 |   template<\x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K _Len, size_t _Align =\n'}
+[2.195556] (stereo_camera_node) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.196195] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:2596:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.196904] (stereo_camera_node) StderrLine: {'line': b' 2596 |   template<size_t _Len, \x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K _Align =\n'}
+[2.197660] (stereo_camera_node) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.202000] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:2597:56:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_Len\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.203101] (stereo_camera_node) StderrLine: {'line': b' 2597 |             __alignof__(typename __aligned_storage_msa<\x1b[01;31m\x1b[K_Len\x1b[m\x1b[K>::__type)>\n'}
+[2.203906] (stereo_camera_node) StderrLine: {'line': b'      |                                                        \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.204618] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:2597:60:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.205311] (stereo_camera_node) StderrLine: {'line': b' 2597 |             __alignof__(typename __aligned_storage_msa<_Len\x1b[01;31m\x1b[K>\x1b[m\x1b[K::__type)>\n'}
+[2.206087] (stereo_camera_node) StderrLine: {'line': b'      |                                                            \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.210732] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:2598:78:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_Len\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.211526] (stereo_camera_node) StderrLine: {'line': b' 2598 |     using aligned_storage_t _GLIBCXX23_DEPRECATED = typename aligned_storage<\x1b[01;31m\x1b[K_Len\x1b[m\x1b[K, _Align>::type;\n'}
+[2.212436] (-) TimerEvent: {}
+[2.212923] (stereo_camera_node) StderrLine: {'line': b'      |                                                                              \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.217780] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:2598:84:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_Align\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.218879] (stereo_camera_node) StderrLine: {'line': b' 2598 |     using aligned_storage_t _GLIBCXX23_DEPRECATED = typename aligned_storage<_Len, \x1b[01;31m\x1b[K_Align\x1b[m\x1b[K>::type;\n'}
+[2.219657] (stereo_camera_node) StderrLine: {'line': b'      |                                                                                    \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.220427] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:2598:90:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.221572] (stereo_camera_node) StderrLine: {'line': b' 2598 |     using aligned_storage_t _GLIBCXX23_DEPRECATED = typename aligned_storage<_Len, _Align\x1b[01;31m\x1b[K>\x1b[m\x1b[K::type;\n'}
+[2.222357] (stereo_camera_node) StderrLine: {'line': b'      |                                                                                          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.222935] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:2598:90:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 2 is invalid\n'}
+[2.223541] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:2600:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.224092] (stereo_camera_node) StderrLine: {'line': b' 2600 |   template <\x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K _Len, typename... _Types>\n'}
+[2.224684] (stereo_camera_node) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.225476] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:2601:74:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_Len\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.226160] (stereo_camera_node) StderrLine: {'line': b' 2601 |     using aligned_union_t _GLIBCXX23_DEPRECATED = typename aligned_union<\x1b[01;31m\x1b[K_Len\x1b[m\x1b[K, _Types...>::type;\n'}
+[2.226875] (stereo_camera_node) StderrLine: {'line': b'      |                                                                          \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.227777] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:2601:89:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.228396] (stereo_camera_node) StderrLine: {'line': b' 2601 |     using aligned_union_t _GLIBCXX23_DEPRECATED = typename aligned_union<_Len, _Types...\x1b[01;31m\x1b[K>\x1b[m\x1b[K::type;\n'}
+[2.228862] (stereo_camera_node) StderrLine: {'line': b'      |                                                                                         \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.229404] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:2728:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.229903] (stereo_camera_node) StderrLine: {'line': b' 2728 |   template<typename _Tp, \x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K _Nm>\n'}
+[2.230486] (stereo_camera_node) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.233623] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:2732:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_Nm\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.234508] (stereo_camera_node) StderrLine: {'line': b' 2732 |     swap(_Tp (&__a)[\x1b[01;31m\x1b[K_Nm\x1b[m\x1b[K], _Tp (&__b)[_Nm])\n'}
+[2.235016] (stereo_camera_node) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.235553] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:2732:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, <declaration error> > std::__enable_if_t<std::__is_swappable<_Tp>::value> std::swap\x1b[m\x1b[K\xe2\x80\x99 conflicts with a previous declaration\n'}
+[2.236047] (stereo_camera_node) StderrLine: {'line': b' 2732 |     swap(_Tp (&__a)[_Nm\x1b[01;31m\x1b[K]\x1b[m\x1b[K, _Tp (&__b)[_Nm])\n'}
+[2.236584] (stereo_camera_node) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.237086] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:2724:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious declaration \xe2\x80\x98\x1b[01m\x1b[Kstd::_Require<std::__not_<std::__is_tuple_like<_Tp> >, std::is_move_constructible<_Tp>, std::is_move_assignable<_Tp> > std::\x1b[01;32m\x1b[Kswap\x1b[m\x1b[K(_Tp&, _Tp&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.237824] (stereo_camera_node) StderrLine: {'line': b' 2724 |     \x1b[01;36m\x1b[Kswap\x1b[m\x1b[K(_Tp&, _Tp&)\n'}
+[2.238463] (stereo_camera_node) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.241275] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:2732:16:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K__a\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.242499] (stereo_camera_node) StderrLine: {'line': b' 2732 |     swap(_Tp (&\x1b[01;31m\x1b[K__a\x1b[m\x1b[K)[_Nm], _Tp (&__b)[_Nm])\n'}
+[2.243562] (stereo_camera_node) StderrLine: {'line': b'      |                \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.248279] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:2732:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_Nm\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.249093] (stereo_camera_node) StderrLine: {'line': b' 2732 |     swap(_Tp (&__a)[\x1b[01;31m\x1b[K_Nm\x1b[m\x1b[K], _Tp (&__b)[_Nm])\n'}
+[2.249671] (stereo_camera_node) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.254156] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:2732:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K__b\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.254851] (stereo_camera_node) StderrLine: {'line': b' 2732 |     swap(_Tp (&__a)[_Nm], _Tp (&\x1b[01;31m\x1b[K__b\x1b[m\x1b[K)[_Nm])\n'}
+[2.255402] (stereo_camera_node) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.259690] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:2732:38:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_Nm\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.260516] (stereo_camera_node) StderrLine: {'line': b' 2732 |     swap(_Tp (&__a)[_Nm], _Tp (&__b)[\x1b[01;31m\x1b[K_Nm\x1b[m\x1b[K])\n'}
+[2.261002] (stereo_camera_node) StderrLine: {'line': b'      |                                      \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.261596] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:2732:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[Knoexcept\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.262109] (stereo_camera_node) StderrLine: {'line': b' 2732 |     swap(_Tp (&__a)[_Nm], _Tp (&__b)[_Nm])\n'}
+[2.262577] (stereo_camera_node) StderrLine: {'line': b'      |                                           \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.262999] (stereo_camera_node) StderrLine: {'line': b'      |                                           \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[2.263472] (stereo_camera_node) StderrLine: {'line': b' 2733 |     \x1b[32m\x1b[Knoexcept\x1b[m\x1b[K(__is_nothrow_swappable<_Tp>::value);\n'}
+[2.263928] (stereo_camera_node) StderrLine: {'line': b'      |     \x1b[32m\x1b[K~~~~~~~~\x1b[m\x1b[K                               \n'}
+[2.268389] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:3168:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.269118] (stereo_camera_node) StderrLine: {'line': b' 3168 | template <typename _Tp, \x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K _Num>\n'}
+[2.269646] (stereo_camera_node) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.274489] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:3169:40:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_Num\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.275359] (stereo_camera_node) StderrLine: {'line': b' 3169 |   inline constexpr bool is_array_v<_Tp[\x1b[01;31m\x1b[K_Num\x1b[m\x1b[K]> = true;\n'}
+[2.275906] (stereo_camera_node) StderrLine: {'line': b'      |                                        \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.276407] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:3169:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.276813] (stereo_camera_node) StderrLine: {'line': b' 3169 |   inline constexpr bool \x1b[01;31m\x1b[Kis_array_v<_Tp[_Num]>\x1b[m\x1b[K = true;\n'}
+[2.277283] (stereo_camera_node) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.277656] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:3169:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate-id \xe2\x80\x98\x1b[01m\x1b[Kis_array_v<<expression error> >\x1b[m\x1b[K\xe2\x80\x99 for \xe2\x80\x98\x1b[01m\x1b[Kstd::is_array_v\x1b[m\x1b[K\xe2\x80\x99 does not match any template declaration\n'}
+[2.278306] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:3165:25:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate is: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> constexpr const bool std::is_array_v<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.278763] (stereo_camera_node) StderrLine: {'line': b' 3165 |   inline constexpr bool \x1b[01;36m\x1b[Kis_array_v\x1b[m\x1b[K = false;\n'}
+[2.279238] (stereo_camera_node) StderrLine: {'line': b'      |                         \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.280528] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:3331:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.281119] (stereo_camera_node) StderrLine: {'line': b' 3331 |   inline constexpr \x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K alignment_of_v = alignment_of<_Tp>::value;\n'}
+[2.281609] (stereo_camera_node) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.282113] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:3331:20:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 is defined in header \xe2\x80\x98\x1b[01m\x1b[K<cstddef>\x1b[m\x1b[K\xe2\x80\x99; did you forget to \xe2\x80\x98\x1b[01m\x1b[K#include <cstddef>\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.282720] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:3334:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.283345] (stereo_camera_node) StderrLine: {'line': b' 3334 |   inline constexpr \x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K rank_v = 0;\n'}
+[2.283999] (stereo_camera_node) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.285616] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:3334:20:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 is defined in header \xe2\x80\x98\x1b[01m\x1b[K<cstddef>\x1b[m\x1b[K\xe2\x80\x99; did you forget to \xe2\x80\x98\x1b[01m\x1b[K#include <cstddef>\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.286334] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:3335:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.286805] (stereo_camera_node) StderrLine: {'line': b' 3335 | template <typename _Tp, \x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K _Size>\n'}
+[2.287378] (stereo_camera_node) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.287837] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:3336:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.288550] (stereo_camera_node) StderrLine: {'line': b' 3336 |   inline constexpr \x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K rank_v<_Tp[_Size]> = 1 + rank_v<_Tp>;\n'}
+[2.289236] (stereo_camera_node) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.289891] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:3336:20:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 is defined in header \xe2\x80\x98\x1b[01m\x1b[K<cstddef>\x1b[m\x1b[K\xe2\x80\x99; did you forget to \xe2\x80\x98\x1b[01m\x1b[K#include <cstddef>\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.290589] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:3338:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.291149] (stereo_camera_node) StderrLine: {'line': b' 3338 |   inline constexpr \x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K rank_v<_Tp[]> = 1 + rank_v<_Tp>;\n'}
+[2.291710] (stereo_camera_node) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.292680] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:3338:20:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 is defined in header \xe2\x80\x98\x1b[01m\x1b[K<cstddef>\x1b[m\x1b[K\xe2\x80\x99; did you forget to \xe2\x80\x98\x1b[01m\x1b[K#include <cstddef>\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.293311] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:3341:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.293776] (stereo_camera_node) StderrLine: {'line': b' 3341 |   inline constexpr \x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K extent_v = 0;\n'}
+[2.294335] (stereo_camera_node) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.294819] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:3341:20:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 is defined in header \xe2\x80\x98\x1b[01m\x1b[K<cstddef>\x1b[m\x1b[K\xe2\x80\x99; did you forget to \xe2\x80\x98\x1b[01m\x1b[K#include <cstddef>\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.295422] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:3342:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.296036] (stereo_camera_node) StderrLine: {'line': b' 3342 | template <typename _Tp, \x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K _Size>\n'}
+[2.296629] (stereo_camera_node) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.297219] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:3343:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.297803] (stereo_camera_node) StderrLine: {'line': b' 3343 |   inline constexpr \x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K extent_v<_Tp[_Size], 0> = _Size;\n'}
+[2.298410] (stereo_camera_node) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.299242] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:3343:20:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 is defined in header \xe2\x80\x98\x1b[01m\x1b[K<cstddef>\x1b[m\x1b[K\xe2\x80\x99; did you forget to \xe2\x80\x98\x1b[01m\x1b[K#include <cstddef>\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.299729] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:3344:40:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.300303] (stereo_camera_node) StderrLine: {'line': b' 3344 | template <typename _Tp, unsigned _Idx, \x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K _Size>\n'}
+[2.300787] (stereo_camera_node) StderrLine: {'line': b'      |                                        \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.301285] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:3345:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.301863] (stereo_camera_node) StderrLine: {'line': b' 3345 |   inline constexpr \x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K extent_v<_Tp[_Size], _Idx> = extent_v<_Tp, _Idx - 1>;\n'}
+[2.302510] (stereo_camera_node) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.303073] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:3345:20:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 is defined in header \xe2\x80\x98\x1b[01m\x1b[K<cstddef>\x1b[m\x1b[K\xe2\x80\x99; did you forget to \xe2\x80\x98\x1b[01m\x1b[K#include <cstddef>\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.303750] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:3347:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.304390] (stereo_camera_node) StderrLine: {'line': b' 3347 |   inline constexpr \x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K extent_v<_Tp[], 0> = 0;\n'}
+[2.305165] (stereo_camera_node) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.305646] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:3347:20:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 is defined in header \xe2\x80\x98\x1b[01m\x1b[K<cstddef>\x1b[m\x1b[K\xe2\x80\x99; did you forget to \xe2\x80\x98\x1b[01m\x1b[K#include <cstddef>\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.306163] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:3349:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.306627] (stereo_camera_node) StderrLine: {'line': b' 3349 |   inline constexpr \x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K extent_v<_Tp[], _Idx> = extent_v<_Tp, _Idx - 1>;\n'}
+[2.307162] (stereo_camera_node) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.307632] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:3349:20:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 is defined in header \xe2\x80\x98\x1b[01m\x1b[K<cstddef>\x1b[m\x1b[K\xe2\x80\x99; did you forget to \xe2\x80\x98\x1b[01m\x1b[K#include <cstddef>\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.308266] (stereo_camera_node) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/13/bits/stl_pair.h:61\x1b[m\x1b[K:\n'}
+[2.308840] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/move.h:205:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.309533] (stereo_camera_node) StderrLine: {'line': b'  205 |   template<typename _Tp, \x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K _Nm>\n'}
+[2.310167] (stereo_camera_node) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.310756] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/move.h:213:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_Nm\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.311556] (stereo_camera_node) StderrLine: {'line': b'  213 |     swap(_Tp (&__a)[\x1b[01;31m\x1b[K_Nm\x1b[m\x1b[K], _Tp (&__b)[_Nm])\n'}
+[2.312280] (stereo_camera_node) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.312751] (-) TimerEvent: {}
+[2.313182] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/move.h:213:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, <declaration error> > typename std::enable_if<std::__is_swappable<_Tp>::value, void>::type std::swap\x1b[m\x1b[K\xe2\x80\x99 conflicts with a previous declaration\n'}
+[2.314033] (stereo_camera_node) StderrLine: {'line': b'  213 |     swap(_Tp (&__a)[_Nm\x1b[01;31m\x1b[K]\x1b[m\x1b[K, _Tp (&__b)[_Nm])\n'}
+[2.314716] (stereo_camera_node) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.315331] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/move.h:189:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious declaration \xe2\x80\x98\x1b[01m\x1b[Kstd::_Require<std::__not_<std::__is_tuple_like<_Tp> >, std::is_move_constructible<_Tp>, std::is_move_assignable<_Tp> > std::\x1b[01;32m\x1b[Kswap\x1b[m\x1b[K(_Tp&, _Tp&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.315909] (stereo_camera_node) StderrLine: {'line': b'  189 |     \x1b[01;36m\x1b[Kswap\x1b[m\x1b[K(_Tp& __a, _Tp& __b)\n'}
+[2.316532] (stereo_camera_node) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.317151] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/move.h:213:16:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K__a\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.318029] (stereo_camera_node) StderrLine: {'line': b'  213 |     swap(_Tp (&\x1b[01;31m\x1b[K__a\x1b[m\x1b[K)[_Nm], _Tp (&__b)[_Nm])\n'}
+[2.319991] (stereo_camera_node) StderrLine: {'line': b'      |                \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.320776] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/move.h:213:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_Nm\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.321513] (stereo_camera_node) StderrLine: {'line': b'  213 |     swap(_Tp (&__a)[\x1b[01;31m\x1b[K_Nm\x1b[m\x1b[K], _Tp (&__b)[_Nm])\n'}
+[2.322128] (stereo_camera_node) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.322701] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/move.h:213:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K__b\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.323211] (stereo_camera_node) StderrLine: {'line': b'  213 |     swap(_Tp (&__a)[_Nm], _Tp (&\x1b[01;31m\x1b[K__b\x1b[m\x1b[K)[_Nm])\n'}
+[2.323865] (stereo_camera_node) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.324515] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/move.h:213:38:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_Nm\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.325021] (stereo_camera_node) StderrLine: {'line': b'  213 |     swap(_Tp (&__a)[_Nm], _Tp (&__b)[\x1b[01;31m\x1b[K_Nm\x1b[m\x1b[K])\n'}
+[2.325608] (stereo_camera_node) StderrLine: {'line': b'      |                                      \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.326162] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/move.h:213:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[Knoexcept\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.326732] (stereo_camera_node) StderrLine: {'line': b'  213 |     swap(_Tp (&__a)[_Nm], _Tp (&__b)[_Nm])\n'}
+[2.327816] (stereo_camera_node) StderrLine: {'line': b'      |                                           \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.328460] (stereo_camera_node) StderrLine: {'line': b'      |                                           \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[2.329032] (stereo_camera_node) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/13/bits/stl_pair.h:62\x1b[m\x1b[K:\n'}
+[2.329556] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/utility.h:58:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.330102] (stereo_camera_node) StderrLine: {'line': b'   58 |            \x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K = tuple_size<_Tp>::value>\n'}
+[2.330597] (stereo_camera_node) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.331125] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/utility.h:62:56:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kinvalid template non-type parameter\n'}
+[2.331766] (stereo_camera_node) StderrLine: {'line': b'   62 |     struct tuple_size<const __enable_if_has_tuple_size<\x1b[01;36m\x1b[K_Tp\x1b[m\x1b[K>>\n'}
+[2.332406] (stereo_camera_node) StderrLine: {'line': b'      |                                                        \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.332935] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/utility.h:62:59:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.334399] (stereo_camera_node) StderrLine: {'line': b'   62 |     struct tuple_size<const __enable_if_has_tuple_size<_Tp\x1b[01;31m\x1b[K>>\x1b[m\x1b[K\n'}
+[2.334914] (stereo_camera_node) StderrLine: {'line': b'      |                                                           \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[2.335901] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/utility.h:66:59:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kinvalid template non-type parameter\n'}
+[2.336736] (stereo_camera_node) StderrLine: {'line': b'   66 |     struct tuple_size<volatile __enable_if_has_tuple_size<\x1b[01;36m\x1b[K_Tp\x1b[m\x1b[K>>\n'}
+[2.337565] (stereo_camera_node) StderrLine: {'line': b'      |                                                           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.338236] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/utility.h:66:62:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.339016] (stereo_camera_node) StderrLine: {'line': b'   66 |     struct tuple_size<volatile __enable_if_has_tuple_size<_Tp\x1b[01;31m\x1b[K>>\x1b[m\x1b[K\n'}
+[2.339948] (stereo_camera_node) StderrLine: {'line': b'      |                                                              \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[2.340631] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/utility.h:70:65:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kinvalid template non-type parameter\n'}
+[2.341227] (stereo_camera_node) StderrLine: {'line': b'   70 |     struct tuple_size<const volatile __enable_if_has_tuple_size<\x1b[01;36m\x1b[K_Tp\x1b[m\x1b[K>>\n'}
+[2.341828] (stereo_camera_node) StderrLine: {'line': b'      |                                                                 \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.342736] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/utility.h:70:68:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.343402] (stereo_camera_node) StderrLine: {'line': b'   70 |     struct tuple_size<const volatile __enable_if_has_tuple_size<_Tp\x1b[01;31m\x1b[K>>\x1b[m\x1b[K\n'}
+[2.344085] (stereo_camera_node) StderrLine: {'line': b'      |                                                                    \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[2.344745] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/utility.h:75:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.345272] (stereo_camera_node) StderrLine: {'line': b'   75 |     inline constexpr \x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K tuple_size_v = tuple_size<_Tp>::value;\n'}
+[2.345934] (stereo_camera_node) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.346623] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/utility.h:1:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 is defined in header \xe2\x80\x98\x1b[01m\x1b[K<cstddef>\x1b[m\x1b[K\xe2\x80\x99; did you forget to \xe2\x80\x98\x1b[01m\x1b[K#include <cstddef>\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.347247] (stereo_camera_node) StderrLine: {'line': b'  +++ |+\x1b[32m\x1b[K#include <cstddef>\x1b[m\x1b[K\n'}
+[2.347798] (stereo_camera_node) StderrLine: {'line': b'    1 | // Utilities used throughout the library -*- C++ -*-\n'}
+[2.348419] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/utility.h:79:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.349475] (stereo_camera_node) StderrLine: {'line': b'   79 |   template<\x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K __i, typename _Tp>\n'}
+[2.349982] (stereo_camera_node) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.350496] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/utility.h:80:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno default argument for \xe2\x80\x98\x1b[01m\x1b[K_Tp\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.350908] (stereo_camera_node) StderrLine: {'line': b'   80 |     struct \x1b[01;31m\x1b[Ktuple_element\x1b[m\x1b[K;\n'}
+[2.351484] (stereo_camera_node) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.351922] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/utility.h:83:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.352668] (stereo_camera_node) StderrLine: {'line': b'   83 |   template<\x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K __i, typename _Tp>\n'}
+[2.353303] (stereo_camera_node) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.353845] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/utility.h:84:54:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K__i\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.354474] (stereo_camera_node) StderrLine: {'line': b'   84 |     using __tuple_element_t = typename tuple_element<\x1b[01;31m\x1b[K__i\x1b[m\x1b[K, _Tp>::type;\n'}
+[2.355044] (stereo_camera_node) StderrLine: {'line': b'      |                                                      \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.356038] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/utility.h:84:62:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.356548] (stereo_camera_node) StderrLine: {'line': b'   84 |     using __tuple_element_t = typename tuple_element<__i, _Tp\x1b[01;31m\x1b[K>\x1b[m\x1b[K::type;\n'}
+[2.357087] (stereo_camera_node) StderrLine: {'line': b'      |                                                              \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.357664] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/utility.h:86:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.358233] (stereo_camera_node) StderrLine: {'line': b'   86 |   template<\x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K __i, typename _Tp>\n'}
+[2.358702] (stereo_camera_node) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.359346] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/utility.h:87:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K__i\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.359917] (stereo_camera_node) StderrLine: {'line': b'   87 |     struct tuple_element<\x1b[01;31m\x1b[K__i\x1b[m\x1b[K, const _Tp>\n'}
+[2.360455] (stereo_camera_node) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.360895] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/utility.h:87:40:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.361444] (stereo_camera_node) StderrLine: {'line': b'   87 |     struct tuple_element<__i, const _Tp\x1b[01;31m\x1b[K>\x1b[m\x1b[K\n'}
+[2.361903] (stereo_camera_node) StderrLine: {'line': b'      |                                        \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.362499] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/utility.h:92:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.363132] (stereo_camera_node) StderrLine: {'line': b'   92 |   template<\x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K __i, typename _Tp>\n'}
+[2.363756] (stereo_camera_node) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.364377] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/utility.h:93:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K__i\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.364876] (stereo_camera_node) StderrLine: {'line': b'   93 |     struct tuple_element<\x1b[01;31m\x1b[K__i\x1b[m\x1b[K, volatile _Tp>\n'}
+[2.365491] (stereo_camera_node) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.366649] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/utility.h:93:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.367501] (stereo_camera_node) StderrLine: {'line': b'   93 |     struct tuple_element<__i, volatile _Tp\x1b[01;31m\x1b[K>\x1b[m\x1b[K\n'}
+[2.368021] (stereo_camera_node) StderrLine: {'line': b'      |                                           \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.368532] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/utility.h:98:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.368988] (stereo_camera_node) StderrLine: {'line': b'   98 |   template<\x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K __i, typename _Tp>\n'}
+[2.369538] (stereo_camera_node) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.370043] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/utility.h:99:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K__i\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.370692] (stereo_camera_node) StderrLine: {'line': b'   99 |     struct tuple_element<\x1b[01;31m\x1b[K__i\x1b[m\x1b[K, const volatile _Tp>\n'}
+[2.371274] (stereo_camera_node) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.371800] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/utility.h:99:49:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.372466] (stereo_camera_node) StderrLine: {'line': b'   99 |     struct tuple_element<__i, const volatile _Tp\x1b[01;31m\x1b[K>\x1b[m\x1b[K\n'}
+[2.372996] (stereo_camera_node) StderrLine: {'line': b'      |                                                 \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.374182] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/utility.h:109:15:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.374937] (stereo_camera_node) StderrLine: {'line': b'  109 |     constexpr \x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K\n'}
+[2.375610] (stereo_camera_node) StderrLine: {'line': b'      |               \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.376111] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/utility.h:109:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 is defined in header \xe2\x80\x98\x1b[01m\x1b[K<cstddef>\x1b[m\x1b[K\xe2\x80\x99; did you forget to \xe2\x80\x98\x1b[01m\x1b[K#include <cstddef>\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.376687] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/utility.h:134:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.377208] (stereo_camera_node) StderrLine: {'line': b'  134 |   template<\x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K __i, typename _Tp>\n'}
+[2.377852] (stereo_camera_node) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.378464] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/utility.h:135:52:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K__i\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.379000] (stereo_camera_node) StderrLine: {'line': b'  135 |     using tuple_element_t = typename tuple_element<\x1b[01;31m\x1b[K__i\x1b[m\x1b[K, _Tp>::type;\n'}
+[2.379570] (stereo_camera_node) StderrLine: {'line': b'      |                                                    \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.380130] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/utility.h:135:60:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.380707] (stereo_camera_node) StderrLine: {'line': b'  135 |     using tuple_element_t = typename tuple_element<__i, _Tp\x1b[01;31m\x1b[K>\x1b[m\x1b[K::type;\n'}
+[2.381481] (stereo_camera_node) StderrLine: {'line': b'      |                                                            \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.382156] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/utility.h:140:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.382828] (stereo_camera_node) StderrLine: {'line': b'  140 |   template<\x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K... _Indexes> struct _Index_tuple { };\n'}
+[2.383344] (stereo_camera_node) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.383739] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/utility.h:143:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.384333] (stereo_camera_node) StderrLine: {'line': b'  143 |   template<\x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K _Num>\n'}
+[2.384848] (stereo_camera_node) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.385485] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/utility.h:154:50:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_Num\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.385991] (stereo_camera_node) StderrLine: {'line': b'  154 |       using __type = _Index_tuple<__integer_pack(\x1b[01;31m\x1b[K_Num\x1b[m\x1b[K)...>;\n'}
+[2.386454] (stereo_camera_node) StderrLine: {'line': b'      |                                                  \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.386865] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/utility.h:154:55:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected parameter pack before \xe2\x80\x98\x1b[01m\x1b[K...\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.387596] (stereo_camera_node) StderrLine: {'line': b'  154 |       using __type = _Index_tuple<__integer_pack(_Num)\x1b[01;31m\x1b[K...\x1b[m\x1b[K>;\n'}
+[2.388502] (stereo_camera_node) StderrLine: {'line': b'      |                                                       \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.389076] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/utility.h:154:58:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.389641] (stereo_camera_node) StderrLine: {'line': b'  154 |       using __type = _Index_tuple<__integer_pack(_Num)...\x1b[01;31m\x1b[K>\x1b[m\x1b[K;\n'}
+[2.390177] (stereo_camera_node) StderrLine: {'line': b'      |                                                          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.390652] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/utility.h:170:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.391242] (stereo_camera_node) StderrLine: {'line': b'  170 |       static constexpr \x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K size() noexcept { return sizeof...(_Idx); }\n'}
+[2.391829] (stereo_camera_node) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.392430] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/utility.h:170:24:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 is defined in header \xe2\x80\x98\x1b[01m\x1b[K<cstddef>\x1b[m\x1b[K\xe2\x80\x99; did you forget to \xe2\x80\x98\x1b[01m\x1b[K#include <cstddef>\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.393019] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/utility.h:183:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.393750] (stereo_camera_node) StderrLine: {'line': b'  183 |   template<\x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K... _Idx>\n'}
+[2.394347] (stereo_camera_node) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.395294] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/utility.h:184:45:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.396194] (stereo_camera_node) StderrLine: {'line': b'  184 |     using index_sequence = integer_sequence<\x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K, _Idx...>;\n'}
+[2.396679] (stereo_camera_node) StderrLine: {'line': b'      |                                             \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.397168] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/utility.h:184:45:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 is defined in header \xe2\x80\x98\x1b[01m\x1b[K<cstddef>\x1b[m\x1b[K\xe2\x80\x99; did you forget to \xe2\x80\x98\x1b[01m\x1b[K#include <cstddef>\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.397691] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/utility.h:184:53:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_Idx\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.398314] (stereo_camera_node) StderrLine: {'line': b'  184 |     using index_sequence = integer_sequence<size_t, \x1b[01;31m\x1b[K_Idx\x1b[m\x1b[K...>;\n'}
+[2.399015] (stereo_camera_node) StderrLine: {'line': b'      |                                                     \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.399647] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/utility.h:184:57:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected parameter pack before \xe2\x80\x98\x1b[01m\x1b[K...\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.400309] (stereo_camera_node) StderrLine: {'line': b'  184 |     using index_sequence = integer_sequence<size_t, _Idx\x1b[01;31m\x1b[K...\x1b[m\x1b[K>;\n'}
+[2.400892] (stereo_camera_node) StderrLine: {'line': b'      |                                                         \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.401689] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/utility.h:184:60:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.402585] (stereo_camera_node) StderrLine: {'line': b'  184 |     using index_sequence = integer_sequence<size_t, _Idx...\x1b[01;31m\x1b[K>\x1b[m\x1b[K;\n'}
+[2.403142] (stereo_camera_node) StderrLine: {'line': b'      |                                                            \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.403597] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/utility.h:184:60:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 2 is invalid\n'}
+[2.404039] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/utility.h:187:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.404595] (stereo_camera_node) StderrLine: {'line': b'  187 |   template<\x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K _Num>\n'}
+[2.405098] (stereo_camera_node) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.405874] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/utility.h:188:55:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.406546] (stereo_camera_node) StderrLine: {'line': b'  188 |     using make_index_sequence = make_integer_sequence<\x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K, _Num>;\n'}
+[2.407168] (stereo_camera_node) StderrLine: {'line': b'      |                                                       \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.407769] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/utility.h:188:55:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 is defined in header \xe2\x80\x98\x1b[01m\x1b[K<cstddef>\x1b[m\x1b[K\xe2\x80\x99; did you forget to \xe2\x80\x98\x1b[01m\x1b[K#include <cstddef>\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.408380] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/utility.h:188:63:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_Num\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.409121] (stereo_camera_node) StderrLine: {'line': b'  188 |     using make_index_sequence = make_integer_sequence<size_t, \x1b[01;31m\x1b[K_Num\x1b[m\x1b[K>;\n'}
+[2.409785] (stereo_camera_node) StderrLine: {'line': b'      |                                                               \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.410309] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/utility.h:188:67:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.410709] (stereo_camera_node) StderrLine: {'line': b'  188 |     using make_index_sequence = make_integer_sequence<size_t, _Num\x1b[01;31m\x1b[K>\x1b[m\x1b[K;\n'}
+[2.411154] (stereo_camera_node) StderrLine: {'line': b'      |                                                                   \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.412172] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/utility.h:188:67:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 2 is invalid\n'}
+[2.412600] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/utility.h:192:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmake_index_sequence\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[Kmake_integer_sequence\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.413027] (-) TimerEvent: {}
+[2.413407] (stereo_camera_node) StderrLine: {'line': b'  192 |     using index_sequence_for = \x1b[01;31m\x1b[Kmake_index_sequence\x1b[m\x1b[K<sizeof...(_Types)>;\n'}
+[2.414096] (stereo_camera_node) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.414730] (stereo_camera_node) StderrLine: {'line': b'      |                                \x1b[32m\x1b[Kmake_integer_sequence\x1b[m\x1b[K\n'}
+[2.415319] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/utility.h:210:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.415817] (stereo_camera_node) StderrLine: {'line': b'  210 |   template<\x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K _Idx> struct in_place_index_t\n'}
+[2.416191] (stereo_camera_node) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.416516] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/utility.h:215:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.416824] (stereo_camera_node) StderrLine: {'line': b'  215 |   template<\x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K _Idx>\n'}
+[2.417180] (stereo_camera_node) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.417612] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/utility.h:216:39:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_Idx\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.417992] (stereo_camera_node) StderrLine: {'line': b'  216 |     inline constexpr in_place_index_t<\x1b[01;31m\x1b[K_Idx\x1b[m\x1b[K> in_place_index{};\n'}
+[2.418376] (stereo_camera_node) StderrLine: {'line': b'      |                                       \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.418778] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/utility.h:216:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.419460] (stereo_camera_node) StderrLine: {'line': b'  216 |     inline constexpr in_place_index_t<_Idx\x1b[01;31m\x1b[K>\x1b[m\x1b[K in_place_index{};\n'}
+[2.420229] (stereo_camera_node) StderrLine: {'line': b'      |                                           \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.420731] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/utility.h:230:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.421585] (stereo_camera_node) StderrLine: {'line': b'  230 |   template<\x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K _Np, typename... _Types>\n'}
+[2.422144] (stereo_camera_node) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.422502] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/utility.h:246:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.422852] (stereo_camera_node) StderrLine: {'line': b'  246 |   template<\x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K _Np, typename _Tp0, typename _Tp1, typename _Tp2,\n'}
+[2.423234] (stereo_camera_node) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.423659] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/utility.h:251:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_Np\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.424104] (stereo_camera_node) StderrLine: {'line': b'  251 |     struct _Nth_type<\x1b[01;31m\x1b[K_Np\x1b[m\x1b[K, _Tp0, _Tp1, _Tp2, _Rest...>\n'}
+[2.424565] (stereo_camera_node) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.424983] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/utility.h:251:53:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.425465] (stereo_camera_node) StderrLine: {'line': b'  251 |     struct _Nth_type<_Np, _Tp0, _Tp1, _Tp2, _Rest...\x1b[01;31m\x1b[K>\x1b[m\x1b[K\n'}
+[2.425878] (stereo_camera_node) StderrLine: {'line': b'      |                                                     \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.426420] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/utility.h:252:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_Np\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.426825] (stereo_camera_node) StderrLine: {'line': b'  252 |     : _Nth_type<\x1b[01;31m\x1b[K_Np\x1b[m\x1b[K - 3, _Rest...>\n'}
+[2.427293] (stereo_camera_node) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.427692] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/utility.h:252:34:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.428550] (stereo_camera_node) StderrLine: {'line': b'  252 |     : _Nth_type<_Np - 3, _Rest...\x1b[01;31m\x1b[K>\x1b[m\x1b[K\n'}
+[2.429073] (stereo_camera_node) StderrLine: {'line': b'      |                                  \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.430138] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_pair.h:92:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.431005] (stereo_camera_node) StderrLine: {'line': b'   92 |   template<\x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K...>\n'}
+[2.431635] (stereo_camera_node) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.432314] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_pair.h:235:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.432683] (stereo_camera_node) StderrLine: {'line': b'  235 |       template<typename... _Args1, \x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K... _Indexes1,\n'}
+[2.433037] (stereo_camera_node) StderrLine: {'line': b'      |                                    \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.433375] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_pair.h:236:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.433734] (stereo_camera_node) StderrLine: {'line': b'  236 |                typename... _Args2, \x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K... _Indexes2>\n'}
+[2.434192] (stereo_camera_node) StderrLine: {'line': b'      |                                    \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.434572] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_pair.h:239:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_Indexes1\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.434902] (stereo_camera_node) StderrLine: {'line': b'  239 |              _Index_tuple<\x1b[01;31m\x1b[K_Indexes1\x1b[m\x1b[K...>, _Index_tuple<_Indexes2...>);\n'}
+[2.435399] (stereo_camera_node) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.435825] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_pair.h:239:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected parameter pack before \xe2\x80\x98\x1b[01m\x1b[K...\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.436373] (stereo_camera_node) StderrLine: {'line': b'  239 |              _Index_tuple<_Indexes1\x1b[01;31m\x1b[K...\x1b[m\x1b[K>, _Index_tuple<_Indexes2...>);\n'}
+[2.436871] (stereo_camera_node) StderrLine: {'line': b'      |                                    \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.437474] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_pair.h:239:39:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.437996] (stereo_camera_node) StderrLine: {'line': b'  239 |              _Index_tuple<_Indexes1...\x1b[01;31m\x1b[K>\x1b[m\x1b[K, _Index_tuple<_Indexes2...>);\n'}
+[2.438435] (stereo_camera_node) StderrLine: {'line': b'      |                                       \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.443938] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_pair.h:239:55:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_Indexes2\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.444736] (stereo_camera_node) StderrLine: {'line': b'  239 |              _Index_tuple<_Indexes1...>, _Index_tuple<\x1b[01;31m\x1b[K_Indexes2\x1b[m\x1b[K...>);\n'}
+[2.445323] (stereo_camera_node) StderrLine: {'line': b'      |                                                       \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.445780] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_pair.h:239:64:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected parameter pack before \xe2\x80\x98\x1b[01m\x1b[K...\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.446318] (stereo_camera_node) StderrLine: {'line': b'  239 |              _Index_tuple<_Indexes1...>, _Index_tuple<_Indexes2\x1b[01;31m\x1b[K...\x1b[m\x1b[K>);\n'}
+[2.446818] (stereo_camera_node) StderrLine: {'line': b'      |                                                                \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.447369] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_pair.h:239:67:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.447829] (stereo_camera_node) StderrLine: {'line': b'  239 |              _Index_tuple<_Indexes1...>, _Index_tuple<_Indexes2...\x1b[01;31m\x1b[K>\x1b[m\x1b[K);\n'}
+[2.448401] (stereo_camera_node) StderrLine: {'line': b'      |                                                                   \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.454174] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_pair.h:950:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.455672] (stereo_camera_node) StderrLine: {'line': b'  950 |     : public integral_constant<\x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K, 2> { };\n'}
+[2.456485] (stereo_camera_node) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.457050] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_pair.h:63:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 is defined in header \xe2\x80\x98\x1b[01m\x1b[K<cstddef>\x1b[m\x1b[K\xe2\x80\x99; did you forget to \xe2\x80\x98\x1b[01m\x1b[K#include <cstddef>\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.457649] (stereo_camera_node) StderrLine: {'line': b'   62 | # include <bits/utility.h> // for std::tuple_element, std::tuple_size\n'}
+[2.458169] (stereo_camera_node) StderrLine: {'line': b'  +++ |+\x1b[32m\x1b[K#include <cstddef>\x1b[m\x1b[K\n'}
+[2.458809] (stereo_camera_node) StderrLine: {'line': b'   63 | #endif\n'}
+[2.459428] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_pair.h:950:41:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.460000] (stereo_camera_node) StderrLine: {'line': b'  950 |     : public integral_constant<size_t, 2\x1b[01;31m\x1b[K>\x1b[m\x1b[K { };\n'}
+[2.460614] (stereo_camera_node) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.461214] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_pair.h:950:41:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kinvalid template non-type parameter\n'}
+[2.461753] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_pair.h:964:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.462501] (stereo_camera_node) StderrLine: {'line': b'  964 |     inline constexpr \x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K tuple_size_v<pair<_Tp1, _Tp2>> = 2;\n'}
+[2.463381] (stereo_camera_node) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.463834] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_pair.h:964:22:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 is defined in header \xe2\x80\x98\x1b[01m\x1b[K<cstddef>\x1b[m\x1b[K\xe2\x80\x99; did you forget to \xe2\x80\x98\x1b[01m\x1b[K#include <cstddef>\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.464421] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_pair.h:967:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.464877] (stereo_camera_node) StderrLine: {'line': b'  967 |     inline constexpr \x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K tuple_size_v<const pair<_Tp1, _Tp2>> = 2;\n'}
+[2.465610] (stereo_camera_node) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.466282] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_pair.h:967:22:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 is defined in header \xe2\x80\x98\x1b[01m\x1b[K<cstddef>\x1b[m\x1b[K\xe2\x80\x99; did you forget to \xe2\x80\x98\x1b[01m\x1b[K#include <cstddef>\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.466857] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_pair.h:977:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.467470] (stereo_camera_node) StderrLine: {'line': b'  977 |   template<\x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K _Int>\n'}
+[2.468023] (stereo_camera_node) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.469161] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_pair.h:1033:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.469999] (stereo_camera_node) StderrLine: {'line': b' 1033 |   template<\x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K _Int, class _Tp1, class _Tp2>\n'}
+[2.470542] (stereo_camera_node) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.471065] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_pair.h:1034:38:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_Int\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.471901] (stereo_camera_node) StderrLine: {'line': b' 1034 |     constexpr typename tuple_element<\x1b[01;31m\x1b[K_Int\x1b[m\x1b[K, pair<_Tp1, _Tp2>>::type&\n'}
+[2.472828] (stereo_camera_node) StderrLine: {'line': b'      |                                      \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.473534] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_pair.h:1034:59:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.474158] (stereo_camera_node) StderrLine: {'line': b' 1034 |     constexpr typename tuple_element<_Int, pair<_Tp1, _Tp2\x1b[01;31m\x1b[K>>\x1b[m\x1b[K::type&\n'}
+[2.474821] (stereo_camera_node) StderrLine: {'line': b'      |                                                           \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[2.475618] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_pair.h:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kconstexpr int& std::\x1b[01;32m\x1b[Kget\x1b[m\x1b[K(pair<_Tp1, _Tp2>&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.476701] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_pair.h:1036:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_Int\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.477458] (stereo_camera_node) StderrLine: {'line': b' 1036 |     { return __pair_get<\x1b[01;31m\x1b[K_Int\x1b[m\x1b[K>::__get(__in); }\n'}
+[2.478334] (stereo_camera_node) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.478877] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_pair.h:1036:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.479693] (stereo_camera_node) StderrLine: {'line': b' 1036 |     { return __pair_get<_Int\x1b[01;31m\x1b[K>\x1b[m\x1b[K::__get(__in); }\n'}
+[2.480694] (stereo_camera_node) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.481697] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_pair.h:\x1b[m\x1b[K At global scope:\n'}
+[2.482695] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_pair.h:1038:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.486906] (stereo_camera_node) StderrLine: {'line': b' 1038 |   template<\x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K _Int, class _Tp1, class _Tp2>\n'}
+[2.487918] (stereo_camera_node) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.488718] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_pair.h:1039:38:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_Int\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.489372] (stereo_camera_node) StderrLine: {'line': b' 1039 |     constexpr typename tuple_element<\x1b[01;31m\x1b[K_Int\x1b[m\x1b[K, pair<_Tp1, _Tp2>>::type&&\n'}
+[2.489994] (stereo_camera_node) StderrLine: {'line': b'      |                                      \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.490867] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_pair.h:1039:59:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.491477] (stereo_camera_node) StderrLine: {'line': b' 1039 |     constexpr typename tuple_element<_Int, pair<_Tp1, _Tp2\x1b[01;31m\x1b[K>>\x1b[m\x1b[K::type&&\n'}
+[2.491921] (stereo_camera_node) StderrLine: {'line': b'      |                                                           \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[2.492464] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_pair.h:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kconstexpr int&& std::\x1b[01;32m\x1b[Kget\x1b[m\x1b[K(pair<_Tp1, _Tp2>&&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.492982] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_pair.h:1041:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_Int\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.493601] (stereo_camera_node) StderrLine: {'line': b' 1041 |     { return __pair_get<\x1b[01;31m\x1b[K_Int\x1b[m\x1b[K>::__move_get(std::move(__in)); }\n'}
+[2.494231] (stereo_camera_node) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.494809] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_pair.h:1041:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.495426] (stereo_camera_node) StderrLine: {'line': b' 1041 |     { return __pair_get<_Int\x1b[01;31m\x1b[K>\x1b[m\x1b[K::__move_get(std::move(__in)); }\n'}
+[2.495991] (stereo_camera_node) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.496576] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_pair.h:\x1b[m\x1b[K At global scope:\n'}
+[2.497436] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_pair.h:1043:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.498086] (stereo_camera_node) StderrLine: {'line': b' 1043 |   template<\x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K _Int, class _Tp1, class _Tp2>\n'}
+[2.498649] (stereo_camera_node) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.499190] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_pair.h:1044:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_Int\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.499675] (stereo_camera_node) StderrLine: {'line': b' 1044 |     constexpr const typename tuple_element<\x1b[01;31m\x1b[K_Int\x1b[m\x1b[K, pair<_Tp1, _Tp2>>::type&\n'}
+[2.500214] (stereo_camera_node) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.500820] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_pair.h:1044:65:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.501434] (stereo_camera_node) StderrLine: {'line': b' 1044 |     constexpr const typename tuple_element<_Int, pair<_Tp1, _Tp2\x1b[01;31m\x1b[K>>\x1b[m\x1b[K::type&\n'}
+[2.501999] (stereo_camera_node) StderrLine: {'line': b'      |                                                                 \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[2.502602] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_pair.h:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kconstexpr const int& std::\x1b[01;32m\x1b[Kget\x1b[m\x1b[K(const pair<_Tp1, _Tp2>&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.503167] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_pair.h:1046:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_Int\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.504025] (stereo_camera_node) StderrLine: {'line': b' 1046 |     { return __pair_get<\x1b[01;31m\x1b[K_Int\x1b[m\x1b[K>::__const_get(__in); }\n'}
+[2.504528] (stereo_camera_node) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.504977] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_pair.h:1046:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.505484] (stereo_camera_node) StderrLine: {'line': b' 1046 |     { return __pair_get<_Int\x1b[01;31m\x1b[K>\x1b[m\x1b[K::__const_get(__in); }\n'}
+[2.505932] (stereo_camera_node) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.506462] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_pair.h:\x1b[m\x1b[K At global scope:\n'}
+[2.507034] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_pair.h:1048:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.507679] (stereo_camera_node) StderrLine: {'line': b' 1048 |   template<\x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K _Int, class _Tp1, class _Tp2>\n'}
+[2.508272] (stereo_camera_node) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.508794] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_pair.h:1049:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_Int\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.509427] (stereo_camera_node) StderrLine: {'line': b' 1049 |     constexpr const typename tuple_element<\x1b[01;31m\x1b[K_Int\x1b[m\x1b[K, pair<_Tp1, _Tp2>>::type&&\n'}
+[2.509913] (stereo_camera_node) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.510676] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_pair.h:1049:65:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.511169] (stereo_camera_node) StderrLine: {'line': b' 1049 |     constexpr const typename tuple_element<_Int, pair<_Tp1, _Tp2\x1b[01;31m\x1b[K>>\x1b[m\x1b[K::type&&\n'}
+[2.511673] (stereo_camera_node) StderrLine: {'line': b'      |                                                                 \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[2.512600] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_pair.h:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kconstexpr const int&& std::\x1b[01;32m\x1b[Kget\x1b[m\x1b[K(const pair<_Tp1, _Tp2>&&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.513405] (-) TimerEvent: {}
+[2.513846] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_pair.h:1051:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_Int\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.514560] (stereo_camera_node) StderrLine: {'line': b' 1051 |     { return __pair_get<\x1b[01;31m\x1b[K_Int\x1b[m\x1b[K>::__const_move_get(std::move(__in)); }\n'}
+[2.515051] (stereo_camera_node) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.516034] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_pair.h:1051:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.516585] (stereo_camera_node) StderrLine: {'line': b' 1051 |     { return __pair_get<_Int\x1b[01;31m\x1b[K>\x1b[m\x1b[K::__const_move_get(std::move(__in)); }\n'}
+[2.517107] (stereo_camera_node) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.517664] (stereo_camera_node) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/13/bits/stl_algobase.h:65\x1b[m\x1b[K:\n'}
+[2.518132] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_iterator_base_types.h:\x1b[m\x1b[K At global scope:\n'}
+[2.518698] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_iterator_base_types.h:125:67:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kptrdiff_t\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.519438] (stereo_camera_node) StderrLine: {'line': b'  125 |   template<typename _Category, typename _Tp, typename _Distance = \x1b[01;31m\x1b[Kptrdiff_t\x1b[m\x1b[K,\n'}
+[2.520547] (stereo_camera_node) StderrLine: {'line': b'      |                                                                   \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.521506] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_iterator_base_types.h:1:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kptrdiff_t\x1b[m\x1b[K\xe2\x80\x99 is defined in header \xe2\x80\x98\x1b[01m\x1b[K<cstddef>\x1b[m\x1b[K\xe2\x80\x99; did you forget to \xe2\x80\x98\x1b[01m\x1b[K#include <cstddef>\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.522124] (stereo_camera_node) StderrLine: {'line': b'  +++ |+\x1b[32m\x1b[K#include <cstddef>\x1b[m\x1b[K\n'}
+[2.522752] (stereo_camera_node) StderrLine: {'line': b'    1 | // Types used in iterator implementation -*- C++ -*-\n'}
+[2.523238] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_iterator_base_types.h:214:15:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kptrdiff_t\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.523648] (stereo_camera_node) StderrLine: {'line': b'  214 |       typedef \x1b[01;31m\x1b[Kptrdiff_t\x1b[m\x1b[K                   difference_type;\n'}
+[2.524098] (stereo_camera_node) StderrLine: {'line': b'      |               \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.524541] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_iterator_base_types.h:214:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kptrdiff_t\x1b[m\x1b[K\xe2\x80\x99 is defined in header \xe2\x80\x98\x1b[01m\x1b[K<cstddef>\x1b[m\x1b[K\xe2\x80\x99; did you forget to \xe2\x80\x98\x1b[01m\x1b[K#include <cstddef>\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.524940] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_iterator_base_types.h:225:15:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kptrdiff_t\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.525619] (stereo_camera_node) StderrLine: {'line': b'  225 |       typedef \x1b[01;31m\x1b[Kptrdiff_t\x1b[m\x1b[K                   difference_type;\n'}
+[2.526134] (stereo_camera_node) StderrLine: {'line': b'      |               \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.526615] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_iterator_base_types.h:225:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kptrdiff_t\x1b[m\x1b[K\xe2\x80\x99 is defined in header \xe2\x80\x98\x1b[01m\x1b[K<cstddef>\x1b[m\x1b[K\xe2\x80\x99; did you forget to \xe2\x80\x98\x1b[01m\x1b[K#include <cstddef>\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.527040] (stereo_camera_node) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/13/bits/stl_algobase.h:66\x1b[m\x1b[K:\n'}
+[2.527499] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_iterator_base_funcs.h:112:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kptrdiff_t\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.527883] (stereo_camera_node) StderrLine: {'line': b'  112 |     \x1b[01;31m\x1b[Kptrdiff_t\x1b[m\x1b[K\n'}
+[2.528437] (stereo_camera_node) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.528907] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_iterator_base_funcs.h:66:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kptrdiff_t\x1b[m\x1b[K\xe2\x80\x99 is defined in header \xe2\x80\x98\x1b[01m\x1b[K<cstddef>\x1b[m\x1b[K\xe2\x80\x99; did you forget to \xe2\x80\x98\x1b[01m\x1b[K#include <cstddef>\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.529409] (stereo_camera_node) StderrLine: {'line': b'   65 | #include <debug/assertions.h>\n'}
+[2.529804] (stereo_camera_node) StderrLine: {'line': b'  +++ |+\x1b[32m\x1b[K#include <cstddef>\x1b[m\x1b[K\n'}
+[2.530250] (stereo_camera_node) StderrLine: {'line': b'   66 | #include <bits/stl_iterator_base_types.h>\n'}
+[2.530647] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_iterator_base_funcs.h:118:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kptrdiff_t\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.531089] (stereo_camera_node) StderrLine: {'line': b'  118 |     \x1b[01;31m\x1b[Kptrdiff_t\x1b[m\x1b[K\n'}
+[2.531538] (stereo_camera_node) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.531927] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_iterator_base_funcs.h:118:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kptrdiff_t\x1b[m\x1b[K\xe2\x80\x99 is defined in header \xe2\x80\x98\x1b[01m\x1b[K<cstddef>\x1b[m\x1b[K\xe2\x80\x99; did you forget to \xe2\x80\x98\x1b[01m\x1b[K#include <cstddef>\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.532452] (stereo_camera_node) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/13/bits/stl_iterator.h:67\x1b[m\x1b[K,\n'}
+[2.532849] (stereo_camera_node) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/13/bits/stl_algobase.h:67\x1b[m\x1b[K:\n'}
+[2.533345] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/ptr_traits.h:163:47:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kptrdiff_t\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.533827] (stereo_camera_node) StderrLine: {'line': b'  163 |       using difference_type = __detected_or_t<\x1b[01;31m\x1b[Kptrdiff_t\x1b[m\x1b[K, __diff_t, _Ptr>;\n'}
+[2.534329] (stereo_camera_node) StderrLine: {'line': b'      |                                               \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.534716] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/ptr_traits.h:1:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kptrdiff_t\x1b[m\x1b[K\xe2\x80\x99 is defined in header \xe2\x80\x98\x1b[01m\x1b[K<cstddef>\x1b[m\x1b[K\xe2\x80\x99; did you forget to \xe2\x80\x98\x1b[01m\x1b[K#include <cstddef>\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.535216] (stereo_camera_node) StderrLine: {'line': b'  +++ |+\x1b[32m\x1b[K#include <cstddef>\x1b[m\x1b[K\n'}
+[2.535628] (stereo_camera_node) StderrLine: {'line': b'    1 | // Pointer Traits -*- C++ -*-\n'}
+[2.536049] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/ptr_traits.h:163:72:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.536561] (stereo_camera_node) StderrLine: {'line': b'  163 |       using difference_type = __detected_or_t<ptrdiff_t, __diff_t, _Ptr\x1b[01;31m\x1b[K>\x1b[m\x1b[K;\n'}
+[2.536980] (stereo_camera_node) StderrLine: {'line': b'      |                                                                        \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.537620] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/ptr_traits.h:201:15:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kptrdiff_t\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.538173] (stereo_camera_node) StderrLine: {'line': b'  201 |       typedef \x1b[01;31m\x1b[Kptrdiff_t\x1b[m\x1b[K difference_type;\n'}
+[2.538682] (stereo_camera_node) StderrLine: {'line': b'      |               \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.539245] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/ptr_traits.h:201:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kptrdiff_t\x1b[m\x1b[K\xe2\x80\x99 is defined in header \xe2\x80\x98\x1b[01m\x1b[K<cstddef>\x1b[m\x1b[K\xe2\x80\x99; did you forget to \xe2\x80\x98\x1b[01m\x1b[K#include <cstddef>\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.553322] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_algobase.h:93:56:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.554041] (stereo_camera_node) StderrLine: {'line': b'   93 |     __memcmp(const _Tp* __first1, const _Up* __first2, \x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K __num)\n'}
+[2.554549] (stereo_camera_node) StderrLine: {'line': b'      |                                                        \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.556414] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_algobase.h:\x1b[m\x1b[K In static member function \xe2\x80\x98\x1b[01m\x1b[Kstatic _Up* std::__copy_move<_IsMove, true, std::random_access_iterator_tag>::\x1b[01;32m\x1b[K__copy_m\x1b[m\x1b[K(_Tp*, _Tp*, _Up*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.557286] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_algobase.h:435:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kptrdiff_t\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.557770] (stereo_camera_node) StderrLine: {'line': b'  435 |           const \x1b[01;31m\x1b[Kptrdiff_t\x1b[m\x1b[K _Num = __last - __first;\n'}
+[2.558279] (stereo_camera_node) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.558764] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_algobase.h:77:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kptrdiff_t\x1b[m\x1b[K\xe2\x80\x99 is defined in header \xe2\x80\x98\x1b[01m\x1b[K<cstddef>\x1b[m\x1b[K\xe2\x80\x99; did you forget to \xe2\x80\x98\x1b[01m\x1b[K#include <cstddef>\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.559295] (stereo_camera_node) StderrLine: {'line': b'   76 | # include <bit> // std::__bit_width\n'}
+[2.559877] (stereo_camera_node) StderrLine: {'line': b'  +++ |+\x1b[32m\x1b[K#include <cstddef>\x1b[m\x1b[K\n'}
+[2.560476] (stereo_camera_node) StderrLine: {'line': b'   77 | #endif\n'}
+[2.565867] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_algobase.h:436:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_Num\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.566680] (stereo_camera_node) StderrLine: {'line': b'  436 |           if (__builtin_expect(\x1b[01;31m\x1b[K_Num\x1b[m\x1b[K > 1, true))\n'}
+[2.567219] (stereo_camera_node) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.575153] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_algobase.h:441:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_Num\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.575846] (stereo_camera_node) StderrLine: {'line': b'  441 |           return __result + \x1b[01;31m\x1b[K_Num\x1b[m\x1b[K;\n'}
+[2.576444] (stereo_camera_node) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.579436] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_algobase.h:\x1b[m\x1b[K In static member function \xe2\x80\x98\x1b[01m\x1b[Kstatic _Up* std::__copy_move_backward<_IsMove, true, std::random_access_iterator_tag>::\x1b[01;32m\x1b[K__copy_move_b\x1b[m\x1b[K(_Tp*, _Tp*, _Up*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.580157] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_algobase.h:746:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kptrdiff_t\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.580676] (stereo_camera_node) StderrLine: {'line': b'  746 |           const \x1b[01;31m\x1b[Kptrdiff_t\x1b[m\x1b[K _Num = __last - __first;\n'}
+[2.581188] (stereo_camera_node) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.581707] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_algobase.h:746:17:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kptrdiff_t\x1b[m\x1b[K\xe2\x80\x99 is defined in header \xe2\x80\x98\x1b[01m\x1b[K<cstddef>\x1b[m\x1b[K\xe2\x80\x99; did you forget to \xe2\x80\x98\x1b[01m\x1b[K#include <cstddef>\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.588897] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_algobase.h:747:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_Num\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.589676] (stereo_camera_node) StderrLine: {'line': b'  747 |           if (__builtin_expect(\x1b[01;31m\x1b[K_Num\x1b[m\x1b[K > 1, true))\n'}
+[2.590195] (stereo_camera_node) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.598051] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_algobase.h:752:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_Num\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.598721] (stereo_camera_node) StderrLine: {'line': b'  752 |           return __result - \x1b[01;31m\x1b[K_Num\x1b[m\x1b[K;\n'}
+[2.599227] (stereo_camera_node) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.600504] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_algobase.h:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Ktypename __gnu_cxx::__enable_if<std::__is_byte<_Tp>::__value, void>::__type std::\x1b[01;32m\x1b[K__fill_a1\x1b[m\x1b[K(_Tp*, _Tp*, const _Tp&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.601254] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_algobase.h:950:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected initializer before \xe2\x80\x98\x1b[01m\x1b[K__len\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.601753] (stereo_camera_node) StderrLine: {'line': b'  950 |       if (const size_t \x1b[01;31m\x1b[K__len\x1b[m\x1b[K = __last - __first)\n'}
+[2.602365] (stereo_camera_node) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.603025] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_algobase.h:950:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K__len\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.603690] (stereo_camera_node) StderrLine: {'line': b'  950 |       if \x1b[34m\x1b[K(\x1b[m\x1b[Kconst size_t\x1b[01;31m\x1b[K \x1b[m\x1b[K\x1b[32m\x1b[K__len\x1b[m\x1b[K = __last - __first)\n'}
+[2.604455] (stereo_camera_node) StderrLine: {'line': b'      |          \x1b[34m\x1b[K~\x1b[m\x1b[K            \x1b[01;31m\x1b[K^\x1b[m\x1b[K\x1b[32m\x1b[K~~~~~\x1b[m\x1b[K\n'}
+[2.605119] (stereo_camera_node) StderrLine: {'line': b'      |                       \x1b[32m\x1b[K)\x1b[m\x1b[K\n'}
+[2.607299] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_algobase.h:951:70:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K__len\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.608000] (stereo_camera_node) StderrLine: {'line': b'  951 |         __builtin_memset(__first, static_cast<unsigned char>(__tmp), \x1b[01;31m\x1b[K__len\x1b[m\x1b[K);\n'}
+[2.608511] (stereo_camera_node) StderrLine: {'line': b'      |                                                                      \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.610700] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_algobase.h:\x1b[m\x1b[K In static member function \xe2\x80\x98\x1b[01m\x1b[Kstatic bool std::__equal<true>::\x1b[01;32m\x1b[Kequal\x1b[m\x1b[K(const _Tp*, const _Tp*, const _Tp*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.611497] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_algobase.h:1184:28:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected initializer before \xe2\x80\x98\x1b[01m\x1b[K__len\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.612027] (stereo_camera_node) StderrLine: {'line': b' 1184 |           if (const size_t \x1b[01;31m\x1b[K__len\x1b[m\x1b[K = (__last1 - __first1))\n'}
+[2.612524] (stereo_camera_node) StderrLine: {'line': b'      |                            \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.612944] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_algobase.h:1184:28:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K__len\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.613535] (-) TimerEvent: {}
+[2.613897] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_algobase.h:1184:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kto match this \xe2\x80\x98\x1b[01m\x1b[K(\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.614777] (stereo_camera_node) StderrLine: {'line': b' 1184 |           if \x1b[01;36m\x1b[K(\x1b[m\x1b[Kconst size_t __len = (__last1 - __first1))\n'}
+[2.615375] (stereo_camera_node) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.620909] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_algobase.h:1185:55:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K__len\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.621806] (stereo_camera_node) StderrLine: {'line': b' 1185 |             return !std::__memcmp(__first1, __first2, \x1b[01;31m\x1b[K__len\x1b[m\x1b[K);\n'}
+[2.622504] (stereo_camera_node) StderrLine: {'line': b'      |                                                       \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.624780] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_algobase.h:\x1b[m\x1b[K At global scope:\n'}
+[2.625471] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_algobase.h:1357:16:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kptrdiff_t\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.625986] (stereo_camera_node) StderrLine: {'line': b' 1357 |         static \x1b[01;31m\x1b[Kptrdiff_t\x1b[m\x1b[K\n'}
+[2.626554] (stereo_camera_node) StderrLine: {'line': b'      |                \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.627026] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/stl_algobase.h:1357:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kptrdiff_t\x1b[m\x1b[K\xe2\x80\x99 is defined in header \xe2\x80\x98\x1b[01m\x1b[K<cstddef>\x1b[m\x1b[K\xe2\x80\x99; did you forget to \xe2\x80\x98\x1b[01m\x1b[K#include <cstddef>\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.631321] (stereo_camera_node) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/13/bits/algorithmfwd.h:39\x1b[m\x1b[K,\n'}
+[2.632018] (stereo_camera_node) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/13/bits/stl_algo.h:59\x1b[m\x1b[K,\n'}
+[2.632512] (stereo_camera_node) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/13/algorithm:61\x1b[m\x1b[K:\n'}
+[2.632986] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/initializer_list:51:15:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.633529] (stereo_camera_node) StderrLine: {'line': b'   51 |       typedef \x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K            size_type;\n'}
+[2.634086] (stereo_camera_node) StderrLine: {'line': b'      |               \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.634824] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/initializer_list:1:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 is defined in header \xe2\x80\x98\x1b[01m\x1b[K<cstddef>\x1b[m\x1b[K\xe2\x80\x99; did you forget to \xe2\x80\x98\x1b[01m\x1b[K#include <cstddef>\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.635476] (stereo_camera_node) StderrLine: {'line': b'  +++ |+\x1b[32m\x1b[K#include <cstddef>\x1b[m\x1b[K\n'}
+[2.635935] (stereo_camera_node) StderrLine: {'line': b'    1 | // std::initializer_list support -*- C++ -*-\n'}
+[2.636992] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/initializer_list:57:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_type\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[Ktrue_type\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.637880] (stereo_camera_node) StderrLine: {'line': b'   57 |       \x1b[01;31m\x1b[Ksize_type\x1b[m\x1b[K                 _M_len;\n'}
+[2.638407] (stereo_camera_node) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.638864] (stereo_camera_node) StderrLine: {'line': b'      |       \x1b[32m\x1b[Ktrue_type\x1b[m\x1b[K\n'}
+[2.639394] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/initializer_list:60:54:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_type\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.639853] (stereo_camera_node) StderrLine: {'line': b'   60 |       constexpr initializer_list(const_iterator __a, \x1b[01;31m\x1b[Ksize_type\x1b[m\x1b[K __l)\n'}
+[2.640356] (stereo_camera_node) StderrLine: {'line': b'      |                                                      \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.642167] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/initializer_list:68:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_type\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[Ktrue_type\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.643060] (stereo_camera_node) StderrLine: {'line': b'   68 |       constexpr \x1b[01;31m\x1b[Ksize_type\x1b[m\x1b[K\n'}
+[2.643642] (stereo_camera_node) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.644093] (stereo_camera_node) StderrLine: {'line': b'      |                 \x1b[32m\x1b[Ktrue_type\x1b[m\x1b[K\n'}
+[2.644569] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/initializer_list:45:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kdefinition of \xe2\x80\x98\x1b[01m\x1b[Kclass std::initializer_list<_E>\x1b[m\x1b[K\xe2\x80\x99 does not match \xe2\x80\x98\x1b[01m\x1b[K#include <initializer_list>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.645277] (stereo_camera_node) StderrLine: {'line': b'   45 |     class \x1b[01;31m\x1b[Kinitializer_list\x1b[m\x1b[K\n'}
+[2.645693] (stereo_camera_node) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.646104] (stereo_camera_node) StderrLine: {'line': b'compilation terminated.\n'}
+[2.657719] (stereo_camera_node) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/stereo_camera_node.dir/build.make:76: CMakeFiles/stereo_camera_node.dir/src/stereo_camera_node.cpp.o] Error 1\n'}
+[2.658832] (stereo_camera_node) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/stereo_camera_node.dir/all] Error 2\n'}
+[2.659881] (stereo_camera_node) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[2.668163] (stereo_camera_node) CommandEnded: {'returncode': 2}
+[2.714415] (-) TimerEvent: {}
+[2.719855] (stereo_camera_node) JobEnded: {'identifier': 'stereo_camera_node', 'rc': 2}
+[2.732401] (-) EventReactorShutdown: {}

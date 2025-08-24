@@ -514,6 +514,9 @@ type_description_interfaces_DIR:PATH=/opt/ros/jazzy/share/type_description_inter
 //Path to a program.
 xmllint_BIN:FILEPATH=/usr/bin/xmllint
 
+//The directory containing a CMake configuration file for yaml-cpp.
+yaml-cpp_DIR:PATH=/usr/lib/aarch64-linux-gnu/cmake/yaml-cpp
+
 
 ########################
 # INTERNAL cache entries

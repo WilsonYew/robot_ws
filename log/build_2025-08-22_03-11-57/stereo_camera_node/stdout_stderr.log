@@ -1,0 +1,1378 @@
+[ 40%] Built target stereo_calibration_capture
+[ 60%] [32mBuilding CXX object CMakeFiles/stereo_camera_node.dir/src/main.cpp.o[0m
+[ 80%] [32mBuilding CXX object CMakeFiles/stereo_camera_node.dir/src/stereo_camera_node.cpp.o[0m
+In file included from [01m[K/home/golftrolley/robot_ws/src/stereo_camera_node/src/main.cpp:1[m[K:
+[01m[K/home/golftrolley/robot_ws/src/stereo_camera_node/src/stereo_camera_node.cpp:[m[K In member function ‘[01m[Kvoid StereoCameraNode::[01;32m[KleftCallback[m[K(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/golftrolley/robot_ws/src/stereo_camera_node/src/stereo_camera_node.cpp:73:28:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Publisher<sensor_msgs::msg::Image_<std::allocator<void> > >::publish(std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >&)[m[K’
+   73 |     [01;31m[Krect_left_pub_->publish(rect_msg)[m[K;
+      |     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:31[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/subscription.hpp:50[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executor_options.hpp:22[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executor.hpp:38[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:172[m[K,
+                 from [01m[K/home/golftrolley/robot_ws/src/stereo_camera_node/src/stereo_camera_node.cpp:1[m[K:
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:242:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> std::enable_if_t<(rosidl_generator_traits::is_message<T>::value && std::is_same<T, typename rclcpp::TypeAdapter<MessageT>::ros_message_type>::value)> rclcpp::Publisher<MessageT, AllocatorT>::[01;32m[Kpublish[m[K(std::unique_ptr<T, typename std::conditional<std::is_same<typename std::allocator_traits<typename std::allocator_traits<_Allocator>::rebind_traits<typename rclcpp::TypeAdapter<MessageT, void, void>::ros_message_type>::allocator_type>::rebind_alloc<typename rclcpp::TypeAdapter<MessageT, void, void>::ros_message_type>, std::allocator<typename rclcpp::TypeAdapter<MessageT>::ros_message_type> >::value, std::default_delete<typename rclcpp::TypeAdapter<MessageT>::ros_message_type>, rclcpp::allocator::AllocatorDeleter<typename std::allocator_traits<_Allocator>::rebind_traits<typename rclcpp::TypeAdapter<MessageT, void, void>::ros_message_type>::allocator_type> >::type>) [35m[K[with MessageT = sensor_msgs::msg::Image_<std::allocator<void> >; AllocatorT = std::allocator<void>][m[K[m[K’
+  242 |   [01;36m[Kpublish[m[K(std::unique_ptr<T, ROSMessageTypeDeleter> msg)
+      |   [01;36m[K^~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:242:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/golftrolley/robot_ws/src/stereo_camera_node/src/stereo_camera_node.cpp:73:28:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >[m[K’ is not derived from ‘[01m[Kstd::unique_ptr<T, std::default_delete<sensor_msgs::msg::Image_<std::allocator<void> > > >[m[K’
+   73 |     [01;36m[Krect_left_pub_->publish(rect_msg)[m[K;
+      |     [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:296:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> std::enable_if_t<(rosidl_generator_traits::is_message<T>::value && std::is_same<T, typename rclcpp::TypeAdapter<MessageT>::ros_message_type>::value)> rclcpp::Publisher<MessageT, AllocatorT>::[01;32m[Kpublish[m[K(const T&) [35m[K[with MessageT = sensor_msgs::msg::Image_<std::allocator<void> >; AllocatorT = std::allocator<void>][m[K[m[K’
+  296 |   [01;36m[Kpublish[m[K(const T & msg)
+      |   [01;36m[K^~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:296:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/c++/13/bits/move.h:37[m[K,
+                 from [01m[K/usr/include/c++/13/bits/new_allocator.h:36[m[K,
+                 from [01m[K/usr/include/aarch64-linux-gnu/c++/13/bits/c++allocator.h:33[m[K,
+                 from [01m[K/usr/include/c++/13/bits/allocator.h:46[m[K,
+                 from [01m[K/usr/include/c++/13/memory:65[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:169[m[K:
+/usr/include/c++/13/type_traits: In substitution of ‘[01m[Ktemplate<bool _Cond, class _Tp> using std::enable_if_t = typename std::enable_if::type [35m[K[with bool _Cond = false; _Tp = void][m[K[m[K’:
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:296:3:[m[K   required by substitution of ‘[01m[Ktemplate<class T> std::enable_if_t<(rosidl_generator_traits::is_message<T>::value && std::is_same<T, sensor_msgs::msg::Image_<std::allocator<void> > >::value), void> rclcpp::Publisher<sensor_msgs::msg::Image_<std::allocator<void> > >::[01;32m[Kpublish[m[K(const T&) [35m[K[with T = std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >][m[K[m[K’
+[01m[K/home/golftrolley/robot_ws/src/stereo_camera_node/src/stereo_camera_node.cpp:73:28:[m[K   required from here
+[01m[K/usr/include/c++/13/type_traits:2610:11:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, void>[m[K’
+ 2610 |     using [01;31m[Kenable_if_t[m[K = typename enable_if<_Cond, _Tp>::type;
+      |           [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:326:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> std::enable_if_t<(typename rclcpp::TypeAdapter<MessageT>::is_specialized::value && std::is_same<T, typename rclcpp::TypeAdapter<MessageT>::custom_type>::value)> rclcpp::Publisher<MessageT, AllocatorT>::[01;32m[Kpublish[m[K(std::unique_ptr<T, typename std::conditional<std::is_same<typename std::allocator_traits<typename std::allocator_traits<_Allocator>::rebind_traits<typename rclcpp::TypeAdapter<MessageT, void, void>::custom_type>::allocator_type>::rebind_alloc<typename rclcpp::TypeAdapter<MessageT, void, void>::custom_type>, std::allocator<typename rclcpp::TypeAdapter<MessageT>::custom_type> >::value, std::default_delete<typename rclcpp::TypeAdapter<MessageT>::custom_type>, rclcpp::allocator::AllocatorDeleter<typename std::allocator_traits<_Allocator>::rebind_traits<typename rclcpp::TypeAdapter<MessageT, void, void>::custom_type>::allocator_type> >::type>) [35m[K[with MessageT = sensor_msgs::msg::Image_<std::allocator<void> >; AllocatorT = std::allocator<void>][m[K[m[K’
+  326 |   [01;36m[Kpublish[m[K(std::unique_ptr<T, PublishedTypeDeleter> msg)
+      |   [01;36m[K^~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:326:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/golftrolley/robot_ws/src/stereo_camera_node/src/stereo_camera_node.cpp:73:28:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >[m[K’ is not derived from ‘[01m[Kstd::unique_ptr<T, std::default_delete<sensor_msgs::msg::Image_<std::allocator<void> > > >[m[K’
+   73 |     [01;36m[Krect_left_pub_->publish(rect_msg)[m[K;
+      |     [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:376:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> std::enable_if_t<(typename rclcpp::TypeAdapter<MessageT>::is_specialized::value && std::is_same<T, typename rclcpp::TypeAdapter<MessageT>::custom_type>::value)> rclcpp::Publisher<MessageT, AllocatorT>::[01;32m[Kpublish[m[K(const T&) [35m[K[with MessageT = sensor_msgs::msg::Image_<std::allocator<void> >; AllocatorT = std::allocator<void>][m[K[m[K’
+  376 |   [01;36m[Kpublish[m[K(const T & msg)
+      |   [01;36m[K^~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:376:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:394:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid rclcpp::Publisher<MessageT, AllocatorT>::[01;32m[Kpublish[m[K(const rcl_serialized_message_t&) [35m[K[with MessageT = sensor_msgs::msg::Image_<std::allocator<void> >; AllocatorT = std::allocator<void>; rcl_serialized_message_t = rcutils_uint8_array_s][m[K[m[K’
+  394 |   [01;36m[Kpublish[m[K(const rcl_serialized_message_t & serialized_msg)
+      |   [01;36m[K^~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:394:44:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >[m[K’ to ‘[01m[Kconst rcl_serialized_message_t&[m[K’ {aka ‘[01m[Kconst rcutils_uint8_array_s&[m[K’}
+  394 |   publish([01;36m[Kconst rcl_serialized_message_t & serialized_msg[m[K)
+      |           [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:400:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid rclcpp::Publisher<MessageT, AllocatorT>::[01;32m[Kpublish[m[K(const rclcpp::SerializedMessage&) [35m[K[with MessageT = sensor_msgs::msg::Image_<std::allocator<void> >; AllocatorT = std::allocator<void>][m[K[m[K’
+  400 |   [01;36m[Kpublish[m[K(const SerializedMessage & serialized_msg)
+      |   [01;36m[K^~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:400:37:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >[m[K’ to ‘[01m[Kconst rclcpp::SerializedMessage&[m[K’
+  400 |   publish([01;36m[Kconst SerializedMessage & serialized_msg[m[K)
+      |           [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:414:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid rclcpp::Publisher<MessageT, AllocatorT>::[01;32m[Kpublish[m[K(rclcpp::LoanedMessage<typename rclcpp::TypeAdapter<MessageT>::ros_message_type, AllocatorT>&&) [35m[K[with MessageT = sensor_msgs::msg::Image_<std::allocator<void> >; AllocatorT = std::allocator<void>; typename rclcpp::TypeAdapter<MessageT>::ros_message_type = sensor_msgs::msg::Image_<std::allocator<void> >][m[K[m[K’
+  414 |   [01;36m[Kpublish[m[K(rclcpp::LoanedMessage<ROSMessageType, AllocatorT> && loaned_msg)
+      |   [01;36m[K^~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:414:64:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >[m[K’ to ‘[01m[Krclcpp::LoanedMessage<sensor_msgs::msg::Image_<std::allocator<void> >, std::allocator<void> >&&[m[K’
+  414 |   publish([01;36m[Krclcpp::LoanedMessage<ROSMessageType, AllocatorT> && loaned_msg[m[K)
+      |           [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/golftrolley/robot_ws/src/stereo_camera_node/src/stereo_camera_node.cpp:[m[K In member function ‘[01m[Kvoid StereoCameraNode::[01;32m[KrightCallback[m[K(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/golftrolley/robot_ws/src/stereo_camera_node/src/stereo_camera_node.cpp:86:29:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Publisher<sensor_msgs::msg::Image_<std::allocator<void> > >::publish(std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >&)[m[K’
+   86 |     [01;31m[Krect_right_pub_->publish(rect_msg)[m[K;
+      |     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:242:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> std::enable_if_t<(rosidl_generator_traits::is_message<T>::value && std::is_same<T, typename rclcpp::TypeAdapter<MessageT>::ros_message_type>::value)> rclcpp::Publisher<MessageT, AllocatorT>::[01;32m[Kpublish[m[K(std::unique_ptr<T, typename std::conditional<std::is_same<typename std::allocator_traits<typename std::allocator_traits<_Allocator>::rebind_traits<typename rclcpp::TypeAdapter<MessageT, void, void>::ros_message_type>::allocator_type>::rebind_alloc<typename rclcpp::TypeAdapter<MessageT, void, void>::ros_message_type>, std::allocator<typename rclcpp::TypeAdapter<MessageT>::ros_message_type> >::value, std::default_delete<typename rclcpp::TypeAdapter<MessageT>::ros_message_type>, rclcpp::allocator::AllocatorDeleter<typename std::allocator_traits<_Allocator>::rebind_traits<typename rclcpp::TypeAdapter<MessageT, void, void>::ros_message_type>::allocator_type> >::type>) [35m[K[with MessageT = sensor_msgs::msg::Image_<std::allocator<void> >; AllocatorT = std::allocator<void>][m[K[m[K’
+  242 |   [01;36m[Kpublish[m[K(std::unique_ptr<T, ROSMessageTypeDeleter> msg)
+      |   [01;36m[K^~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:242:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/golftrolley/robot_ws/src/stereo_camera_node/src/stereo_camera_node.cpp:86:29:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >[m[K’ is not derived from ‘[01m[Kstd::unique_ptr<T, std::default_delete<sensor_msgs::msg::Image_<std::allocator<void> > > >[m[K’
+   86 |     [01;36m[Krect_right_pub_->publish(rect_msg)[m[K;
+      |     [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:296:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> std::enable_if_t<(rosidl_generator_traits::is_message<T>::value && std::is_same<T, typename rclcpp::TypeAdapter<MessageT>::ros_message_type>::value)> rclcpp::Publisher<MessageT, AllocatorT>::[01;32m[Kpublish[m[K(const T&) [35m[K[with MessageT = sensor_msgs::msg::Image_<std::allocator<void> >; AllocatorT = std::allocator<void>][m[K[m[K’
+  296 |   [01;36m[Kpublish[m[K(const T & msg)
+      |   [01;36m[K^~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:296:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:326:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> std::enable_if_t<(typename rclcpp::TypeAdapter<MessageT>::is_specialized::value && std::is_same<T, typename rclcpp::TypeAdapter<MessageT>::custom_type>::value)> rclcpp::Publisher<MessageT, AllocatorT>::[01;32m[Kpublish[m[K(std::unique_ptr<T, typename std::conditional<std::is_same<typename std::allocator_traits<typename std::allocator_traits<_Allocator>::rebind_traits<typename rclcpp::TypeAdapter<MessageT, void, void>::custom_type>::allocator_type>::rebind_alloc<typename rclcpp::TypeAdapter<MessageT, void, void>::custom_type>, std::allocator<typename rclcpp::TypeAdapter<MessageT>::custom_type> >::value, std::default_delete<typename rclcpp::TypeAdapter<MessageT>::custom_type>, rclcpp::allocator::AllocatorDeleter<typename std::allocator_traits<_Allocator>::rebind_traits<typename rclcpp::TypeAdapter<MessageT, void, void>::custom_type>::allocator_type> >::type>) [35m[K[with MessageT = sensor_msgs::msg::Image_<std::allocator<void> >; AllocatorT = std::allocator<void>][m[K[m[K’
+  326 |   [01;36m[Kpublish[m[K(std::unique_ptr<T, PublishedTypeDeleter> msg)
+      |   [01;36m[K^~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:326:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/golftrolley/robot_ws/src/stereo_camera_node/src/stereo_camera_node.cpp:86:29:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >[m[K’ is not derived from ‘[01m[Kstd::unique_ptr<T, std::default_delete<sensor_msgs::msg::Image_<std::allocator<void> > > >[m[K’
+   86 |     [01;36m[Krect_right_pub_->publish(rect_msg)[m[K;
+      |     [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:376:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> std::enable_if_t<(typename rclcpp::TypeAdapter<MessageT>::is_specialized::value && std::is_same<T, typename rclcpp::TypeAdapter<MessageT>::custom_type>::value)> rclcpp::Publisher<MessageT, AllocatorT>::[01;32m[Kpublish[m[K(const T&) [35m[K[with MessageT = sensor_msgs::msg::Image_<std::allocator<void> >; AllocatorT = std::allocator<void>][m[K[m[K’
+  376 |   [01;36m[Kpublish[m[K(const T & msg)
+      |   [01;36m[K^~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:376:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:394:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid rclcpp::Publisher<MessageT, AllocatorT>::[01;32m[Kpublish[m[K(const rcl_serialized_message_t&) [35m[K[with MessageT = sensor_msgs::msg::Image_<std::allocator<void> >; AllocatorT = std::allocator<void>; rcl_serialized_message_t = rcutils_uint8_array_s][m[K[m[K’
+  394 |   [01;36m[Kpublish[m[K(const rcl_serialized_message_t & serialized_msg)
+      |   [01;36m[K^~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:394:44:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >[m[K’ to ‘[01m[Kconst rcl_serialized_message_t&[m[K’ {aka ‘[01m[Kconst rcutils_uint8_array_s&[m[K’}
+  394 |   publish([01;36m[Kconst rcl_serialized_message_t & serialized_msg[m[K)
+      |           [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:400:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid rclcpp::Publisher<MessageT, AllocatorT>::[01;32m[Kpublish[m[K(const rclcpp::SerializedMessage&) [35m[K[with MessageT = sensor_msgs::msg::Image_<std::allocator<void> >; AllocatorT = std::allocator<void>][m[K[m[K’
+  400 |   [01;36m[Kpublish[m[K(const SerializedMessage & serialized_msg)
+      |   [01;36m[K^~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:400:37:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >[m[K’ to ‘[01m[Kconst rclcpp::SerializedMessage&[m[K’
+  400 |   publish([01;36m[Kconst SerializedMessage & serialized_msg[m[K)
+      |           [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:414:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid rclcpp::Publisher<MessageT, AllocatorT>::[01;32m[Kpublish[m[K(rclcpp::LoanedMessage<typename rclcpp::TypeAdapter<MessageT>::ros_message_type, AllocatorT>&&) [35m[K[with MessageT = sensor_msgs::msg::Image_<std::allocator<void> >; AllocatorT = std::allocator<void>; typename rclcpp::TypeAdapter<MessageT>::ros_message_type = sensor_msgs::msg::Image_<std::allocator<void> >][m[K[m[K’
+  414 |   [01;36m[Kpublish[m[K(rclcpp::LoanedMessage<ROSMessageType, AllocatorT> && loaned_msg)
+      |   [01;36m[K^~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:414:64:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >[m[K’ to ‘[01m[Krclcpp::LoanedMessage<sensor_msgs::msg::Image_<std::allocator<void> >, std::allocator<void> >&&[m[K’
+  414 |   publish([01;36m[Krclcpp::LoanedMessage<ROSMessageType, AllocatorT> && loaned_msg[m[K)
+      |           [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/golftrolley/robot_ws/src/stereo_camera_node/src/main.cpp:[m[K At global scope:
+[01m[K/home/golftrolley/robot_ws/src/stereo_camera_node/src/main.cpp:4:5:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kint[01;32m[K main[m[K(int, char**)[m[K’
+    4 | int [01;31m[Kmain[m[K(int argc, char **argv)
+      |     [01;31m[K^~~~[m[K
+[01m[K/home/golftrolley/robot_ws/src/stereo_camera_node/src/stereo_camera_node.cpp:105:5:[m[K [01;36m[Knote: [m[K‘[01m[Kint[01;32m[K main[m[K(int, char**)[m[K’ previously defined here
+  105 | int [01;36m[Kmain[m[K(int argc, char **argv)
+      |     [01;36m[K^~~~[m[K
+[01m[K/home/golftrolley/robot_ws/src/stereo_camera_node/src/stereo_camera_node.cpp:[m[K In member function ‘[01m[Kvoid StereoCameraNode::[01;32m[KleftCallback[m[K(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/golftrolley/robot_ws/src/stereo_camera_node/src/stereo_camera_node.cpp:73:28:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Publisher<sensor_msgs::msg::Image_<std::allocator<void> > >::publish(std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >&)[m[K’
+   73 |     [01;31m[Krect_left_pub_->publish(rect_msg)[m[K;
+      |     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:31[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/subscription.hpp:50[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executor_options.hpp:22[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executor.hpp:38[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:172[m[K,
+                 from [01m[K/home/golftrolley/robot_ws/src/stereo_camera_node/src/stereo_camera_node.cpp:1[m[K:
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:242:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> std::enable_if_t<(rosidl_generator_traits::is_message<T>::value && std::is_same<T, typename rclcpp::TypeAdapter<MessageT>::ros_message_type>::value)> rclcpp::Publisher<MessageT, AllocatorT>::[01;32m[Kpublish[m[K(std::unique_ptr<T, typename std::conditional<std::is_same<typename std::allocator_traits<typename std::allocator_traits<_Allocator>::rebind_traits<typename rclcpp::TypeAdapter<MessageT, void, void>::ros_message_type>::allocator_type>::rebind_alloc<typename rclcpp::TypeAdapter<MessageT, void, void>::ros_message_type>, std::allocator<typename rclcpp::TypeAdapter<MessageT>::ros_message_type> >::value, std::default_delete<typename rclcpp::TypeAdapter<MessageT>::ros_message_type>, rclcpp::allocator::AllocatorDeleter<typename std::allocator_traits<_Allocator>::rebind_traits<typename rclcpp::TypeAdapter<MessageT, void, void>::ros_message_type>::allocator_type> >::type>) [35m[K[with MessageT = sensor_msgs::msg::Image_<std::allocator<void> >; AllocatorT = std::allocator<void>][m[K[m[K’
+  242 |   [01;36m[Kpublish[m[K(std::unique_ptr<T, ROSMessageTypeDeleter> msg)
+      |   [01;36m[K^~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:242:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/golftrolley/robot_ws/src/stereo_camera_node/src/stereo_camera_node.cpp:73:28:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >[m[K’ is not derived from ‘[01m[Kstd::unique_ptr<T, std::default_delete<sensor_msgs::msg::Image_<std::allocator<void> > > >[m[K’
+   73 |     [01;36m[Krect_left_pub_->publish(rect_msg)[m[K;
+      |     [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:296:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> std::enable_if_t<(rosidl_generator_traits::is_message<T>::value && std::is_same<T, typename rclcpp::TypeAdapter<MessageT>::ros_message_type>::value)> rclcpp::Publisher<MessageT, AllocatorT>::[01;32m[Kpublish[m[K(const T&) [35m[K[with MessageT = sensor_msgs::msg::Image_<std::allocator<void> >; AllocatorT = std::allocator<void>][m[K[m[K’
+  296 |   [01;36m[Kpublish[m[K(const T & msg)
+      |   [01;36m[K^~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:296:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/c++/13/bits/move.h:37[m[K,
+                 from [01m[K/usr/include/c++/13/bits/new_allocator.h:36[m[K,
+                 from [01m[K/usr/include/aarch64-linux-gnu/c++/13/bits/c++allocator.h:33[m[K,
+                 from [01m[K/usr/include/c++/13/bits/allocator.h:46[m[K,
+                 from [01m[K/usr/include/c++/13/memory:65[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:169[m[K:
+/usr/include/c++/13/type_traits: In substitution of ‘[01m[Ktemplate<bool _Cond, class _Tp> using std::enable_if_t = typename std::enable_if::type [35m[K[with bool _Cond = false; _Tp = void][m[K[m[K’:
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:296:3:[m[K   required by substitution of ‘[01m[Ktemplate<class T> std::enable_if_t<(rosidl_generator_traits::is_message<T>::value && std::is_same<T, sensor_msgs::msg::Image_<std::allocator<void> > >::value), void> rclcpp::Publisher<sensor_msgs::msg::Image_<std::allocator<void> > >::[01;32m[Kpublish[m[K(const T&) [35m[K[with T = std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >][m[K[m[K’
+[01m[K/home/golftrolley/robot_ws/src/stereo_camera_node/src/stereo_camera_node.cpp:73:28:[m[K   required from here
+[01m[K/usr/include/c++/13/type_traits:2610:11:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, void>[m[K’
+ 2610 |     using [01;31m[Kenable_if_t[m[K = typename enable_if<_Cond, _Tp>::type;
+      |           [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:326:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> std::enable_if_t<(typename rclcpp::TypeAdapter<MessageT>::is_specialized::value && std::is_same<T, typename rclcpp::TypeAdapter<MessageT>::custom_type>::value)> rclcpp::Publisher<MessageT, AllocatorT>::[01;32m[Kpublish[m[K(std::unique_ptr<T, typename std::conditional<std::is_same<typename std::allocator_traits<typename std::allocator_traits<_Allocator>::rebind_traits<typename rclcpp::TypeAdapter<MessageT, void, void>::custom_type>::allocator_type>::rebind_alloc<typename rclcpp::TypeAdapter<MessageT, void, void>::custom_type>, std::allocator<typename rclcpp::TypeAdapter<MessageT>::custom_type> >::value, std::default_delete<typename rclcpp::TypeAdapter<MessageT>::custom_type>, rclcpp::allocator::AllocatorDeleter<typename std::allocator_traits<_Allocator>::rebind_traits<typename rclcpp::TypeAdapter<MessageT, void, void>::custom_type>::allocator_type> >::type>) [35m[K[with MessageT = sensor_msgs::msg::Image_<std::allocator<void> >; AllocatorT = std::allocator<void>][m[K[m[K’
+  326 |   [01;36m[Kpublish[m[K(std::unique_ptr<T, PublishedTypeDeleter> msg)
+      |   [01;36m[K^~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:326:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/golftrolley/robot_ws/src/stereo_camera_node/src/stereo_camera_node.cpp:73:28:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >[m[K’ is not derived from ‘[01m[Kstd::unique_ptr<T, std::default_delete<sensor_msgs::msg::Image_<std::allocator<void> > > >[m[K’
+   73 |     [01;36m[Krect_left_pub_->publish(rect_msg)[m[K;
+      |     [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:376:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> std::enable_if_t<(typename rclcpp::TypeAdapter<MessageT>::is_specialized::value && std::is_same<T, typename rclcpp::TypeAdapter<MessageT>::custom_type>::value)> rclcpp::Publisher<MessageT, AllocatorT>::[01;32m[Kpublish[m[K(const T&) [35m[K[with MessageT = sensor_msgs::msg::Image_<std::allocator<void> >; AllocatorT = std::allocator<void>][m[K[m[K’
+  376 |   [01;36m[Kpublish[m[K(const T & msg)
+      |   [01;36m[K^~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:376:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:394:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid rclcpp::Publisher<MessageT, AllocatorT>::[01;32m[Kpublish[m[K(const rcl_serialized_message_t&) [35m[K[with MessageT = sensor_msgs::msg::Image_<std::allocator<void> >; AllocatorT = std::allocator<void>; rcl_serialized_message_t = rcutils_uint8_array_s][m[K[m[K’
+  394 |   [01;36m[Kpublish[m[K(const rcl_serialized_message_t & serialized_msg)
+      |   [01;36m[K^~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:394:44:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >[m[K’ to ‘[01m[Kconst rcl_serialized_message_t&[m[K’ {aka ‘[01m[Kconst rcutils_uint8_array_s&[m[K’}
+  394 |   publish([01;36m[Kconst rcl_serialized_message_t & serialized_msg[m[K)
+      |           [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:400:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid rclcpp::Publisher<MessageT, AllocatorT>::[01;32m[Kpublish[m[K(const rclcpp::SerializedMessage&) [35m[K[with MessageT = sensor_msgs::msg::Image_<std::allocator<void> >; AllocatorT = std::allocator<void>][m[K[m[K’
+  400 |   [01;36m[Kpublish[m[K(const SerializedMessage & serialized_msg)
+      |   [01;36m[K^~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:400:37:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >[m[K’ to ‘[01m[Kconst rclcpp::SerializedMessage&[m[K’
+  400 |   publish([01;36m[Kconst SerializedMessage & serialized_msg[m[K)
+      |           [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:414:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid rclcpp::Publisher<MessageT, AllocatorT>::[01;32m[Kpublish[m[K(rclcpp::LoanedMessage<typename rclcpp::TypeAdapter<MessageT>::ros_message_type, AllocatorT>&&) [35m[K[with MessageT = sensor_msgs::msg::Image_<std::allocator<void> >; AllocatorT = std::allocator<void>; typename rclcpp::TypeAdapter<MessageT>::ros_message_type = sensor_msgs::msg::Image_<std::allocator<void> >][m[K[m[K’
+  414 |   [01;36m[Kpublish[m[K(rclcpp::LoanedMessage<ROSMessageType, AllocatorT> && loaned_msg)
+      |   [01;36m[K^~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:414:64:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >[m[K’ to ‘[01m[Krclcpp::LoanedMessage<sensor_msgs::msg::Image_<std::allocator<void> >, std::allocator<void> >&&[m[K’
+  414 |   publish([01;36m[Krclcpp::LoanedMessage<ROSMessageType, AllocatorT> && loaned_msg[m[K)
+      |           [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/golftrolley/robot_ws/src/stereo_camera_node/src/stereo_camera_node.cpp:[m[K In member function ‘[01m[Kvoid StereoCameraNode::[01;32m[KrightCallback[m[K(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/golftrolley/robot_ws/src/stereo_camera_node/src/stereo_camera_node.cpp:86:29:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Publisher<sensor_msgs::msg::Image_<std::allocator<void> > >::publish(std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >&)[m[K’
+   86 |     [01;31m[Krect_right_pub_->publish(rect_msg)[m[K;
+      |     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:242:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> std::enable_if_t<(rosidl_generator_traits::is_message<T>::value && std::is_same<T, typename rclcpp::TypeAdapter<MessageT>::ros_message_type>::value)> rclcpp::Publisher<MessageT, AllocatorT>::[01;32m[Kpublish[m[K(std::unique_ptr<T, typename std::conditional<std::is_same<typename std::allocator_traits<typename std::allocator_traits<_Allocator>::rebind_traits<typename rclcpp::TypeAdapter<MessageT, void, void>::ros_message_type>::allocator_type>::rebind_alloc<typename rclcpp::TypeAdapter<MessageT, void, void>::ros_message_type>, std::allocator<typename rclcpp::TypeAdapter<MessageT>::ros_message_type> >::value, std::default_delete<typename rclcpp::TypeAdapter<MessageT>::ros_message_type>, rclcpp::allocator::AllocatorDeleter<typename std::allocator_traits<_Allocator>::rebind_traits<typename rclcpp::TypeAdapter<MessageT, void, void>::ros_message_type>::allocator_type> >::type>) [35m[K[with MessageT = sensor_msgs::msg::Image_<std::allocator<void> >; AllocatorT = std::allocator<void>][m[K[m[K’
+  242 |   [01;36m[Kpublish[m[K(std::unique_ptr<T, ROSMessageTypeDeleter> msg)
+      |   [01;36m[K^~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:242:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/golftrolley/robot_ws/src/stereo_camera_node/src/stereo_camera_node.cpp:86:29:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >[m[K’ is not derived from ‘[01m[Kstd::unique_ptr<T, std::default_delete<sensor_msgs::msg::Image_<std::allocator<void> > > >[m[K’
+   86 |     [01;36m[Krect_right_pub_->publish(rect_msg)[m[K;
+      |     [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:296:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> std::enable_if_t<(rosidl_generator_traits::is_message<T>::value && std::is_same<T, typename rclcpp::TypeAdapter<MessageT>::ros_message_type>::value)> rclcpp::Publisher<MessageT, AllocatorT>::[01;32m[Kpublish[m[K(const T&) [35m[K[with MessageT = sensor_msgs::msg::Image_<std::allocator<void> >; AllocatorT = std::allocator<void>][m[K[m[K’
+  296 |   [01;36m[Kpublish[m[K(const T & msg)
+      |   [01;36m[K^~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:296:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:326:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> std::enable_if_t<(typename rclcpp::TypeAdapter<MessageT>::is_specialized::value && std::is_same<T, typename rclcpp::TypeAdapter<MessageT>::custom_type>::value)> rclcpp::Publisher<MessageT, AllocatorT>::[01;32m[Kpublish[m[K(std::unique_ptr<T, typename std::conditional<std::is_same<typename std::allocator_traits<typename std::allocator_traits<_Allocator>::rebind_traits<typename rclcpp::TypeAdapter<MessageT, void, void>::custom_type>::allocator_type>::rebind_alloc<typename rclcpp::TypeAdapter<MessageT, void, void>::custom_type>, std::allocator<typename rclcpp::TypeAdapter<MessageT>::custom_type> >::value, std::default_delete<typename rclcpp::TypeAdapter<MessageT>::custom_type>, rclcpp::allocator::AllocatorDeleter<typename std::allocator_traits<_Allocator>::rebind_traits<typename rclcpp::TypeAdapter<MessageT, void, void>::custom_type>::allocator_type> >::type>) [35m[K[with MessageT = sensor_msgs::msg::Image_<std::allocator<void> >; AllocatorT = std::allocator<void>][m[K[m[K’
+  326 |   [01;36m[Kpublish[m[K(std::unique_ptr<T, PublishedTypeDeleter> msg)
+      |   [01;36m[K^~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:326:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/golftrolley/robot_ws/src/stereo_camera_node/src/stereo_camera_node.cpp:86:29:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >[m[K’ is not derived from ‘[01m[Kstd::unique_ptr<T, std::default_delete<sensor_msgs::msg::Image_<std::allocator<void> > > >[m[K’
+   86 |     [01;36m[Krect_right_pub_->publish(rect_msg)[m[K;
+      |     [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:376:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> std::enable_if_t<(typename rclcpp::TypeAdapter<MessageT>::is_specialized::value && std::is_same<T, typename rclcpp::TypeAdapter<MessageT>::custom_type>::value)> rclcpp::Publisher<MessageT, AllocatorT>::[01;32m[Kpublish[m[K(const T&) [35m[K[with MessageT = sensor_msgs::msg::Image_<std::allocator<void> >; AllocatorT = std::allocator<void>][m[K[m[K’
+  376 |   [01;36m[Kpublish[m[K(const T & msg)
+      |   [01;36m[K^~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:376:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:394:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid rclcpp::Publisher<MessageT, AllocatorT>::[01;32m[Kpublish[m[K(const rcl_serialized_message_t&) [35m[K[with MessageT = sensor_msgs::msg::Image_<std::allocator<void> >; AllocatorT = std::allocator<void>; rcl_serialized_message_t = rcutils_uint8_array_s][m[K[m[K’
+  394 |   [01;36m[Kpublish[m[K(const rcl_serialized_message_t & serialized_msg)
+      |   [01;36m[K^~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:394:44:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >[m[K’ to ‘[01m[Kconst rcl_serialized_message_t&[m[K’ {aka ‘[01m[Kconst rcutils_uint8_array_s&[m[K’}
+  394 |   publish([01;36m[Kconst rcl_serialized_message_t & serialized_msg[m[K)
+      |           [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:400:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid rclcpp::Publisher<MessageT, AllocatorT>::[01;32m[Kpublish[m[K(const rclcpp::SerializedMessage&) [35m[K[with MessageT = sensor_msgs::msg::Image_<std::allocator<void> >; AllocatorT = std::allocator<void>][m[K[m[K’
+  400 |   [01;36m[Kpublish[m[K(const SerializedMessage & serialized_msg)
+      |   [01;36m[K^~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:400:37:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >[m[K’ to ‘[01m[Kconst rclcpp::SerializedMessage&[m[K’
+  400 |   publish([01;36m[Kconst SerializedMessage & serialized_msg[m[K)
+      |           [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:414:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid rclcpp::Publisher<MessageT, AllocatorT>::[01;32m[Kpublish[m[K(rclcpp::LoanedMessage<typename rclcpp::TypeAdapter<MessageT>::ros_message_type, AllocatorT>&&) [35m[K[with MessageT = sensor_msgs::msg::Image_<std::allocator<void> >; AllocatorT = std::allocator<void>; typename rclcpp::TypeAdapter<MessageT>::ros_message_type = sensor_msgs::msg::Image_<std::allocator<void> >][m[K[m[K’
+  414 |   [01;36m[Kpublish[m[K(rclcpp::LoanedMessage<ROSMessageType, AllocatorT> && loaned_msg)
+      |   [01;36m[K^~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:414:64:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >[m[K’ to ‘[01m[Krclcpp::LoanedMessage<sensor_msgs::msg::Image_<std::allocator<void> >, std::allocator<void> >&&[m[K’
+  414 |   publish([01;36m[Krclcpp::LoanedMessage<ROSMessageType, AllocatorT> && loaned_msg[m[K)
+      |           [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/core.hpp:48[m[K,
+                 from [01m[K/opt/ros/jazzy/include/cv_bridge/cv_bridge/cv_bridge.hpp:43[m[K,
+                 from [01m[K/home/golftrolley/robot_ws/src/stereo_camera_node/src/stereo_camera_node.cpp:4[m[K:
+/usr/include/opencv4/opencv2/core/persistence.hpp: In instantiation of ‘[01m[Kvoid cv::[01;32m[Koperator>>[m[K(const FileNode&, _Tp&) [35m[K[with _Tp = unsigned int][m[K[m[K’:
+[01m[K/home/golftrolley/robot_ws/src/stereo_camera_node/src/stereo_camera_node.cpp:49:44:[m[K   required from here
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kread(const cv::FileNode&, unsigned int&, unsigned int)[m[K’
+ 1281 |     [01;31m[Kread( n, value, _Tp())[m[K;
+      |     [01;31m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1159:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, short int&, short int)[m[K’ (near match)
+ 1159 | void [01;36m[Kread[m[K(const FileNode& node, short& value, short default_value)
+      |      [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1159:6:[m[K [01;36m[Knote: [m[K  conversion of argument 2 would be ill-formed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;31m[Kerror: [m[Kcannot bind non-const lvalue reference of type ‘[01m[Kshort int&[m[K’ to a value of type ‘[01m[Kunsigned int[m[K’
+ 1281 |     [01;31m[Kread( n, value, _Tp())[m[K;
+      |     [01;31m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1151:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, ushort&, ushort)[m[K’ (near match)
+ 1151 | void [01;36m[Kread[m[K(const FileNode& node, ushort& value, ushort default_value)
+      |      [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1151:6:[m[K [01;36m[Knote: [m[K  conversion of argument 2 would be ill-formed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;31m[Kerror: [m[Kcannot bind non-const lvalue reference of type ‘[01m[Kushort&[m[K’ {aka ‘[01m[Kshort unsigned int&[m[K’} to a value of type ‘[01m[Kunsigned int[m[K’
+ 1281 |     [01;31m[Kread( n, value, _Tp())[m[K;
+      |     [01;31m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1143:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, schar&, schar)[m[K’ (near match)
+ 1143 | void [01;36m[Kread[m[K(const FileNode& node, schar& value, schar default_value)
+      |      [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1143:6:[m[K [01;36m[Knote: [m[K  conversion of argument 2 would be ill-formed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;31m[Kerror: [m[Kcannot bind non-const lvalue reference of type ‘[01m[Kschar&[m[K’ {aka ‘[01m[Ksigned char&[m[K’} to a value of type ‘[01m[Kunsigned int[m[K’
+ 1281 |     [01;31m[Kread( n, value, _Tp())[m[K;
+      |     [01;31m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1135:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, uchar&, uchar)[m[K’ (near match)
+ 1135 | void [01;36m[Kread[m[K(const FileNode& node, uchar& value, uchar default_value)
+      |      [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1135:6:[m[K [01;36m[Knote: [m[K  conversion of argument 2 would be ill-formed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;31m[Kerror: [m[Kcannot bind non-const lvalue reference of type ‘[01m[Kuchar&[m[K’ {aka ‘[01m[Kunsigned char&[m[K’} to a value of type ‘[01m[Kunsigned int[m[K’
+ 1281 |     [01;31m[Kread( n, value, _Tp())[m[K;
+      |     [01;31m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1127:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, bool&, bool)[m[K’ (near match)
+ 1127 | void [01;36m[Kread[m[K(const FileNode& node, bool& value, bool default_value)
+      |      [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1127:6:[m[K [01;36m[Knote: [m[K  conversion of argument 2 would be ill-formed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;31m[Kerror: [m[Kcannot bind non-const lvalue reference of type ‘[01m[Kbool&[m[K’ to a value of type ‘[01m[Kunsigned int[m[K’
+ 1281 |     [01;31m[Kread( n, value, _Tp())[m[K;
+      |     [01;31m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:725:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, double&, double)[m[K’ (near match)
+  725 | CV_EXPORTS void [01;36m[Kread[m[K(const FileNode& node, double& value, double default_value);
+      |                 [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:725:17:[m[K [01;36m[Knote: [m[K  conversion of argument 2 would be ill-formed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;31m[Kerror: [m[Kcannot bind non-const lvalue reference of type ‘[01m[Kdouble&[m[K’ to a value of type ‘[01m[Kunsigned int[m[K’
+ 1281 |     [01;31m[Kread( n, value, _Tp())[m[K;
+      |     [01;31m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:724:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, float&, float)[m[K’ (near match)
+  724 | CV_EXPORTS void [01;36m[Kread[m[K(const FileNode& node, float& value, float default_value);
+      |                 [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:724:17:[m[K [01;36m[Knote: [m[K  conversion of argument 2 would be ill-formed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;31m[Kerror: [m[Kcannot bind non-const lvalue reference of type ‘[01m[Kfloat&[m[K’ to a value of type ‘[01m[Kunsigned int[m[K’
+ 1281 |     [01;31m[Kread( n, value, _Tp())[m[K;
+      |     [01;31m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:723:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, int&, int)[m[K’ (near match)
+  723 | CV_EXPORTS void [01;36m[Kread[m[K(const FileNode& node, int& value, int default_value);
+      |                 [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:723:17:[m[K [01;36m[Knote: [m[K  conversion of argument 2 would be ill-formed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;31m[Kerror: [m[Kcannot bind non-const lvalue reference of type ‘[01m[Kint&[m[K’ to a value of type ‘[01m[Kunsigned int[m[K’
+ 1281 |     [01;31m[Kread( n, value, _Tp())[m[K;
+      |     [01;31m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1203:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, std::vector<DMatch>&, const std::vector<DMatch>&)[m[K’
+ 1203 | void [01;36m[Kread[m[K( const FileNode& node, std::vector<DMatch>& vec, const std::vector<DMatch>& default_value )
+      |      [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1203:55:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kunsigned int[m[K’ to ‘[01m[Kstd::vector<cv::DMatch>&[m[K’
+ 1203 | void read( const FileNode& node, [01;36m[Kstd::vector<DMatch>& vec[m[K, const std::vector<DMatch>& default_value )
+      |                                  [01;36m[K~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1194:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, std::vector<KeyPoint>&, const std::vector<KeyPoint>&)[m[K’
+ 1194 | void [01;36m[Kread[m[K( const FileNode& node, std::vector<KeyPoint>& vec, const std::vector<KeyPoint>& default_value )
+      |      [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1194:57:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kunsigned int[m[K’ to ‘[01m[Kstd::vector<cv::KeyPoint>&[m[K’
+ 1194 | void read( const FileNode& node, [01;36m[Kstd::vector<KeyPoint>& vec[m[K, const std::vector<KeyPoint>& default_value )
+      |                                  [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:792:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, Range&, const Range&)[m[K’
+  792 | static inline void [01;36m[Kread[m[K(const FileNode& node, Range& value, const Range& default_value)
+      |                    [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:792:54:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kunsigned int[m[K’ to ‘[01m[Kcv::Range&[m[K’
+  792 | static inline void read(const FileNode& node, [01;36m[KRange& value[m[K, const Range& default_value)
+      |                                               [01;36m[K~~~~~~~^~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:734:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, DMatch&, const DMatch&)[m[K’
+  734 | CV_EXPORTS void [01;36m[Kread[m[K(const FileNode& node, DMatch& value, const DMatch& default_value);
+      |                 [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:734:52:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kunsigned int[m[K’ to ‘[01m[Kcv::DMatch&[m[K’
+  734 | CV_EXPORTS void read(const FileNode& node, [01;36m[KDMatch& value[m[K, const DMatch& default_value);
+      |                                            [01;36m[K~~~~~~~~^~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:733:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, KeyPoint&, const KeyPoint&)[m[K’
+  733 | CV_EXPORTS void [01;36m[Kread[m[K(const FileNode& node, KeyPoint& value, const KeyPoint& default_value);
+      |                 [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:733:54:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kunsigned int[m[K’ to ‘[01m[Kcv::KeyPoint&[m[K’
+  733 | CV_EXPORTS void read(const FileNode& node, [01;36m[KKeyPoint& value[m[K, const KeyPoint& default_value);
+      |                                            [01;36m[K~~~~~~~~~~^~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:728:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, SparseMat&, const SparseMat&)[m[K’
+  728 | CV_EXPORTS void [01;36m[Kread[m[K(const FileNode& node, SparseMat& mat, const SparseMat& default_mat = SparseMat() );
+      |                 [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:728:55:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kunsigned int[m[K’ to ‘[01m[Kcv::SparseMat&[m[K’
+  728 | CV_EXPORTS void read(const FileNode& node, [01;36m[KSparseMat& mat[m[K, const SparseMat& default_mat = SparseMat() );
+      |                                            [01;36m[K~~~~~~~~~~~^~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:727:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, Mat&, const Mat&)[m[K’
+  727 | CV_EXPORTS void [01;36m[Kread[m[K(const FileNode& node, Mat& mat, const Mat& default_mat = Mat() );
+      |                 [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:727:49:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kunsigned int[m[K’ to ‘[01m[Kcv::Mat&[m[K’
+  727 | CV_EXPORTS void read(const FileNode& node, [01;36m[KMat& mat[m[K, const Mat& default_mat = Mat() );
+      |                                            [01;36m[K~~~~~^~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:726:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, std::string&, const std::string&)[m[K’
+  726 | CV_EXPORTS void [01;36m[Kread[m[K(const FileNode& node, std::string& value, const std::string& default_value);
+      |                 [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:726:57:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kunsigned int[m[K’ to ‘[01m[Kstd::string&[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>&[m[K’}
+  726 | CV_EXPORTS void read(const FileNode& node, [01;36m[Kstd::string& value[m[K, const std::string& default_value);
+      |                                            [01;36m[K~~~~~~~~~~~~~^~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:736:43:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> void cv::[01;32m[Kread[m[K(const FileNode&, Point_<_Tp>&, const Point_<_Tp>&)[m[K’
+  736 | template<typename _Tp> static inline void [01;36m[Kread[m[K(const FileNode& node, Point_<_Tp>& value, const Point_<_Tp>& default_value)
+      |                                           [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:736:43:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kcv::Point_<_Tp>[m[K’ and ‘[01m[Kunsigned int[m[K’
+ 1281 |     [01;36m[Kread( n, value, _Tp())[m[K;
+      |     [01;36m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:742:43:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> void cv::[01;32m[Kread[m[K(const FileNode&, Point3_<_Tp>&, const Point3_<_Tp>&)[m[K’
+  742 | template<typename _Tp> static inline void [01;36m[Kread[m[K(const FileNode& node, Point3_<_Tp>& value, const Point3_<_Tp>& default_value)
+      |                                           [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:742:43:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kcv::Point3_<_Tp>[m[K’ and ‘[01m[Kunsigned int[m[K’
+ 1281 |     [01;36m[Kread( n, value, _Tp())[m[K;
+      |     [01;36m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:749:43:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> void cv::[01;32m[Kread[m[K(const FileNode&, Size_<_Tp>&, const Size_<_Tp>&)[m[K’
+  749 | template<typename _Tp> static inline void [01;36m[Kread[m[K(const FileNode& node, Size_<_Tp>& value, const Size_<_Tp>& default_value)
+      |                                           [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:749:43:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kcv::Size_<_Tp>[m[K’ and ‘[01m[Kunsigned int[m[K’
+ 1281 |     [01;36m[Kread( n, value, _Tp())[m[K;
+      |     [01;36m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:755:43:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> void cv::[01;32m[Kread[m[K(const FileNode&, Complex<_Tp>&, const Complex<_Tp>&)[m[K’
+  755 | template<typename _Tp> static inline void [01;36m[Kread[m[K(const FileNode& node, Complex<_Tp>& value, const Complex<_Tp>& default_value)
+      |                                           [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:755:43:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kcv::Complex<_Tp>[m[K’ and ‘[01m[Kunsigned int[m[K’
+ 1281 |     [01;36m[Kread( n, value, _Tp())[m[K;
+      |     [01;36m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:761:43:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> void cv::[01;32m[Kread[m[K(const FileNode&, Rect_<_Tp>&, const Rect_<_Tp>&)[m[K’
+  761 | template<typename _Tp> static inline void [01;36m[Kread[m[K(const FileNode& node, Rect_<_Tp>& value, const Rect_<_Tp>& default_value)
+      |                                           [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:761:43:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kcv::Rect_<_Tp>[m[K’ and ‘[01m[Kunsigned int[m[K’
+ 1281 |     [01;36m[Kread( n, value, _Tp())[m[K;
+      |     [01;36m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:768:51:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, int cn> void cv::[01;32m[Kread[m[K(const FileNode&, Vec<_Tp, m>&, const Vec<_Tp, m>&)[m[K’
+  768 | template<typename _Tp, int cn> static inline void [01;36m[Kread[m[K(const FileNode& node, Vec<_Tp, cn>& value, const Vec<_Tp, cn>& default_value)
+      |                                                   [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:768:51:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kcv::Vec<_Tp, m>[m[K’ and ‘[01m[Kunsigned int[m[K’
+ 1281 |     [01;36m[Kread( n, value, _Tp())[m[K;
+      |     [01;36m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:774:57:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, int m, int n> void cv::[01;32m[Kread[m[K(const FileNode&, Matx<_Tp, m, n>&, const Matx<_Tp, m, n>&)[m[K’
+  774 | template<typename _Tp, int m, int n> static inline void [01;36m[Kread[m[K(const FileNode& node, Matx<_Tp, m, n>& value, const Matx<_Tp, m, n>& default_matx = Matx<_Tp, m, n>())
+      |                                                         [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:774:57:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kcv::Matx<_Tp, m, n>[m[K’ and ‘[01m[Kunsigned int[m[K’
+ 1281 |     [01;36m[Kread( n, value, _Tp())[m[K;
+      |     [01;36m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:785:43:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> void cv::[01;32m[Kread[m[K(const FileNode&, Scalar_<_Tp>&, const Scalar_<_Tp>&)[m[K’
+  785 | template<typename _Tp> static inline void [01;36m[Kread[m[K(const FileNode& node, Scalar_<_Tp>& value, const Scalar_<_Tp>& default_value)
+      |                                           [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:785:43:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kcv::Scalar_<_Tp>[m[K’ and ‘[01m[Kunsigned int[m[K’
+ 1281 |     [01;36m[Kread( n, value, _Tp())[m[K;
+      |     [01;36m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1167:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> void cv::[01;32m[Kread[m[K(FileNodeIterator&, std::vector<BufferT>&, size_t)[m[K’
+ 1167 | void [01;36m[Kread[m[K( FileNodeIterator& it, std::vector<_Tp>& vec, size_t maxCount = (size_t)INT_MAX )
+      |      [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1167:6:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::vector<BufferT>[m[K’ and ‘[01m[Kunsigned int[m[K’
+ 1281 |     [01;36m[Kread( n, value, _Tp())[m[K;
+      |     [01;36m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1174:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, typename std::enable_if<std::is_enum<_Tp>::value>::type* <anonymous> > void cv::[01;32m[Kread[m[K(const FileNode&, _Tp&, const _Tp&)[m[K’
+ 1174 | static inline void [01;36m[Kread[m[K(const FileNode& node, _Tp& value, const _Tp& default_value = static_cast<_Tp>(0))
+      |                    [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1174:20:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1173:85:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, void>[m[K’
+ 1173 | template<typename _Tp, typename std::enable_if< std::is_enum<_Tp>::value >::type* = [01;31m[Knullptr[m[K>
+      |                                                                                     [01;31m[K^~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1182:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> void cv::[01;32m[Kread[m[K(const FileNode&, std::vector<BufferT>&, const std::vector<BufferT>&)[m[K’
+ 1182 | void [01;36m[Kread[m[K( const FileNode& node, std::vector<_Tp>& vec, const std::vector<_Tp>& default_value = std::vector<_Tp>() )
+      |      [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1182:6:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::vector<BufferT>[m[K’ and ‘[01m[Kunsigned int[m[K’
+ 1281 |     [01;36m[Kread( n, value, _Tp())[m[K;
+      |     [01;36m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:730:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, std::vector<KeyPoint>&)[m[K’
+  730 | CV_EXPORTS void [01;36m[Kread[m[K(const FileNode& node, std::vector<KeyPoint>& keypoints);
+      |                 [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:730:17:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 3 provided
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:731:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, std::vector<DMatch>&)[m[K’
+  731 | CV_EXPORTS void [01;36m[Kread[m[K(const FileNode& node, std::vector<DMatch>& matches);
+      |                 [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:731:17:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 3 provided
+/usr/include/opencv4/opencv2/core/persistence.hpp: In instantiation of ‘[01m[Kvoid cv::[01;32m[Koperator>>[m[K(const FileNode&, _Tp&) [35m[K[with _Tp = std::array<double, 9>][m[K[m[K’:
+[01m[K/home/golftrolley/robot_ws/src/stereo_camera_node/src/stereo_camera_node.cpp:51:36:[m[K   required from here
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kread(const cv::FileNode&, std::array<double, 9>&, std::array<double, 9>)[m[K’
+ 1281 |     [01;31m[Kread( n, value, _Tp())[m[K;
+      |     [01;31m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1203:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, std::vector<DMatch>&, const std::vector<DMatch>&)[m[K’
+ 1203 | void [01;36m[Kread[m[K( const FileNode& node, std::vector<DMatch>& vec, const std::vector<DMatch>& default_value )
+      |      [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1203:55:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::array<double, 9>[m[K’ to ‘[01m[Kstd::vector<cv::DMatch>&[m[K’
+ 1203 | void read( const FileNode& node, [01;36m[Kstd::vector<DMatch>& vec[m[K, const std::vector<DMatch>& default_value )
+      |                                  [01;36m[K~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1194:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, std::vector<KeyPoint>&, const std::vector<KeyPoint>&)[m[K’
+ 1194 | void [01;36m[Kread[m[K( const FileNode& node, std::vector<KeyPoint>& vec, const std::vector<KeyPoint>& default_value )
+      |      [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1194:57:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::array<double, 9>[m[K’ to ‘[01m[Kstd::vector<cv::KeyPoint>&[m[K’
+ 1194 | void read( const FileNode& node, [01;36m[Kstd::vector<KeyPoint>& vec[m[K, const std::vector<KeyPoint>& default_value )
+      |                                  [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1159:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, short int&, short int)[m[K’
+ 1159 | void [01;36m[Kread[m[K(const FileNode& node, short& value, short default_value)
+      |      [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1159:40:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::array<double, 9>[m[K’ to ‘[01m[Kshort int&[m[K’
+ 1159 | void read(const FileNode& node, [01;36m[Kshort& value[m[K, short default_value)
+      |                                 [01;36m[K~~~~~~~^~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1151:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, ushort&, ushort)[m[K’
+ 1151 | void [01;36m[Kread[m[K(const FileNode& node, ushort& value, ushort default_value)
+      |      [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1151:41:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::array<double, 9>[m[K’ to ‘[01m[Kushort&[m[K’ {aka ‘[01m[Kshort unsigned int&[m[K’}
+ 1151 | void read(const FileNode& node, [01;36m[Kushort& value[m[K, ushort default_value)
+      |                                 [01;36m[K~~~~~~~~^~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1143:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, schar&, schar)[m[K’
+ 1143 | void [01;36m[Kread[m[K(const FileNode& node, schar& value, schar default_value)
+      |      [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1143:40:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::array<double, 9>[m[K’ to ‘[01m[Kschar&[m[K’ {aka ‘[01m[Ksigned char&[m[K’}
+ 1143 | void read(const FileNode& node, [01;36m[Kschar& value[m[K, schar default_value)
+      |                                 [01;36m[K~~~~~~~^~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1135:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, uchar&, uchar)[m[K’
+ 1135 | void [01;36m[Kread[m[K(const FileNode& node, uchar& value, uchar default_value)
+      |      [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1135:40:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::array<double, 9>[m[K’ to ‘[01m[Kuchar&[m[K’ {aka ‘[01m[Kunsigned char&[m[K’}
+ 1135 | void read(const FileNode& node, [01;36m[Kuchar& value[m[K, uchar default_value)
+      |                                 [01;36m[K~~~~~~~^~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1127:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, bool&, bool)[m[K’
+ 1127 | void [01;36m[Kread[m[K(const FileNode& node, bool& value, bool default_value)
+      |      [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1127:39:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::array<double, 9>[m[K’ to ‘[01m[Kbool&[m[K’
+ 1127 | void read(const FileNode& node, [01;36m[Kbool& value[m[K, bool default_value)
+      |                                 [01;36m[K~~~~~~^~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:792:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, Range&, const Range&)[m[K’
+  792 | static inline void [01;36m[Kread[m[K(const FileNode& node, Range& value, const Range& default_value)
+      |                    [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:792:54:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::array<double, 9>[m[K’ to ‘[01m[Kcv::Range&[m[K’
+  792 | static inline void read(const FileNode& node, [01;36m[KRange& value[m[K, const Range& default_value)
+      |                                               [01;36m[K~~~~~~~^~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:734:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, DMatch&, const DMatch&)[m[K’
+  734 | CV_EXPORTS void [01;36m[Kread[m[K(const FileNode& node, DMatch& value, const DMatch& default_value);
+      |                 [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:734:52:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::array<double, 9>[m[K’ to ‘[01m[Kcv::DMatch&[m[K’
+  734 | CV_EXPORTS void read(const FileNode& node, [01;36m[KDMatch& value[m[K, const DMatch& default_value);
+      |                                            [01;36m[K~~~~~~~~^~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:733:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, KeyPoint&, const KeyPoint&)[m[K’
+  733 | CV_EXPORTS void [01;36m[Kread[m[K(const FileNode& node, KeyPoint& value, const KeyPoint& default_value);
+      |                 [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:733:54:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::array<double, 9>[m[K’ to ‘[01m[Kcv::KeyPoint&[m[K’
+  733 | CV_EXPORTS void read(const FileNode& node, [01;36m[KKeyPoint& value[m[K, const KeyPoint& default_value);
+      |                                            [01;36m[K~~~~~~~~~~^~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:728:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, SparseMat&, const SparseMat&)[m[K’
+  728 | CV_EXPORTS void [01;36m[Kread[m[K(const FileNode& node, SparseMat& mat, const SparseMat& default_mat = SparseMat() );
+      |                 [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:728:55:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::array<double, 9>[m[K’ to ‘[01m[Kcv::SparseMat&[m[K’
+  728 | CV_EXPORTS void read(const FileNode& node, [01;36m[KSparseMat& mat[m[K, const SparseMat& default_mat = SparseMat() );
+      |                                            [01;36m[K~~~~~~~~~~~^~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:727:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, Mat&, const Mat&)[m[K’
+  727 | CV_EXPORTS void [01;36m[Kread[m[K(const FileNode& node, Mat& mat, const Mat& default_mat = Mat() );
+      |                 [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:727:49:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::array<double, 9>[m[K’ to ‘[01m[Kcv::Mat&[m[K’
+  727 | CV_EXPORTS void read(const FileNode& node, [01;36m[KMat& mat[m[K, const Mat& default_mat = Mat() );
+      |                                            [01;36m[K~~~~~^~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:726:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, std::string&, const std::string&)[m[K’
+  726 | CV_EXPORTS void [01;36m[Kread[m[K(const FileNode& node, std::string& value, const std::string& default_value);
+      |                 [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:726:57:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::array<double, 9>[m[K’ to ‘[01m[Kstd::string&[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>&[m[K’}
+  726 | CV_EXPORTS void read(const FileNode& node, [01;36m[Kstd::string& value[m[K, const std::string& default_value);
+      |                                            [01;36m[K~~~~~~~~~~~~~^~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:725:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, double&, double)[m[K’
+  725 | CV_EXPORTS void [01;36m[Kread[m[K(const FileNode& node, double& value, double default_value);
+      |                 [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:725:52:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::array<double, 9>[m[K’ to ‘[01m[Kdouble&[m[K’
+  725 | CV_EXPORTS void read(const FileNode& node, [01;36m[Kdouble& value[m[K, double default_value);
+      |                                            [01;36m[K~~~~~~~~^~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:724:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, float&, float)[m[K’
+  724 | CV_EXPORTS void [01;36m[Kread[m[K(const FileNode& node, float& value, float default_value);
+      |                 [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:724:51:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::array<double, 9>[m[K’ to ‘[01m[Kfloat&[m[K’
+  724 | CV_EXPORTS void read(const FileNode& node, [01;36m[Kfloat& value[m[K, float default_value);
+      |                                            [01;36m[K~~~~~~~^~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:723:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, int&, int)[m[K’
+  723 | CV_EXPORTS void [01;36m[Kread[m[K(const FileNode& node, int& value, int default_value);
+      |                 [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:723:49:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::array<double, 9>[m[K’ to ‘[01m[Kint&[m[K’
+  723 | CV_EXPORTS void read(const FileNode& node, [01;36m[Kint& value[m[K, int default_value);
+      |                                            [01;36m[K~~~~~^~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:736:43:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> void cv::[01;32m[Kread[m[K(const FileNode&, Point_<_Tp>&, const Point_<_Tp>&)[m[K’
+  736 | template<typename _Tp> static inline void [01;36m[Kread[m[K(const FileNode& node, Point_<_Tp>& value, const Point_<_Tp>& default_value)
+      |                                           [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:736:43:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::array<double, 9>[m[K’ is not derived from ‘[01m[Kcv::Point_<_Tp>[m[K’
+ 1281 |     [01;36m[Kread( n, value, _Tp())[m[K;
+      |     [01;36m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:742:43:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> void cv::[01;32m[Kread[m[K(const FileNode&, Point3_<_Tp>&, const Point3_<_Tp>&)[m[K’
+  742 | template<typename _Tp> static inline void [01;36m[Kread[m[K(const FileNode& node, Point3_<_Tp>& value, const Point3_<_Tp>& default_value)
+      |                                           [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:742:43:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::array<double, 9>[m[K’ is not derived from ‘[01m[Kcv::Point3_<_Tp>[m[K’
+ 1281 |     [01;36m[Kread( n, value, _Tp())[m[K;
+      |     [01;36m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:749:43:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> void cv::[01;32m[Kread[m[K(const FileNode&, Size_<_Tp>&, const Size_<_Tp>&)[m[K’
+  749 | template<typename _Tp> static inline void [01;36m[Kread[m[K(const FileNode& node, Size_<_Tp>& value, const Size_<_Tp>& default_value)
+      |                                           [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:749:43:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::array<double, 9>[m[K’ is not derived from ‘[01m[Kcv::Size_<_Tp>[m[K’
+ 1281 |     [01;36m[Kread( n, value, _Tp())[m[K;
+      |     [01;36m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:755:43:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> void cv::[01;32m[Kread[m[K(const FileNode&, Complex<_Tp>&, const Complex<_Tp>&)[m[K’
+  755 | template<typename _Tp> static inline void [01;36m[Kread[m[K(const FileNode& node, Complex<_Tp>& value, const Complex<_Tp>& default_value)
+      |                                           [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:755:43:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::array<double, 9>[m[K’ is not derived from ‘[01m[Kcv::Complex<_Tp>[m[K’
+ 1281 |     [01;36m[Kread( n, value, _Tp())[m[K;
+      |     [01;36m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:761:43:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> void cv::[01;32m[Kread[m[K(const FileNode&, Rect_<_Tp>&, const Rect_<_Tp>&)[m[K’
+  761 | template<typename _Tp> static inline void [01;36m[Kread[m[K(const FileNode& node, Rect_<_Tp>& value, const Rect_<_Tp>& default_value)
+      |                                           [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:761:43:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::array<double, 9>[m[K’ is not derived from ‘[01m[Kcv::Rect_<_Tp>[m[K’
+ 1281 |     [01;36m[Kread( n, value, _Tp())[m[K;
+      |     [01;36m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:768:51:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, int cn> void cv::[01;32m[Kread[m[K(const FileNode&, Vec<_Tp, m>&, const Vec<_Tp, m>&)[m[K’
+  768 | template<typename _Tp, int cn> static inline void [01;36m[Kread[m[K(const FileNode& node, Vec<_Tp, cn>& value, const Vec<_Tp, cn>& default_value)
+      |                                                   [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:768:51:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::array<double, 9>[m[K’ is not derived from ‘[01m[Kcv::Vec<_Tp, m>[m[K’
+ 1281 |     [01;36m[Kread( n, value, _Tp())[m[K;
+      |     [01;36m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:774:57:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, int m, int n> void cv::[01;32m[Kread[m[K(const FileNode&, Matx<_Tp, m, n>&, const Matx<_Tp, m, n>&)[m[K’
+  774 | template<typename _Tp, int m, int n> static inline void [01;36m[Kread[m[K(const FileNode& node, Matx<_Tp, m, n>& value, const Matx<_Tp, m, n>& default_matx = Matx<_Tp, m, n>())
+      |                                                         [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:774:57:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::array<double, 9>[m[K’ is not derived from ‘[01m[Kcv::Matx<_Tp, m, n>[m[K’
+ 1281 |     [01;36m[Kread( n, value, _Tp())[m[K;
+      |     [01;36m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:785:43:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> void cv::[01;32m[Kread[m[K(const FileNode&, Scalar_<_Tp>&, const Scalar_<_Tp>&)[m[K’
+  785 | template<typename _Tp> static inline void [01;36m[Kread[m[K(const FileNode& node, Scalar_<_Tp>& value, const Scalar_<_Tp>& default_value)
+      |                                           [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:785:43:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::array<double, 9>[m[K’ is not derived from ‘[01m[Kcv::Scalar_<_Tp>[m[K’
+ 1281 |     [01;36m[Kread( n, value, _Tp())[m[K;
+      |     [01;36m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1167:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> void cv::[01;32m[Kread[m[K(FileNodeIterator&, std::vector<BufferT>&, size_t)[m[K’
+ 1167 | void [01;36m[Kread[m[K( FileNodeIterator& it, std::vector<_Tp>& vec, size_t maxCount = (size_t)INT_MAX )
+      |      [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1167:6:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::array<double, 9>[m[K’ is not derived from ‘[01m[Kstd::vector<BufferT>[m[K’
+ 1281 |     [01;36m[Kread( n, value, _Tp())[m[K;
+      |     [01;36m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1174:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, typename std::enable_if<std::is_enum<_Tp>::value>::type* <anonymous> > void cv::[01;32m[Kread[m[K(const FileNode&, _Tp&, const _Tp&)[m[K’
+ 1174 | static inline void [01;36m[Kread[m[K(const FileNode& node, _Tp& value, const _Tp& default_value = static_cast<_Tp>(0))
+      |                    [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1174:20:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1173:85:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, void>[m[K’
+ 1173 | template<typename _Tp, typename std::enable_if< std::is_enum<_Tp>::value >::type* = [01;31m[Knullptr[m[K>
+      |                                                                                     [01;31m[K^~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1182:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> void cv::[01;32m[Kread[m[K(const FileNode&, std::vector<BufferT>&, const std::vector<BufferT>&)[m[K’
+ 1182 | void [01;36m[Kread[m[K( const FileNode& node, std::vector<_Tp>& vec, const std::vector<_Tp>& default_value = std::vector<_Tp>() )
+      |      [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1182:6:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::array<double, 9>[m[K’ is not derived from ‘[01m[Kstd::vector<BufferT>[m[K’
+ 1281 |     [01;36m[Kread( n, value, _Tp())[m[K;
+      |     [01;36m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:730:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, std::vector<KeyPoint>&)[m[K’
+  730 | CV_EXPORTS void [01;36m[Kread[m[K(const FileNode& node, std::vector<KeyPoint>& keypoints);
+      |                 [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:730:17:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 3 provided
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:731:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, std::vector<DMatch>&)[m[K’
+  731 | CV_EXPORTS void [01;36m[Kread[m[K(const FileNode& node, std::vector<DMatch>& matches);
+      |                 [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:731:17:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 3 provided
+/usr/include/opencv4/opencv2/core/persistence.hpp: In instantiation of ‘[01m[Kvoid cv::[01;32m[Koperator>>[m[K(const FileNode&, _Tp&) [35m[K[with _Tp = std::array<double, 12>][m[K[m[K’:
+[01m[K/home/golftrolley/robot_ws/src/stereo_camera_node/src/stereo_camera_node.cpp:54:36:[m[K   required from here
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kread(const cv::FileNode&, std::array<double, 12>&, std::array<double, 12>)[m[K’
+ 1281 |     [01;31m[Kread( n, value, _Tp())[m[K;
+      |     [01;31m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1203:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, std::vector<DMatch>&, const std::vector<DMatch>&)[m[K’
+ 1203 | void [01;36m[Kread[m[K( const FileNode& node, std::vector<DMatch>& vec, const std::vector<DMatch>& default_value )
+      |      [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1203:55:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::array<double, 12>[m[K’ to ‘[01m[Kstd::vector<cv::DMatch>&[m[K’
+ 1203 | void read( const FileNode& node, [01;36m[Kstd::vector<DMatch>& vec[m[K, const std::vector<DMatch>& default_value )
+      |                                  [01;36m[K~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1194:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, std::vector<KeyPoint>&, const std::vector<KeyPoint>&)[m[K’
+ 1194 | void [01;36m[Kread[m[K( const FileNode& node, std::vector<KeyPoint>& vec, const std::vector<KeyPoint>& default_value )
+      |      [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1194:57:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::array<double, 12>[m[K’ to ‘[01m[Kstd::vector<cv::KeyPoint>&[m[K’
+ 1194 | void read( const FileNode& node, [01;36m[Kstd::vector<KeyPoint>& vec[m[K, const std::vector<KeyPoint>& default_value )
+      |                                  [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1159:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, short int&, short int)[m[K’
+ 1159 | void [01;36m[Kread[m[K(const FileNode& node, short& value, short default_value)
+      |      [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1159:40:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::array<double, 12>[m[K’ to ‘[01m[Kshort int&[m[K’
+ 1159 | void read(const FileNode& node, [01;36m[Kshort& value[m[K, short default_value)
+      |                                 [01;36m[K~~~~~~~^~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1151:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, ushort&, ushort)[m[K’
+ 1151 | void [01;36m[Kread[m[K(const FileNode& node, ushort& value, ushort default_value)
+      |      [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1151:41:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::array<double, 12>[m[K’ to ‘[01m[Kushort&[m[K’ {aka ‘[01m[Kshort unsigned int&[m[K’}
+ 1151 | void read(const FileNode& node, [01;36m[Kushort& value[m[K, ushort default_value)
+      |                                 [01;36m[K~~~~~~~~^~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1143:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, schar&, schar)[m[K’
+ 1143 | void [01;36m[Kread[m[K(const FileNode& node, schar& value, schar default_value)
+      |      [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1143:40:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::array<double, 12>[m[K’ to ‘[01m[Kschar&[m[K’ {aka ‘[01m[Ksigned char&[m[K’}
+ 1143 | void read(const FileNode& node, [01;36m[Kschar& value[m[K, schar default_value)
+      |                                 [01;36m[K~~~~~~~^~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1135:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, uchar&, uchar)[m[K’
+ 1135 | void [01;36m[Kread[m[K(const FileNode& node, uchar& value, uchar default_value)
+      |      [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1135:40:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::array<double, 12>[m[K’ to ‘[01m[Kuchar&[m[K’ {aka ‘[01m[Kunsigned char&[m[K’}
+ 1135 | void read(const FileNode& node, [01;36m[Kuchar& value[m[K, uchar default_value)
+      |                                 [01;36m[K~~~~~~~^~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1127:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, bool&, bool)[m[K’
+ 1127 | void [01;36m[Kread[m[K(const FileNode& node, bool& value, bool default_value)
+      |      [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1127:39:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::array<double, 12>[m[K’ to ‘[01m[Kbool&[m[K’
+ 1127 | void read(const FileNode& node, [01;36m[Kbool& value[m[K, bool default_value)
+      |                                 [01;36m[K~~~~~~^~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:792:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, Range&, const Range&)[m[K’
+  792 | static inline void [01;36m[Kread[m[K(const FileNode& node, Range& value, const Range& default_value)
+      |                    [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:792:54:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::array<double, 12>[m[K’ to ‘[01m[Kcv::Range&[m[K’
+  792 | static inline void read(const FileNode& node, [01;36m[KRange& value[m[K, const Range& default_value)
+      |                                               [01;36m[K~~~~~~~^~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:734:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, DMatch&, const DMatch&)[m[K’
+  734 | CV_EXPORTS void [01;36m[Kread[m[K(const FileNode& node, DMatch& value, const DMatch& default_value);
+      |                 [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:734:52:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::array<double, 12>[m[K’ to ‘[01m[Kcv::DMatch&[m[K’
+  734 | CV_EXPORTS void read(const FileNode& node, [01;36m[KDMatch& value[m[K, const DMatch& default_value);
+      |                                            [01;36m[K~~~~~~~~^~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:733:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, KeyPoint&, const KeyPoint&)[m[K’
+  733 | CV_EXPORTS void [01;36m[Kread[m[K(const FileNode& node, KeyPoint& value, const KeyPoint& default_value);
+      |                 [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:733:54:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::array<double, 12>[m[K’ to ‘[01m[Kcv::KeyPoint&[m[K’
+  733 | CV_EXPORTS void read(const FileNode& node, [01;36m[KKeyPoint& value[m[K, const KeyPoint& default_value);
+      |                                            [01;36m[K~~~~~~~~~~^~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:728:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, SparseMat&, const SparseMat&)[m[K’
+  728 | CV_EXPORTS void [01;36m[Kread[m[K(const FileNode& node, SparseMat& mat, const SparseMat& default_mat = SparseMat() );
+      |                 [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:728:55:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::array<double, 12>[m[K’ to ‘[01m[Kcv::SparseMat&[m[K’
+  728 | CV_EXPORTS void read(const FileNode& node, [01;36m[KSparseMat& mat[m[K, const SparseMat& default_mat = SparseMat() );
+      |                                            [01;36m[K~~~~~~~~~~~^~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:727:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, Mat&, const Mat&)[m[K’
+  727 | CV_EXPORTS void [01;36m[Kread[m[K(const FileNode& node, Mat& mat, const Mat& default_mat = Mat() );
+      |                 [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:727:49:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::array<double, 12>[m[K’ to ‘[01m[Kcv::Mat&[m[K’
+  727 | CV_EXPORTS void read(const FileNode& node, [01;36m[KMat& mat[m[K, const Mat& default_mat = Mat() );
+      |                                            [01;36m[K~~~~~^~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:726:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, std::string&, const std::string&)[m[K’
+  726 | CV_EXPORTS void [01;36m[Kread[m[K(const FileNode& node, std::string& value, const std::string& default_value);
+      |                 [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:726:57:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::array<double, 12>[m[K’ to ‘[01m[Kstd::string&[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>&[m[K’}
+  726 | CV_EXPORTS void read(const FileNode& node, [01;36m[Kstd::string& value[m[K, const std::string& default_value);
+      |                                            [01;36m[K~~~~~~~~~~~~~^~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:725:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, double&, double)[m[K’
+  725 | CV_EXPORTS void [01;36m[Kread[m[K(const FileNode& node, double& value, double default_value);
+      |                 [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:725:52:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::array<double, 12>[m[K’ to ‘[01m[Kdouble&[m[K’
+  725 | CV_EXPORTS void read(const FileNode& node, [01;36m[Kdouble& value[m[K, double default_value);
+      |                                            [01;36m[K~~~~~~~~^~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:724:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, float&, float)[m[K’
+  724 | CV_EXPORTS void [01;36m[Kread[m[K(const FileNode& node, float& value, float default_value);
+      |                 [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:724:51:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::array<double, 12>[m[K’ to ‘[01m[Kfloat&[m[K’
+  724 | CV_EXPORTS void read(const FileNode& node, [01;36m[Kfloat& value[m[K, float default_value);
+      |                                            [01;36m[K~~~~~~~^~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:723:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, int&, int)[m[K’
+  723 | CV_EXPORTS void [01;36m[Kread[m[K(const FileNode& node, int& value, int default_value);
+      |                 [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:723:49:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::array<double, 12>[m[K’ to ‘[01m[Kint&[m[K’
+  723 | CV_EXPORTS void read(const FileNode& node, [01;36m[Kint& value[m[K, int default_value);
+      |                                            [01;36m[K~~~~~^~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:736:43:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> void cv::[01;32m[Kread[m[K(const FileNode&, Point_<_Tp>&, const Point_<_Tp>&)[m[K’
+  736 | template<typename _Tp> static inline void [01;36m[Kread[m[K(const FileNode& node, Point_<_Tp>& value, const Point_<_Tp>& default_value)
+      |                                           [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:736:43:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::array<double, 12>[m[K’ is not derived from ‘[01m[Kcv::Point_<_Tp>[m[K’
+ 1281 |     [01;36m[Kread( n, value, _Tp())[m[K;
+      |     [01;36m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:742:43:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> void cv::[01;32m[Kread[m[K(const FileNode&, Point3_<_Tp>&, const Point3_<_Tp>&)[m[K’
+  742 | template<typename _Tp> static inline void [01;36m[Kread[m[K(const FileNode& node, Point3_<_Tp>& value, const Point3_<_Tp>& default_value)
+      |                                           [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:742:43:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::array<double, 12>[m[K’ is not derived from ‘[01m[Kcv::Point3_<_Tp>[m[K’
+ 1281 |     [01;36m[Kread( n, value, _Tp())[m[K;
+      |     [01;36m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:749:43:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> void cv::[01;32m[Kread[m[K(const FileNode&, Size_<_Tp>&, const Size_<_Tp>&)[m[K’
+  749 | template<typename _Tp> static inline void [01;36m[Kread[m[K(const FileNode& node, Size_<_Tp>& value, const Size_<_Tp>& default_value)
+      |                                           [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:749:43:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::array<double, 12>[m[K’ is not derived from ‘[01m[Kcv::Size_<_Tp>[m[K’
+ 1281 |     [01;36m[Kread( n, value, _Tp())[m[K;
+      |     [01;36m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:755:43:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> void cv::[01;32m[Kread[m[K(const FileNode&, Complex<_Tp>&, const Complex<_Tp>&)[m[K’
+  755 | template<typename _Tp> static inline void [01;36m[Kread[m[K(const FileNode& node, Complex<_Tp>& value, const Complex<_Tp>& default_value)
+      |                                           [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:755:43:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::array<double, 12>[m[K’ is not derived from ‘[01m[Kcv::Complex<_Tp>[m[K’
+ 1281 |     [01;36m[Kread( n, value, _Tp())[m[K;
+      |     [01;36m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:761:43:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> void cv::[01;32m[Kread[m[K(const FileNode&, Rect_<_Tp>&, const Rect_<_Tp>&)[m[K’
+  761 | template<typename _Tp> static inline void [01;36m[Kread[m[K(const FileNode& node, Rect_<_Tp>& value, const Rect_<_Tp>& default_value)
+      |                                           [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:761:43:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::array<double, 12>[m[K’ is not derived from ‘[01m[Kcv::Rect_<_Tp>[m[K’
+ 1281 |     [01;36m[Kread( n, value, _Tp())[m[K;
+      |     [01;36m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:768:51:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, int cn> void cv::[01;32m[Kread[m[K(const FileNode&, Vec<_Tp, m>&, const Vec<_Tp, m>&)[m[K’
+  768 | template<typename _Tp, int cn> static inline void [01;36m[Kread[m[K(const FileNode& node, Vec<_Tp, cn>& value, const Vec<_Tp, cn>& default_value)
+      |                                                   [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:768:51:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::array<double, 12>[m[K’ is not derived from ‘[01m[Kcv::Vec<_Tp, m>[m[K’
+ 1281 |     [01;36m[Kread( n, value, _Tp())[m[K;
+      |     [01;36m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:774:57:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, int m, int n> void cv::[01;32m[Kread[m[K(const FileNode&, Matx<_Tp, m, n>&, const Matx<_Tp, m, n>&)[m[K’
+  774 | template<typename _Tp, int m, int n> static inline void [01;36m[Kread[m[K(const FileNode& node, Matx<_Tp, m, n>& value, const Matx<_Tp, m, n>& default_matx = Matx<_Tp, m, n>())
+      |                                                         [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:774:57:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::array<double, 12>[m[K’ is not derived from ‘[01m[Kcv::Matx<_Tp, m, n>[m[K’
+ 1281 |     [01;36m[Kread( n, value, _Tp())[m[K;
+      |     [01;36m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:785:43:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> void cv::[01;32m[Kread[m[K(const FileNode&, Scalar_<_Tp>&, const Scalar_<_Tp>&)[m[K’
+  785 | template<typename _Tp> static inline void [01;36m[Kread[m[K(const FileNode& node, Scalar_<_Tp>& value, const Scalar_<_Tp>& default_value)
+      |                                           [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:785:43:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::array<double, 12>[m[K’ is not derived from ‘[01m[Kcv::Scalar_<_Tp>[m[K’
+ 1281 |     [01;36m[Kread( n, value, _Tp())[m[K;
+      |     [01;36m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1167:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> void cv::[01;32m[Kread[m[K(FileNodeIterator&, std::vector<BufferT>&, size_t)[m[K’
+ 1167 | void [01;36m[Kread[m[K( FileNodeIterator& it, std::vector<_Tp>& vec, size_t maxCount = (size_t)INT_MAX )
+      |      [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1167:6:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::array<double, 12>[m[K’ is not derived from ‘[01m[Kstd::vector<BufferT>[m[K’
+ 1281 |     [01;36m[Kread( n, value, _Tp())[m[K;
+      |     [01;36m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1174:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, typename std::enable_if<std::is_enum<_Tp>::value>::type* <anonymous> > void cv::[01;32m[Kread[m[K(const FileNode&, _Tp&, const _Tp&)[m[K’
+ 1174 | static inline void [01;36m[Kread[m[K(const FileNode& node, _Tp& value, const _Tp& default_value = static_cast<_Tp>(0))
+      |                    [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1174:20:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1173:85:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, void>[m[K’
+ 1173 | template<typename _Tp, typename std::enable_if< std::is_enum<_Tp>::value >::type* = [01;31m[Knullptr[m[K>
+      |                                                                                     [01;31m[K^~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1182:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> void cv::[01;32m[Kread[m[K(const FileNode&, std::vector<BufferT>&, const std::vector<BufferT>&)[m[K’
+ 1182 | void [01;36m[Kread[m[K( const FileNode& node, std::vector<_Tp>& vec, const std::vector<_Tp>& default_value = std::vector<_Tp>() )
+      |      [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1182:6:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::array<double, 12>[m[K’ is not derived from ‘[01m[Kstd::vector<BufferT>[m[K’
+ 1281 |     [01;36m[Kread( n, value, _Tp())[m[K;
+      |     [01;36m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:730:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, std::vector<KeyPoint>&)[m[K’
+  730 | CV_EXPORTS void [01;36m[Kread[m[K(const FileNode& node, std::vector<KeyPoint>& keypoints);
+      |                 [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:730:17:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 3 provided
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:731:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, std::vector<DMatch>&)[m[K’
+  731 | CV_EXPORTS void [01;36m[Kread[m[K(const FileNode& node, std::vector<DMatch>& matches);
+      |                 [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:731:17:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 3 provided
+In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/core.hpp:48[m[K,
+                 from [01m[K/opt/ros/jazzy/include/cv_bridge/cv_bridge/cv_bridge.hpp:43[m[K,
+                 from [01m[K/home/golftrolley/robot_ws/src/stereo_camera_node/src/stereo_camera_node.cpp:4[m[K:
+/usr/include/opencv4/opencv2/core/persistence.hpp: In instantiation of ‘[01m[Kvoid cv::[01;32m[Koperator>>[m[K(const FileNode&, _Tp&) [35m[K[with _Tp = unsigned int][m[K[m[K’:
+[01m[K/home/golftrolley/robot_ws/src/stereo_camera_node/src/stereo_camera_node.cpp:49:44:[m[K   required from here
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kread(const cv::FileNode&, unsigned int&, unsigned int)[m[K’
+ 1281 |     [01;31m[Kread( n, value, _Tp())[m[K;
+      |     [01;31m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1159:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, short int&, short int)[m[K’ (near match)
+ 1159 | void [01;36m[Kread[m[K(const FileNode& node, short& value, short default_value)
+      |      [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1159:6:[m[K [01;36m[Knote: [m[K  conversion of argument 2 would be ill-formed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;31m[Kerror: [m[Kcannot bind non-const lvalue reference of type ‘[01m[Kshort int&[m[K’ to a value of type ‘[01m[Kunsigned int[m[K’
+ 1281 |     [01;31m[Kread( n, value, _Tp())[m[K;
+      |     [01;31m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1151:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, ushort&, ushort)[m[K’ (near match)
+ 1151 | void [01;36m[Kread[m[K(const FileNode& node, ushort& value, ushort default_value)
+      |      [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1151:6:[m[K [01;36m[Knote: [m[K  conversion of argument 2 would be ill-formed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;31m[Kerror: [m[Kcannot bind non-const lvalue reference of type ‘[01m[Kushort&[m[K’ {aka ‘[01m[Kshort unsigned int&[m[K’} to a value of type ‘[01m[Kunsigned int[m[K’
+ 1281 |     [01;31m[Kread( n, value, _Tp())[m[K;
+      |     [01;31m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1143:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, schar&, schar)[m[K’ (near match)
+ 1143 | void [01;36m[Kread[m[K(const FileNode& node, schar& value, schar default_value)
+      |      [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1143:6:[m[K [01;36m[Knote: [m[K  conversion of argument 2 would be ill-formed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;31m[Kerror: [m[Kcannot bind non-const lvalue reference of type ‘[01m[Kschar&[m[K’ {aka ‘[01m[Ksigned char&[m[K’} to a value of type ‘[01m[Kunsigned int[m[K’
+ 1281 |     [01;31m[Kread( n, value, _Tp())[m[K;
+      |     [01;31m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1135:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, uchar&, uchar)[m[K’ (near match)
+ 1135 | void [01;36m[Kread[m[K(const FileNode& node, uchar& value, uchar default_value)
+      |      [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1135:6:[m[K [01;36m[Knote: [m[K  conversion of argument 2 would be ill-formed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;31m[Kerror: [m[Kcannot bind non-const lvalue reference of type ‘[01m[Kuchar&[m[K’ {aka ‘[01m[Kunsigned char&[m[K’} to a value of type ‘[01m[Kunsigned int[m[K’
+ 1281 |     [01;31m[Kread( n, value, _Tp())[m[K;
+      |     [01;31m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1127:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, bool&, bool)[m[K’ (near match)
+ 1127 | void [01;36m[Kread[m[K(const FileNode& node, bool& value, bool default_value)
+      |      [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1127:6:[m[K [01;36m[Knote: [m[K  conversion of argument 2 would be ill-formed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;31m[Kerror: [m[Kcannot bind non-const lvalue reference of type ‘[01m[Kbool&[m[K’ to a value of type ‘[01m[Kunsigned int[m[K’
+ 1281 |     [01;31m[Kread( n, value, _Tp())[m[K;
+      |     [01;31m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:725:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, double&, double)[m[K’ (near match)
+  725 | CV_EXPORTS void [01;36m[Kread[m[K(const FileNode& node, double& value, double default_value);
+      |                 [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:725:17:[m[K [01;36m[Knote: [m[K  conversion of argument 2 would be ill-formed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;31m[Kerror: [m[Kcannot bind non-const lvalue reference of type ‘[01m[Kdouble&[m[K’ to a value of type ‘[01m[Kunsigned int[m[K’
+ 1281 |     [01;31m[Kread( n, value, _Tp())[m[K;
+      |     [01;31m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:724:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, float&, float)[m[K’ (near match)
+  724 | CV_EXPORTS void [01;36m[Kread[m[K(const FileNode& node, float& value, float default_value);
+      |                 [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:724:17:[m[K [01;36m[Knote: [m[K  conversion of argument 2 would be ill-formed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;31m[Kerror: [m[Kcannot bind non-const lvalue reference of type ‘[01m[Kfloat&[m[K’ to a value of type ‘[01m[Kunsigned int[m[K’
+ 1281 |     [01;31m[Kread( n, value, _Tp())[m[K;
+      |     [01;31m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:723:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, int&, int)[m[K’ (near match)
+  723 | CV_EXPORTS void [01;36m[Kread[m[K(const FileNode& node, int& value, int default_value);
+      |                 [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:723:17:[m[K [01;36m[Knote: [m[K  conversion of argument 2 would be ill-formed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;31m[Kerror: [m[Kcannot bind non-const lvalue reference of type ‘[01m[Kint&[m[K’ to a value of type ‘[01m[Kunsigned int[m[K’
+ 1281 |     [01;31m[Kread( n, value, _Tp())[m[K;
+      |     [01;31m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1203:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, std::vector<DMatch>&, const std::vector<DMatch>&)[m[K’
+ 1203 | void [01;36m[Kread[m[K( const FileNode& node, std::vector<DMatch>& vec, const std::vector<DMatch>& default_value )
+      |      [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1203:55:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kunsigned int[m[K’ to ‘[01m[Kstd::vector<cv::DMatch>&[m[K’
+ 1203 | void read( const FileNode& node, [01;36m[Kstd::vector<DMatch>& vec[m[K, const std::vector<DMatch>& default_value )
+      |                                  [01;36m[K~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1194:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, std::vector<KeyPoint>&, const std::vector<KeyPoint>&)[m[K’
+ 1194 | void [01;36m[Kread[m[K( const FileNode& node, std::vector<KeyPoint>& vec, const std::vector<KeyPoint>& default_value )
+      |      [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1194:57:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kunsigned int[m[K’ to ‘[01m[Kstd::vector<cv::KeyPoint>&[m[K’
+ 1194 | void read( const FileNode& node, [01;36m[Kstd::vector<KeyPoint>& vec[m[K, const std::vector<KeyPoint>& default_value )
+      |                                  [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:792:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, Range&, const Range&)[m[K’
+  792 | static inline void [01;36m[Kread[m[K(const FileNode& node, Range& value, const Range& default_value)
+      |                    [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:792:54:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kunsigned int[m[K’ to ‘[01m[Kcv::Range&[m[K’
+  792 | static inline void read(const FileNode& node, [01;36m[KRange& value[m[K, const Range& default_value)
+      |                                               [01;36m[K~~~~~~~^~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:734:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, DMatch&, const DMatch&)[m[K’
+  734 | CV_EXPORTS void [01;36m[Kread[m[K(const FileNode& node, DMatch& value, const DMatch& default_value);
+      |                 [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:734:52:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kunsigned int[m[K’ to ‘[01m[Kcv::DMatch&[m[K’
+  734 | CV_EXPORTS void read(const FileNode& node, [01;36m[KDMatch& value[m[K, const DMatch& default_value);
+      |                                            [01;36m[K~~~~~~~~^~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:733:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, KeyPoint&, const KeyPoint&)[m[K’
+  733 | CV_EXPORTS void [01;36m[Kread[m[K(const FileNode& node, KeyPoint& value, const KeyPoint& default_value);
+      |                 [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:733:54:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kunsigned int[m[K’ to ‘[01m[Kcv::KeyPoint&[m[K’
+  733 | CV_EXPORTS void read(const FileNode& node, [01;36m[KKeyPoint& value[m[K, const KeyPoint& default_value);
+      |                                            [01;36m[K~~~~~~~~~~^~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:728:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, SparseMat&, const SparseMat&)[m[K’
+  728 | CV_EXPORTS void [01;36m[Kread[m[K(const FileNode& node, SparseMat& mat, const SparseMat& default_mat = SparseMat() );
+      |                 [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:728:55:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kunsigned int[m[K’ to ‘[01m[Kcv::SparseMat&[m[K’
+  728 | CV_EXPORTS void read(const FileNode& node, [01;36m[KSparseMat& mat[m[K, const SparseMat& default_mat = SparseMat() );
+      |                                            [01;36m[K~~~~~~~~~~~^~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:727:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, Mat&, const Mat&)[m[K’
+  727 | CV_EXPORTS void [01;36m[Kread[m[K(const FileNode& node, Mat& mat, const Mat& default_mat = Mat() );
+      |                 [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:727:49:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kunsigned int[m[K’ to ‘[01m[Kcv::Mat&[m[K’
+  727 | CV_EXPORTS void read(const FileNode& node, [01;36m[KMat& mat[m[K, const Mat& default_mat = Mat() );
+      |                                            [01;36m[K~~~~~^~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:726:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, std::string&, const std::string&)[m[K’
+  726 | CV_EXPORTS void [01;36m[Kread[m[K(const FileNode& node, std::string& value, const std::string& default_value);
+      |                 [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:726:57:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kunsigned int[m[K’ to ‘[01m[Kstd::string&[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>&[m[K’}
+  726 | CV_EXPORTS void read(const FileNode& node, [01;36m[Kstd::string& value[m[K, const std::string& default_value);
+      |                                            [01;36m[K~~~~~~~~~~~~~^~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:736:43:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> void cv::[01;32m[Kread[m[K(const FileNode&, Point_<_Tp>&, const Point_<_Tp>&)[m[K’
+  736 | template<typename _Tp> static inline void [01;36m[Kread[m[K(const FileNode& node, Point_<_Tp>& value, const Point_<_Tp>& default_value)
+      |                                           [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:736:43:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kcv::Point_<_Tp>[m[K’ and ‘[01m[Kunsigned int[m[K’
+ 1281 |     [01;36m[Kread( n, value, _Tp())[m[K;
+      |     [01;36m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:742:43:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> void cv::[01;32m[Kread[m[K(const FileNode&, Point3_<_Tp>&, const Point3_<_Tp>&)[m[K’
+  742 | template<typename _Tp> static inline void [01;36m[Kread[m[K(const FileNode& node, Point3_<_Tp>& value, const Point3_<_Tp>& default_value)
+      |                                           [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:742:43:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kcv::Point3_<_Tp>[m[K’ and ‘[01m[Kunsigned int[m[K’
+ 1281 |     [01;36m[Kread( n, value, _Tp())[m[K;
+      |     [01;36m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:749:43:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> void cv::[01;32m[Kread[m[K(const FileNode&, Size_<_Tp>&, const Size_<_Tp>&)[m[K’
+  749 | template<typename _Tp> static inline void [01;36m[Kread[m[K(const FileNode& node, Size_<_Tp>& value, const Size_<_Tp>& default_value)
+      |                                           [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:749:43:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kcv::Size_<_Tp>[m[K’ and ‘[01m[Kunsigned int[m[K’
+ 1281 |     [01;36m[Kread( n, value, _Tp())[m[K;
+      |     [01;36m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:755:43:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> void cv::[01;32m[Kread[m[K(const FileNode&, Complex<_Tp>&, const Complex<_Tp>&)[m[K’
+  755 | template<typename _Tp> static inline void [01;36m[Kread[m[K(const FileNode& node, Complex<_Tp>& value, const Complex<_Tp>& default_value)
+      |                                           [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:755:43:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kcv::Complex<_Tp>[m[K’ and ‘[01m[Kunsigned int[m[K’
+ 1281 |     [01;36m[Kread( n, value, _Tp())[m[K;
+      |     [01;36m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:761:43:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> void cv::[01;32m[Kread[m[K(const FileNode&, Rect_<_Tp>&, const Rect_<_Tp>&)[m[K’
+  761 | template<typename _Tp> static inline void [01;36m[Kread[m[K(const FileNode& node, Rect_<_Tp>& value, const Rect_<_Tp>& default_value)
+      |                                           [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:761:43:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kcv::Rect_<_Tp>[m[K’ and ‘[01m[Kunsigned int[m[K’
+ 1281 |     [01;36m[Kread( n, value, _Tp())[m[K;
+      |     [01;36m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:768:51:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, int cn> void cv::[01;32m[Kread[m[K(const FileNode&, Vec<_Tp, m>&, const Vec<_Tp, m>&)[m[K’
+  768 | template<typename _Tp, int cn> static inline void [01;36m[Kread[m[K(const FileNode& node, Vec<_Tp, cn>& value, const Vec<_Tp, cn>& default_value)
+      |                                                   [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:768:51:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kcv::Vec<_Tp, m>[m[K’ and ‘[01m[Kunsigned int[m[K’
+ 1281 |     [01;36m[Kread( n, value, _Tp())[m[K;
+      |     [01;36m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:774:57:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, int m, int n> void cv::[01;32m[Kread[m[K(const FileNode&, Matx<_Tp, m, n>&, const Matx<_Tp, m, n>&)[m[K’
+  774 | template<typename _Tp, int m, int n> static inline void [01;36m[Kread[m[K(const FileNode& node, Matx<_Tp, m, n>& value, const Matx<_Tp, m, n>& default_matx = Matx<_Tp, m, n>())
+      |                                                         [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:774:57:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kcv::Matx<_Tp, m, n>[m[K’ and ‘[01m[Kunsigned int[m[K’
+ 1281 |     [01;36m[Kread( n, value, _Tp())[m[K;
+      |     [01;36m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:785:43:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> void cv::[01;32m[Kread[m[K(const FileNode&, Scalar_<_Tp>&, const Scalar_<_Tp>&)[m[K’
+  785 | template<typename _Tp> static inline void [01;36m[Kread[m[K(const FileNode& node, Scalar_<_Tp>& value, const Scalar_<_Tp>& default_value)
+      |                                           [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:785:43:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kcv::Scalar_<_Tp>[m[K’ and ‘[01m[Kunsigned int[m[K’
+ 1281 |     [01;36m[Kread( n, value, _Tp())[m[K;
+      |     [01;36m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1167:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> void cv::[01;32m[Kread[m[K(FileNodeIterator&, std::vector<BufferT>&, size_t)[m[K’
+ 1167 | void [01;36m[Kread[m[K( FileNodeIterator& it, std::vector<_Tp>& vec, size_t maxCount = (size_t)INT_MAX )
+      |      [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1167:6:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::vector<BufferT>[m[K’ and ‘[01m[Kunsigned int[m[K’
+ 1281 |     [01;36m[Kread( n, value, _Tp())[m[K;
+      |     [01;36m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1174:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, typename std::enable_if<std::is_enum<_Tp>::value>::type* <anonymous> > void cv::[01;32m[Kread[m[K(const FileNode&, _Tp&, const _Tp&)[m[K’
+ 1174 | static inline void [01;36m[Kread[m[K(const FileNode& node, _Tp& value, const _Tp& default_value = static_cast<_Tp>(0))
+      |                    [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1174:20:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1173:85:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, void>[m[K’
+ 1173 | template<typename _Tp, typename std::enable_if< std::is_enum<_Tp>::value >::type* = [01;31m[Knullptr[m[K>
+      |                                                                                     [01;31m[K^~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1182:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> void cv::[01;32m[Kread[m[K(const FileNode&, std::vector<BufferT>&, const std::vector<BufferT>&)[m[K’
+ 1182 | void [01;36m[Kread[m[K( const FileNode& node, std::vector<_Tp>& vec, const std::vector<_Tp>& default_value = std::vector<_Tp>() )
+      |      [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1182:6:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::vector<BufferT>[m[K’ and ‘[01m[Kunsigned int[m[K’
+ 1281 |     [01;36m[Kread( n, value, _Tp())[m[K;
+      |     [01;36m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:730:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, std::vector<KeyPoint>&)[m[K’
+  730 | CV_EXPORTS void [01;36m[Kread[m[K(const FileNode& node, std::vector<KeyPoint>& keypoints);
+      |                 [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:730:17:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 3 provided
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:731:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, std::vector<DMatch>&)[m[K’
+  731 | CV_EXPORTS void [01;36m[Kread[m[K(const FileNode& node, std::vector<DMatch>& matches);
+      |                 [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:731:17:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 3 provided
+/usr/include/opencv4/opencv2/core/persistence.hpp: In instantiation of ‘[01m[Kvoid cv::[01;32m[Koperator>>[m[K(const FileNode&, _Tp&) [35m[K[with _Tp = std::array<double, 9>][m[K[m[K’:
+[01m[K/home/golftrolley/robot_ws/src/stereo_camera_node/src/stereo_camera_node.cpp:51:36:[m[K   required from here
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kread(const cv::FileNode&, std::array<double, 9>&, std::array<double, 9>)[m[K’
+ 1281 |     [01;31m[Kread( n, value, _Tp())[m[K;
+      |     [01;31m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1203:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, std::vector<DMatch>&, const std::vector<DMatch>&)[m[K’
+ 1203 | void [01;36m[Kread[m[K( const FileNode& node, std::vector<DMatch>& vec, const std::vector<DMatch>& default_value )
+      |      [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1203:55:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::array<double, 9>[m[K’ to ‘[01m[Kstd::vector<cv::DMatch>&[m[K’
+ 1203 | void read( const FileNode& node, [01;36m[Kstd::vector<DMatch>& vec[m[K, const std::vector<DMatch>& default_value )
+      |                                  [01;36m[K~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1194:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, std::vector<KeyPoint>&, const std::vector<KeyPoint>&)[m[K’
+ 1194 | void [01;36m[Kread[m[K( const FileNode& node, std::vector<KeyPoint>& vec, const std::vector<KeyPoint>& default_value )
+      |      [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1194:57:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::array<double, 9>[m[K’ to ‘[01m[Kstd::vector<cv::KeyPoint>&[m[K’
+ 1194 | void read( const FileNode& node, [01;36m[Kstd::vector<KeyPoint>& vec[m[K, const std::vector<KeyPoint>& default_value )
+      |                                  [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1159:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, short int&, short int)[m[K’
+ 1159 | void [01;36m[Kread[m[K(const FileNode& node, short& value, short default_value)
+      |      [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1159:40:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::array<double, 9>[m[K’ to ‘[01m[Kshort int&[m[K’
+ 1159 | void read(const FileNode& node, [01;36m[Kshort& value[m[K, short default_value)
+      |                                 [01;36m[K~~~~~~~^~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1151:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, ushort&, ushort)[m[K’
+ 1151 | void [01;36m[Kread[m[K(const FileNode& node, ushort& value, ushort default_value)
+      |      [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1151:41:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::array<double, 9>[m[K’ to ‘[01m[Kushort&[m[K’ {aka ‘[01m[Kshort unsigned int&[m[K’}
+ 1151 | void read(const FileNode& node, [01;36m[Kushort& value[m[K, ushort default_value)
+      |                                 [01;36m[K~~~~~~~~^~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1143:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, schar&, schar)[m[K’
+ 1143 | void [01;36m[Kread[m[K(const FileNode& node, schar& value, schar default_value)
+      |      [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1143:40:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::array<double, 9>[m[K’ to ‘[01m[Kschar&[m[K’ {aka ‘[01m[Ksigned char&[m[K’}
+ 1143 | void read(const FileNode& node, [01;36m[Kschar& value[m[K, schar default_value)
+      |                                 [01;36m[K~~~~~~~^~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1135:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, uchar&, uchar)[m[K’
+ 1135 | void [01;36m[Kread[m[K(const FileNode& node, uchar& value, uchar default_value)
+      |      [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1135:40:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::array<double, 9>[m[K’ to ‘[01m[Kuchar&[m[K’ {aka ‘[01m[Kunsigned char&[m[K’}
+ 1135 | void read(const FileNode& node, [01;36m[Kuchar& value[m[K, uchar default_value)
+      |                                 [01;36m[K~~~~~~~^~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1127:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, bool&, bool)[m[K’
+ 1127 | void [01;36m[Kread[m[K(const FileNode& node, bool& value, bool default_value)
+      |      [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1127:39:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::array<double, 9>[m[K’ to ‘[01m[Kbool&[m[K’
+ 1127 | void read(const FileNode& node, [01;36m[Kbool& value[m[K, bool default_value)
+      |                                 [01;36m[K~~~~~~^~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:792:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, Range&, const Range&)[m[K’
+  792 | static inline void [01;36m[Kread[m[K(const FileNode& node, Range& value, const Range& default_value)
+      |                    [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:792:54:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::array<double, 9>[m[K’ to ‘[01m[Kcv::Range&[m[K’
+  792 | static inline void read(const FileNode& node, [01;36m[KRange& value[m[K, const Range& default_value)
+      |                                               [01;36m[K~~~~~~~^~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:734:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, DMatch&, const DMatch&)[m[K’
+  734 | CV_EXPORTS void [01;36m[Kread[m[K(const FileNode& node, DMatch& value, const DMatch& default_value);
+      |                 [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:734:52:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::array<double, 9>[m[K’ to ‘[01m[Kcv::DMatch&[m[K’
+  734 | CV_EXPORTS void read(const FileNode& node, [01;36m[KDMatch& value[m[K, const DMatch& default_value);
+      |                                            [01;36m[K~~~~~~~~^~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:733:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, KeyPoint&, const KeyPoint&)[m[K’
+  733 | CV_EXPORTS void [01;36m[Kread[m[K(const FileNode& node, KeyPoint& value, const KeyPoint& default_value);
+      |                 [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:733:54:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::array<double, 9>[m[K’ to ‘[01m[Kcv::KeyPoint&[m[K’
+  733 | CV_EXPORTS void read(const FileNode& node, [01;36m[KKeyPoint& value[m[K, const KeyPoint& default_value);
+      |                                            [01;36m[K~~~~~~~~~~^~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:728:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, SparseMat&, const SparseMat&)[m[K’
+  728 | CV_EXPORTS void [01;36m[Kread[m[K(const FileNode& node, SparseMat& mat, const SparseMat& default_mat = SparseMat() );
+      |                 [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:728:55:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::array<double, 9>[m[K’ to ‘[01m[Kcv::SparseMat&[m[K’
+  728 | CV_EXPORTS void read(const FileNode& node, [01;36m[KSparseMat& mat[m[K, const SparseMat& default_mat = SparseMat() );
+      |                                            [01;36m[K~~~~~~~~~~~^~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:727:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, Mat&, const Mat&)[m[K’
+  727 | CV_EXPORTS void [01;36m[Kread[m[K(const FileNode& node, Mat& mat, const Mat& default_mat = Mat() );
+      |                 [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:727:49:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::array<double, 9>[m[K’ to ‘[01m[Kcv::Mat&[m[K’
+  727 | CV_EXPORTS void read(const FileNode& node, [01;36m[KMat& mat[m[K, const Mat& default_mat = Mat() );
+      |                                            [01;36m[K~~~~~^~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:726:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, std::string&, const std::string&)[m[K’
+  726 | CV_EXPORTS void [01;36m[Kread[m[K(const FileNode& node, std::string& value, const std::string& default_value);
+      |                 [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:726:57:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::array<double, 9>[m[K’ to ‘[01m[Kstd::string&[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>&[m[K’}
+  726 | CV_EXPORTS void read(const FileNode& node, [01;36m[Kstd::string& value[m[K, const std::string& default_value);
+      |                                            [01;36m[K~~~~~~~~~~~~~^~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:725:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, double&, double)[m[K’
+  725 | CV_EXPORTS void [01;36m[Kread[m[K(const FileNode& node, double& value, double default_value);
+      |                 [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:725:52:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::array<double, 9>[m[K’ to ‘[01m[Kdouble&[m[K’
+  725 | CV_EXPORTS void read(const FileNode& node, [01;36m[Kdouble& value[m[K, double default_value);
+      |                                            [01;36m[K~~~~~~~~^~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:724:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, float&, float)[m[K’
+  724 | CV_EXPORTS void [01;36m[Kread[m[K(const FileNode& node, float& value, float default_value);
+      |                 [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:724:51:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::array<double, 9>[m[K’ to ‘[01m[Kfloat&[m[K’
+  724 | CV_EXPORTS void read(const FileNode& node, [01;36m[Kfloat& value[m[K, float default_value);
+      |                                            [01;36m[K~~~~~~~^~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:723:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, int&, int)[m[K’
+  723 | CV_EXPORTS void [01;36m[Kread[m[K(const FileNode& node, int& value, int default_value);
+      |                 [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:723:49:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::array<double, 9>[m[K’ to ‘[01m[Kint&[m[K’
+  723 | CV_EXPORTS void read(const FileNode& node, [01;36m[Kint& value[m[K, int default_value);
+      |                                            [01;36m[K~~~~~^~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:736:43:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> void cv::[01;32m[Kread[m[K(const FileNode&, Point_<_Tp>&, const Point_<_Tp>&)[m[K’
+  736 | template<typename _Tp> static inline void [01;36m[Kread[m[K(const FileNode& node, Point_<_Tp>& value, const Point_<_Tp>& default_value)
+      |                                           [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:736:43:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::array<double, 9>[m[K’ is not derived from ‘[01m[Kcv::Point_<_Tp>[m[K’
+ 1281 |     [01;36m[Kread( n, value, _Tp())[m[K;
+      |     [01;36m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:742:43:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> void cv::[01;32m[Kread[m[K(const FileNode&, Point3_<_Tp>&, const Point3_<_Tp>&)[m[K’
+  742 | template<typename _Tp> static inline void [01;36m[Kread[m[K(const FileNode& node, Point3_<_Tp>& value, const Point3_<_Tp>& default_value)
+      |                                           [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:742:43:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::array<double, 9>[m[K’ is not derived from ‘[01m[Kcv::Point3_<_Tp>[m[K’
+ 1281 |     [01;36m[Kread( n, value, _Tp())[m[K;
+      |     [01;36m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:749:43:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> void cv::[01;32m[Kread[m[K(const FileNode&, Size_<_Tp>&, const Size_<_Tp>&)[m[K’
+  749 | template<typename _Tp> static inline void [01;36m[Kread[m[K(const FileNode& node, Size_<_Tp>& value, const Size_<_Tp>& default_value)
+      |                                           [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:749:43:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::array<double, 9>[m[K’ is not derived from ‘[01m[Kcv::Size_<_Tp>[m[K’
+ 1281 |     [01;36m[Kread( n, value, _Tp())[m[K;
+      |     [01;36m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:755:43:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> void cv::[01;32m[Kread[m[K(const FileNode&, Complex<_Tp>&, const Complex<_Tp>&)[m[K’
+  755 | template<typename _Tp> static inline void [01;36m[Kread[m[K(const FileNode& node, Complex<_Tp>& value, const Complex<_Tp>& default_value)
+      |                                           [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:755:43:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::array<double, 9>[m[K’ is not derived from ‘[01m[Kcv::Complex<_Tp>[m[K’
+ 1281 |     [01;36m[Kread( n, value, _Tp())[m[K;
+      |     [01;36m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:761:43:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> void cv::[01;32m[Kread[m[K(const FileNode&, Rect_<_Tp>&, const Rect_<_Tp>&)[m[K’
+  761 | template<typename _Tp> static inline void [01;36m[Kread[m[K(const FileNode& node, Rect_<_Tp>& value, const Rect_<_Tp>& default_value)
+      |                                           [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:761:43:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::array<double, 9>[m[K’ is not derived from ‘[01m[Kcv::Rect_<_Tp>[m[K’
+ 1281 |     [01;36m[Kread( n, value, _Tp())[m[K;
+      |     [01;36m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:768:51:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, int cn> void cv::[01;32m[Kread[m[K(const FileNode&, Vec<_Tp, m>&, const Vec<_Tp, m>&)[m[K’
+  768 | template<typename _Tp, int cn> static inline void [01;36m[Kread[m[K(const FileNode& node, Vec<_Tp, cn>& value, const Vec<_Tp, cn>& default_value)
+      |                                                   [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:768:51:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::array<double, 9>[m[K’ is not derived from ‘[01m[Kcv::Vec<_Tp, m>[m[K’
+ 1281 |     [01;36m[Kread( n, value, _Tp())[m[K;
+      |     [01;36m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:774:57:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, int m, int n> void cv::[01;32m[Kread[m[K(const FileNode&, Matx<_Tp, m, n>&, const Matx<_Tp, m, n>&)[m[K’
+  774 | template<typename _Tp, int m, int n> static inline void [01;36m[Kread[m[K(const FileNode& node, Matx<_Tp, m, n>& value, const Matx<_Tp, m, n>& default_matx = Matx<_Tp, m, n>())
+      |                                                         [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:774:57:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::array<double, 9>[m[K’ is not derived from ‘[01m[Kcv::Matx<_Tp, m, n>[m[K’
+ 1281 |     [01;36m[Kread( n, value, _Tp())[m[K;
+      |     [01;36m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:785:43:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> void cv::[01;32m[Kread[m[K(const FileNode&, Scalar_<_Tp>&, const Scalar_<_Tp>&)[m[K’
+  785 | template<typename _Tp> static inline void [01;36m[Kread[m[K(const FileNode& node, Scalar_<_Tp>& value, const Scalar_<_Tp>& default_value)
+      |                                           [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:785:43:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::array<double, 9>[m[K’ is not derived from ‘[01m[Kcv::Scalar_<_Tp>[m[K’
+ 1281 |     [01;36m[Kread( n, value, _Tp())[m[K;
+      |     [01;36m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1167:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> void cv::[01;32m[Kread[m[K(FileNodeIterator&, std::vector<BufferT>&, size_t)[m[K’
+ 1167 | void [01;36m[Kread[m[K( FileNodeIterator& it, std::vector<_Tp>& vec, size_t maxCount = (size_t)INT_MAX )
+      |      [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1167:6:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::array<double, 9>[m[K’ is not derived from ‘[01m[Kstd::vector<BufferT>[m[K’
+ 1281 |     [01;36m[Kread( n, value, _Tp())[m[K;
+      |     [01;36m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1174:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, typename std::enable_if<std::is_enum<_Tp>::value>::type* <anonymous> > void cv::[01;32m[Kread[m[K(const FileNode&, _Tp&, const _Tp&)[m[K’
+ 1174 | static inline void [01;36m[Kread[m[K(const FileNode& node, _Tp& value, const _Tp& default_value = static_cast<_Tp>(0))
+      |                    [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1174:20:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1173:85:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, void>[m[K’
+ 1173 | template<typename _Tp, typename std::enable_if< std::is_enum<_Tp>::value >::type* = [01;31m[Knullptr[m[K>
+      |                                                                                     [01;31m[K^~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1182:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> void cv::[01;32m[Kread[m[K(const FileNode&, std::vector<BufferT>&, const std::vector<BufferT>&)[m[K’
+ 1182 | void [01;36m[Kread[m[K( const FileNode& node, std::vector<_Tp>& vec, const std::vector<_Tp>& default_value = std::vector<_Tp>() )
+      |      [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1182:6:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::array<double, 9>[m[K’ is not derived from ‘[01m[Kstd::vector<BufferT>[m[K’
+ 1281 |     [01;36m[Kread( n, value, _Tp())[m[K;
+      |     [01;36m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:730:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, std::vector<KeyPoint>&)[m[K’
+  730 | CV_EXPORTS void [01;36m[Kread[m[K(const FileNode& node, std::vector<KeyPoint>& keypoints);
+      |                 [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:730:17:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 3 provided
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:731:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, std::vector<DMatch>&)[m[K’
+  731 | CV_EXPORTS void [01;36m[Kread[m[K(const FileNode& node, std::vector<DMatch>& matches);
+      |                 [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:731:17:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 3 provided
+/usr/include/opencv4/opencv2/core/persistence.hpp: In instantiation of ‘[01m[Kvoid cv::[01;32m[Koperator>>[m[K(const FileNode&, _Tp&) [35m[K[with _Tp = std::array<double, 12>][m[K[m[K’:
+[01m[K/home/golftrolley/robot_ws/src/stereo_camera_node/src/stereo_camera_node.cpp:54:36:[m[K   required from here
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kread(const cv::FileNode&, std::array<double, 12>&, std::array<double, 12>)[m[K’
+ 1281 |     [01;31m[Kread( n, value, _Tp())[m[K;
+      |     [01;31m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1203:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, std::vector<DMatch>&, const std::vector<DMatch>&)[m[K’
+ 1203 | void [01;36m[Kread[m[K( const FileNode& node, std::vector<DMatch>& vec, const std::vector<DMatch>& default_value )
+      |      [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1203:55:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::array<double, 12>[m[K’ to ‘[01m[Kstd::vector<cv::DMatch>&[m[K’
+ 1203 | void read( const FileNode& node, [01;36m[Kstd::vector<DMatch>& vec[m[K, const std::vector<DMatch>& default_value )
+      |                                  [01;36m[K~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1194:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, std::vector<KeyPoint>&, const std::vector<KeyPoint>&)[m[K’
+ 1194 | void [01;36m[Kread[m[K( const FileNode& node, std::vector<KeyPoint>& vec, const std::vector<KeyPoint>& default_value )
+      |      [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1194:57:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::array<double, 12>[m[K’ to ‘[01m[Kstd::vector<cv::KeyPoint>&[m[K’
+ 1194 | void read( const FileNode& node, [01;36m[Kstd::vector<KeyPoint>& vec[m[K, const std::vector<KeyPoint>& default_value )
+      |                                  [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1159:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, short int&, short int)[m[K’
+ 1159 | void [01;36m[Kread[m[K(const FileNode& node, short& value, short default_value)
+      |      [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1159:40:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::array<double, 12>[m[K’ to ‘[01m[Kshort int&[m[K’
+ 1159 | void read(const FileNode& node, [01;36m[Kshort& value[m[K, short default_value)
+      |                                 [01;36m[K~~~~~~~^~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1151:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, ushort&, ushort)[m[K’
+ 1151 | void [01;36m[Kread[m[K(const FileNode& node, ushort& value, ushort default_value)
+      |      [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1151:41:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::array<double, 12>[m[K’ to ‘[01m[Kushort&[m[K’ {aka ‘[01m[Kshort unsigned int&[m[K’}
+ 1151 | void read(const FileNode& node, [01;36m[Kushort& value[m[K, ushort default_value)
+      |                                 [01;36m[K~~~~~~~~^~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1143:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, schar&, schar)[m[K’
+ 1143 | void [01;36m[Kread[m[K(const FileNode& node, schar& value, schar default_value)
+      |      [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1143:40:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::array<double, 12>[m[K’ to ‘[01m[Kschar&[m[K’ {aka ‘[01m[Ksigned char&[m[K’}
+ 1143 | void read(const FileNode& node, [01;36m[Kschar& value[m[K, schar default_value)
+      |                                 [01;36m[K~~~~~~~^~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1135:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, uchar&, uchar)[m[K’
+ 1135 | void [01;36m[Kread[m[K(const FileNode& node, uchar& value, uchar default_value)
+      |      [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1135:40:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::array<double, 12>[m[K’ to ‘[01m[Kuchar&[m[K’ {aka ‘[01m[Kunsigned char&[m[K’}
+ 1135 | void read(const FileNode& node, [01;36m[Kuchar& value[m[K, uchar default_value)
+      |                                 [01;36m[K~~~~~~~^~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1127:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, bool&, bool)[m[K’
+ 1127 | void [01;36m[Kread[m[K(const FileNode& node, bool& value, bool default_value)
+      |      [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1127:39:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::array<double, 12>[m[K’ to ‘[01m[Kbool&[m[K’
+ 1127 | void read(const FileNode& node, [01;36m[Kbool& value[m[K, bool default_value)
+      |                                 [01;36m[K~~~~~~^~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:792:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, Range&, const Range&)[m[K’
+  792 | static inline void [01;36m[Kread[m[K(const FileNode& node, Range& value, const Range& default_value)
+      |                    [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:792:54:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::array<double, 12>[m[K’ to ‘[01m[Kcv::Range&[m[K’
+  792 | static inline void read(const FileNode& node, [01;36m[KRange& value[m[K, const Range& default_value)
+      |                                               [01;36m[K~~~~~~~^~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:734:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, DMatch&, const DMatch&)[m[K’
+  734 | CV_EXPORTS void [01;36m[Kread[m[K(const FileNode& node, DMatch& value, const DMatch& default_value);
+      |                 [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:734:52:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::array<double, 12>[m[K’ to ‘[01m[Kcv::DMatch&[m[K’
+  734 | CV_EXPORTS void read(const FileNode& node, [01;36m[KDMatch& value[m[K, const DMatch& default_value);
+      |                                            [01;36m[K~~~~~~~~^~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:733:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, KeyPoint&, const KeyPoint&)[m[K’
+  733 | CV_EXPORTS void [01;36m[Kread[m[K(const FileNode& node, KeyPoint& value, const KeyPoint& default_value);
+      |                 [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:733:54:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::array<double, 12>[m[K’ to ‘[01m[Kcv::KeyPoint&[m[K’
+  733 | CV_EXPORTS void read(const FileNode& node, [01;36m[KKeyPoint& value[m[K, const KeyPoint& default_value);
+      |                                            [01;36m[K~~~~~~~~~~^~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:728:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, SparseMat&, const SparseMat&)[m[K’
+  728 | CV_EXPORTS void [01;36m[Kread[m[K(const FileNode& node, SparseMat& mat, const SparseMat& default_mat = SparseMat() );
+      |                 [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:728:55:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::array<double, 12>[m[K’ to ‘[01m[Kcv::SparseMat&[m[K’
+  728 | CV_EXPORTS void read(const FileNode& node, [01;36m[KSparseMat& mat[m[K, const SparseMat& default_mat = SparseMat() );
+      |                                            [01;36m[K~~~~~~~~~~~^~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:727:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, Mat&, const Mat&)[m[K’
+  727 | CV_EXPORTS void [01;36m[Kread[m[K(const FileNode& node, Mat& mat, const Mat& default_mat = Mat() );
+      |                 [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:727:49:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::array<double, 12>[m[K’ to ‘[01m[Kcv::Mat&[m[K’
+  727 | CV_EXPORTS void read(const FileNode& node, [01;36m[KMat& mat[m[K, const Mat& default_mat = Mat() );
+      |                                            [01;36m[K~~~~~^~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:726:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, std::string&, const std::string&)[m[K’
+  726 | CV_EXPORTS void [01;36m[Kread[m[K(const FileNode& node, std::string& value, const std::string& default_value);
+      |                 [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:726:57:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::array<double, 12>[m[K’ to ‘[01m[Kstd::string&[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>&[m[K’}
+  726 | CV_EXPORTS void read(const FileNode& node, [01;36m[Kstd::string& value[m[K, const std::string& default_value);
+      |                                            [01;36m[K~~~~~~~~~~~~~^~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:725:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, double&, double)[m[K’
+  725 | CV_EXPORTS void [01;36m[Kread[m[K(const FileNode& node, double& value, double default_value);
+      |                 [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:725:52:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::array<double, 12>[m[K’ to ‘[01m[Kdouble&[m[K’
+  725 | CV_EXPORTS void read(const FileNode& node, [01;36m[Kdouble& value[m[K, double default_value);
+      |                                            [01;36m[K~~~~~~~~^~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:724:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, float&, float)[m[K’
+  724 | CV_EXPORTS void [01;36m[Kread[m[K(const FileNode& node, float& value, float default_value);
+      |                 [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:724:51:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::array<double, 12>[m[K’ to ‘[01m[Kfloat&[m[K’
+  724 | CV_EXPORTS void read(const FileNode& node, [01;36m[Kfloat& value[m[K, float default_value);
+      |                                            [01;36m[K~~~~~~~^~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:723:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, int&, int)[m[K’
+  723 | CV_EXPORTS void [01;36m[Kread[m[K(const FileNode& node, int& value, int default_value);
+      |                 [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:723:49:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::array<double, 12>[m[K’ to ‘[01m[Kint&[m[K’
+  723 | CV_EXPORTS void read(const FileNode& node, [01;36m[Kint& value[m[K, int default_value);
+      |                                            [01;36m[K~~~~~^~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:736:43:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> void cv::[01;32m[Kread[m[K(const FileNode&, Point_<_Tp>&, const Point_<_Tp>&)[m[K’
+  736 | template<typename _Tp> static inline void [01;36m[Kread[m[K(const FileNode& node, Point_<_Tp>& value, const Point_<_Tp>& default_value)
+      |                                           [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:736:43:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::array<double, 12>[m[K’ is not derived from ‘[01m[Kcv::Point_<_Tp>[m[K’
+ 1281 |     [01;36m[Kread( n, value, _Tp())[m[K;
+      |     [01;36m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:742:43:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> void cv::[01;32m[Kread[m[K(const FileNode&, Point3_<_Tp>&, const Point3_<_Tp>&)[m[K’
+  742 | template<typename _Tp> static inline void [01;36m[Kread[m[K(const FileNode& node, Point3_<_Tp>& value, const Point3_<_Tp>& default_value)
+      |                                           [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:742:43:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::array<double, 12>[m[K’ is not derived from ‘[01m[Kcv::Point3_<_Tp>[m[K’
+ 1281 |     [01;36m[Kread( n, value, _Tp())[m[K;
+      |     [01;36m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:749:43:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> void cv::[01;32m[Kread[m[K(const FileNode&, Size_<_Tp>&, const Size_<_Tp>&)[m[K’
+  749 | template<typename _Tp> static inline void [01;36m[Kread[m[K(const FileNode& node, Size_<_Tp>& value, const Size_<_Tp>& default_value)
+      |                                           [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:749:43:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::array<double, 12>[m[K’ is not derived from ‘[01m[Kcv::Size_<_Tp>[m[K’
+ 1281 |     [01;36m[Kread( n, value, _Tp())[m[K;
+      |     [01;36m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:755:43:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> void cv::[01;32m[Kread[m[K(const FileNode&, Complex<_Tp>&, const Complex<_Tp>&)[m[K’
+  755 | template<typename _Tp> static inline void [01;36m[Kread[m[K(const FileNode& node, Complex<_Tp>& value, const Complex<_Tp>& default_value)
+      |                                           [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:755:43:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::array<double, 12>[m[K’ is not derived from ‘[01m[Kcv::Complex<_Tp>[m[K’
+ 1281 |     [01;36m[Kread( n, value, _Tp())[m[K;
+      |     [01;36m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:761:43:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> void cv::[01;32m[Kread[m[K(const FileNode&, Rect_<_Tp>&, const Rect_<_Tp>&)[m[K’
+  761 | template<typename _Tp> static inline void [01;36m[Kread[m[K(const FileNode& node, Rect_<_Tp>& value, const Rect_<_Tp>& default_value)
+      |                                           [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:761:43:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::array<double, 12>[m[K’ is not derived from ‘[01m[Kcv::Rect_<_Tp>[m[K’
+ 1281 |     [01;36m[Kread( n, value, _Tp())[m[K;
+      |     [01;36m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:768:51:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, int cn> void cv::[01;32m[Kread[m[K(const FileNode&, Vec<_Tp, m>&, const Vec<_Tp, m>&)[m[K’
+  768 | template<typename _Tp, int cn> static inline void [01;36m[Kread[m[K(const FileNode& node, Vec<_Tp, cn>& value, const Vec<_Tp, cn>& default_value)
+      |                                                   [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:768:51:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::array<double, 12>[m[K’ is not derived from ‘[01m[Kcv::Vec<_Tp, m>[m[K’
+ 1281 |     [01;36m[Kread( n, value, _Tp())[m[K;
+      |     [01;36m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:774:57:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, int m, int n> void cv::[01;32m[Kread[m[K(const FileNode&, Matx<_Tp, m, n>&, const Matx<_Tp, m, n>&)[m[K’
+  774 | template<typename _Tp, int m, int n> static inline void [01;36m[Kread[m[K(const FileNode& node, Matx<_Tp, m, n>& value, const Matx<_Tp, m, n>& default_matx = Matx<_Tp, m, n>())
+      |                                                         [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:774:57:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::array<double, 12>[m[K’ is not derived from ‘[01m[Kcv::Matx<_Tp, m, n>[m[K’
+ 1281 |     [01;36m[Kread( n, value, _Tp())[m[K;
+      |     [01;36m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:785:43:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> void cv::[01;32m[Kread[m[K(const FileNode&, Scalar_<_Tp>&, const Scalar_<_Tp>&)[m[K’
+  785 | template<typename _Tp> static inline void [01;36m[Kread[m[K(const FileNode& node, Scalar_<_Tp>& value, const Scalar_<_Tp>& default_value)
+      |                                           [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:785:43:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::array<double, 12>[m[K’ is not derived from ‘[01m[Kcv::Scalar_<_Tp>[m[K’
+ 1281 |     [01;36m[Kread( n, value, _Tp())[m[K;
+      |     [01;36m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1167:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> void cv::[01;32m[Kread[m[K(FileNodeIterator&, std::vector<BufferT>&, size_t)[m[K’
+ 1167 | void [01;36m[Kread[m[K( FileNodeIterator& it, std::vector<_Tp>& vec, size_t maxCount = (size_t)INT_MAX )
+      |      [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1167:6:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::array<double, 12>[m[K’ is not derived from ‘[01m[Kstd::vector<BufferT>[m[K’
+ 1281 |     [01;36m[Kread( n, value, _Tp())[m[K;
+      |     [01;36m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1174:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, typename std::enable_if<std::is_enum<_Tp>::value>::type* <anonymous> > void cv::[01;32m[Kread[m[K(const FileNode&, _Tp&, const _Tp&)[m[K’
+ 1174 | static inline void [01;36m[Kread[m[K(const FileNode& node, _Tp& value, const _Tp& default_value = static_cast<_Tp>(0))
+      |                    [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1174:20:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1173:85:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, void>[m[K’
+ 1173 | template<typename _Tp, typename std::enable_if< std::is_enum<_Tp>::value >::type* = [01;31m[Knullptr[m[K>
+      |                                                                                     [01;31m[K^~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1182:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> void cv::[01;32m[Kread[m[K(const FileNode&, std::vector<BufferT>&, const std::vector<BufferT>&)[m[K’
+ 1182 | void [01;36m[Kread[m[K( const FileNode& node, std::vector<_Tp>& vec, const std::vector<_Tp>& default_value = std::vector<_Tp>() )
+      |      [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1182:6:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:1281:9:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::array<double, 12>[m[K’ is not derived from ‘[01m[Kstd::vector<BufferT>[m[K’
+ 1281 |     [01;36m[Kread( n, value, _Tp())[m[K;
+      |     [01;36m[K~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:730:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, std::vector<KeyPoint>&)[m[K’
+  730 | CV_EXPORTS void [01;36m[Kread[m[K(const FileNode& node, std::vector<KeyPoint>& keypoints);
+      |                 [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:730:17:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 3 provided
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:731:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::[01;32m[Kread[m[K(const FileNode&, std::vector<DMatch>&)[m[K’
+  731 | CV_EXPORTS void [01;36m[Kread[m[K(const FileNode& node, std::vector<DMatch>& matches);
+      |                 [01;36m[K^~~~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/persistence.hpp:731:17:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 3 provided
+gmake[2]: *** [CMakeFiles/stereo_camera_node.dir/build.make:76: CMakeFiles/stereo_camera_node.dir/src/main.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/stereo_camera_node.dir/build.make:90: CMakeFiles/stereo_camera_node.dir/src/stereo_camera_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/stereo_camera_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

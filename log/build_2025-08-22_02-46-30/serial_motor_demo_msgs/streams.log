@@ -1,0 +1,298 @@
+[0.115s] Invoking command in '/home/golftrolley/robot_ws/build/serial_motor_demo_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/golftrolley/robot_ws/install/stereo_camera_split:/home/golftrolley/robot_ws/install/serial_motor_demo:/home/golftrolley/robot_ws/install/golftrolley:/opt/ros/jazzy /usr/bin/cmake /home/golftrolley/robot_ws/src/serial_motor_demo/serial_motor_demo_msgs -DCMAKE_INSTALL_PREFIX=/home/golftrolley/robot_ws/install/serial_motor_demo_msgs
+[0.549s] -- The C compiler identification is GNU 13.3.0
+[0.971s] -- The CXX compiler identification is GNU 13.3.0
+[1.138s] -- Detecting C compiler ABI info
+[2.248s] -- Detecting C compiler ABI info - done
+[2.286s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.287s] -- Detecting C compile features
+[2.291s] -- Detecting C compile features - done
+[2.382s] -- Detecting CXX compiler ABI info
+[3.553s] -- Detecting CXX compiler ABI info - done
+[3.658s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.662s] -- Detecting CXX compile features
+[3.668s] -- Detecting CXX compile features - done
+[3.731s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[5.138s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[6.051s] -- Found ament_lint_auto: 0.17.2 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[6.934s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[7.002s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[7.648s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[8.147s] -- Found rosidl_adapter: 4.6.5 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[11.673s] -- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[15.604s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[20.126s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[20.201s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[21.620s] -- Found PythonExtra: /usr/bin/python3  
+[25.353s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[25.685s] -- Added test 'copyright' to check source files copyright and LICENSE
+[25.715s] -- Added test 'lint_cmake' to check CMake code style
+[25.732s] -- Added test 'xmllint' to check XML markup files
+[25.845s] -- Configuring done (25.7s)
+[26.274s] -- Generating done (0.4s)
+[26.369s] -- Build files have been written to: /home/golftrolley/robot_ws/build/serial_motor_demo_msgs
+[26.432s] Invoked command in '/home/golftrolley/robot_ws/build/serial_motor_demo_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/golftrolley/robot_ws/install/stereo_camera_split:/home/golftrolley/robot_ws/install/serial_motor_demo:/home/golftrolley/robot_ws/install/golftrolley:/opt/ros/jazzy /usr/bin/cmake /home/golftrolley/robot_ws/src/serial_motor_demo/serial_motor_demo_msgs -DCMAKE_INSTALL_PREFIX=/home/golftrolley/robot_ws/install/serial_motor_demo_msgs
+[26.435s] Invoking command in '/home/golftrolley/robot_ws/build/serial_motor_demo_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/golftrolley/robot_ws/install/stereo_camera_split:/home/golftrolley/robot_ws/install/serial_motor_demo:/home/golftrolley/robot_ws/install/golftrolley:/opt/ros/jazzy /usr/bin/cmake --build /home/golftrolley/robot_ws/build/serial_motor_demo_msgs -- -j4 -l4
+[26.984s] [  1%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[29.029s] [  1%] Built target serial_motor_demo_msgs__rosidl_generator_type_description
+[29.262s] [  1%] Built target ament_cmake_python_copy_serial_motor_demo_msgs
+[29.436s] [  3%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[33.212s] [  3%] Built target serial_motor_demo_msgs__cpp
+[35.361s] running egg_info
+[35.368s] creating serial_motor_demo_msgs.egg-info
+[35.608s] writing serial_motor_demo_msgs.egg-info/PKG-INFO
+[35.614s] writing dependency_links to serial_motor_demo_msgs.egg-info/dependency_links.txt
+[35.615s] writing top-level names to serial_motor_demo_msgs.egg-info/top_level.txt
+[35.622s] writing manifest file 'serial_motor_demo_msgs.egg-info/SOURCES.txt'
+[36.381s] reading manifest file 'serial_motor_demo_msgs.egg-info/SOURCES.txt'
+[36.391s] writing manifest file 'serial_motor_demo_msgs.egg-info/SOURCES.txt'
+[36.657s] [  3%] Built target ament_cmake_python_build_serial_motor_demo_msgs_egg
+[36.751s] [  5%] [34m[1mGenerating C code for ROS interfaces[0m
+[40.610s] [  7%] [32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_command__description.c.o[0m
+[40.884s] [  9%] [32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_vels__description.c.o[0m
+[41.161s] [ 11%] [32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_vels__functions.c.o[0m
+[41.583s] [ 12%] [32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_vels__type_support.c.o[0m
+[41.827s] [ 14%] [32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/encoder_vals__description.c.o[0m
+[42.091s] [ 16%] [32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/encoder_vals__functions.c.o[0m
+[42.437s] [ 18%] [32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/encoder_vals__type_support.c.o[0m
+[42.699s] [ 20%] [32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_command__type_support.c.o[0m
+[43.110s] [ 22%] [32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_command__functions.c.o[0m
+[43.484s] [ 24%] [32m[1mLinking C shared library libserial_motor_demo_msgs__rosidl_generator_c.so[0m
+[43.801s] [ 24%] Built target serial_motor_demo_msgs__rosidl_generator_c
+[43.884s] [ 25%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[46.739s] [ 27%] [32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/serial_motor_demo_msgs/msg/detail/motor_command__type_support_c.cpp.o[0m
+[50.899s] [ 29%] [32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/serial_motor_demo_msgs/msg/detail/motor_vels__type_support_c.cpp.o[0m
+[54.557s] [ 31%] [32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/serial_motor_demo_msgs/msg/detail/encoder_vals__type_support_c.cpp.o[0m
+[60.092s] [ 33%] [32m[1mLinking CXX shared library libserial_motor_demo_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[60.515s] [ 33%] Built target serial_motor_demo_msgs__rosidl_typesupport_fastrtps_c
+[60.606s] [ 35%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[63.261s] [ 37%] [32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/serial_motor_demo_msgs/msg/detail/dds_fastrtps/motor_command__type_support.cpp.o[0m
+[67.136s] [ 38%] [32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/serial_motor_demo_msgs/msg/detail/dds_fastrtps/motor_vels__type_support.cpp.o[0m
+[70.571s] [ 40%] [32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/serial_motor_demo_msgs/msg/detail/dds_fastrtps/encoder_vals__type_support.cpp.o[0m
+[74.103s] [ 42%] [32m[1mLinking CXX shared library libserial_motor_demo_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[74.489s] [ 42%] Built target serial_motor_demo_msgs__rosidl_typesupport_fastrtps_cpp
+[74.589s] [ 44%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[77.167s] [ 46%] [32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/serial_motor_demo_msgs/msg/detail/motor_command__type_support.cpp.o[0m
+[79.584s] [ 48%] [32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/serial_motor_demo_msgs/msg/detail/motor_vels__type_support.cpp.o[0m
+[81.782s] [ 50%] [32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/serial_motor_demo_msgs/msg/detail/encoder_vals__type_support.cpp.o[0m
+[84.056s] [ 51%] [32m[1mLinking CXX shared library libserial_motor_demo_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[84.366s] [ 51%] Built target serial_motor_demo_msgs__rosidl_typesupport_introspection_cpp
+[84.457s] [ 53%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[86.791s] [ 55%] [32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/serial_motor_demo_msgs/msg/motor_command__type_support.cpp.o[0m
+[89.079s] [ 57%] [32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/serial_motor_demo_msgs/msg/motor_vels__type_support.cpp.o[0m
+[91.551s] [ 59%] [32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/serial_motor_demo_msgs/msg/encoder_vals__type_support.cpp.o[0m
+[94.151s] [ 61%] [32m[1mLinking CXX shared library libserial_motor_demo_msgs__rosidl_typesupport_cpp.so[0m
+[94.473s] [ 61%] Built target serial_motor_demo_msgs__rosidl_typesupport_cpp
+[94.564s] [ 62%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[96.714s] [ 64%] [32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/serial_motor_demo_msgs/msg/motor_command__type_support.cpp.o[0m
+[97.086s] [ 66%] [32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/serial_motor_demo_msgs/msg/encoder_vals__type_support.cpp.o[0m
+[97.391s] [ 68%] [32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/serial_motor_demo_msgs/msg/motor_vels__type_support.cpp.o[0m
+[97.707s] [ 70%] [32m[1mLinking CXX shared library libserial_motor_demo_msgs__rosidl_typesupport_c.so[0m
+[98.062s] [ 70%] Built target serial_motor_demo_msgs__rosidl_typesupport_c
+[98.200s] [ 72%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[100.641s] [ 74%] [32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serial_motor_demo_msgs/msg/detail/motor_command__type_support.c.o[0m
+[101.187s] [ 75%] [32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serial_motor_demo_msgs/msg/detail/encoder_vals__type_support.c.o[0m
+[101.557s] [ 77%] [32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serial_motor_demo_msgs/msg/detail/motor_vels__type_support.c.o[0m
+[101.852s] [ 79%] [32m[1mLinking C shared library libserial_motor_demo_msgs__rosidl_typesupport_introspection_c.so[0m
+[102.166s] [ 79%] Built target serial_motor_demo_msgs__rosidl_typesupport_introspection_c
+[102.333s] [ 79%] Built target serial_motor_demo_msgs
+[102.494s] [ 81%] [34m[1mGenerating Python code for ROS interfaces[0m
+[106.812s] [ 81%] Built target serial_motor_demo_msgs__py
+[106.984s] [ 83%] [32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_generator_py.dir/rosidl_generator_py/serial_motor_demo_msgs/msg/_motor_command_s.c.o[0m
+[107.903s] [ 85%] [32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_generator_py.dir/rosidl_generator_py/serial_motor_demo_msgs/msg/_encoder_vals_s.c.o[0m
+[108.687s] [ 87%] [32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_generator_py.dir/rosidl_generator_py/serial_motor_demo_msgs/msg/_motor_vels_s.c.o[0m
+[109.607s] [ 88%] [32m[1mLinking C shared library libserial_motor_demo_msgs__rosidl_generator_py.so[0m
+[109.958s] [ 88%] Built target serial_motor_demo_msgs__rosidl_generator_py
+[110.135s] [ 90%] [32mBuilding C object CMakeFiles/serial_motor_demo_msgs_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/serial_motor_demo_msgs/_serial_motor_demo_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[110.944s] [ 92%] [32m[1mLinking C shared module rosidl_generator_py/serial_motor_demo_msgs/serial_motor_demo_msgs_s__rosidl_typesupport_fastrtps_c.so[0m
+[111.192s] [ 92%] Built target serial_motor_demo_msgs_s__rosidl_typesupport_fastrtps_c
+[111.456s] [ 94%] [32mBuilding C object CMakeFiles/serial_motor_demo_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/serial_motor_demo_msgs/_serial_motor_demo_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[112.286s] [ 96%] [32m[1mLinking C shared module rosidl_generator_py/serial_motor_demo_msgs/serial_motor_demo_msgs_s__rosidl_typesupport_c.so[0m
+[112.515s] [ 96%] Built target serial_motor_demo_msgs_s__rosidl_typesupport_c
+[112.671s] [ 98%] [32mBuilding C object CMakeFiles/serial_motor_demo_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/serial_motor_demo_msgs/_serial_motor_demo_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[113.511s] [100%] [32m[1mLinking C shared module rosidl_generator_py/serial_motor_demo_msgs/serial_motor_demo_msgs_s__rosidl_typesupport_introspection_c.so[0m
+[113.776s] [100%] Built target serial_motor_demo_msgs_s__rosidl_typesupport_introspection_c
+[113.890s] Invoked command in '/home/golftrolley/robot_ws/build/serial_motor_demo_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/golftrolley/robot_ws/install/stereo_camera_split:/home/golftrolley/robot_ws/install/serial_motor_demo:/home/golftrolley/robot_ws/install/golftrolley:/opt/ros/jazzy /usr/bin/cmake --build /home/golftrolley/robot_ws/build/serial_motor_demo_msgs -- -j4 -l4
+[113.899s] Invoking command in '/home/golftrolley/robot_ws/build/serial_motor_demo_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/golftrolley/robot_ws/install/stereo_camera_split:/home/golftrolley/robot_ws/install/serial_motor_demo:/home/golftrolley/robot_ws/install/golftrolley:/opt/ros/jazzy /usr/bin/cmake --install /home/golftrolley/robot_ws/build/serial_motor_demo_msgs
+[113.978s] -- Install configuration: ""
+[113.982s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/share/ament_index/resource_index/rosidl_interfaces/serial_motor_demo_msgs
+[113.987s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/msg/MotorCommand.json
+[113.989s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/msg/MotorVels.json
+[113.990s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/msg/EncoderVals.json
+[113.993s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs
+[113.997s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg
+[114.001s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/rosidl_generator_c__visibility_control.h
+[114.002s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/motor_vels.h
+[114.006s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/motor_command.h
+[114.007s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/encoder_vals.h
+[114.011s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail
+[114.015s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__type_support.c
+[114.016s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__functions.h
+[114.019s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__functions.c
+[114.022s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__type_support.c
+[114.023s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__struct.h
+[114.024s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__functions.h
+[114.025s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__description.c
+[114.028s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__struct.h
+[114.029s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__type_support.h
+[114.032s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__type_support.h
+[114.033s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__struct.h
+[114.037s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__functions.c
+[114.039s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__description.c
+[114.040s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__type_support.h
+[114.044s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__type_support.c
+[114.045s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__description.c
+[114.046s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__functions.c
+[114.051s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__functions.h
+[114.055s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/environment/library_path.sh
+[114.056s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/environment/library_path.dsv
+[114.056s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_generator_c.so
+[114.061s] -- Set non-toolchain portion of runtime path of "/home/golftrolley/robot_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_generator_c.so" to ""
+[114.062s] -- Up-to-date: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs
+[114.062s] -- Up-to-date: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg
+[114.067s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[114.068s] -- Up-to-date: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail
+[114.071s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__rosidl_typesupport_fastrtps_c.h
+[114.072s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__rosidl_typesupport_fastrtps_c.h
+[114.073s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__rosidl_typesupport_fastrtps_c.h
+[114.078s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_typesupport_fastrtps_c.so
+[114.082s] -- Set non-toolchain portion of runtime path of "/home/golftrolley/robot_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[114.085s] -- Up-to-date: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs
+[114.086s] -- Up-to-date: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg
+[114.091s] -- Up-to-date: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail
+[114.092s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__type_support.c
+[114.096s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__rosidl_typesupport_introspection_c.h
+[114.097s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__type_support.c
+[114.102s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__rosidl_typesupport_introspection_c.h
+[114.103s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__type_support.c
+[114.106s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__rosidl_typesupport_introspection_c.h
+[114.110s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[114.119s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_typesupport_introspection_c.so
+[114.127s] -- Set non-toolchain portion of runtime path of "/home/golftrolley/robot_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_typesupport_introspection_c.so" to ""
+[114.128s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_typesupport_c.so
+[114.144s] -- Set non-toolchain portion of runtime path of "/home/golftrolley/robot_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_typesupport_c.so" to ""
+[114.150s] -- Up-to-date: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs
+[114.152s] -- Up-to-date: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg
+[114.156s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/motor_vels.hpp
+[114.160s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[114.161s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/motor_command.hpp
+[114.162s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/encoder_vals.hpp
+[114.163s] -- Up-to-date: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail
+[114.165s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__builder.hpp
+[114.166s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__struct.hpp
+[114.167s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__struct.hpp
+[114.170s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__traits.hpp
+[114.174s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__traits.hpp
+[114.180s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__type_support.hpp
+[114.182s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__type_support.hpp
+[114.190s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__struct.hpp
+[114.192s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__builder.hpp
+[114.196s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__builder.hpp
+[114.201s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__traits.hpp
+[114.209s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__type_support.hpp
+[114.214s] -- Up-to-date: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs
+[114.216s] -- Up-to-date: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg
+[114.221s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[114.230s] -- Up-to-date: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail
+[114.232s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/dds_fastrtps
+[114.239s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__rosidl_typesupport_fastrtps_cpp.hpp
+[114.244s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__rosidl_typesupport_fastrtps_cpp.hpp
+[114.245s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__rosidl_typesupport_fastrtps_cpp.hpp
+[114.250s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_typesupport_fastrtps_cpp.so
+[114.252s] -- Set non-toolchain portion of runtime path of "/home/golftrolley/robot_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[114.258s] -- Up-to-date: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs
+[114.259s] -- Up-to-date: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg
+[114.259s] -- Up-to-date: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail
+[114.260s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__type_support.cpp
+[114.265s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__rosidl_typesupport_introspection_cpp.hpp
+[114.266s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__rosidl_typesupport_introspection_cpp.hpp
+[114.267s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__type_support.cpp
+[114.273s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__type_support.cpp
+[114.277s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__rosidl_typesupport_introspection_cpp.hpp
+[114.278s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_typesupport_introspection_cpp.so
+[114.284s] -- Set non-toolchain portion of runtime path of "/home/golftrolley/robot_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[114.285s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_typesupport_cpp.so
+[114.294s] -- Set non-toolchain portion of runtime path of "/home/golftrolley/robot_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_typesupport_cpp.so" to ""
+[114.295s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/environment/pythonpath.sh
+[114.296s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/environment/pythonpath.dsv
+[114.300s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs-0.0.0-py3.12.egg-info
+[114.301s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs-0.0.0-py3.12.egg-info/SOURCES.txt
+[114.307s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs-0.0.0-py3.12.egg-info/top_level.txt
+[114.307s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs-0.0.0-py3.12.egg-info/PKG-INFO
+[114.308s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs-0.0.0-py3.12.egg-info/dependency_links.txt
+[114.313s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs
+[114.314s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/_serial_motor_demo_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[114.321s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/serial_motor_demo_msgs_s__rosidl_typesupport_c.so
+[114.322s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/msg
+[114.323s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/msg/_motor_vels.py
+[114.329s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/msg/_encoder_vals_s.c
+[114.330s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/msg/_motor_command.py
+[114.331s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/msg/__init__.py
+[114.338s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/msg/_motor_command_s.c
+[114.339s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/msg/_encoder_vals.py
+[114.342s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/msg/_motor_vels_s.c
+[114.349s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/serial_motor_demo_msgs_s__rosidl_typesupport_fastrtps_c.so
+[114.353s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/__init__.py
+[114.354s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/serial_motor_demo_msgs_s__rosidl_typesupport_introspection_c.so
+[114.355s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/_serial_motor_demo_msgs_s.ep.rosidl_typesupport_c.c
+[114.361s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/_serial_motor_demo_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[114.661s] Listing '/home/golftrolley/robot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs'...
+[114.666s] Compiling '/home/golftrolley/robot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/__init__.py'...
+[114.671s] Listing '/home/golftrolley/robot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/msg'...
+[114.673s] Compiling '/home/golftrolley/robot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/msg/__init__.py'...
+[114.678s] Compiling '/home/golftrolley/robot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/msg/_encoder_vals.py'...
+[114.683s] Compiling '/home/golftrolley/robot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/msg/_motor_command.py'...
+[114.685s] Compiling '/home/golftrolley/robot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/msg/_motor_vels.py'...
+[114.714s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/serial_motor_demo_msgs_s__rosidl_typesupport_fastrtps_c.so
+[114.720s] -- Set non-toolchain portion of runtime path of "/home/golftrolley/robot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/serial_motor_demo_msgs_s__rosidl_typesupport_fastrtps_c.so" to ""
+[114.727s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/serial_motor_demo_msgs_s__rosidl_typesupport_introspection_c.so
+[114.729s] -- Set non-toolchain portion of runtime path of "/home/golftrolley/robot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/serial_motor_demo_msgs_s__rosidl_typesupport_introspection_c.so" to ""
+[114.733s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/serial_motor_demo_msgs_s__rosidl_typesupport_c.so
+[114.739s] -- Set non-toolchain portion of runtime path of "/home/golftrolley/robot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages/serial_motor_demo_msgs/serial_motor_demo_msgs_s__rosidl_typesupport_c.so" to ""
+[114.742s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_generator_py.so
+[114.749s] -- Set non-toolchain portion of runtime path of "/home/golftrolley/robot_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_generator_py.so" to ""
+[114.751s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/msg/MotorCommand.idl
+[114.755s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/msg/MotorVels.idl
+[114.761s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/msg/EncoderVals.idl
+[114.764s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/msg/MotorCommand.msg
+[114.767s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/msg/MotorVels.msg
+[114.770s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/msg/EncoderVals.msg
+[114.774s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/share/ament_index/resource_index/package_run_dependencies/serial_motor_demo_msgs
+[114.778s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/share/ament_index/resource_index/parent_prefix_path/serial_motor_demo_msgs
+[114.782s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/environment/ament_prefix_path.sh
+[114.786s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/environment/ament_prefix_path.dsv
+[114.790s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/environment/path.sh
+[114.796s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/environment/path.dsv
+[114.797s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/local_setup.bash
+[114.804s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/local_setup.sh
+[114.805s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/local_setup.zsh
+[114.809s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/local_setup.dsv
+[114.810s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/package.dsv
+[114.813s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/share/ament_index/resource_index/packages/serial_motor_demo_msgs
+[114.818s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/export_serial_motor_demo_msgs__rosidl_generator_cExport.cmake
+[114.822s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/export_serial_motor_demo_msgs__rosidl_generator_cExport-noconfig.cmake
+[114.826s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/export_serial_motor_demo_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[114.828s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/export_serial_motor_demo_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[114.836s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/serial_motor_demo_msgs__rosidl_typesupport_introspection_cExport.cmake
+[114.837s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/serial_motor_demo_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[114.842s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/serial_motor_demo_msgs__rosidl_typesupport_cExport.cmake
+[114.843s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/serial_motor_demo_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[114.849s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/export_serial_motor_demo_msgs__rosidl_generator_cppExport.cmake
+[114.851s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/export_serial_motor_demo_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[114.854s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/export_serial_motor_demo_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[114.861s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/serial_motor_demo_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[114.863s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/serial_motor_demo_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[114.865s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/serial_motor_demo_msgs__rosidl_typesupport_cppExport.cmake
+[114.872s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/serial_motor_demo_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[114.873s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/export_serial_motor_demo_msgs__rosidl_generator_pyExport.cmake
+[114.877s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/export_serial_motor_demo_msgs__rosidl_generator_pyExport-noconfig.cmake
+[114.881s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/rosidl_cmake-extras.cmake
+[114.884s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[114.888s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[114.892s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[114.896s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[114.900s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[114.904s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[114.908s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/serial_motor_demo_msgsConfig.cmake
+[114.911s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/serial_motor_demo_msgsConfig-version.cmake
+[114.916s] -- Installing: /home/golftrolley/robot_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/package.xml
+[114.930s] Invoked command in '/home/golftrolley/robot_ws/build/serial_motor_demo_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/golftrolley/robot_ws/install/stereo_camera_split:/home/golftrolley/robot_ws/install/serial_motor_demo:/home/golftrolley/robot_ws/install/golftrolley:/opt/ros/jazzy /usr/bin/cmake --install /home/golftrolley/robot_ws/build/serial_motor_demo_msgs

@@ -1,0 +1,11 @@
+[0.058s] Invoking command in '/home/golftrolley/robot_ws/build/stereo_camera_node': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/golftrolley/robot_ws/install/stereo_camera_split:/home/golftrolley/robot_ws/install/serial_motor_demo:/home/golftrolley/robot_ws/install/golftrolley:/opt/ros/jazzy /usr/bin/cmake --build /home/golftrolley/robot_ws/build/stereo_camera_node -- -j4 -l4
+[0.437s] [ 50%] Built target stereo_calibration_capture
+[0.442s] [ 75%] [32mBuilding CXX object CMakeFiles/stereo_camera_node.dir/src/stereo_camera_node.cpp.o[0m
+[2.101s] [01m[K/home/golftrolley/robot_ws/src/stereo_camera_node/src/stereo_camera_node.cpp:3:10:[m[K [01;31m[Kfatal error: [m[Kcv_bridge/cv_bridge.h: No such file or directory
+[2.102s]     3 | #include [01;31m[K<cv_bridge/cv_bridge.h>[m[K
+[2.102s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.102s] compilation terminated.
+[2.111s] gmake[2]: *** [CMakeFiles/stereo_camera_node.dir/build.make:76: CMakeFiles/stereo_camera_node.dir/src/stereo_camera_node.cpp.o] Error 1
+[2.112s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/stereo_camera_node.dir/all] Error 2
+[2.113s] gmake: *** [Makefile:146: all] Error 2
+[2.121s] Invoked command in '/home/golftrolley/robot_ws/build/stereo_camera_node' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/golftrolley/robot_ws/install/stereo_camera_split:/home/golftrolley/robot_ws/install/serial_motor_demo:/home/golftrolley/robot_ws/install/golftrolley:/opt/ros/jazzy /usr/bin/cmake --build /home/golftrolley/robot_ws/build/stereo_camera_node -- -j4 -l4

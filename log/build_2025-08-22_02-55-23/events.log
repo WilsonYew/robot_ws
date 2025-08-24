@@ -1,0 +1,394 @@
+[0.000000] (-) TimerEvent: {}
+[0.000963] (-) JobUnselected: {'identifier': 'dd_bot'}
+[0.001777] (-) JobUnselected: {'identifier': 'diffdrive_arduino'}
+[0.002274] (-) JobUnselected: {'identifier': 'golftrolley'}
+[0.002800] (-) JobUnselected: {'identifier': 'mpu6050driver'}
+[0.002967] (-) JobUnselected: {'identifier': 'ros2_control_cmake'}
+[0.003042] (-) JobUnselected: {'identifier': 'serial'}
+[0.003131] (-) JobUnselected: {'identifier': 'serial_motor_demo'}
+[0.003422] (-) JobUnselected: {'identifier': 'serial_motor_demo_msgs'}
+[0.003513] (-) JobUnselected: {'identifier': 'stereo_camera_split'}
+[0.003580] (-) JobUnselected: {'identifier': 'ydlidar_ros2_driver'}
+[0.003647] (-) JobUnselected: {'identifier': 'ydlidar_sdk'}
+[0.003723] (stereo_camera_node) JobQueued: {'identifier': 'stereo_camera_node', 'dependencies': OrderedDict()}
+[0.003809] (stereo_camera_node) JobStarted: {'identifier': 'stereo_camera_node'}
+[0.052313] (stereo_camera_node) JobProgress: {'identifier': 'stereo_camera_node', 'progress': 'cmake'}
+[0.055354] (stereo_camera_node) JobProgress: {'identifier': 'stereo_camera_node', 'progress': 'build'}
+[0.058262] (stereo_camera_node) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/golftrolley/robot_ws/build/stereo_camera_node', '--', '-j4', '-l4'], 'cwd': '/home/golftrolley/robot_ws/build/stereo_camera_node', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'golftrolley', 'SSH_CLIENT': '10.42.0.1 41114 22', 'LC_TIME': 'ms_MY.UTF-8', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/golftrolley/.vscode-server/cli/servers/Stable-360a4e4fd251bfce169a4ddf857c7d25d1ad40da/server/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/golftrolley/robot_ws/install/serial_motor_demo_msgs/lib:/home/golftrolley/robot_ws/install/serial/lib:/home/golftrolley/robot_ws/install/diffdrive_arduino/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'BROWSER': '/home/golftrolley/.vscode-server/cli/servers/Stable-360a4e4fd251bfce169a4ddf857c7d25d1ad40da/server/bin/helpers/browser.sh', 'HOME': '/home/golftrolley', 'OLDPWD': '/home/golftrolley/robot_ws', 'TERM_PROGRAM_VERSION': '1.103.1', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-514271e3-cd22-446c-8e9f-d6ac4a05e617.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/golftrolley/.vscode-server/cli/servers/Stable-360a4e4fd251bfce169a4ddf857c7d25d1ad40da/server/extensions/git/dist/askpass-main.js', 'LC_MONETARY': 'ms_MY.UTF-8', 'VSCODE_GIT_ASKPASS_NODE': '/home/golftrolley/.vscode-server/cli/servers/Stable-360a4e4fd251bfce169a4ddf857c7d25d1ad40da/server/node', 'SSL_CERT_FILE': '/usr/lib/ssl/cert.pem', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/golftrolley/robot_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'golftrolley', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '4', 'PATH': '/home/golftrolley/.vscode-server/cli/servers/Stable-360a4e4fd251bfce169a4ddf857c7d25d1ad40da/server/bin/remote-cli:/home/golftrolley/robot_ws/install/ydlidar_sdk/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/golftrolley/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand', 'LC_ADDRESS': 'ms_MY.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'SSL_CERT_DIR': '/usr/lib/ssl/certs', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'ms_MY.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-81043886d8.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/golftrolley/robot_ws/install/ydlidar_ros2_driver:/home/golftrolley/robot_ws/install/stereo_camera_split:/home/golftrolley/robot_ws/install/stereo_camera_node:/home/golftrolley/robot_ws/install/serial_motor_demo:/home/golftrolley/robot_ws/install/serial_motor_demo_msgs:/home/golftrolley/robot_ws/install/serial:/home/golftrolley/robot_ws/install/ros2_control_cmake:/home/golftrolley/robot_ws/install/my_v4l2_camera:/home/golftrolley/robot_ws/install/mpu6050driver:/home/golftrolley/robot_ws/install/golftrolley:/home/golftrolley/robot_ws/install/diffdrive_arduino:/home/golftrolley/robot_ws/install/dd_bot:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'ms_MY.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ms_MY.UTF-8', 'LC_IDENTIFICATION': 'ms_MY.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/golftrolley/robot_ws/build/stereo_camera_node', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '10.42.0.1 41114 10.42.0.2 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/golftrolley/robot_ws/build/stereo_camera_split:/home/golftrolley/robot_ws/install/stereo_camera_split/lib/python3.12/site-packages:/home/golftrolley/robot_ws/build/serial_motor_demo:/home/golftrolley/robot_ws/install/serial_motor_demo/lib/python3.12/site-packages:/home/golftrolley/robot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages:/home/golftrolley/robot_ws/build/golftrolley:/home/golftrolley/robot_ws/install/golftrolley/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'ms_MY.UTF-8', 'LC_PAPER': 'ms_MY.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/golftrolley/robot_ws/install/ydlidar_sdk:/home/golftrolley/robot_ws/install/ydlidar_ros2_driver:/home/golftrolley/robot_ws/install/stereo_camera_node:/home/golftrolley/robot_ws/install/serial_motor_demo_msgs:/home/golftrolley/robot_ws/install/serial:/home/golftrolley/robot_ws/install/ros2_control_cmake:/home/golftrolley/robot_ws/install/my_v4l2_camera:/home/golftrolley/robot_ws/install/mpu6050driver:/home/golftrolley/robot_ws/install/diffdrive_arduino:/home/golftrolley/robot_ws/install/dd_bot:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/golftrolley/robot_ws/install/stereo_camera_split:/home/golftrolley/robot_ws/install/serial_motor_demo:/home/golftrolley/robot_ws/install/golftrolley:/opt/ros/jazzy'}), 'shell': False}
+[0.099245] (-) TimerEvent: {}
+[0.200023] (-) TimerEvent: {}
+[0.300987] (-) TimerEvent: {}
+[0.402247] (-) TimerEvent: {}
+[0.421092] (stereo_camera_node) StdoutLine: {'line': b'[ 50%] Built target stereo_calibration_capture\n'}
+[0.425403] (stereo_camera_node) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/stereo_camera_node.dir/src/stereo_camera_node.cpp.o\x1b[0m\n'}
+[0.502426] (-) TimerEvent: {}
+[0.603052] (-) TimerEvent: {}
+[0.703713] (-) TimerEvent: {}
+[0.804405] (-) TimerEvent: {}
+[0.905046] (-) TimerEvent: {}
+[1.005717] (-) TimerEvent: {}
+[1.106404] (-) TimerEvent: {}
+[1.207083] (-) TimerEvent: {}
+[1.307786] (-) TimerEvent: {}
+[1.408518] (-) TimerEvent: {}
+[1.509219] (-) TimerEvent: {}
+[1.609922] (-) TimerEvent: {}
+[1.710676] (-) TimerEvent: {}
+[1.811420] (-) TimerEvent: {}
+[1.912179] (-) TimerEvent: {}
+[2.012810] (-) TimerEvent: {}
+[2.113575] (-) TimerEvent: {}
+[2.214320] (-) TimerEvent: {}
+[2.315057] (-) TimerEvent: {}
+[2.415867] (-) TimerEvent: {}
+[2.516781] (-) TimerEvent: {}
+[2.617574] (-) TimerEvent: {}
+[2.718266] (-) TimerEvent: {}
+[2.818953] (-) TimerEvent: {}
+[2.919704] (-) TimerEvent: {}
+[3.020447] (-) TimerEvent: {}
+[3.121185] (-) TimerEvent: {}
+[3.221875] (-) TimerEvent: {}
+[3.322695] (-) TimerEvent: {}
+[3.423601] (-) TimerEvent: {}
+[3.524372] (-) TimerEvent: {}
+[3.625092] (-) TimerEvent: {}
+[3.725842] (-) TimerEvent: {}
+[3.826705] (-) TimerEvent: {}
+[3.927551] (-) TimerEvent: {}
+[4.028347] (-) TimerEvent: {}
+[4.129051] (-) TimerEvent: {}
+[4.229779] (-) TimerEvent: {}
+[4.330542] (-) TimerEvent: {}
+[4.431255] (-) TimerEvent: {}
+[4.531988] (-) TimerEvent: {}
+[4.632778] (-) TimerEvent: {}
+[4.733544] (-) TimerEvent: {}
+[4.834379] (-) TimerEvent: {}
+[4.935190] (-) TimerEvent: {}
+[5.036006] (-) TimerEvent: {}
+[5.136788] (-) TimerEvent: {}
+[5.237557] (-) TimerEvent: {}
+[5.338312] (-) TimerEvent: {}
+[5.439228] (-) TimerEvent: {}
+[5.540075] (-) TimerEvent: {}
+[5.640888] (-) TimerEvent: {}
+[5.741699] (-) TimerEvent: {}
+[5.842441] (-) TimerEvent: {}
+[5.943212] (-) TimerEvent: {}
+[6.043911] (-) TimerEvent: {}
+[6.144675] (-) TimerEvent: {}
+[6.245424] (-) TimerEvent: {}
+[6.346225] (-) TimerEvent: {}
+[6.446961] (-) TimerEvent: {}
+[6.547733] (-) TimerEvent: {}
+[6.648487] (-) TimerEvent: {}
+[6.749232] (-) TimerEvent: {}
+[6.849941] (-) TimerEvent: {}
+[6.950712] (-) TimerEvent: {}
+[7.051473] (-) TimerEvent: {}
+[7.152283] (-) TimerEvent: {}
+[7.253031] (-) TimerEvent: {}
+[7.354049] (-) TimerEvent: {}
+[7.454888] (-) TimerEvent: {}
+[7.555718] (-) TimerEvent: {}
+[7.656511] (-) TimerEvent: {}
+[7.757270] (-) TimerEvent: {}
+[7.857979] (-) TimerEvent: {}
+[7.958780] (-) TimerEvent: {}
+[8.059545] (-) TimerEvent: {}
+[8.160257] (-) TimerEvent: {}
+[8.260993] (-) TimerEvent: {}
+[8.361864] (-) TimerEvent: {}
+[8.462723] (-) TimerEvent: {}
+[8.563523] (-) TimerEvent: {}
+[8.664423] (-) TimerEvent: {}
+[8.765258] (-) TimerEvent: {}
+[8.865975] (-) TimerEvent: {}
+[8.966745] (-) TimerEvent: {}
+[9.067593] (-) TimerEvent: {}
+[9.168284] (-) TimerEvent: {}
+[9.269005] (-) TimerEvent: {}
+[9.369795] (-) TimerEvent: {}
+[9.470575] (-) TimerEvent: {}
+[9.571346] (-) TimerEvent: {}
+[9.672070] (-) TimerEvent: {}
+[9.772862] (-) TimerEvent: {}
+[9.873615] (-) TimerEvent: {}
+[9.974377] (-) TimerEvent: {}
+[10.075080] (-) TimerEvent: {}
+[10.175894] (-) TimerEvent: {}
+[10.276751] (-) TimerEvent: {}
+[10.377636] (-) TimerEvent: {}
+[10.478436] (-) TimerEvent: {}
+[10.579218] (-) TimerEvent: {}
+[10.679988] (-) TimerEvent: {}
+[10.780768] (-) TimerEvent: {}
+[10.881525] (-) TimerEvent: {}
+[10.982275] (-) TimerEvent: {}
+[11.082990] (-) TimerEvent: {}
+[11.183875] (-) TimerEvent: {}
+[11.284652] (-) TimerEvent: {}
+[11.385374] (-) TimerEvent: {}
+[11.486085] (-) TimerEvent: {}
+[11.586815] (-) TimerEvent: {}
+[11.687626] (-) TimerEvent: {}
+[11.788647] (-) TimerEvent: {}
+[11.889361] (-) TimerEvent: {}
+[11.990061] (-) TimerEvent: {}
+[12.090831] (-) TimerEvent: {}
+[12.191605] (-) TimerEvent: {}
+[12.292316] (-) TimerEvent: {}
+[12.393041] (-) TimerEvent: {}
+[12.493857] (-) TimerEvent: {}
+[12.594665] (-) TimerEvent: {}
+[12.695421] (-) TimerEvent: {}
+[12.796091] (-) TimerEvent: {}
+[12.896862] (-) TimerEvent: {}
+[12.997660] (-) TimerEvent: {}
+[13.098393] (-) TimerEvent: {}
+[13.199085] (-) TimerEvent: {}
+[13.299908] (-) TimerEvent: {}
+[13.400821] (-) TimerEvent: {}
+[13.501570] (-) TimerEvent: {}
+[13.602253] (-) TimerEvent: {}
+[13.702999] (-) TimerEvent: {}
+[13.803738] (-) TimerEvent: {}
+[13.904493] (-) TimerEvent: {}
+[14.005264] (-) TimerEvent: {}
+[14.106056] (-) TimerEvent: {}
+[14.206804] (-) TimerEvent: {}
+[14.307585] (-) TimerEvent: {}
+[14.408319] (-) TimerEvent: {}
+[14.509207] (-) TimerEvent: {}
+[14.609982] (-) TimerEvent: {}
+[14.710777] (-) TimerEvent: {}
+[14.811650] (-) TimerEvent: {}
+[14.912440] (-) TimerEvent: {}
+[15.013219] (-) TimerEvent: {}
+[15.113916] (-) TimerEvent: {}
+[15.214735] (-) TimerEvent: {}
+[15.315498] (-) TimerEvent: {}
+[15.416272] (-) TimerEvent: {}
+[15.517076] (-) TimerEvent: {}
+[15.617842] (-) TimerEvent: {}
+[15.718721] (-) TimerEvent: {}
+[15.819553] (-) TimerEvent: {}
+[15.920284] (-) TimerEvent: {}
+[16.021034] (-) TimerEvent: {}
+[16.121804] (-) TimerEvent: {}
+[16.222619] (-) TimerEvent: {}
+[16.323373] (-) TimerEvent: {}
+[16.424157] (-) TimerEvent: {}
+[16.524869] (-) TimerEvent: {}
+[16.625647] (-) TimerEvent: {}
+[16.726401] (-) TimerEvent: {}
+[16.827168] (-) TimerEvent: {}
+[16.927877] (-) TimerEvent: {}
+[17.028641] (-) TimerEvent: {}
+[17.129409] (-) TimerEvent: {}
+[17.230207] (-) TimerEvent: {}
+[17.330925] (-) TimerEvent: {}
+[17.431699] (-) TimerEvent: {}
+[17.532465] (-) TimerEvent: {}
+[17.633241] (-) TimerEvent: {}
+[17.733951] (-) TimerEvent: {}
+[17.834728] (-) TimerEvent: {}
+[17.935486] (-) TimerEvent: {}
+[18.036234] (-) TimerEvent: {}
+[18.136935] (-) TimerEvent: {}
+[18.237722] (-) TimerEvent: {}
+[18.338557] (-) TimerEvent: {}
+[18.439291] (-) TimerEvent: {}
+[18.540024] (-) TimerEvent: {}
+[18.640784] (-) TimerEvent: {}
+[18.741522] (-) TimerEvent: {}
+[18.842264] (-) TimerEvent: {}
+[18.942965] (-) TimerEvent: {}
+[19.043713] (-) TimerEvent: {}
+[19.144466] (-) TimerEvent: {}
+[19.245224] (-) TimerEvent: {}
+[19.345903] (-) TimerEvent: {}
+[19.446722] (-) TimerEvent: {}
+[19.547662] (-) TimerEvent: {}
+[19.648418] (-) TimerEvent: {}
+[19.749159] (-) TimerEvent: {}
+[19.849874] (-) TimerEvent: {}
+[19.950693] (-) TimerEvent: {}
+[20.051447] (-) TimerEvent: {}
+[20.152210] (-) TimerEvent: {}
+[20.252912] (-) TimerEvent: {}
+[20.353669] (-) TimerEvent: {}
+[20.454411] (-) TimerEvent: {}
+[20.555137] (-) TimerEvent: {}
+[20.655825] (-) TimerEvent: {}
+[20.756575] (-) TimerEvent: {}
+[20.857288] (-) TimerEvent: {}
+[20.958011] (-) TimerEvent: {}
+[21.058782] (-) TimerEvent: {}
+[21.159562] (-) TimerEvent: {}
+[21.260266] (-) TimerEvent: {}
+[21.360958] (-) TimerEvent: {}
+[21.461697] (-) TimerEvent: {}
+[21.562546] (-) TimerEvent: {}
+[21.663763] (-) TimerEvent: {}
+[21.764501] (-) TimerEvent: {}
+[21.865236] (-) TimerEvent: {}
+[21.966008] (-) TimerEvent: {}
+[22.066787] (-) TimerEvent: {}
+[22.167524] (-) TimerEvent: {}
+[22.268305] (-) TimerEvent: {}
+[22.368992] (-) TimerEvent: {}
+[22.469766] (-) TimerEvent: {}
+[22.570576] (-) TimerEvent: {}
+[22.671290] (-) TimerEvent: {}
+[22.772048] (-) TimerEvent: {}
+[22.873368] (-) TimerEvent: {}
+[22.974155] (-) TimerEvent: {}
+[23.074877] (-) TimerEvent: {}
+[23.175737] (-) TimerEvent: {}
+[23.276522] (-) TimerEvent: {}
+[23.377449] (-) TimerEvent: {}
+[23.478260] (-) TimerEvent: {}
+[23.578987] (-) TimerEvent: {}
+[23.679864] (-) TimerEvent: {}
+[23.780883] (-) TimerEvent: {}
+[23.881738] (-) TimerEvent: {}
+[23.982540] (-) TimerEvent: {}
+[24.083270] (-) TimerEvent: {}
+[24.183987] (-) TimerEvent: {}
+[24.284874] (-) TimerEvent: {}
+[24.385684] (-) TimerEvent: {}
+[24.486522] (-) TimerEvent: {}
+[24.587262] (-) TimerEvent: {}
+[24.688003] (-) TimerEvent: {}
+[24.788791] (-) TimerEvent: {}
+[24.889538] (-) TimerEvent: {}
+[24.990274] (-) TimerEvent: {}
+[25.090987] (-) TimerEvent: {}
+[25.191757] (-) TimerEvent: {}
+[25.292520] (-) TimerEvent: {}
+[25.393265] (-) TimerEvent: {}
+[25.493972] (-) TimerEvent: {}
+[25.594748] (-) TimerEvent: {}
+[25.695518] (-) TimerEvent: {}
+[25.796303] (-) TimerEvent: {}
+[25.897031] (-) TimerEvent: {}
+[25.997827] (-) TimerEvent: {}
+[26.098601] (-) TimerEvent: {}
+[26.199276] (-) TimerEvent: {}
+[26.300034] (-) TimerEvent: {}
+[26.400818] (-) TimerEvent: {}
+[26.501583] (-) TimerEvent: {}
+[26.602297] (-) TimerEvent: {}
+[26.702999] (-) TimerEvent: {}
+[26.803752] (-) TimerEvent: {}
+[26.904481] (-) TimerEvent: {}
+[27.005232] (-) TimerEvent: {}
+[27.105937] (-) TimerEvent: {}
+[27.206696] (-) TimerEvent: {}
+[27.307448] (-) TimerEvent: {}
+[27.408205] (-) TimerEvent: {}
+[27.508907] (-) TimerEvent: {}
+[27.609684] (-) TimerEvent: {}
+[27.710455] (-) TimerEvent: {}
+[27.811216] (-) TimerEvent: {}
+[27.911945] (-) TimerEvent: {}
+[28.012716] (-) TimerEvent: {}
+[28.113502] (-) TimerEvent: {}
+[28.214292] (-) TimerEvent: {}
+[28.315040] (-) TimerEvent: {}
+[28.416466] (-) TimerEvent: {}
+[28.517225] (-) TimerEvent: {}
+[28.617973] (-) TimerEvent: {}
+[28.718790] (-) TimerEvent: {}
+[28.819563] (-) TimerEvent: {}
+[28.920285] (-) TimerEvent: {}
+[29.020999] (-) TimerEvent: {}
+[29.121781] (-) TimerEvent: {}
+[29.222544] (-) TimerEvent: {}
+[29.323270] (-) TimerEvent: {}
+[29.423976] (-) TimerEvent: {}
+[29.524838] (-) TimerEvent: {}
+[29.625672] (-) TimerEvent: {}
+[29.726399] (-) TimerEvent: {}
+[29.827152] (-) TimerEvent: {}
+[29.927873] (-) TimerEvent: {}
+[30.028948] (-) TimerEvent: {}
+[30.129989] (-) TimerEvent: {}
+[30.230759] (-) TimerEvent: {}
+[30.331584] (-) TimerEvent: {}
+[30.432640] (-) TimerEvent: {}
+[30.573023] (-) TimerEvent: {}
+[30.673923] (-) TimerEvent: {}
+[30.774689] (-) TimerEvent: {}
+[30.875424] (-) TimerEvent: {}
+[30.976199] (-) TimerEvent: {}
+[31.076916] (-) TimerEvent: {}
+[31.177726] (-) TimerEvent: {}
+[31.278550] (-) TimerEvent: {}
+[31.379279] (-) TimerEvent: {}
+[31.480066] (-) TimerEvent: {}
+[31.580877] (-) TimerEvent: {}
+[31.681775] (-) TimerEvent: {}
+[31.782801] (-) TimerEvent: {}
+[31.883755] (-) TimerEvent: {}
+[31.984957] (-) TimerEvent: {}
+[32.021464] (stereo_camera_node) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable stereo_camera_node\x1b[0m\n'}
+[32.085183] (-) TimerEvent: {}
+[32.186011] (-) TimerEvent: {}
+[32.287605] (-) TimerEvent: {}
+[32.388491] (-) TimerEvent: {}
+[32.489321] (-) TimerEvent: {}
+[32.590245] (-) TimerEvent: {}
+[32.691166] (-) TimerEvent: {}
+[32.791994] (-) TimerEvent: {}
+[32.892969] (-) TimerEvent: {}
+[32.993838] (-) TimerEvent: {}
+[33.094693] (-) TimerEvent: {}
+[33.195539] (-) TimerEvent: {}
+[33.296292] (-) TimerEvent: {}
+[33.397025] (-) TimerEvent: {}
+[33.497972] (-) TimerEvent: {}
+[33.598782] (-) TimerEvent: {}
+[33.699652] (-) TimerEvent: {}
+[33.800503] (-) TimerEvent: {}
+[33.901284] (-) TimerEvent: {}
+[34.001984] (-) TimerEvent: {}
+[34.102740] (-) TimerEvent: {}
+[34.203508] (-) TimerEvent: {}
+[34.304275] (-) TimerEvent: {}
+[34.405060] (-) TimerEvent: {}
+[34.505943] (-) TimerEvent: {}
+[34.606812] (-) TimerEvent: {}
+[34.707616] (-) TimerEvent: {}
+[34.808281] (-) TimerEvent: {}
+[34.909358] (-) TimerEvent: {}
+[34.916660] (stereo_camera_node) StdoutLine: {'line': b'[100%] Built target stereo_camera_node\n'}
+[34.976282] (stereo_camera_node) CommandEnded: {'returncode': 0}
+[34.978644] (stereo_camera_node) JobProgress: {'identifier': 'stereo_camera_node', 'progress': 'install'}
+[35.009562] (-) TimerEvent: {}
+[35.029646] (stereo_camera_node) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/golftrolley/robot_ws/build/stereo_camera_node'], 'cwd': '/home/golftrolley/robot_ws/build/stereo_camera_node', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'golftrolley', 'SSH_CLIENT': '10.42.0.1 41114 22', 'LC_TIME': 'ms_MY.UTF-8', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/golftrolley/.vscode-server/cli/servers/Stable-360a4e4fd251bfce169a4ddf857c7d25d1ad40da/server/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/golftrolley/robot_ws/install/serial_motor_demo_msgs/lib:/home/golftrolley/robot_ws/install/serial/lib:/home/golftrolley/robot_ws/install/diffdrive_arduino/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'BROWSER': '/home/golftrolley/.vscode-server/cli/servers/Stable-360a4e4fd251bfce169a4ddf857c7d25d1ad40da/server/bin/helpers/browser.sh', 'HOME': '/home/golftrolley', 'OLDPWD': '/home/golftrolley/robot_ws', 'TERM_PROGRAM_VERSION': '1.103.1', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-514271e3-cd22-446c-8e9f-d6ac4a05e617.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/golftrolley/.vscode-server/cli/servers/Stable-360a4e4fd251bfce169a4ddf857c7d25d1ad40da/server/extensions/git/dist/askpass-main.js', 'LC_MONETARY': 'ms_MY.UTF-8', 'VSCODE_GIT_ASKPASS_NODE': '/home/golftrolley/.vscode-server/cli/servers/Stable-360a4e4fd251bfce169a4ddf857c7d25d1ad40da/server/node', 'SSL_CERT_FILE': '/usr/lib/ssl/cert.pem', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/golftrolley/robot_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'golftrolley', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '4', 'PATH': '/home/golftrolley/.vscode-server/cli/servers/Stable-360a4e4fd251bfce169a4ddf857c7d25d1ad40da/server/bin/remote-cli:/home/golftrolley/robot_ws/install/ydlidar_sdk/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/golftrolley/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand', 'LC_ADDRESS': 'ms_MY.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'SSL_CERT_DIR': '/usr/lib/ssl/certs', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'ms_MY.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-81043886d8.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/golftrolley/robot_ws/install/ydlidar_ros2_driver:/home/golftrolley/robot_ws/install/stereo_camera_split:/home/golftrolley/robot_ws/install/stereo_camera_node:/home/golftrolley/robot_ws/install/serial_motor_demo:/home/golftrolley/robot_ws/install/serial_motor_demo_msgs:/home/golftrolley/robot_ws/install/serial:/home/golftrolley/robot_ws/install/ros2_control_cmake:/home/golftrolley/robot_ws/install/my_v4l2_camera:/home/golftrolley/robot_ws/install/mpu6050driver:/home/golftrolley/robot_ws/install/golftrolley:/home/golftrolley/robot_ws/install/diffdrive_arduino:/home/golftrolley/robot_ws/install/dd_bot:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'ms_MY.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ms_MY.UTF-8', 'LC_IDENTIFICATION': 'ms_MY.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/golftrolley/robot_ws/build/stereo_camera_node', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '10.42.0.1 41114 10.42.0.2 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/golftrolley/robot_ws/build/stereo_camera_split:/home/golftrolley/robot_ws/install/stereo_camera_split/lib/python3.12/site-packages:/home/golftrolley/robot_ws/build/serial_motor_demo:/home/golftrolley/robot_ws/install/serial_motor_demo/lib/python3.12/site-packages:/home/golftrolley/robot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages:/home/golftrolley/robot_ws/build/golftrolley:/home/golftrolley/robot_ws/install/golftrolley/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'ms_MY.UTF-8', 'LC_PAPER': 'ms_MY.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/golftrolley/robot_ws/install/ydlidar_sdk:/home/golftrolley/robot_ws/install/ydlidar_ros2_driver:/home/golftrolley/robot_ws/install/stereo_camera_node:/home/golftrolley/robot_ws/install/serial_motor_demo_msgs:/home/golftrolley/robot_ws/install/serial:/home/golftrolley/robot_ws/install/ros2_control_cmake:/home/golftrolley/robot_ws/install/my_v4l2_camera:/home/golftrolley/robot_ws/install/mpu6050driver:/home/golftrolley/robot_ws/install/diffdrive_arduino:/home/golftrolley/robot_ws/install/dd_bot:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/golftrolley/robot_ws/install/stereo_camera_split:/home/golftrolley/robot_ws/install/serial_motor_demo:/home/golftrolley/robot_ws/install/golftrolley:/opt/ros/jazzy'}), 'shell': False}
+[35.078073] (stereo_camera_node) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[35.079438] (stereo_camera_node) StdoutLine: {'line': b'-- Installing: /home/golftrolley/robot_ws/install/stereo_camera_node/lib/stereo_camera_node/stereo_camera_node\n'}
+[35.097343] (stereo_camera_node) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/golftrolley/robot_ws/install/stereo_camera_node/lib/stereo_camera_node/stereo_camera_node" to ""\n'}
+[35.098664] (stereo_camera_node) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/stereo_camera_node/lib/stereo_camera_node/stereo_calibration_capture\n'}
+[35.100205] (stereo_camera_node) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/stereo_camera_node/share/ament_index/resource_index/package_run_dependencies/stereo_camera_node\n'}
+[35.101139] (stereo_camera_node) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/stereo_camera_node/share/ament_index/resource_index/parent_prefix_path/stereo_camera_node\n'}
+[35.101634] (stereo_camera_node) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/stereo_camera_node/share/stereo_camera_node/environment/ament_prefix_path.sh\n'}
+[35.102849] (stereo_camera_node) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/stereo_camera_node/share/stereo_camera_node/environment/ament_prefix_path.dsv\n'}
+[35.103514] (stereo_camera_node) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/stereo_camera_node/share/stereo_camera_node/environment/path.sh\n'}
+[35.104144] (stereo_camera_node) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/stereo_camera_node/share/stereo_camera_node/environment/path.dsv\n'}
+[35.104584] (stereo_camera_node) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/stereo_camera_node/share/stereo_camera_node/local_setup.bash\n'}
+[35.104996] (stereo_camera_node) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/stereo_camera_node/share/stereo_camera_node/local_setup.sh\n'}
+[35.105431] (stereo_camera_node) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/stereo_camera_node/share/stereo_camera_node/local_setup.zsh\n'}
+[35.106017] (stereo_camera_node) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/stereo_camera_node/share/stereo_camera_node/local_setup.dsv\n'}
+[35.106625] (stereo_camera_node) StdoutLine: {'line': b'-- Installing: /home/golftrolley/robot_ws/install/stereo_camera_node/share/stereo_camera_node/package.dsv\n'}
+[35.107081] (stereo_camera_node) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/stereo_camera_node/share/ament_index/resource_index/packages/stereo_camera_node\n'}
+[35.107654] (stereo_camera_node) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/stereo_camera_node/share/stereo_camera_node/cmake/stereo_camera_nodeConfig.cmake\n'}
+[35.108151] (stereo_camera_node) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/stereo_camera_node/share/stereo_camera_node/cmake/stereo_camera_nodeConfig-version.cmake\n'}
+[35.108690] (stereo_camera_node) StdoutLine: {'line': b'-- Up-to-date: /home/golftrolley/robot_ws/install/stereo_camera_node/share/stereo_camera_node/package.xml\n'}
+[35.109708] (-) TimerEvent: {}
+[35.113198] (stereo_camera_node) CommandEnded: {'returncode': 0}
+[35.187948] (stereo_camera_node) JobEnded: {'identifier': 'stereo_camera_node', 'rc': 0}
+[35.190699] (-) EventReactorShutdown: {}

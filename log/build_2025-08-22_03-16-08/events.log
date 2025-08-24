@@ -1,0 +1,517 @@
+[0.000000] (-) TimerEvent: {}
+[0.000471] (-) JobUnselected: {'identifier': 'dd_bot'}
+[0.000782] (-) JobUnselected: {'identifier': 'diffdrive_arduino'}
+[0.001252] (-) JobUnselected: {'identifier': 'golftrolley'}
+[0.001955] (-) JobUnselected: {'identifier': 'mpu6050driver'}
+[0.002031] (-) JobUnselected: {'identifier': 'ros2_control_cmake'}
+[0.002124] (-) JobUnselected: {'identifier': 'serial'}
+[0.002568] (-) JobUnselected: {'identifier': 'serial_motor_demo'}
+[0.002641] (-) JobUnselected: {'identifier': 'serial_motor_demo_msgs'}
+[0.002709] (-) JobUnselected: {'identifier': 'stereo_camera_split'}
+[0.002775] (-) JobUnselected: {'identifier': 'ydlidar_ros2_driver'}
+[0.002840] (-) JobUnselected: {'identifier': 'ydlidar_sdk'}
+[0.002916] (stereo_camera_node) JobQueued: {'identifier': 'stereo_camera_node', 'dependencies': OrderedDict()}
+[0.002998] (stereo_camera_node) JobStarted: {'identifier': 'stereo_camera_node'}
+[0.048788] (stereo_camera_node) JobProgress: {'identifier': 'stereo_camera_node', 'progress': 'cmake'}
+[0.052347] (stereo_camera_node) JobProgress: {'identifier': 'stereo_camera_node', 'progress': 'build'}
+[0.055248] (stereo_camera_node) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/golftrolley/robot_ws/build/stereo_camera_node', '--', '-j4', '-l4'], 'cwd': '/home/golftrolley/robot_ws/build/stereo_camera_node', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'golftrolley', 'SSH_CLIENT': '10.42.0.1 41114 22', 'LC_TIME': 'ms_MY.UTF-8', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/golftrolley/.vscode-server/cli/servers/Stable-360a4e4fd251bfce169a4ddf857c7d25d1ad40da/server/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/golftrolley/robot_ws/install/serial_motor_demo_msgs/lib:/home/golftrolley/robot_ws/install/serial/lib:/home/golftrolley/robot_ws/install/diffdrive_arduino/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'BROWSER': '/home/golftrolley/.vscode-server/cli/servers/Stable-360a4e4fd251bfce169a4ddf857c7d25d1ad40da/server/bin/helpers/browser.sh', 'HOME': '/home/golftrolley', 'OLDPWD': '/home/golftrolley/robot_ws', 'TERM_PROGRAM_VERSION': '1.103.1', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-514271e3-cd22-446c-8e9f-d6ac4a05e617.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/golftrolley/.vscode-server/cli/servers/Stable-360a4e4fd251bfce169a4ddf857c7d25d1ad40da/server/extensions/git/dist/askpass-main.js', 'LC_MONETARY': 'ms_MY.UTF-8', 'VSCODE_GIT_ASKPASS_NODE': '/home/golftrolley/.vscode-server/cli/servers/Stable-360a4e4fd251bfce169a4ddf857c7d25d1ad40da/server/node', 'SSL_CERT_FILE': '/usr/lib/ssl/cert.pem', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/golftrolley/robot_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'golftrolley', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '4', 'PATH': '/home/golftrolley/.vscode-server/cli/servers/Stable-360a4e4fd251bfce169a4ddf857c7d25d1ad40da/server/bin/remote-cli:/home/golftrolley/robot_ws/install/ydlidar_sdk/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/golftrolley/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand', 'LC_ADDRESS': 'ms_MY.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'SSL_CERT_DIR': '/usr/lib/ssl/certs', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'ms_MY.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-81043886d8.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/golftrolley/robot_ws/install/ydlidar_ros2_driver:/home/golftrolley/robot_ws/install/stereo_camera_split:/home/golftrolley/robot_ws/install/stereo_camera_node:/home/golftrolley/robot_ws/install/serial_motor_demo:/home/golftrolley/robot_ws/install/serial_motor_demo_msgs:/home/golftrolley/robot_ws/install/serial:/home/golftrolley/robot_ws/install/ros2_control_cmake:/home/golftrolley/robot_ws/install/my_v4l2_camera:/home/golftrolley/robot_ws/install/mpu6050driver:/home/golftrolley/robot_ws/install/golftrolley:/home/golftrolley/robot_ws/install/diffdrive_arduino:/home/golftrolley/robot_ws/install/dd_bot:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'ms_MY.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ms_MY.UTF-8', 'LC_IDENTIFICATION': 'ms_MY.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/golftrolley/robot_ws/build/stereo_camera_node', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '10.42.0.1 41114 10.42.0.2 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/golftrolley/robot_ws/build/stereo_camera_split:/home/golftrolley/robot_ws/install/stereo_camera_split/lib/python3.12/site-packages:/home/golftrolley/robot_ws/build/serial_motor_demo:/home/golftrolley/robot_ws/install/serial_motor_demo/lib/python3.12/site-packages:/home/golftrolley/robot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages:/home/golftrolley/robot_ws/build/golftrolley:/home/golftrolley/robot_ws/install/golftrolley/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'ms_MY.UTF-8', 'LC_PAPER': 'ms_MY.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/golftrolley/robot_ws/install/ydlidar_sdk:/home/golftrolley/robot_ws/install/ydlidar_ros2_driver:/home/golftrolley/robot_ws/install/stereo_camera_node:/home/golftrolley/robot_ws/install/serial_motor_demo_msgs:/home/golftrolley/robot_ws/install/serial:/home/golftrolley/robot_ws/install/ros2_control_cmake:/home/golftrolley/robot_ws/install/my_v4l2_camera:/home/golftrolley/robot_ws/install/mpu6050driver:/home/golftrolley/robot_ws/install/diffdrive_arduino:/home/golftrolley/robot_ws/install/dd_bot:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/golftrolley/robot_ws/install/stereo_camera_split:/home/golftrolley/robot_ws/install/serial_motor_demo:/home/golftrolley/robot_ws/install/golftrolley:/opt/ros/jazzy'}), 'shell': False}
+[0.099259] (-) TimerEvent: {}
+[0.199939] (-) TimerEvent: {}
+[0.300679] (-) TimerEvent: {}
+[0.401445] (-) TimerEvent: {}
+[0.411164] (stereo_camera_node) StdoutLine: {'line': b'[ 40%] Built target stereo_calibration_capture\n'}
+[0.487793] (stereo_camera_node) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/stereo_camera_node.dir/src/main.cpp.o\x1b[0m\n'}
+[0.493191] (stereo_camera_node) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/stereo_camera_node.dir/src/stereo_camera_node.cpp.o\x1b[0m\n'}
+[0.501624] (-) TimerEvent: {}
+[0.602380] (-) TimerEvent: {}
+[0.703457] (-) TimerEvent: {}
+[0.804188] (-) TimerEvent: {}
+[0.904961] (-) TimerEvent: {}
+[1.005694] (-) TimerEvent: {}
+[1.106387] (-) TimerEvent: {}
+[1.207074] (-) TimerEvent: {}
+[1.307804] (-) TimerEvent: {}
+[1.408648] (-) TimerEvent: {}
+[1.509281] (-) TimerEvent: {}
+[1.609974] (-) TimerEvent: {}
+[1.710708] (-) TimerEvent: {}
+[1.811502] (-) TimerEvent: {}
+[1.912379] (-) TimerEvent: {}
+[2.013064] (-) TimerEvent: {}
+[2.113738] (-) TimerEvent: {}
+[2.214472] (-) TimerEvent: {}
+[2.315331] (-) TimerEvent: {}
+[2.416090] (-) TimerEvent: {}
+[2.516867] (-) TimerEvent: {}
+[2.617978] (-) TimerEvent: {}
+[2.719141] (-) TimerEvent: {}
+[2.820166] (-) TimerEvent: {}
+[2.921692] (-) TimerEvent: {}
+[3.023203] (-) TimerEvent: {}
+[3.124152] (-) TimerEvent: {}
+[3.224967] (-) TimerEvent: {}
+[3.325776] (-) TimerEvent: {}
+[3.427214] (-) TimerEvent: {}
+[3.527966] (-) TimerEvent: {}
+[3.628934] (-) TimerEvent: {}
+[3.729886] (-) TimerEvent: {}
+[3.830860] (-) TimerEvent: {}
+[3.932076] (-) TimerEvent: {}
+[4.033694] (-) TimerEvent: {}
+[4.134878] (-) TimerEvent: {}
+[4.235899] (-) TimerEvent: {}
+[4.337177] (-) TimerEvent: {}
+[4.437967] (-) TimerEvent: {}
+[4.538997] (-) TimerEvent: {}
+[4.639874] (-) TimerEvent: {}
+[4.740852] (-) TimerEvent: {}
+[4.841903] (-) TimerEvent: {}
+[4.942766] (-) TimerEvent: {}
+[5.043602] (-) TimerEvent: {}
+[5.144470] (-) TimerEvent: {}
+[5.245293] (-) TimerEvent: {}
+[5.346247] (-) TimerEvent: {}
+[5.447174] (-) TimerEvent: {}
+[5.548078] (-) TimerEvent: {}
+[5.649284] (-) TimerEvent: {}
+[5.750885] (-) TimerEvent: {}
+[5.852300] (-) TimerEvent: {}
+[5.953203] (-) TimerEvent: {}
+[6.054510] (-) TimerEvent: {}
+[6.155902] (-) TimerEvent: {}
+[6.257523] (-) TimerEvent: {}
+[6.358934] (-) TimerEvent: {}
+[6.460592] (-) TimerEvent: {}
+[6.561426] (-) TimerEvent: {}
+[6.662748] (-) TimerEvent: {}
+[6.764019] (-) TimerEvent: {}
+[6.865331] (-) TimerEvent: {}
+[6.966262] (-) TimerEvent: {}
+[7.067154] (-) TimerEvent: {}
+[7.168444] (-) TimerEvent: {}
+[7.269769] (-) TimerEvent: {}
+[7.370665] (-) TimerEvent: {}
+[7.471503] (-) TimerEvent: {}
+[7.572293] (-) TimerEvent: {}
+[7.673532] (-) TimerEvent: {}
+[7.774869] (-) TimerEvent: {}
+[7.876438] (-) TimerEvent: {}
+[7.979190] (-) TimerEvent: {}
+[8.080570] (-) TimerEvent: {}
+[8.181479] (-) TimerEvent: {}
+[8.282798] (-) TimerEvent: {}
+[8.383771] (-) TimerEvent: {}
+[8.485292] (-) TimerEvent: {}
+[8.586061] (-) TimerEvent: {}
+[8.687425] (-) TimerEvent: {}
+[8.788588] (-) TimerEvent: {}
+[8.891192] (-) TimerEvent: {}
+[8.992210] (-) TimerEvent: {}
+[9.094663] (-) TimerEvent: {}
+[9.197655] (-) TimerEvent: {}
+[9.298536] (-) TimerEvent: {}
+[9.400664] (-) TimerEvent: {}
+[9.502584] (-) TimerEvent: {}
+[9.604723] (-) TimerEvent: {}
+[9.707481] (-) TimerEvent: {}
+[9.809650] (-) TimerEvent: {}
+[9.911435] (-) TimerEvent: {}
+[10.013281] (-) TimerEvent: {}
+[10.115303] (-) TimerEvent: {}
+[10.216216] (-) TimerEvent: {}
+[10.318041] (-) TimerEvent: {}
+[10.419825] (-) TimerEvent: {}
+[10.521626] (-) TimerEvent: {}
+[10.622554] (-) TimerEvent: {}
+[10.723787] (-) TimerEvent: {}
+[10.824719] (-) TimerEvent: {}
+[10.925613] (-) TimerEvent: {}
+[11.026812] (-) TimerEvent: {}
+[11.127726] (-) TimerEvent: {}
+[11.228552] (-) TimerEvent: {}
+[11.329485] (-) TimerEvent: {}
+[11.430271] (-) TimerEvent: {}
+[11.531054] (-) TimerEvent: {}
+[11.632264] (-) TimerEvent: {}
+[11.733048] (-) TimerEvent: {}
+[11.833895] (-) TimerEvent: {}
+[11.934857] (-) TimerEvent: {}
+[12.035771] (-) TimerEvent: {}
+[12.136703] (-) TimerEvent: {}
+[12.237531] (-) TimerEvent: {}
+[12.338699] (-) TimerEvent: {}
+[12.439570] (-) TimerEvent: {}
+[12.541057] (-) TimerEvent: {}
+[12.641923] (-) TimerEvent: {}
+[12.742766] (-) TimerEvent: {}
+[12.846252] (-) TimerEvent: {}
+[12.948704] (-) TimerEvent: {}
+[13.050492] (-) TimerEvent: {}
+[13.152086] (-) TimerEvent: {}
+[13.252918] (-) TimerEvent: {}
+[13.353697] (-) TimerEvent: {}
+[13.454488] (-) TimerEvent: {}
+[13.555272] (-) TimerEvent: {}
+[13.656041] (-) TimerEvent: {}
+[13.756836] (-) TimerEvent: {}
+[13.857639] (-) TimerEvent: {}
+[13.958510] (-) TimerEvent: {}
+[14.060153] (-) TimerEvent: {}
+[14.161289] (-) TimerEvent: {}
+[14.262175] (-) TimerEvent: {}
+[14.363259] (-) TimerEvent: {}
+[14.464511] (-) TimerEvent: {}
+[14.565311] (-) TimerEvent: {}
+[14.666164] (-) TimerEvent: {}
+[14.767022] (-) TimerEvent: {}
+[14.867877] (-) TimerEvent: {}
+[14.968806] (-) TimerEvent: {}
+[15.069635] (-) TimerEvent: {}
+[15.170556] (-) TimerEvent: {}
+[15.271478] (-) TimerEvent: {}
+[15.372399] (-) TimerEvent: {}
+[15.473266] (-) TimerEvent: {}
+[15.574174] (-) TimerEvent: {}
+[15.674929] (-) TimerEvent: {}
+[15.775744] (-) TimerEvent: {}
+[15.876567] (-) TimerEvent: {}
+[15.977533] (-) TimerEvent: {}
+[16.078313] (-) TimerEvent: {}
+[16.179086] (-) TimerEvent: {}
+[16.280192] (-) TimerEvent: {}
+[16.381059] (-) TimerEvent: {}
+[16.482036] (-) TimerEvent: {}
+[16.582934] (-) TimerEvent: {}
+[16.683765] (-) TimerEvent: {}
+[16.784916] (-) TimerEvent: {}
+[16.885829] (-) TimerEvent: {}
+[16.986726] (-) TimerEvent: {}
+[17.087745] (-) TimerEvent: {}
+[17.189208] (-) TimerEvent: {}
+[17.290004] (-) TimerEvent: {}
+[17.390855] (-) TimerEvent: {}
+[17.491789] (-) TimerEvent: {}
+[17.592838] (-) TimerEvent: {}
+[17.693683] (-) TimerEvent: {}
+[17.794621] (-) TimerEvent: {}
+[17.895625] (-) TimerEvent: {}
+[17.997989] (-) TimerEvent: {}
+[18.099792] (-) TimerEvent: {}
+[18.150725] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/home/golftrolley/robot_ws/src/stereo_camera_node/src/stereo_camera_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid StereoCameraNode::\x1b[01;32m\x1b[KcaptureAndPublish\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[18.152981] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/home/golftrolley/robot_ws/src/stereo_camera_node/src/stereo_camera_node.cpp:74:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Publisher<sensor_msgs::msg::Image_<std::allocator<void> > >::publish(std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[18.157726] (stereo_camera_node) StderrLine: {'line': b'   74 |         \x1b[01;31m\x1b[Kleft_rect_pub_->publish(left_msg)\x1b[m\x1b[K;\n'}
+[18.158648] (stereo_camera_node) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~\x1b[m\x1b[K\n'}
+[18.159334] (stereo_camera_node) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:31\x1b[m\x1b[K,\n'}
+[18.160086] (stereo_camera_node) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/subscription.hpp:50\x1b[m\x1b[K,\n'}
+[18.161935] (stereo_camera_node) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/any_executable.hpp:25\x1b[m\x1b[K,\n'}
+[18.162772] (stereo_camera_node) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[18.164223] (stereo_camera_node) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[18.165061] (stereo_camera_node) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executor_options.hpp:22\x1b[m\x1b[K,\n'}
+[18.165869] (stereo_camera_node) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executor.hpp:38\x1b[m\x1b[K,\n'}
+[18.166872] (stereo_camera_node) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[18.167774] (stereo_camera_node) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[18.168677] (stereo_camera_node) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:172\x1b[m\x1b[K,\n'}
+[18.169634] (stereo_camera_node) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/golftrolley/robot_ws/src/stereo_camera_node/src/stereo_camera_node.cpp:1\x1b[m\x1b[K:\n'}
+[18.170702] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:242:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class T> std::enable_if_t<(rosidl_generator_traits::is_message<T>::value && std::is_same<T, typename rclcpp::TypeAdapter<MessageT>::ros_message_type>::value)> rclcpp::Publisher<MessageT, AllocatorT>::\x1b[01;32m\x1b[Kpublish\x1b[m\x1b[K(std::unique_ptr<T, typename std::conditional<std::is_same<typename std::allocator_traits<typename std::allocator_traits<_Allocator>::rebind_traits<typename rclcpp::TypeAdapter<MessageT, void, void>::ros_message_type>::allocator_type>::rebind_alloc<typename rclcpp::TypeAdapter<MessageT, void, void>::ros_message_type>, std::allocator<typename rclcpp::TypeAdapter<MessageT>::ros_message_type> >::value, std::default_delete<typename rclcpp::TypeAdapter<MessageT>::ros_message_type>, rclcpp::allocator::AllocatorDeleter<typename std::allocator_traits<_Allocator>::rebind_traits<typename rclcpp::TypeAdapter<MessageT, void, void>::ros_message_type>::allocator_type> >::type>) \x1b[35m\x1b[K[with MessageT = sensor_msgs::msg::Image_<std::allocator<void> >; AllocatorT = std::allocator<void>]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[18.171741] (stereo_camera_node) StderrLine: {'line': b'  242 |   \x1b[01;36m\x1b[Kpublish\x1b[m\x1b[K(std::unique_ptr<T, ROSMessageTypeDeleter> msg)\n'}
+[18.172629] (stereo_camera_node) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[18.173620] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:242:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[18.175021] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/home/golftrolley/robot_ws/src/stereo_camera_node/src/stereo_camera_node.cpp:74:32:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kstd::unique_ptr<T, std::default_delete<sensor_msgs::msg::Image_<std::allocator<void> > > >\x1b[m\x1b[K\xe2\x80\x99\n'}
+[18.176482] (stereo_camera_node) StderrLine: {'line': b'   74 |         \x1b[01;36m\x1b[Kleft_rect_pub_->publish(left_msg)\x1b[m\x1b[K;\n'}
+[18.177443] (stereo_camera_node) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~\x1b[m\x1b[K\n'}
+[18.179893] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:296:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class T> std::enable_if_t<(rosidl_generator_traits::is_message<T>::value && std::is_same<T, typename rclcpp::TypeAdapter<MessageT>::ros_message_type>::value)> rclcpp::Publisher<MessageT, AllocatorT>::\x1b[01;32m\x1b[Kpublish\x1b[m\x1b[K(const T&) \x1b[35m\x1b[K[with MessageT = sensor_msgs::msg::Image_<std::allocator<void> >; AllocatorT = std::allocator<void>]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[18.182187] (stereo_camera_node) StderrLine: {'line': b'  296 |   \x1b[01;36m\x1b[Kpublish\x1b[m\x1b[K(const T & msg)\n'}
+[18.183716] (stereo_camera_node) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[18.184759] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:296:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[18.185581] (stereo_camera_node) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/13/bits/move.h:37\x1b[m\x1b[K,\n'}
+[18.186342] (stereo_camera_node) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/13/bits/new_allocator.h:36\x1b[m\x1b[K,\n'}
+[18.187207] (stereo_camera_node) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/aarch64-linux-gnu/c++/13/bits/c++allocator.h:33\x1b[m\x1b[K,\n'}
+[18.188135] (stereo_camera_node) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/13/bits/allocator.h:46\x1b[m\x1b[K,\n'}
+[18.188918] (stereo_camera_node) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/13/memory:65\x1b[m\x1b[K,\n'}
+[18.189705] (stereo_camera_node) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:169\x1b[m\x1b[K:\n'}
+[18.190502] (stereo_camera_node) StderrLine: {'line': b'/usr/include/c++/13/type_traits: In substitution of \xe2\x80\x98\x1b[01m\x1b[Ktemplate<bool _Cond, class _Tp> using std::enable_if_t = typename std::enable_if::type \x1b[35m\x1b[K[with bool _Cond = false; _Tp = void]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[18.191230] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:296:3:\x1b[m\x1b[K   required by substitution of \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class T> std::enable_if_t<(rosidl_generator_traits::is_message<T>::value && std::is_same<T, sensor_msgs::msg::Image_<std::allocator<void> > >::value), void> rclcpp::Publisher<sensor_msgs::msg::Image_<std::allocator<void> > >::\x1b[01;32m\x1b[Kpublish\x1b[m\x1b[K(const T&) \x1b[35m\x1b[K[with T = std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[18.191971] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/home/golftrolley/robot_ws/src/stereo_camera_node/src/stereo_camera_node.cpp:74:32:\x1b[m\x1b[K   required from here\n'}
+[18.193525] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:2610:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno type named \xe2\x80\x98\x1b[01m\x1b[Ktype\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kstruct std::enable_if<false, void>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[18.194812] (stereo_camera_node) StderrLine: {'line': b' 2610 |     using \x1b[01;31m\x1b[Kenable_if_t\x1b[m\x1b[K = typename enable_if<_Cond, _Tp>::type;\n'}
+[18.195652] (stereo_camera_node) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[18.196760] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:326:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class T> std::enable_if_t<(typename rclcpp::TypeAdapter<MessageT>::is_specialized::value && std::is_same<T, typename rclcpp::TypeAdapter<MessageT>::custom_type>::value)> rclcpp::Publisher<MessageT, AllocatorT>::\x1b[01;32m\x1b[Kpublish\x1b[m\x1b[K(std::unique_ptr<T, typename std::conditional<std::is_same<typename std::allocator_traits<typename std::allocator_traits<_Allocator>::rebind_traits<typename rclcpp::TypeAdapter<MessageT, void, void>::custom_type>::allocator_type>::rebind_alloc<typename rclcpp::TypeAdapter<MessageT, void, void>::custom_type>, std::allocator<typename rclcpp::TypeAdapter<MessageT>::custom_type> >::value, std::default_delete<typename rclcpp::TypeAdapter<MessageT>::custom_type>, rclcpp::allocator::AllocatorDeleter<typename std::allocator_traits<_Allocator>::rebind_traits<typename rclcpp::TypeAdapter<MessageT, void, void>::custom_type>::allocator_type> >::type>) \x1b[35m\x1b[K[with MessageT = sensor_msgs::msg::Image_<std::allocator<void> >; AllocatorT = std::allocator<void>]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[18.198074] (stereo_camera_node) StderrLine: {'line': b'  326 |   \x1b[01;36m\x1b[Kpublish\x1b[m\x1b[K(std::unique_ptr<T, PublishedTypeDeleter> msg)\n'}
+[18.199314] (stereo_camera_node) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[18.200367] (-) TimerEvent: {}
+[18.201028] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:326:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[18.202304] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/home/golftrolley/robot_ws/src/stereo_camera_node/src/stereo_camera_node.cpp:74:32:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kstd::unique_ptr<T, std::default_delete<sensor_msgs::msg::Image_<std::allocator<void> > > >\x1b[m\x1b[K\xe2\x80\x99\n'}
+[18.203467] (stereo_camera_node) StderrLine: {'line': b'   74 |         \x1b[01;36m\x1b[Kleft_rect_pub_->publish(left_msg)\x1b[m\x1b[K;\n'}
+[18.205194] (stereo_camera_node) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~\x1b[m\x1b[K\n'}
+[18.206190] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:376:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class T> std::enable_if_t<(typename rclcpp::TypeAdapter<MessageT>::is_specialized::value && std::is_same<T, typename rclcpp::TypeAdapter<MessageT>::custom_type>::value)> rclcpp::Publisher<MessageT, AllocatorT>::\x1b[01;32m\x1b[Kpublish\x1b[m\x1b[K(const T&) \x1b[35m\x1b[K[with MessageT = sensor_msgs::msg::Image_<std::allocator<void> >; AllocatorT = std::allocator<void>]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[18.208038] (stereo_camera_node) StderrLine: {'line': b'  376 |   \x1b[01;36m\x1b[Kpublish\x1b[m\x1b[K(const T & msg)\n'}
+[18.209260] (stereo_camera_node) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[18.210211] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:376:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[18.211659] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:394:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kvoid rclcpp::Publisher<MessageT, AllocatorT>::\x1b[01;32m\x1b[Kpublish\x1b[m\x1b[K(const rcl_serialized_message_t&) \x1b[35m\x1b[K[with MessageT = sensor_msgs::msg::Image_<std::allocator<void> >; AllocatorT = std::allocator<void>; rcl_serialized_message_t = rcutils_uint8_array_s]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[18.212670] (stereo_camera_node) StderrLine: {'line': b'  394 |   \x1b[01;36m\x1b[Kpublish\x1b[m\x1b[K(const rcl_serialized_message_t & serialized_msg)\n'}
+[18.213423] (stereo_camera_node) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[18.214220] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:394:44:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst rcl_serialized_message_t&\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst rcutils_uint8_array_s&\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[18.214965] (stereo_camera_node) StderrLine: {'line': b'  394 |   publish(\x1b[01;36m\x1b[Kconst rcl_serialized_message_t & serialized_msg\x1b[m\x1b[K)\n'}
+[18.215627] (stereo_camera_node) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[18.216310] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:400:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kvoid rclcpp::Publisher<MessageT, AllocatorT>::\x1b[01;32m\x1b[Kpublish\x1b[m\x1b[K(const rclcpp::SerializedMessage&) \x1b[35m\x1b[K[with MessageT = sensor_msgs::msg::Image_<std::allocator<void> >; AllocatorT = std::allocator<void>]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[18.217196] (stereo_camera_node) StderrLine: {'line': b'  400 |   \x1b[01;36m\x1b[Kpublish\x1b[m\x1b[K(const SerializedMessage & serialized_msg)\n'}
+[18.217950] (stereo_camera_node) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[18.218726] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:400:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::SerializedMessage&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[18.220328] (stereo_camera_node) StderrLine: {'line': b'  400 |   publish(\x1b[01;36m\x1b[Kconst SerializedMessage & serialized_msg\x1b[m\x1b[K)\n'}
+[18.221181] (stereo_camera_node) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[18.222066] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:414:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kvoid rclcpp::Publisher<MessageT, AllocatorT>::\x1b[01;32m\x1b[Kpublish\x1b[m\x1b[K(rclcpp::LoanedMessage<typename rclcpp::TypeAdapter<MessageT>::ros_message_type, AllocatorT>&&) \x1b[35m\x1b[K[with MessageT = sensor_msgs::msg::Image_<std::allocator<void> >; AllocatorT = std::allocator<void>; typename rclcpp::TypeAdapter<MessageT>::ros_message_type = sensor_msgs::msg::Image_<std::allocator<void> >]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[18.223146] (stereo_camera_node) StderrLine: {'line': b'  414 |   \x1b[01;36m\x1b[Kpublish\x1b[m\x1b[K(rclcpp::LoanedMessage<ROSMessageType, AllocatorT> && loaned_msg)\n'}
+[18.224084] (stereo_camera_node) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[18.225330] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:414:64:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Krclcpp::LoanedMessage<sensor_msgs::msg::Image_<std::allocator<void> >, std::allocator<void> >&&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[18.226307] (stereo_camera_node) StderrLine: {'line': b'  414 |   publish(\x1b[01;36m\x1b[Krclcpp::LoanedMessage<ROSMessageType, AllocatorT> && loaned_msg\x1b[m\x1b[K)\n'}
+[18.227318] (stereo_camera_node) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~\x1b[m\x1b[K\n'}
+[18.229172] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/home/golftrolley/robot_ws/src/stereo_camera_node/src/stereo_camera_node.cpp:75:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Publisher<sensor_msgs::msg::Image_<std::allocator<void> > >::publish(std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[18.230237] (stereo_camera_node) StderrLine: {'line': b'   75 |         \x1b[01;31m\x1b[Kright_rect_pub_->publish(right_msg)\x1b[m\x1b[K;\n'}
+[18.232845] (stereo_camera_node) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[18.233955] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:242:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class T> std::enable_if_t<(rosidl_generator_traits::is_message<T>::value && std::is_same<T, typename rclcpp::TypeAdapter<MessageT>::ros_message_type>::value)> rclcpp::Publisher<MessageT, AllocatorT>::\x1b[01;32m\x1b[Kpublish\x1b[m\x1b[K(std::unique_ptr<T, typename std::conditional<std::is_same<typename std::allocator_traits<typename std::allocator_traits<_Allocator>::rebind_traits<typename rclcpp::TypeAdapter<MessageT, void, void>::ros_message_type>::allocator_type>::rebind_alloc<typename rclcpp::TypeAdapter<MessageT, void, void>::ros_message_type>, std::allocator<typename rclcpp::TypeAdapter<MessageT>::ros_message_type> >::value, std::default_delete<typename rclcpp::TypeAdapter<MessageT>::ros_message_type>, rclcpp::allocator::AllocatorDeleter<typename std::allocator_traits<_Allocator>::rebind_traits<typename rclcpp::TypeAdapter<MessageT, void, void>::ros_message_type>::allocator_type> >::type>) \x1b[35m\x1b[K[with MessageT = sensor_msgs::msg::Image_<std::allocator<void> >; AllocatorT = std::allocator<void>]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[18.235840] (stereo_camera_node) StderrLine: {'line': b'  242 |   \x1b[01;36m\x1b[Kpublish\x1b[m\x1b[K(std::unique_ptr<T, ROSMessageTypeDeleter> msg)\n'}
+[18.237206] (stereo_camera_node) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[18.238792] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:242:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[18.240384] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/home/golftrolley/robot_ws/src/stereo_camera_node/src/stereo_camera_node.cpp:75:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kstd::unique_ptr<T, std::default_delete<sensor_msgs::msg::Image_<std::allocator<void> > > >\x1b[m\x1b[K\xe2\x80\x99\n'}
+[18.241809] (stereo_camera_node) StderrLine: {'line': b'   75 |         \x1b[01;36m\x1b[Kright_rect_pub_->publish(right_msg)\x1b[m\x1b[K;\n'}
+[18.243122] (stereo_camera_node) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[18.244384] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:296:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class T> std::enable_if_t<(rosidl_generator_traits::is_message<T>::value && std::is_same<T, typename rclcpp::TypeAdapter<MessageT>::ros_message_type>::value)> rclcpp::Publisher<MessageT, AllocatorT>::\x1b[01;32m\x1b[Kpublish\x1b[m\x1b[K(const T&) \x1b[35m\x1b[K[with MessageT = sensor_msgs::msg::Image_<std::allocator<void> >; AllocatorT = std::allocator<void>]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[18.245503] (stereo_camera_node) StderrLine: {'line': b'  296 |   \x1b[01;36m\x1b[Kpublish\x1b[m\x1b[K(const T & msg)\n'}
+[18.246716] (stereo_camera_node) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[18.247943] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:296:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[18.249181] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:326:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class T> std::enable_if_t<(typename rclcpp::TypeAdapter<MessageT>::is_specialized::value && std::is_same<T, typename rclcpp::TypeAdapter<MessageT>::custom_type>::value)> rclcpp::Publisher<MessageT, AllocatorT>::\x1b[01;32m\x1b[Kpublish\x1b[m\x1b[K(std::unique_ptr<T, typename std::conditional<std::is_same<typename std::allocator_traits<typename std::allocator_traits<_Allocator>::rebind_traits<typename rclcpp::TypeAdapter<MessageT, void, void>::custom_type>::allocator_type>::rebind_alloc<typename rclcpp::TypeAdapter<MessageT, void, void>::custom_type>, std::allocator<typename rclcpp::TypeAdapter<MessageT>::custom_type> >::value, std::default_delete<typename rclcpp::TypeAdapter<MessageT>::custom_type>, rclcpp::allocator::AllocatorDeleter<typename std::allocator_traits<_Allocator>::rebind_traits<typename rclcpp::TypeAdapter<MessageT, void, void>::custom_type>::allocator_type> >::type>) \x1b[35m\x1b[K[with MessageT = sensor_msgs::msg::Image_<std::allocator<void> >; AllocatorT = std::allocator<void>]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[18.251292] (stereo_camera_node) StderrLine: {'line': b'  326 |   \x1b[01;36m\x1b[Kpublish\x1b[m\x1b[K(std::unique_ptr<T, PublishedTypeDeleter> msg)\n'}
+[18.252629] (stereo_camera_node) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[18.253823] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:326:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[18.254873] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/home/golftrolley/robot_ws/src/stereo_camera_node/src/stereo_camera_node.cpp:75:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kstd::unique_ptr<T, std::default_delete<sensor_msgs::msg::Image_<std::allocator<void> > > >\x1b[m\x1b[K\xe2\x80\x99\n'}
+[18.256222] (stereo_camera_node) StderrLine: {'line': b'   75 |         \x1b[01;36m\x1b[Kright_rect_pub_->publish(right_msg)\x1b[m\x1b[K;\n'}
+[18.257224] (stereo_camera_node) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[18.258198] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:376:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class T> std::enable_if_t<(typename rclcpp::TypeAdapter<MessageT>::is_specialized::value && std::is_same<T, typename rclcpp::TypeAdapter<MessageT>::custom_type>::value)> rclcpp::Publisher<MessageT, AllocatorT>::\x1b[01;32m\x1b[Kpublish\x1b[m\x1b[K(const T&) \x1b[35m\x1b[K[with MessageT = sensor_msgs::msg::Image_<std::allocator<void> >; AllocatorT = std::allocator<void>]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[18.259219] (stereo_camera_node) StderrLine: {'line': b'  376 |   \x1b[01;36m\x1b[Kpublish\x1b[m\x1b[K(const T & msg)\n'}
+[18.260261] (stereo_camera_node) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[18.261207] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:376:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[18.262143] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:394:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kvoid rclcpp::Publisher<MessageT, AllocatorT>::\x1b[01;32m\x1b[Kpublish\x1b[m\x1b[K(const rcl_serialized_message_t&) \x1b[35m\x1b[K[with MessageT = sensor_msgs::msg::Image_<std::allocator<void> >; AllocatorT = std::allocator<void>; rcl_serialized_message_t = rcutils_uint8_array_s]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[18.263178] (stereo_camera_node) StderrLine: {'line': b'  394 |   \x1b[01;36m\x1b[Kpublish\x1b[m\x1b[K(const rcl_serialized_message_t & serialized_msg)\n'}
+[18.264178] (stereo_camera_node) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[18.265200] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:394:44:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst rcl_serialized_message_t&\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst rcutils_uint8_array_s&\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[18.266388] (stereo_camera_node) StderrLine: {'line': b'  394 |   publish(\x1b[01;36m\x1b[Kconst rcl_serialized_message_t & serialized_msg\x1b[m\x1b[K)\n'}
+[18.267412] (stereo_camera_node) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[18.268369] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:400:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kvoid rclcpp::Publisher<MessageT, AllocatorT>::\x1b[01;32m\x1b[Kpublish\x1b[m\x1b[K(const rclcpp::SerializedMessage&) \x1b[35m\x1b[K[with MessageT = sensor_msgs::msg::Image_<std::allocator<void> >; AllocatorT = std::allocator<void>]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[18.269350] (stereo_camera_node) StderrLine: {'line': b'  400 |   \x1b[01;36m\x1b[Kpublish\x1b[m\x1b[K(const SerializedMessage & serialized_msg)\n'}
+[18.270232] (stereo_camera_node) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[18.271194] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:400:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::SerializedMessage&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[18.272283] (stereo_camera_node) StderrLine: {'line': b'  400 |   publish(\x1b[01;36m\x1b[Kconst SerializedMessage & serialized_msg\x1b[m\x1b[K)\n'}
+[18.273372] (stereo_camera_node) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[18.274423] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:414:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kvoid rclcpp::Publisher<MessageT, AllocatorT>::\x1b[01;32m\x1b[Kpublish\x1b[m\x1b[K(rclcpp::LoanedMessage<typename rclcpp::TypeAdapter<MessageT>::ros_message_type, AllocatorT>&&) \x1b[35m\x1b[K[with MessageT = sensor_msgs::msg::Image_<std::allocator<void> >; AllocatorT = std::allocator<void>; typename rclcpp::TypeAdapter<MessageT>::ros_message_type = sensor_msgs::msg::Image_<std::allocator<void> >]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[18.275477] (stereo_camera_node) StderrLine: {'line': b'  414 |   \x1b[01;36m\x1b[Kpublish\x1b[m\x1b[K(rclcpp::LoanedMessage<ROSMessageType, AllocatorT> && loaned_msg)\n'}
+[18.276671] (stereo_camera_node) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[18.277963] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:414:64:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Krclcpp::LoanedMessage<sensor_msgs::msg::Image_<std::allocator<void> >, std::allocator<void> >&&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[18.279014] (stereo_camera_node) StderrLine: {'line': b'  414 |   publish(\x1b[01;36m\x1b[Krclcpp::LoanedMessage<ROSMessageType, AllocatorT> && loaned_msg\x1b[m\x1b[K)\n'}
+[18.280005] (stereo_camera_node) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~\x1b[m\x1b[K\n'}
+[18.300617] (-) TimerEvent: {}
+[18.401603] (-) TimerEvent: {}
+[18.502588] (-) TimerEvent: {}
+[18.571993] (stereo_camera_node) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/golftrolley/robot_ws/src/stereo_camera_node/src/main.cpp:1\x1b[m\x1b[K:\n'}
+[18.573052] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/home/golftrolley/robot_ws/src/stereo_camera_node/src/stereo_camera_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid StereoCameraNode::\x1b[01;32m\x1b[KcaptureAndPublish\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[18.574086] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/home/golftrolley/robot_ws/src/stereo_camera_node/src/stereo_camera_node.cpp:74:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Publisher<sensor_msgs::msg::Image_<std::allocator<void> > >::publish(std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[18.574849] (stereo_camera_node) StderrLine: {'line': b'   74 |         \x1b[01;31m\x1b[Kleft_rect_pub_->publish(left_msg)\x1b[m\x1b[K;\n'}
+[18.578878] (stereo_camera_node) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~\x1b[m\x1b[K\n'}
+[18.580378] (stereo_camera_node) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:31\x1b[m\x1b[K,\n'}
+[18.581246] (stereo_camera_node) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/subscription.hpp:50\x1b[m\x1b[K,\n'}
+[18.582028] (stereo_camera_node) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/any_executable.hpp:25\x1b[m\x1b[K,\n'}
+[18.582840] (stereo_camera_node) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[18.584441] (stereo_camera_node) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[18.585559] (stereo_camera_node) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executor_options.hpp:22\x1b[m\x1b[K,\n'}
+[18.586577] (stereo_camera_node) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executor.hpp:38\x1b[m\x1b[K,\n'}
+[18.587396] (stereo_camera_node) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[18.588188] (stereo_camera_node) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[18.588955] (stereo_camera_node) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:172\x1b[m\x1b[K,\n'}
+[18.589737] (stereo_camera_node) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/golftrolley/robot_ws/src/stereo_camera_node/src/stereo_camera_node.cpp:1\x1b[m\x1b[K:\n'}
+[18.590516] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:242:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class T> std::enable_if_t<(rosidl_generator_traits::is_message<T>::value && std::is_same<T, typename rclcpp::TypeAdapter<MessageT>::ros_message_type>::value)> rclcpp::Publisher<MessageT, AllocatorT>::\x1b[01;32m\x1b[Kpublish\x1b[m\x1b[K(std::unique_ptr<T, typename std::conditional<std::is_same<typename std::allocator_traits<typename std::allocator_traits<_Allocator>::rebind_traits<typename rclcpp::TypeAdapter<MessageT, void, void>::ros_message_type>::allocator_type>::rebind_alloc<typename rclcpp::TypeAdapter<MessageT, void, void>::ros_message_type>, std::allocator<typename rclcpp::TypeAdapter<MessageT>::ros_message_type> >::value, std::default_delete<typename rclcpp::TypeAdapter<MessageT>::ros_message_type>, rclcpp::allocator::AllocatorDeleter<typename std::allocator_traits<_Allocator>::rebind_traits<typename rclcpp::TypeAdapter<MessageT, void, void>::ros_message_type>::allocator_type> >::type>) \x1b[35m\x1b[K[with MessageT = sensor_msgs::msg::Image_<std::allocator<void> >; AllocatorT = std::allocator<void>]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[18.591987] (stereo_camera_node) StderrLine: {'line': b'  242 |   \x1b[01;36m\x1b[Kpublish\x1b[m\x1b[K(std::unique_ptr<T, ROSMessageTypeDeleter> msg)\n'}
+[18.592950] (stereo_camera_node) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[18.594383] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:242:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[18.595252] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/home/golftrolley/robot_ws/src/stereo_camera_node/src/stereo_camera_node.cpp:74:32:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kstd::unique_ptr<T, std::default_delete<sensor_msgs::msg::Image_<std::allocator<void> > > >\x1b[m\x1b[K\xe2\x80\x99\n'}
+[18.596697] (stereo_camera_node) StderrLine: {'line': b'   74 |         \x1b[01;36m\x1b[Kleft_rect_pub_->publish(left_msg)\x1b[m\x1b[K;\n'}
+[18.597937] (stereo_camera_node) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~\x1b[m\x1b[K\n'}
+[18.598873] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:296:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class T> std::enable_if_t<(rosidl_generator_traits::is_message<T>::value && std::is_same<T, typename rclcpp::TypeAdapter<MessageT>::ros_message_type>::value)> rclcpp::Publisher<MessageT, AllocatorT>::\x1b[01;32m\x1b[Kpublish\x1b[m\x1b[K(const T&) \x1b[35m\x1b[K[with MessageT = sensor_msgs::msg::Image_<std::allocator<void> >; AllocatorT = std::allocator<void>]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[18.599884] (stereo_camera_node) StderrLine: {'line': b'  296 |   \x1b[01;36m\x1b[Kpublish\x1b[m\x1b[K(const T & msg)\n'}
+[18.600670] (stereo_camera_node) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[18.601389] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:296:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[18.602157] (stereo_camera_node) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/13/bits/move.h:37\x1b[m\x1b[K,\n'}
+[18.602864] (-) TimerEvent: {}
+[18.603484] (stereo_camera_node) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/13/bits/new_allocator.h:36\x1b[m\x1b[K,\n'}
+[18.604425] (stereo_camera_node) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/aarch64-linux-gnu/c++/13/bits/c++allocator.h:33\x1b[m\x1b[K,\n'}
+[18.605219] (stereo_camera_node) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/13/bits/allocator.h:46\x1b[m\x1b[K,\n'}
+[18.605970] (stereo_camera_node) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/13/memory:65\x1b[m\x1b[K,\n'}
+[18.606735] (stereo_camera_node) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:169\x1b[m\x1b[K:\n'}
+[18.607508] (stereo_camera_node) StderrLine: {'line': b'/usr/include/c++/13/type_traits: In substitution of \xe2\x80\x98\x1b[01m\x1b[Ktemplate<bool _Cond, class _Tp> using std::enable_if_t = typename std::enable_if::type \x1b[35m\x1b[K[with bool _Cond = false; _Tp = void]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[18.608279] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:296:3:\x1b[m\x1b[K   required by substitution of \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class T> std::enable_if_t<(rosidl_generator_traits::is_message<T>::value && std::is_same<T, sensor_msgs::msg::Image_<std::allocator<void> > >::value), void> rclcpp::Publisher<sensor_msgs::msg::Image_<std::allocator<void> > >::\x1b[01;32m\x1b[Kpublish\x1b[m\x1b[K(const T&) \x1b[35m\x1b[K[with T = std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[18.609242] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/home/golftrolley/robot_ws/src/stereo_camera_node/src/stereo_camera_node.cpp:74:32:\x1b[m\x1b[K   required from here\n'}
+[18.610062] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:2610:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno type named \xe2\x80\x98\x1b[01m\x1b[Ktype\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kstruct std::enable_if<false, void>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[18.611646] (stereo_camera_node) StderrLine: {'line': b' 2610 |     using \x1b[01;31m\x1b[Kenable_if_t\x1b[m\x1b[K = typename enable_if<_Cond, _Tp>::type;\n'}
+[18.613439] (stereo_camera_node) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[18.614269] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:326:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class T> std::enable_if_t<(typename rclcpp::TypeAdapter<MessageT>::is_specialized::value && std::is_same<T, typename rclcpp::TypeAdapter<MessageT>::custom_type>::value)> rclcpp::Publisher<MessageT, AllocatorT>::\x1b[01;32m\x1b[Kpublish\x1b[m\x1b[K(std::unique_ptr<T, typename std::conditional<std::is_same<typename std::allocator_traits<typename std::allocator_traits<_Allocator>::rebind_traits<typename rclcpp::TypeAdapter<MessageT, void, void>::custom_type>::allocator_type>::rebind_alloc<typename rclcpp::TypeAdapter<MessageT, void, void>::custom_type>, std::allocator<typename rclcpp::TypeAdapter<MessageT>::custom_type> >::value, std::default_delete<typename rclcpp::TypeAdapter<MessageT>::custom_type>, rclcpp::allocator::AllocatorDeleter<typename std::allocator_traits<_Allocator>::rebind_traits<typename rclcpp::TypeAdapter<MessageT, void, void>::custom_type>::allocator_type> >::type>) \x1b[35m\x1b[K[with MessageT = sensor_msgs::msg::Image_<std::allocator<void> >; AllocatorT = std::allocator<void>]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[18.615234] (stereo_camera_node) StderrLine: {'line': b'  326 |   \x1b[01;36m\x1b[Kpublish\x1b[m\x1b[K(std::unique_ptr<T, PublishedTypeDeleter> msg)\n'}
+[18.616018] (stereo_camera_node) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[18.616768] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:326:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[18.617555] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/home/golftrolley/robot_ws/src/stereo_camera_node/src/stereo_camera_node.cpp:74:32:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kstd::unique_ptr<T, std::default_delete<sensor_msgs::msg::Image_<std::allocator<void> > > >\x1b[m\x1b[K\xe2\x80\x99\n'}
+[18.618348] (stereo_camera_node) StderrLine: {'line': b'   74 |         \x1b[01;36m\x1b[Kleft_rect_pub_->publish(left_msg)\x1b[m\x1b[K;\n'}
+[18.619123] (stereo_camera_node) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~\x1b[m\x1b[K\n'}
+[18.619888] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:376:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class T> std::enable_if_t<(typename rclcpp::TypeAdapter<MessageT>::is_specialized::value && std::is_same<T, typename rclcpp::TypeAdapter<MessageT>::custom_type>::value)> rclcpp::Publisher<MessageT, AllocatorT>::\x1b[01;32m\x1b[Kpublish\x1b[m\x1b[K(const T&) \x1b[35m\x1b[K[with MessageT = sensor_msgs::msg::Image_<std::allocator<void> >; AllocatorT = std::allocator<void>]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[18.620904] (stereo_camera_node) StderrLine: {'line': b'  376 |   \x1b[01;36m\x1b[Kpublish\x1b[m\x1b[K(const T & msg)\n'}
+[18.621748] (stereo_camera_node) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[18.622549] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:376:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[18.623389] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:394:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kvoid rclcpp::Publisher<MessageT, AllocatorT>::\x1b[01;32m\x1b[Kpublish\x1b[m\x1b[K(const rcl_serialized_message_t&) \x1b[35m\x1b[K[with MessageT = sensor_msgs::msg::Image_<std::allocator<void> >; AllocatorT = std::allocator<void>; rcl_serialized_message_t = rcutils_uint8_array_s]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[18.624178] (stereo_camera_node) StderrLine: {'line': b'  394 |   \x1b[01;36m\x1b[Kpublish\x1b[m\x1b[K(const rcl_serialized_message_t & serialized_msg)\n'}
+[18.624931] (stereo_camera_node) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[18.625656] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:394:44:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst rcl_serialized_message_t&\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst rcutils_uint8_array_s&\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[18.626480] (stereo_camera_node) StderrLine: {'line': b'  394 |   publish(\x1b[01;36m\x1b[Kconst rcl_serialized_message_t & serialized_msg\x1b[m\x1b[K)\n'}
+[18.627156] (stereo_camera_node) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[18.627838] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:400:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kvoid rclcpp::Publisher<MessageT, AllocatorT>::\x1b[01;32m\x1b[Kpublish\x1b[m\x1b[K(const rclcpp::SerializedMessage&) \x1b[35m\x1b[K[with MessageT = sensor_msgs::msg::Image_<std::allocator<void> >; AllocatorT = std::allocator<void>]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[18.628534] (stereo_camera_node) StderrLine: {'line': b'  400 |   \x1b[01;36m\x1b[Kpublish\x1b[m\x1b[K(const SerializedMessage & serialized_msg)\n'}
+[18.630548] (stereo_camera_node) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[18.631470] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:400:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::SerializedMessage&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[18.632506] (stereo_camera_node) StderrLine: {'line': b'  400 |   publish(\x1b[01;36m\x1b[Kconst SerializedMessage & serialized_msg\x1b[m\x1b[K)\n'}
+[18.634545] (stereo_camera_node) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[18.635394] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:414:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kvoid rclcpp::Publisher<MessageT, AllocatorT>::\x1b[01;32m\x1b[Kpublish\x1b[m\x1b[K(rclcpp::LoanedMessage<typename rclcpp::TypeAdapter<MessageT>::ros_message_type, AllocatorT>&&) \x1b[35m\x1b[K[with MessageT = sensor_msgs::msg::Image_<std::allocator<void> >; AllocatorT = std::allocator<void>; typename rclcpp::TypeAdapter<MessageT>::ros_message_type = sensor_msgs::msg::Image_<std::allocator<void> >]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[18.636306] (stereo_camera_node) StderrLine: {'line': b'  414 |   \x1b[01;36m\x1b[Kpublish\x1b[m\x1b[K(rclcpp::LoanedMessage<ROSMessageType, AllocatorT> && loaned_msg)\n'}
+[18.637076] (stereo_camera_node) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[18.637893] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:414:64:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Krclcpp::LoanedMessage<sensor_msgs::msg::Image_<std::allocator<void> >, std::allocator<void> >&&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[18.638688] (stereo_camera_node) StderrLine: {'line': b'  414 |   publish(\x1b[01;36m\x1b[Krclcpp::LoanedMessage<ROSMessageType, AllocatorT> && loaned_msg\x1b[m\x1b[K)\n'}
+[18.639391] (stereo_camera_node) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~\x1b[m\x1b[K\n'}
+[18.640164] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/home/golftrolley/robot_ws/src/stereo_camera_node/src/stereo_camera_node.cpp:75:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Publisher<sensor_msgs::msg::Image_<std::allocator<void> > >::publish(std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[18.640894] (stereo_camera_node) StderrLine: {'line': b'   75 |         \x1b[01;31m\x1b[Kright_rect_pub_->publish(right_msg)\x1b[m\x1b[K;\n'}
+[18.641724] (stereo_camera_node) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[18.642526] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:242:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class T> std::enable_if_t<(rosidl_generator_traits::is_message<T>::value && std::is_same<T, typename rclcpp::TypeAdapter<MessageT>::ros_message_type>::value)> rclcpp::Publisher<MessageT, AllocatorT>::\x1b[01;32m\x1b[Kpublish\x1b[m\x1b[K(std::unique_ptr<T, typename std::conditional<std::is_same<typename std::allocator_traits<typename std::allocator_traits<_Allocator>::rebind_traits<typename rclcpp::TypeAdapter<MessageT, void, void>::ros_message_type>::allocator_type>::rebind_alloc<typename rclcpp::TypeAdapter<MessageT, void, void>::ros_message_type>, std::allocator<typename rclcpp::TypeAdapter<MessageT>::ros_message_type> >::value, std::default_delete<typename rclcpp::TypeAdapter<MessageT>::ros_message_type>, rclcpp::allocator::AllocatorDeleter<typename std::allocator_traits<_Allocator>::rebind_traits<typename rclcpp::TypeAdapter<MessageT, void, void>::ros_message_type>::allocator_type> >::type>) \x1b[35m\x1b[K[with MessageT = sensor_msgs::msg::Image_<std::allocator<void> >; AllocatorT = std::allocator<void>]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[18.644036] (stereo_camera_node) StderrLine: {'line': b'  242 |   \x1b[01;36m\x1b[Kpublish\x1b[m\x1b[K(std::unique_ptr<T, ROSMessageTypeDeleter> msg)\n'}
+[18.645175] (stereo_camera_node) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[18.646662] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:242:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[18.647553] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/home/golftrolley/robot_ws/src/stereo_camera_node/src/stereo_camera_node.cpp:75:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kstd::unique_ptr<T, std::default_delete<sensor_msgs::msg::Image_<std::allocator<void> > > >\x1b[m\x1b[K\xe2\x80\x99\n'}
+[18.648508] (stereo_camera_node) StderrLine: {'line': b'   75 |         \x1b[01;36m\x1b[Kright_rect_pub_->publish(right_msg)\x1b[m\x1b[K;\n'}
+[18.649449] (stereo_camera_node) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[18.650377] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:296:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class T> std::enable_if_t<(rosidl_generator_traits::is_message<T>::value && std::is_same<T, typename rclcpp::TypeAdapter<MessageT>::ros_message_type>::value)> rclcpp::Publisher<MessageT, AllocatorT>::\x1b[01;32m\x1b[Kpublish\x1b[m\x1b[K(const T&) \x1b[35m\x1b[K[with MessageT = sensor_msgs::msg::Image_<std::allocator<void> >; AllocatorT = std::allocator<void>]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[18.651222] (stereo_camera_node) StderrLine: {'line': b'  296 |   \x1b[01;36m\x1b[Kpublish\x1b[m\x1b[K(const T & msg)\n'}
+[18.652790] (stereo_camera_node) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[18.654702] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:296:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[18.655626] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:326:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class T> std::enable_if_t<(typename rclcpp::TypeAdapter<MessageT>::is_specialized::value && std::is_same<T, typename rclcpp::TypeAdapter<MessageT>::custom_type>::value)> rclcpp::Publisher<MessageT, AllocatorT>::\x1b[01;32m\x1b[Kpublish\x1b[m\x1b[K(std::unique_ptr<T, typename std::conditional<std::is_same<typename std::allocator_traits<typename std::allocator_traits<_Allocator>::rebind_traits<typename rclcpp::TypeAdapter<MessageT, void, void>::custom_type>::allocator_type>::rebind_alloc<typename rclcpp::TypeAdapter<MessageT, void, void>::custom_type>, std::allocator<typename rclcpp::TypeAdapter<MessageT>::custom_type> >::value, std::default_delete<typename rclcpp::TypeAdapter<MessageT>::custom_type>, rclcpp::allocator::AllocatorDeleter<typename std::allocator_traits<_Allocator>::rebind_traits<typename rclcpp::TypeAdapter<MessageT, void, void>::custom_type>::allocator_type> >::type>) \x1b[35m\x1b[K[with MessageT = sensor_msgs::msg::Image_<std::allocator<void> >; AllocatorT = std::allocator<void>]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[18.656607] (stereo_camera_node) StderrLine: {'line': b'  326 |   \x1b[01;36m\x1b[Kpublish\x1b[m\x1b[K(std::unique_ptr<T, PublishedTypeDeleter> msg)\n'}
+[18.657421] (stereo_camera_node) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[18.658163] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:326:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[18.659020] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/home/golftrolley/robot_ws/src/stereo_camera_node/src/stereo_camera_node.cpp:75:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kstd::unique_ptr<T, std::default_delete<sensor_msgs::msg::Image_<std::allocator<void> > > >\x1b[m\x1b[K\xe2\x80\x99\n'}
+[18.659911] (stereo_camera_node) StderrLine: {'line': b'   75 |         \x1b[01;36m\x1b[Kright_rect_pub_->publish(right_msg)\x1b[m\x1b[K;\n'}
+[18.660709] (stereo_camera_node) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[18.661479] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:376:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class T> std::enable_if_t<(typename rclcpp::TypeAdapter<MessageT>::is_specialized::value && std::is_same<T, typename rclcpp::TypeAdapter<MessageT>::custom_type>::value)> rclcpp::Publisher<MessageT, AllocatorT>::\x1b[01;32m\x1b[Kpublish\x1b[m\x1b[K(const T&) \x1b[35m\x1b[K[with MessageT = sensor_msgs::msg::Image_<std::allocator<void> >; AllocatorT = std::allocator<void>]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[18.662334] (stereo_camera_node) StderrLine: {'line': b'  376 |   \x1b[01;36m\x1b[Kpublish\x1b[m\x1b[K(const T & msg)\n'}
+[18.663170] (stereo_camera_node) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[18.663974] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:376:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[18.664759] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:394:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kvoid rclcpp::Publisher<MessageT, AllocatorT>::\x1b[01;32m\x1b[Kpublish\x1b[m\x1b[K(const rcl_serialized_message_t&) \x1b[35m\x1b[K[with MessageT = sensor_msgs::msg::Image_<std::allocator<void> >; AllocatorT = std::allocator<void>; rcl_serialized_message_t = rcutils_uint8_array_s]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[18.665573] (stereo_camera_node) StderrLine: {'line': b'  394 |   \x1b[01;36m\x1b[Kpublish\x1b[m\x1b[K(const rcl_serialized_message_t & serialized_msg)\n'}
+[18.666420] (stereo_camera_node) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[18.667235] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:394:44:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst rcl_serialized_message_t&\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst rcutils_uint8_array_s&\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[18.667998] (stereo_camera_node) StderrLine: {'line': b'  394 |   publish(\x1b[01;36m\x1b[Kconst rcl_serialized_message_t & serialized_msg\x1b[m\x1b[K)\n'}
+[18.668834] (stereo_camera_node) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[18.669681] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:400:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kvoid rclcpp::Publisher<MessageT, AllocatorT>::\x1b[01;32m\x1b[Kpublish\x1b[m\x1b[K(const rclcpp::SerializedMessage&) \x1b[35m\x1b[K[with MessageT = sensor_msgs::msg::Image_<std::allocator<void> >; AllocatorT = std::allocator<void>]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[18.670501] (stereo_camera_node) StderrLine: {'line': b'  400 |   \x1b[01;36m\x1b[Kpublish\x1b[m\x1b[K(const SerializedMessage & serialized_msg)\n'}
+[18.671244] (stereo_camera_node) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[18.672141] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:400:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::SerializedMessage&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[18.672940] (stereo_camera_node) StderrLine: {'line': b'  400 |   publish(\x1b[01;36m\x1b[Kconst SerializedMessage & serialized_msg\x1b[m\x1b[K)\n'}
+[18.673716] (stereo_camera_node) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[18.674448] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:414:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kvoid rclcpp::Publisher<MessageT, AllocatorT>::\x1b[01;32m\x1b[Kpublish\x1b[m\x1b[K(rclcpp::LoanedMessage<typename rclcpp::TypeAdapter<MessageT>::ros_message_type, AllocatorT>&&) \x1b[35m\x1b[K[with MessageT = sensor_msgs::msg::Image_<std::allocator<void> >; AllocatorT = std::allocator<void>; typename rclcpp::TypeAdapter<MessageT>::ros_message_type = sensor_msgs::msg::Image_<std::allocator<void> >]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[18.675345] (stereo_camera_node) StderrLine: {'line': b'  414 |   \x1b[01;36m\x1b[Kpublish\x1b[m\x1b[K(rclcpp::LoanedMessage<ROSMessageType, AllocatorT> && loaned_msg)\n'}
+[18.676127] (stereo_camera_node) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[18.676842] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:414:64:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Krclcpp::LoanedMessage<sensor_msgs::msg::Image_<std::allocator<void> >, std::allocator<void> >&&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[18.677733] (stereo_camera_node) StderrLine: {'line': b'  414 |   publish(\x1b[01;36m\x1b[Krclcpp::LoanedMessage<ROSMessageType, AllocatorT> && loaned_msg\x1b[m\x1b[K)\n'}
+[18.678500] (stereo_camera_node) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~\x1b[m\x1b[K\n'}
+[18.679243] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/home/golftrolley/robot_ws/src/stereo_camera_node/src/main.cpp:\x1b[m\x1b[K At global scope:\n'}
+[18.680081] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/home/golftrolley/robot_ws/src/stereo_camera_node/src/main.cpp:4:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredefinition of \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[01;32m\x1b[K main\x1b[m\x1b[K(int, char**)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[18.680941] (stereo_camera_node) StderrLine: {'line': b'    4 | int \x1b[01;31m\x1b[Kmain\x1b[m\x1b[K(int argc, char **argv)\n'}
+[18.681694] (stereo_camera_node) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[18.682461] (stereo_camera_node) StderrLine: {'line': b'\x1b[01m\x1b[K/home/golftrolley/robot_ws/src/stereo_camera_node/src/stereo_camera_node.cpp:92:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kint\x1b[01;32m\x1b[K main\x1b[m\x1b[K(int, char**)\x1b[m\x1b[K\xe2\x80\x99 previously defined here\n'}
+[18.683232] (stereo_camera_node) StderrLine: {'line': b'   92 | int \x1b[01;36m\x1b[Kmain\x1b[m\x1b[K(int argc, char** argv)\n'}
+[18.683976] (stereo_camera_node) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[18.703149] (-) TimerEvent: {}
+[18.803949] (-) TimerEvent: {}
+[18.904909] (-) TimerEvent: {}
+[19.005750] (-) TimerEvent: {}
+[19.108762] (-) TimerEvent: {}
+[19.209665] (-) TimerEvent: {}
+[19.311057] (-) TimerEvent: {}
+[19.411939] (-) TimerEvent: {}
+[19.512817] (-) TimerEvent: {}
+[19.613703] (-) TimerEvent: {}
+[19.714573] (-) TimerEvent: {}
+[19.815488] (-) TimerEvent: {}
+[19.916292] (-) TimerEvent: {}
+[20.017629] (-) TimerEvent: {}
+[20.118896] (-) TimerEvent: {}
+[20.220265] (-) TimerEvent: {}
+[20.321072] (-) TimerEvent: {}
+[20.422429] (-) TimerEvent: {}
+[20.523369] (-) TimerEvent: {}
+[20.624702] (-) TimerEvent: {}
+[20.725553] (-) TimerEvent: {}
+[20.826451] (-) TimerEvent: {}
+[20.927285] (-) TimerEvent: {}
+[21.028162] (-) TimerEvent: {}
+[21.128976] (-) TimerEvent: {}
+[21.229830] (-) TimerEvent: {}
+[21.330709] (-) TimerEvent: {}
+[21.431628] (-) TimerEvent: {}
+[21.532518] (-) TimerEvent: {}
+[21.633497] (-) TimerEvent: {}
+[21.734274] (-) TimerEvent: {}
+[21.835073] (-) TimerEvent: {}
+[21.935945] (-) TimerEvent: {}
+[22.036798] (-) TimerEvent: {}
+[22.137783] (-) TimerEvent: {}
+[22.238711] (-) TimerEvent: {}
+[22.339617] (-) TimerEvent: {}
+[22.440533] (-) TimerEvent: {}
+[22.541862] (-) TimerEvent: {}
+[22.643204] (-) TimerEvent: {}
+[22.744504] (-) TimerEvent: {}
+[22.846352] (-) TimerEvent: {}
+[22.947201] (-) TimerEvent: {}
+[23.048068] (-) TimerEvent: {}
+[23.148923] (-) TimerEvent: {}
+[23.249849] (-) TimerEvent: {}
+[23.350692] (-) TimerEvent: {}
+[23.451587] (-) TimerEvent: {}
+[23.552408] (-) TimerEvent: {}
+[23.653236] (-) TimerEvent: {}
+[23.754050] (-) TimerEvent: {}
+[23.854918] (-) TimerEvent: {}
+[23.955878] (-) TimerEvent: {}
+[24.057794] (-) TimerEvent: {}
+[24.158816] (-) TimerEvent: {}
+[24.260165] (-) TimerEvent: {}
+[24.360970] (-) TimerEvent: {}
+[24.461826] (-) TimerEvent: {}
+[24.562674] (-) TimerEvent: {}
+[24.663492] (-) TimerEvent: {}
+[24.764544] (-) TimerEvent: {}
+[24.865528] (-) TimerEvent: {}
+[24.966700] (-) TimerEvent: {}
+[25.067475] (-) TimerEvent: {}
+[25.168276] (-) TimerEvent: {}
+[25.269079] (-) TimerEvent: {}
+[25.369929] (-) TimerEvent: {}
+[25.470740] (-) TimerEvent: {}
+[25.571611] (-) TimerEvent: {}
+[25.672489] (-) TimerEvent: {}
+[25.773330] (-) TimerEvent: {}
+[25.874313] (-) TimerEvent: {}
+[25.879286] (stereo_camera_node) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/stereo_camera_node.dir/build.make:90: CMakeFiles/stereo_camera_node.dir/src/stereo_camera_node.cpp.o] Error 1\n'}
+[25.880049] (stereo_camera_node) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[25.974505] (-) TimerEvent: {}
+[26.075261] (-) TimerEvent: {}
+[26.176184] (-) TimerEvent: {}
+[26.277319] (-) TimerEvent: {}
+[26.307618] (stereo_camera_node) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/stereo_camera_node.dir/build.make:76: CMakeFiles/stereo_camera_node.dir/src/main.cpp.o] Error 1\n'}
+[26.308746] (stereo_camera_node) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/stereo_camera_node.dir/all] Error 2\n'}
+[26.309914] (stereo_camera_node) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[26.319508] (stereo_camera_node) CommandEnded: {'returncode': 2}
+[26.372029] (stereo_camera_node) JobEnded: {'identifier': 'stereo_camera_node', 'rc': 2}
+[26.377414] (-) TimerEvent: {}
+[26.384578] (-) EventReactorShutdown: {}

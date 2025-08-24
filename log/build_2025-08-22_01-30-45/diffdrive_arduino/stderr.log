@@ -1,4 +1,0 @@
-gmake[2]: *** Deleting file 'libdiffdrive_arduino.so'
-gmake[2]: *** [CMakeFiles/diffdrive_arduino.dir/build.make:298: libdiffdrive_arduino.so] Interrupt
-gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/diffdrive_arduino.dir/all] Interrupt
-gmake: *** [Makefile:146: all] Interrupt

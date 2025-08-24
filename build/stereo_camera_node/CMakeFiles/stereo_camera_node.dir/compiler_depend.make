@@ -382,7 +382,12 @@ CMakeFiles/stereo_camera_node.dir/src/stereo_camera_node.cpp.o: /home/golftrolle
   /opt/ros/jazzy/include/rosidl_typesupport_introspection_cpp/rosidl_typesupport_introspection_cpp/message_introspection.hpp \
   /opt/ros/jazzy/include/rosidl_typesupport_introspection_cpp/rosidl_typesupport_introspection_cpp/visibility_control.h \
   /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/image_encodings.hpp \
+  /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/camera_info.hpp \
   /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/compressed_image.hpp \
+  /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/camera_info__builder.hpp \
+  /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/camera_info__struct.hpp \
+  /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/camera_info__traits.hpp \
+  /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/camera_info__type_support.hpp \
   /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/compressed_image__builder.hpp \
   /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/compressed_image__struct.hpp \
   /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/compressed_image__traits.hpp \
@@ -391,6 +396,8 @@ CMakeFiles/stereo_camera_node.dir/src/stereo_camera_node.cpp.o: /home/golftrolle
   /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/image__struct.hpp \
   /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/image__traits.hpp \
   /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/image__type_support.hpp \
+  /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/region_of_interest__struct.hpp \
+  /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/region_of_interest__traits.hpp \
   /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/image.hpp \
   /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__struct.h \
@@ -1361,21 +1368,13 @@ CMakeFiles/stereo_camera_node.dir/src/stereo_camera_node.cpp.o: /home/golftrolle
 
 /usr/include/asm-generic/errno-base.h:
 
-/usr/include/asm-generic/bitsperlong.h:
-
 /usr/include/aarch64-linux-gnu/sys/user.h:
-
-/usr/include/aarch64-linux-gnu/sys/ucontext.h:
 
 /usr/include/c++/13/bits/stl_tempbuf.h:
 
 /usr/include/c++/13/bits/regex_executor.tcc:
 
 /usr/include/aarch64-linux-gnu/sys/types.h:
-
-/usr/include/c++/13/pstl/glue_numeric_defs.h:
-
-/usr/include/aarch64-linux-gnu/sys/time.h:
 
 /usr/include/aarch64-linux-gnu/sys/single_threaded.h:
 
@@ -1394,6 +1393,22 @@ CMakeFiles/stereo_camera_node.dir/src/stereo_camera_node.cpp.o: /home/golftrolle
 /usr/include/opencv4/opencv2/core/cvstd_wrapper.hpp:
 
 /usr/include/aarch64-linux-gnu/c++/13/bits/gthr.h:
+
+/usr/include/aarch64-linux-gnu/c++/13/bits/gthr-default.h:
+
+/usr/include/opencv4/opencv2/stitching/detail/matchers.hpp:
+
+/usr/include/aarch64-linux-gnu/c++/13/bits/error_constants.h:
+
+/usr/lib/gcc/aarch64-linux-gnu/13/include/limits.h:
+
+/usr/include/aarch64-linux-gnu/c++/13/bits/cxxabi_tweaks.h:
+
+/usr/include/aarch64-linux-gnu/c++/13/bits/ctype_inline.h:
+
+/usr/include/opencv4/opencv2/flann/sampling.h:
+
+/usr/include/aarch64-linux-gnu/c++/13/bits/ctype_base.h:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/subscription_wait_set_mask.hpp:
 
@@ -1429,11 +1444,13 @@ CMakeFiles/stereo_camera_node.dir/src/stereo_camera_node.cpp.o: /home/golftrolle
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/subscription_content_filter_options.hpp:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/detail/rmw_implementation_specific_subscription_payload.hpp:
-
 /opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_type_descriptions_interface.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_topics_interface_traits.hpp:
+
+/usr/include/aarch64-linux-gnu/c++/13/bits/cpu_defines.h:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_topics_interface.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_timers_interface_traits.hpp:
 
@@ -1508,8 +1525,6 @@ CMakeFiles/stereo_camera_node.dir/src/stereo_camera_node.cpp.o: /home/golftrolle
 /usr/include/c++/13/cmath:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/message_memory_strategy.hpp:
-
-/usr/include/aarch64-linux-gnu/c++/13/bits/gthr-default.h:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/memory_strategy.hpp:
 
@@ -1855,6 +1870,12 @@ CMakeFiles/stereo_camera_node.dir/src/stereo_camera_node.cpp.o: /home/golftrolle
 
 /opt/ros/jazzy/include/rmw/rmw/incompatible_qos_events_statuses.h:
 
+/usr/include/opencv4/opencv2/stitching/detail/exposure_compensate.hpp:
+
+/usr/include/aarch64-linux-gnu/c++/13/bits/c++locale.h:
+
+/opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/msg/rosidl_generator_c__visibility_control.h:
+
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__builder.hpp:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__builder.hpp:
@@ -1973,8 +1994,6 @@ CMakeFiles/stereo_camera_node.dir/src/stereo_camera_node.cpp.o: /home/golftrolle
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:
 
-/usr/include/aarch64-linux-gnu/c++/13/bits/ctype_inline.h:
-
 /opt/ros/jazzy/include/rcl/rcl/node.h:
 
 /usr/include/aarch64-linux-gnu/bits/siginfo-consts.h:
@@ -2038,6 +2057,8 @@ CMakeFiles/stereo_camera_node.dir/src/stereo_camera_node.cpp.o: /home/golftrolle
 /opt/ros/jazzy/include/rcl/rcl/error_handling.h:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__type_support.hpp:
+
+/opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/camera_info__traits.hpp:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__type_support.hpp:
 
@@ -2389,10 +2410,6 @@ CMakeFiles/stereo_camera_node.dir/src/stereo_camera_node.cpp.o: /home/golftrolle
 
 /opt/ros/jazzy/include/rmw/rmw/time.h:
 
-/usr/include/c++/13/tr1/bessel_function.tcc:
-
-/opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/msg/detail/field_type__struct.h:
-
 /usr/include/opencv4/opencv2/flann/flann_base.hpp:
 
 /usr/include/math.h:
@@ -2430,10 +2447,6 @@ CMakeFiles/stereo_camera_node.dir/src/stereo_camera_node.cpp.o: /home/golftrolle
 /usr/include/opencv4/opencv2/imgproc/types_c.h:
 
 /usr/include/aarch64-linux-gnu/bits/sigstksz.h:
-
-/usr/include/opencv4/opencv2/flann/sampling.h:
-
-/usr/include/aarch64-linux-gnu/c++/13/bits/ctype_base.h:
 
 /opt/ros/jazzy/include/rosidl_dynamic_typesupport/rosidl_dynamic_typesupport/types.h:
 
@@ -2473,15 +2486,33 @@ CMakeFiles/stereo_camera_node.dir/src/stereo_camera_node.cpp.o: /home/golftrolle
 
 /opt/ros/jazzy/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_type_support_decl.hpp:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_topics_interface.hpp:
-
-/usr/include/aarch64-linux-gnu/c++/13/bits/cpu_defines.h:
-
 /opt/ros/jazzy/include/rosidl_typesupport_introspection_cpp/rosidl_typesupport_introspection_cpp/message_introspection.hpp:
 
 /opt/ros/jazzy/include/tracetools/tracetools/tracetools.h:
 
 /opt/ros/jazzy/include/rosidl_typesupport_introspection_cpp/rosidl_typesupport_introspection_cpp/visibility_control.h:
+
+/opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/camera_info.hpp:
+
+/usr/include/aarch64-linux-gnu/sys/ucontext.h:
+
+/opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/camera_info__builder.hpp:
+
+/opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/msg/detail/key_value__struct.h:
+
+/usr/include/c++/13/tr1/bessel_function.tcc:
+
+/opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/msg/detail/field_type__struct.h:
+
+/opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/camera_info__struct.hpp:
+
+/usr/include/c++/13/pstl/glue_numeric_defs.h:
+
+/usr/include/aarch64-linux-gnu/sys/time.h:
+
+/opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/camera_info__type_support.hpp:
+
+/opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/srv/get_type_description.h:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp:
 
@@ -2492,6 +2523,14 @@ CMakeFiles/stereo_camera_node.dir/src/stereo_camera_node.cpp.o: /home/golftrolle
 /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__type_support.hpp:
 
 /usr/include/aarch64-linux-gnu/bits/signum-generic.h:
+
+/usr/include/asm-generic/bitsperlong.h:
+
+/opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/region_of_interest__struct.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/detail/rmw_implementation_specific_subscription_payload.hpp:
+
+/opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/region_of_interest__traits.hpp:
 
 /usr/include/c++/13/typeinfo:
 
@@ -2541,8 +2580,6 @@ CMakeFiles/stereo_camera_node.dir/src/stereo_camera_node.cpp.o: /home/golftrolle
 
 /opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/msg/detail/individual_type_description__struct.h:
 
-/opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/msg/detail/key_value__struct.h:
-
 /opt/ros/jazzy/include/rclcpp/rclcpp/publisher_factory.hpp:
 
 /opt/ros/jazzy/include/rcutils/rcutils/error_handling.h:
@@ -2552,8 +2589,6 @@ CMakeFiles/stereo_camera_node.dir/src/stereo_camera_node.cpp.o: /home/golftrolle
 /usr/include/opencv4/opencv2/flann/timer.h:
 
 /opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/srv/detail/get_type_description__functions.h:
-
-/opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/srv/get_type_description.h:
 
 /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/image__struct.hpp:
 
@@ -2766,17 +2801,3 @@ CMakeFiles/stereo_camera_node.dir/src/stereo_camera_node.cpp.o: /home/golftrolle
 /opt/ros/jazzy/include/rclcpp/rclcpp/expand_topic_or_service_name.hpp:
 
 /usr/include/aarch64-linux-gnu/bits/wordsize.h:
-
-/usr/include/opencv4/opencv2/stitching/detail/exposure_compensate.hpp:
-
-/opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/msg/rosidl_generator_c__visibility_control.h:
-
-/usr/include/aarch64-linux-gnu/c++/13/bits/c++locale.h:
-
-/usr/lib/gcc/aarch64-linux-gnu/13/include/limits.h:
-
-/usr/include/aarch64-linux-gnu/c++/13/bits/cxxabi_tweaks.h:
-
-/usr/include/opencv4/opencv2/stitching/detail/matchers.hpp:
-
-/usr/include/aarch64-linux-gnu/c++/13/bits/error_constants.h:

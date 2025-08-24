@@ -1,0 +1,79 @@
+[0.110s] Invoking command in '/home/golftrolley/robot_ws/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/golftrolley/robot_ws/install/stereo_camera_split:/home/golftrolley/robot_ws/install/serial_motor_demo:/home/golftrolley/robot_ws/install/golftrolley:/opt/ros/jazzy /usr/bin/cmake /home/golftrolley/robot_ws/src/serial -DCMAKE_INSTALL_PREFIX=/home/golftrolley/robot_ws/install/serial
+[0.814s] -- The C compiler identification is GNU 13.3.0
+[1.478s] -- The CXX compiler identification is GNU 13.3.0
+[1.622s] -- Detecting C compiler ABI info
+[2.860s] -- Detecting C compiler ABI info - done
+[2.974s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.981s] -- Detecting C compile features
+[2.988s] -- Detecting C compile features - done
+[3.136s] -- Detecting CXX compiler ABI info
+[4.469s] -- Detecting CXX compiler ABI info - done
+[4.574s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[4.579s] -- Detecting CXX compile features
+[4.585s] -- Detecting CXX compile features - done
+[4.661s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[6.719s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[7.997s] -- Found ament_cmake_gtest: 2.5.4 (/opt/ros/jazzy/share/ament_cmake_gtest/cmake)
+[8.089s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0")  
+[8.130s] -- Found gtest sources under '/opt/ros/jazzy/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[8.141s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[8.856s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[8.866s] -- Found Threads: TRUE  
+[9.596s] -- Configuring done (9.4s)
+[9.795s] -- Generating done (0.2s)
+[9.830s] -- Build files have been written to: /home/golftrolley/robot_ws/build/serial
+[9.874s] Invoked command in '/home/golftrolley/robot_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/golftrolley/robot_ws/install/stereo_camera_split:/home/golftrolley/robot_ws/install/serial_motor_demo:/home/golftrolley/robot_ws/install/golftrolley:/opt/ros/jazzy /usr/bin/cmake /home/golftrolley/robot_ws/src/serial -DCMAKE_INSTALL_PREFIX=/home/golftrolley/robot_ws/install/serial
+[9.884s] Invoking command in '/home/golftrolley/robot_ws/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/golftrolley/robot_ws/install/stereo_camera_split:/home/golftrolley/robot_ws/install/serial_motor_demo:/home/golftrolley/robot_ws/install/golftrolley:/opt/ros/jazzy /usr/bin/cmake --build /home/golftrolley/robot_ws/build/serial -- -j4 -l4
+[10.378s] [  7%] [32mBuilding CXX object CMakeFiles/serial.dir/src/serial.cc.o[0m
+[13.937s] [ 14%] [32mBuilding CXX object CMakeFiles/serial.dir/src/impl/unix.cc.o[0m
+[17.332s] [ 21%] [32mBuilding CXX object CMakeFiles/serial.dir/src/impl/list_ports/list_ports_linux.cc.o[0m
+[20.696s] [ 28%] [32m[1mLinking CXX static library libserial.a[0m
+[21.072s] [ 28%] Built target serial
+[21.325s] [ 35%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[50.302s] [ 42%] [32m[1mLinking CXX static library libgtest.a[0m
+[51.142s] [ 42%] Built target gtest
+[51.354s] [ 50%] [32mBuilding CXX object CMakeFiles/serial_example.dir/examples/serial_example.cc.o[0m
+[54.087s] [ 57%] [32m[1mLinking CXX executable serial_example[0m
+[54.645s] [ 57%] Built target serial_example
+[54.806s] [ 64%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[61.545s] [ 71%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[61.824s] [ 71%] Built target gtest_main
+[61.990s] [ 78%] [32mBuilding CXX object tests/CMakeFiles/serial-test.dir/unix_serial_tests.cc.o[0m
+[67.582s] In file included from [01m[K/usr/include/boost/bind/detail/requires_cxx11.hpp:9[m[K,
+[67.583s]                  from [01m[K/usr/include/boost/bind/bind.hpp:24[m[K,
+[67.587s]                  from [01m[K/usr/include/boost/bind.hpp:29[m[K,
+[67.595s]                  from [01m[K/home/golftrolley/robot_ws/src/serial/tests/unix_serial_tests.cc:23[m[K:
+[67.602s] [01m[K/usr/include/boost/bind.hpp:36:1:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.[m[K’
+[67.603s]    36 | [01;36m[KBOOST_PRAGMA_MESSAGE[m[K(
+[67.604s]       | [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[69.596s] [ 85%] [32m[1mLinking CXX executable serial-test[0m
+[70.435s] [ 85%] Built target serial-test
+[70.608s] [ 92%] [32mBuilding CXX object tests/CMakeFiles/serial-test-timer.dir/unit/unix_timer_tests.cc.o[0m
+[78.103s] [100%] [32m[1mLinking CXX executable serial-test-timer[0m
+[79.071s] [100%] Built target serial-test-timer
+[79.177s] Invoked command in '/home/golftrolley/robot_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/golftrolley/robot_ws/install/stereo_camera_split:/home/golftrolley/robot_ws/install/serial_motor_demo:/home/golftrolley/robot_ws/install/golftrolley:/opt/ros/jazzy /usr/bin/cmake --build /home/golftrolley/robot_ws/build/serial -- -j4 -l4
+[79.181s] Invoking command in '/home/golftrolley/robot_ws/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/golftrolley/robot_ws/install/stereo_camera_split:/home/golftrolley/robot_ws/install/serial_motor_demo:/home/golftrolley/robot_ws/install/golftrolley:/opt/ros/jazzy /usr/bin/cmake --install /home/golftrolley/robot_ws/build/serial
+[79.254s] -- Install configuration: ""
+[79.259s] -- Installing: /home/golftrolley/robot_ws/install/serial/lib/libserial.a
+[79.270s] -- Installing: /home/golftrolley/robot_ws/install/serial/include/serial/serial.h
+[79.271s] -- Installing: /home/golftrolley/robot_ws/install/serial/include/serial/v8stdint.h
+[79.277s] -- Installing: /home/golftrolley/robot_ws/install/serial/share/serial/environment/library_path.sh
+[79.284s] -- Installing: /home/golftrolley/robot_ws/install/serial/share/serial/environment/library_path.dsv
+[79.287s] -- Installing: /home/golftrolley/robot_ws/install/serial/share/ament_index/resource_index/package_run_dependencies/serial
+[79.293s] -- Installing: /home/golftrolley/robot_ws/install/serial/share/ament_index/resource_index/parent_prefix_path/serial
+[79.300s] -- Installing: /home/golftrolley/robot_ws/install/serial/share/serial/environment/ament_prefix_path.sh
+[79.304s] -- Installing: /home/golftrolley/robot_ws/install/serial/share/serial/environment/ament_prefix_path.dsv
+[79.310s] -- Installing: /home/golftrolley/robot_ws/install/serial/share/serial/environment/path.sh
+[79.314s] -- Installing: /home/golftrolley/robot_ws/install/serial/share/serial/environment/path.dsv
+[79.321s] -- Installing: /home/golftrolley/robot_ws/install/serial/share/serial/local_setup.bash
+[79.324s] -- Installing: /home/golftrolley/robot_ws/install/serial/share/serial/local_setup.sh
+[79.331s] -- Installing: /home/golftrolley/robot_ws/install/serial/share/serial/local_setup.zsh
+[79.335s] -- Installing: /home/golftrolley/robot_ws/install/serial/share/serial/local_setup.dsv
+[79.339s] -- Installing: /home/golftrolley/robot_ws/install/serial/share/serial/package.dsv
+[79.344s] -- Installing: /home/golftrolley/robot_ws/install/serial/share/ament_index/resource_index/packages/serial
+[79.350s] -- Installing: /home/golftrolley/robot_ws/install/serial/share/serial/cmake/ament_cmake_export_include_directories-extras.cmake
+[79.354s] -- Installing: /home/golftrolley/robot_ws/install/serial/share/serial/cmake/ament_cmake_export_libraries-extras.cmake
+[79.357s] -- Installing: /home/golftrolley/robot_ws/install/serial/share/serial/cmake/serialConfig.cmake
+[79.362s] -- Installing: /home/golftrolley/robot_ws/install/serial/share/serial/cmake/serialConfig-version.cmake
+[79.363s] -- Installing: /home/golftrolley/robot_ws/install/serial/share/serial/package.xml
+[79.379s] Invoked command in '/home/golftrolley/robot_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/golftrolley/robot_ws/install/stereo_camera_split:/home/golftrolley/robot_ws/install/serial_motor_demo:/home/golftrolley/robot_ws/install/golftrolley:/opt/ros/jazzy /usr/bin/cmake --install /home/golftrolley/robot_ws/build/serial

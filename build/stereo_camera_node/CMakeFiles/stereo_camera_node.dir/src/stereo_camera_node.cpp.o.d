@@ -711,6 +711,13 @@ CMakeFiles/stereo_camera_node.dir/src/stereo_camera_node.cpp.o: \
  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/header__traits.hpp \
  /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/image__type_support.hpp \
  /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/camera_info.hpp \
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/camera_info__struct.hpp \
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/region_of_interest__struct.hpp \
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/camera_info__builder.hpp \
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/camera_info__traits.hpp \
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/region_of_interest__traits.hpp \
+ /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/camera_info__type_support.hpp \
  /opt/ros/jazzy/include/cv_bridge/cv_bridge/cv_bridge.hpp \
  /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/compressed_image.hpp \
  /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/compressed_image__struct.hpp \

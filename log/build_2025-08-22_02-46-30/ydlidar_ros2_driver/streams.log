@@ -1,0 +1,123 @@
+[0.061s] Invoking command in '/home/golftrolley/robot_ws/build/ydlidar_ros2_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/golftrolley/robot_ws/install/stereo_camera_split:/home/golftrolley/robot_ws/install/serial_motor_demo:/home/golftrolley/robot_ws/install/golftrolley:/opt/ros/jazzy /usr/bin/cmake /home/golftrolley/robot_ws/src/ydlidar_ros2_driver -DCMAKE_INSTALL_PREFIX=/home/golftrolley/robot_ws/install/ydlidar_ros2_driver
+[0.501s] -- The C compiler identification is GNU 13.3.0
+[0.902s] -- The CXX compiler identification is GNU 13.3.0
+[1.024s] -- Detecting C compiler ABI info
+[1.807s] -- Detecting C compiler ABI info - done
+[1.858s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.861s] -- Detecting C compile features
+[1.865s] -- Detecting C compile features - done
+[1.936s] -- Detecting CXX compiler ABI info
+[2.770s] -- Detecting CXX compiler ABI info - done
+[2.887s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.895s] -- Detecting CXX compile features
+[2.900s] -- Detecting CXX compile features - done
+[2.973s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[4.470s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[5.793s] -- Found rclcpp: 28.1.10 (/opt/ros/jazzy/share/rclcpp/cmake)
+[6.314s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[6.480s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[6.689s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[6.905s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[7.694s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[7.787s] -- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[8.618s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[8.755s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[8.905s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[9.551s] -- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[9.989s] -- Found visualization_msgs: 5.3.6 (/opt/ros/jazzy/share/visualization_msgs/cmake)
+[10.193s] -- Found std_srvs: 5.3.6 (/opt/ros/jazzy/share/std_srvs/cmake)
+[10.407s] -- Found ament_lint_auto: 0.17.2 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[11.567s] -- Added test 'copyright' to check source files copyright and LICENSE
+[11.600s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[11.604s] -- Configured cppcheck include dirs: /home/golftrolley/robot_ws/src/ydlidar_ros2_driver/src
+[11.605s] -- Configured cppcheck exclude dirs and/or files: 
+[11.635s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[11.636s] -- Configured cpplint exclude dirs and/or files: 
+[11.648s] -- Added test 'flake8' to check Python code syntax and style conventions
+[11.649s] -- Configured 'flake8' exclude dirs and/or files: 
+[11.662s] -- Added test 'lint_cmake' to check CMake code style
+[11.670s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[11.704s] -- Added test 'uncrustify' to check C / C++ code style
+[11.705s] -- Configured uncrustify additional arguments: 
+[11.715s] -- Added test 'xmllint' to check XML markup files
+[11.740s] -- Configuring done (11.6s)
+[11.934s] -- Generating done (0.1s)
+[11.981s] -- Build files have been written to: /home/golftrolley/robot_ws/build/ydlidar_ros2_driver
+[12.050s] Invoked command in '/home/golftrolley/robot_ws/build/ydlidar_ros2_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/golftrolley/robot_ws/install/stereo_camera_split:/home/golftrolley/robot_ws/install/serial_motor_demo:/home/golftrolley/robot_ws/install/golftrolley:/opt/ros/jazzy /usr/bin/cmake /home/golftrolley/robot_ws/src/ydlidar_ros2_driver -DCMAKE_INSTALL_PREFIX=/home/golftrolley/robot_ws/install/ydlidar_ros2_driver
+[12.058s] Invoking command in '/home/golftrolley/robot_ws/build/ydlidar_ros2_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/golftrolley/robot_ws/install/stereo_camera_split:/home/golftrolley/robot_ws/install/serial_motor_demo:/home/golftrolley/robot_ws/install/golftrolley:/opt/ros/jazzy /usr/bin/cmake --build /home/golftrolley/robot_ws/build/ydlidar_ros2_driver -- -j4 -l4
+[12.547s] [ 25%] [32mBuilding CXX object CMakeFiles/ydlidar_ros2_driver_node.dir/src/ydlidar_ros2_driver_node.cpp.o[0m
+[30.137s] [01m[K/home/golftrolley/robot_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:[m[K In lambda function:
+[30.138s] [01m[K/home/golftrolley/robot_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:191:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Krequest_header[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[30.144s]   191 |     [&laser]([01;35m[Kconst std::shared_ptr<rmw_request_id_t> request_header[m[K,
+[30.145s]       |              [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[30.146s] [01m[K/home/golftrolley/robot_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:192:56:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kreq[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[30.147s]   192 |   [01;35m[Kconst std::shared_ptr<std_srvs::srv::Empty::Request> req[m[K,
+[30.149s]       |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[30.150s] [01m[K/home/golftrolley/robot_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:193:51:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kresponse[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[30.151s]   193 |   [01;35m[Kstd::shared_ptr<std_srvs::srv::Empty::Response> response[m[K) -> bool
+[30.151s]       |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[30.237s] [01m[K/home/golftrolley/robot_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:[m[K In lambda function:
+[30.238s] [01m[K/home/golftrolley/robot_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:201:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Krequest_header[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[30.238s]   201 |     [&laser]([01;35m[Kconst std::shared_ptr<rmw_request_id_t> request_header[m[K,
+[30.239s]       |              [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[30.243s] [01m[K/home/golftrolley/robot_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:202:56:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kreq[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[30.246s]   202 |   [01;35m[Kconst std::shared_ptr<std_srvs::srv::Empty::Request> req[m[K,
+[30.247s]       |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[30.249s] [01m[K/home/golftrolley/robot_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:203:51:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kresponse[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[30.250s]   203 |   [01;35m[Kstd::shared_ptr<std_srvs::srv::Empty::Response> response[m[K) -> bool
+[30.250s]       |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[56.690s] [ 50%] [32m[1mLinking CXX executable ydlidar_ros2_driver_node[0m
+[58.881s] [ 50%] Built target ydlidar_ros2_driver_node
+[59.047s] [ 75%] [32mBuilding CXX object CMakeFiles/ydlidar_ros2_driver_client.dir/src/ydlidar_ros2_driver_client.cpp.o[0m
+[106.707s] [100%] [32m[1mLinking CXX executable ydlidar_ros2_driver_client[0m
+[108.500s] [100%] Built target ydlidar_ros2_driver_client
+[108.563s] Invoked command in '/home/golftrolley/robot_ws/build/ydlidar_ros2_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/golftrolley/robot_ws/install/stereo_camera_split:/home/golftrolley/robot_ws/install/serial_motor_demo:/home/golftrolley/robot_ws/install/golftrolley:/opt/ros/jazzy /usr/bin/cmake --build /home/golftrolley/robot_ws/build/ydlidar_ros2_driver -- -j4 -l4
+[108.570s] Invoking command in '/home/golftrolley/robot_ws/build/ydlidar_ros2_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/golftrolley/robot_ws/install/stereo_camera_split:/home/golftrolley/robot_ws/install/serial_motor_demo:/home/golftrolley/robot_ws/install/golftrolley:/opt/ros/jazzy /usr/bin/cmake --install /home/golftrolley/robot_ws/build/ydlidar_ros2_driver
+[108.625s] -- Install configuration: ""
+[108.626s] -- Installing: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/lib/ydlidar_ros2_driver/ydlidar_ros2_driver_node
+[108.649s] -- Set non-toolchain portion of runtime path of "/home/golftrolley/robot_ws/install/ydlidar_ros2_driver/lib/ydlidar_ros2_driver/ydlidar_ros2_driver_node" to ""
+[108.650s] -- Installing: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/lib/ydlidar_ros2_driver/ydlidar_ros2_driver_client
+[108.684s] -- Set non-toolchain portion of runtime path of "/home/golftrolley/robot_ws/install/ydlidar_ros2_driver/lib/ydlidar_ros2_driver/ydlidar_ros2_driver_client" to ""
+[108.685s] -- Installing: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch
+[108.686s] -- Installing: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/ydlidar.py
+[108.687s] -- Installing: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/x3_ydlidar_launch.py
+[108.688s] -- Installing: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/ydlidar_launch.py
+[108.689s] -- Installing: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/ydlidar_launch_view.py
+[108.690s] -- Installing: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params
+[108.691s] -- Installing: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/TEA.yaml
+[108.692s] -- Installing: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/GS2.yaml
+[108.693s] -- Installing: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/TG.yaml
+[108.694s] -- Installing: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/ydlidar_x3.yaml
+[108.695s] -- Installing: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/X4-Pro.yaml
+[108.696s] -- Installing: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/Tmini.yaml
+[108.697s] -- Installing: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/X3.yaml
+[108.698s] -- Installing: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/ydlidar.yaml
+[108.699s] -- Installing: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/Tmini-Plus-SH.yaml
+[108.700s] -- Installing: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/G4.yaml
+[108.701s] -- Installing: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/X2.yaml
+[108.702s] -- Installing: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/GS5.yaml
+[108.703s] -- Installing: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/G6.yaml
+[108.704s] -- Installing: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/X4.yaml
+[108.706s] -- Installing: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/G1.yaml
+[108.706s] -- Installing: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/sdm15.yaml
+[108.708s] -- Installing: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/G2.yaml
+[108.709s] -- Installing: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/startup
+[108.709s] -- Installing: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/startup/initenv.sh
+[108.711s] -- Installing: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/config
+[108.712s] -- Installing: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/config/ydlidar.rviz
+[108.714s] -- Installing: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ament_index/resource_index/package_run_dependencies/ydlidar_ros2_driver
+[108.716s] -- Installing: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ament_index/resource_index/parent_prefix_path/ydlidar_ros2_driver
+[108.717s] -- Installing: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/ament_prefix_path.sh
+[108.721s] -- Installing: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/ament_prefix_path.dsv
+[108.722s] -- Installing: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/path.sh
+[108.722s] -- Installing: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/path.dsv
+[108.723s] -- Installing: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.bash
+[108.726s] -- Installing: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.sh
+[108.727s] -- Installing: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.zsh
+[108.727s] -- Installing: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.dsv
+[108.730s] -- Installing: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.dsv
+[108.731s] -- Installing: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ament_index/resource_index/packages/ydlidar_ros2_driver
+[108.733s] -- Installing: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/cmake/ydlidar_ros2_driverConfig.cmake
+[108.734s] -- Installing: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/cmake/ydlidar_ros2_driverConfig-version.cmake
+[108.736s] -- Installing: /home/golftrolley/robot_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.xml
+[108.744s] Invoked command in '/home/golftrolley/robot_ws/build/ydlidar_ros2_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/golftrolley/robot_ws/install/stereo_camera_split:/home/golftrolley/robot_ws/install/serial_motor_demo:/home/golftrolley/robot_ws/install/golftrolley:/opt/ros/jazzy /usr/bin/cmake --install /home/golftrolley/robot_ws/build/ydlidar_ros2_driver

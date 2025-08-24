@@ -1,0 +1,431 @@
+[0.000000] (-) TimerEvent: {}
+[0.000962] (-) JobUnselected: {'identifier': 'dd_bot'}
+[0.001785] (-) JobUnselected: {'identifier': 'diffdrive_arduino'}
+[0.002245] (-) JobUnselected: {'identifier': 'golftrolley'}
+[0.002776] (-) JobUnselected: {'identifier': 'mpu6050driver'}
+[0.002942] (-) JobUnselected: {'identifier': 'ros2_control_cmake'}
+[0.003015] (-) JobUnselected: {'identifier': 'serial'}
+[0.003082] (-) JobUnselected: {'identifier': 'serial_motor_demo'}
+[0.003149] (-) JobUnselected: {'identifier': 'serial_motor_demo_msgs'}
+[0.003215] (-) JobUnselected: {'identifier': 'stereo_camera_split'}
+[0.003309] (-) JobUnselected: {'identifier': 'ydlidar_ros2_driver'}
+[0.003628] (-) JobUnselected: {'identifier': 'ydlidar_sdk'}
+[0.003729] (stereo_camera_node) JobQueued: {'identifier': 'stereo_camera_node', 'dependencies': OrderedDict()}
+[0.003816] (stereo_camera_node) JobStarted: {'identifier': 'stereo_camera_node'}
+[0.051015] (stereo_camera_node) JobProgress: {'identifier': 'stereo_camera_node', 'progress': 'cmake'}
+[0.054508] (stereo_camera_node) JobProgress: {'identifier': 'stereo_camera_node', 'progress': 'build'}
+[0.057726] (stereo_camera_node) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/golftrolley/robot_ws/build/stereo_camera_node', '--', '-j4', '-l4'], 'cwd': '/home/golftrolley/robot_ws/build/stereo_camera_node', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'golftrolley', 'SSH_CLIENT': '10.42.0.1 41114 22', 'LC_TIME': 'ms_MY.UTF-8', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/golftrolley/.vscode-server/cli/servers/Stable-360a4e4fd251bfce169a4ddf857c7d25d1ad40da/server/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/golftrolley/robot_ws/install/serial_motor_demo_msgs/lib:/home/golftrolley/robot_ws/install/serial/lib:/home/golftrolley/robot_ws/install/diffdrive_arduino/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'BROWSER': '/home/golftrolley/.vscode-server/cli/servers/Stable-360a4e4fd251bfce169a4ddf857c7d25d1ad40da/server/bin/helpers/browser.sh', 'HOME': '/home/golftrolley', 'OLDPWD': '/home/golftrolley/robot_ws', 'TERM_PROGRAM_VERSION': '1.103.1', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-514271e3-cd22-446c-8e9f-d6ac4a05e617.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/golftrolley/.vscode-server/cli/servers/Stable-360a4e4fd251bfce169a4ddf857c7d25d1ad40da/server/extensions/git/dist/askpass-main.js', 'LC_MONETARY': 'ms_MY.UTF-8', 'VSCODE_GIT_ASKPASS_NODE': '/home/golftrolley/.vscode-server/cli/servers/Stable-360a4e4fd251bfce169a4ddf857c7d25d1ad40da/server/node', 'SSL_CERT_FILE': '/usr/lib/ssl/cert.pem', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/golftrolley/robot_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'golftrolley', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '4', 'PATH': '/home/golftrolley/.vscode-server/cli/servers/Stable-360a4e4fd251bfce169a4ddf857c7d25d1ad40da/server/bin/remote-cli:/home/golftrolley/robot_ws/install/ydlidar_sdk/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/golftrolley/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand', 'LC_ADDRESS': 'ms_MY.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'SSL_CERT_DIR': '/usr/lib/ssl/certs', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'ms_MY.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-81043886d8.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/golftrolley/robot_ws/install/ydlidar_ros2_driver:/home/golftrolley/robot_ws/install/stereo_camera_split:/home/golftrolley/robot_ws/install/stereo_camera_node:/home/golftrolley/robot_ws/install/serial_motor_demo:/home/golftrolley/robot_ws/install/serial_motor_demo_msgs:/home/golftrolley/robot_ws/install/serial:/home/golftrolley/robot_ws/install/ros2_control_cmake:/home/golftrolley/robot_ws/install/my_v4l2_camera:/home/golftrolley/robot_ws/install/mpu6050driver:/home/golftrolley/robot_ws/install/golftrolley:/home/golftrolley/robot_ws/install/diffdrive_arduino:/home/golftrolley/robot_ws/install/dd_bot:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'ms_MY.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ms_MY.UTF-8', 'LC_IDENTIFICATION': 'ms_MY.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/golftrolley/robot_ws/build/stereo_camera_node', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '10.42.0.1 41114 10.42.0.2 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/golftrolley/robot_ws/build/stereo_camera_split:/home/golftrolley/robot_ws/install/stereo_camera_split/lib/python3.12/site-packages:/home/golftrolley/robot_ws/build/serial_motor_demo:/home/golftrolley/robot_ws/install/serial_motor_demo/lib/python3.12/site-packages:/home/golftrolley/robot_ws/install/serial_motor_demo_msgs/lib/python3.12/site-packages:/home/golftrolley/robot_ws/build/golftrolley:/home/golftrolley/robot_ws/install/golftrolley/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'ms_MY.UTF-8', 'LC_PAPER': 'ms_MY.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/golftrolley/robot_ws/install/ydlidar_sdk:/home/golftrolley/robot_ws/install/ydlidar_ros2_driver:/home/golftrolley/robot_ws/install/stereo_camera_node:/home/golftrolley/robot_ws/install/serial_motor_demo_msgs:/home/golftrolley/robot_ws/install/serial:/home/golftrolley/robot_ws/install/ros2_control_cmake:/home/golftrolley/robot_ws/install/my_v4l2_camera:/home/golftrolley/robot_ws/install/mpu6050driver:/home/golftrolley/robot_ws/install/diffdrive_arduino:/home/golftrolley/robot_ws/install/dd_bot:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/golftrolley/robot_ws/install/stereo_camera_split:/home/golftrolley/robot_ws/install/serial_motor_demo:/home/golftrolley/robot_ws/install/golftrolley:/opt/ros/jazzy'}), 'shell': False}
+[0.099242] (-) TimerEvent: {}
+[0.199981] (-) TimerEvent: {}
+[0.300690] (-) TimerEvent: {}
+[0.401466] (-) TimerEvent: {}
+[0.416990] (stereo_camera_node) StdoutLine: {'line': b'[ 40%] Built target stereo_calibration_capture\n'}
+[0.442389] (stereo_camera_node) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/stereo_camera_node.dir/src/main.cpp.o\x1b[0m\n'}
+[0.501659] (-) TimerEvent: {}
+[0.602341] (-) TimerEvent: {}
+[0.702973] (-) TimerEvent: {}
+[0.803684] (-) TimerEvent: {}
+[0.904373] (-) TimerEvent: {}
+[1.005013] (-) TimerEvent: {}
+[1.105704] (-) TimerEvent: {}
+[1.206374] (-) TimerEvent: {}
+[1.307003] (-) TimerEvent: {}
+[1.407713] (-) TimerEvent: {}
+[1.508451] (-) TimerEvent: {}
+[1.609088] (-) TimerEvent: {}
+[1.709817] (-) TimerEvent: {}
+[1.810567] (-) TimerEvent: {}
+[1.911220] (-) TimerEvent: {}
+[2.011895] (-) TimerEvent: {}
+[2.112588] (-) TimerEvent: {}
+[2.213242] (-) TimerEvent: {}
+[2.313998] (-) TimerEvent: {}
+[2.414753] (-) TimerEvent: {}
+[2.515448] (-) TimerEvent: {}
+[2.616339] (-) TimerEvent: {}
+[2.717070] (-) TimerEvent: {}
+[2.817881] (-) TimerEvent: {}
+[2.918539] (-) TimerEvent: {}
+[3.019246] (-) TimerEvent: {}
+[3.119970] (-) TimerEvent: {}
+[3.220783] (-) TimerEvent: {}
+[3.321470] (-) TimerEvent: {}
+[3.422246] (-) TimerEvent: {}
+[3.523090] (-) TimerEvent: {}
+[3.624055] (-) TimerEvent: {}
+[3.724912] (-) TimerEvent: {}
+[3.825721] (-) TimerEvent: {}
+[3.926507] (-) TimerEvent: {}
+[4.027396] (-) TimerEvent: {}
+[4.128142] (-) TimerEvent: {}
+[4.228951] (-) TimerEvent: {}
+[4.329709] (-) TimerEvent: {}
+[4.430582] (-) TimerEvent: {}
+[4.531318] (-) TimerEvent: {}
+[4.632031] (-) TimerEvent: {}
+[4.733255] (-) TimerEvent: {}
+[4.834042] (-) TimerEvent: {}
+[4.934787] (-) TimerEvent: {}
+[5.035512] (-) TimerEvent: {}
+[5.136376] (-) TimerEvent: {}
+[5.237169] (-) TimerEvent: {}
+[5.338011] (-) TimerEvent: {}
+[5.438854] (-) TimerEvent: {}
+[5.539659] (-) TimerEvent: {}
+[5.640435] (-) TimerEvent: {}
+[5.741134] (-) TimerEvent: {}
+[5.841925] (-) TimerEvent: {}
+[5.942790] (-) TimerEvent: {}
+[6.043535] (-) TimerEvent: {}
+[6.144351] (-) TimerEvent: {}
+[6.245197] (-) TimerEvent: {}
+[6.346102] (-) TimerEvent: {}
+[6.447037] (-) TimerEvent: {}
+[6.547849] (-) TimerEvent: {}
+[6.648625] (-) TimerEvent: {}
+[6.749365] (-) TimerEvent: {}
+[6.850085] (-) TimerEvent: {}
+[6.950925] (-) TimerEvent: {}
+[7.051670] (-) TimerEvent: {}
+[7.152411] (-) TimerEvent: {}
+[7.253115] (-) TimerEvent: {}
+[7.353941] (-) TimerEvent: {}
+[7.454752] (-) TimerEvent: {}
+[7.555503] (-) TimerEvent: {}
+[7.656319] (-) TimerEvent: {}
+[7.757033] (-) TimerEvent: {}
+[7.857858] (-) TimerEvent: {}
+[7.958613] (-) TimerEvent: {}
+[8.059410] (-) TimerEvent: {}
+[8.160120] (-) TimerEvent: {}
+[8.260845] (-) TimerEvent: {}
+[8.361602] (-) TimerEvent: {}
+[8.462389] (-) TimerEvent: {}
+[8.563136] (-) TimerEvent: {}
+[8.664019] (-) TimerEvent: {}
+[8.764838] (-) TimerEvent: {}
+[8.865579] (-) TimerEvent: {}
+[8.966328] (-) TimerEvent: {}
+[9.067103] (-) TimerEvent: {}
+[9.167893] (-) TimerEvent: {}
+[9.268645] (-) TimerEvent: {}
+[9.369402] (-) TimerEvent: {}
+[9.470103] (-) TimerEvent: {}
+[9.570862] (-) TimerEvent: {}
+[9.671634] (-) TimerEvent: {}
+[9.772424] (-) TimerEvent: {}
+[9.873134] (-) TimerEvent: {}
+[9.973908] (-) TimerEvent: {}
+[10.074668] (-) TimerEvent: {}
+[10.175421] (-) TimerEvent: {}
+[10.276132] (-) TimerEvent: {}
+[10.376954] (-) TimerEvent: {}
+[10.477711] (-) TimerEvent: {}
+[10.578438] (-) TimerEvent: {}
+[10.679156] (-) TimerEvent: {}
+[10.779929] (-) TimerEvent: {}
+[10.880702] (-) TimerEvent: {}
+[10.981435] (-) TimerEvent: {}
+[11.082177] (-) TimerEvent: {}
+[11.183112] (-) TimerEvent: {}
+[11.283878] (-) TimerEvent: {}
+[11.384620] (-) TimerEvent: {}
+[11.485403] (-) TimerEvent: {}
+[11.586122] (-) TimerEvent: {}
+[11.686901] (-) TimerEvent: {}
+[11.787731] (-) TimerEvent: {}
+[11.888465] (-) TimerEvent: {}
+[11.989196] (-) TimerEvent: {}
+[12.089960] (-) TimerEvent: {}
+[12.190762] (-) TimerEvent: {}
+[12.291519] (-) TimerEvent: {}
+[12.392297] (-) TimerEvent: {}
+[12.493010] (-) TimerEvent: {}
+[12.593816] (-) TimerEvent: {}
+[12.694582] (-) TimerEvent: {}
+[12.795389] (-) TimerEvent: {}
+[12.896095] (-) TimerEvent: {}
+[12.996881] (-) TimerEvent: {}
+[13.097718] (-) TimerEvent: {}
+[13.198422] (-) TimerEvent: {}
+[13.299134] (-) TimerEvent: {}
+[13.399904] (-) TimerEvent: {}
+[13.500741] (-) TimerEvent: {}
+[13.601765] (-) TimerEvent: {}
+[13.702533] (-) TimerEvent: {}
+[13.803249] (-) TimerEvent: {}
+[13.904043] (-) TimerEvent: {}
+[14.004842] (-) TimerEvent: {}
+[14.105583] (-) TimerEvent: {}
+[14.206433] (-) TimerEvent: {}
+[14.307211] (-) TimerEvent: {}
+[14.408116] (-) TimerEvent: {}
+[14.508967] (-) TimerEvent: {}
+[14.609790] (-) TimerEvent: {}
+[14.710667] (-) TimerEvent: {}
+[14.811394] (-) TimerEvent: {}
+[14.912327] (-) TimerEvent: {}
+[15.013230] (-) TimerEvent: {}
+[15.114068] (-) TimerEvent: {}
+[15.215024] (-) TimerEvent: {}
+[15.315762] (-) TimerEvent: {}
+[15.416464] (-) TimerEvent: {}
+[15.517164] (-) TimerEvent: {}
+[15.617926] (-) TimerEvent: {}
+[15.718709] (-) TimerEvent: {}
+[15.819440] (-) TimerEvent: {}
+[15.920229] (-) TimerEvent: {}
+[16.021053] (-) TimerEvent: {}
+[16.121870] (-) TimerEvent: {}
+[16.222658] (-) TimerEvent: {}
+[16.323440] (-) TimerEvent: {}
+[16.424230] (-) TimerEvent: {}
+[16.524985] (-) TimerEvent: {}
+[16.625805] (-) TimerEvent: {}
+[16.726519] (-) TimerEvent: {}
+[16.827233] (-) TimerEvent: {}
+[16.928000] (-) TimerEvent: {}
+[17.028778] (-) TimerEvent: {}
+[17.129551] (-) TimerEvent: {}
+[17.230333] (-) TimerEvent: {}
+[17.331044] (-) TimerEvent: {}
+[17.431822] (-) TimerEvent: {}
+[17.532586] (-) TimerEvent: {}
+[17.633369] (-) TimerEvent: {}
+[17.734087] (-) TimerEvent: {}
+[17.834822] (-) TimerEvent: {}
+[17.935559] (-) TimerEvent: {}
+[18.036307] (-) TimerEvent: {}
+[18.137025] (-) TimerEvent: {}
+[18.237836] (-) TimerEvent: {}
+[18.338579] (-) TimerEvent: {}
+[18.439359] (-) TimerEvent: {}
+[18.540183] (-) TimerEvent: {}
+[18.640967] (-) TimerEvent: {}
+[18.741778] (-) TimerEvent: {}
+[18.842544] (-) TimerEvent: {}
+[18.943238] (-) TimerEvent: {}
+[19.044008] (-) TimerEvent: {}
+[19.144780] (-) TimerEvent: {}
+[19.245548] (-) TimerEvent: {}
+[19.346324] (-) TimerEvent: {}
+[19.447042] (-) TimerEvent: {}
+[19.547866] (-) TimerEvent: {}
+[19.648648] (-) TimerEvent: {}
+[19.749432] (-) TimerEvent: {}
+[19.850139] (-) TimerEvent: {}
+[19.950938] (-) TimerEvent: {}
+[20.051733] (-) TimerEvent: {}
+[20.152448] (-) TimerEvent: {}
+[20.253227] (-) TimerEvent: {}
+[20.353977] (-) TimerEvent: {}
+[20.454783] (-) TimerEvent: {}
+[20.555532] (-) TimerEvent: {}
+[20.656251] (-) TimerEvent: {}
+[20.756996] (-) TimerEvent: {}
+[20.857793] (-) TimerEvent: {}
+[20.958557] (-) TimerEvent: {}
+[21.059241] (-) TimerEvent: {}
+[21.159967] (-) TimerEvent: {}
+[21.260702] (-) TimerEvent: {}
+[21.361424] (-) TimerEvent: {}
+[21.462118] (-) TimerEvent: {}
+[21.562869] (-) TimerEvent: {}
+[21.663608] (-) TimerEvent: {}
+[21.764357] (-) TimerEvent: {}
+[21.865097] (-) TimerEvent: {}
+[21.966013] (-) TimerEvent: {}
+[22.066737] (-) TimerEvent: {}
+[22.167446] (-) TimerEvent: {}
+[22.268223] (-) TimerEvent: {}
+[22.368993] (-) TimerEvent: {}
+[22.469835] (-) TimerEvent: {}
+[22.570608] (-) TimerEvent: {}
+[22.671351] (-) TimerEvent: {}
+[22.772065] (-) TimerEvent: {}
+[22.872880] (-) TimerEvent: {}
+[22.973672] (-) TimerEvent: {}
+[23.074433] (-) TimerEvent: {}
+[23.175136] (-) TimerEvent: {}
+[23.275879] (-) TimerEvent: {}
+[23.376682] (-) TimerEvent: {}
+[23.477616] (-) TimerEvent: {}
+[23.578518] (-) TimerEvent: {}
+[23.679333] (-) TimerEvent: {}
+[23.780039] (-) TimerEvent: {}
+[23.880840] (-) TimerEvent: {}
+[23.981583] (-) TimerEvent: {}
+[24.082424] (-) TimerEvent: {}
+[24.183137] (-) TimerEvent: {}
+[24.283916] (-) TimerEvent: {}
+[24.384651] (-) TimerEvent: {}
+[24.485414] (-) TimerEvent: {}
+[24.586189] (-) TimerEvent: {}
+[24.686927] (-) TimerEvent: {}
+[24.787676] (-) TimerEvent: {}
+[24.888423] (-) TimerEvent: {}
+[24.989164] (-) TimerEvent: {}
+[25.089953] (-) TimerEvent: {}
+[25.190734] (-) TimerEvent: {}
+[25.291454] (-) TimerEvent: {}
+[25.392186] (-) TimerEvent: {}
+[25.492964] (-) TimerEvent: {}
+[25.593760] (-) TimerEvent: {}
+[25.694592] (-) TimerEvent: {}
+[25.795336] (-) TimerEvent: {}
+[25.896042] (-) TimerEvent: {}
+[25.996810] (-) TimerEvent: {}
+[26.097558] (-) TimerEvent: {}
+[26.198322] (-) TimerEvent: {}
+[26.299014] (-) TimerEvent: {}
+[26.399826] (-) TimerEvent: {}
+[26.500584] (-) TimerEvent: {}
+[26.601343] (-) TimerEvent: {}
+[26.702081] (-) TimerEvent: {}
+[26.802899] (-) TimerEvent: {}
+[26.903707] (-) TimerEvent: {}
+[27.004433] (-) TimerEvent: {}
+[27.105126] (-) TimerEvent: {}
+[27.205899] (-) TimerEvent: {}
+[27.306720] (-) TimerEvent: {}
+[27.407442] (-) TimerEvent: {}
+[27.508143] (-) TimerEvent: {}
+[27.608912] (-) TimerEvent: {}
+[27.709670] (-) TimerEvent: {}
+[27.810416] (-) TimerEvent: {}
+[27.911137] (-) TimerEvent: {}
+[28.011884] (-) TimerEvent: {}
+[28.112622] (-) TimerEvent: {}
+[28.213394] (-) TimerEvent: {}
+[28.314089] (-) TimerEvent: {}
+[28.414864] (-) TimerEvent: {}
+[28.515704] (-) TimerEvent: {}
+[28.616447] (-) TimerEvent: {}
+[28.717593] (-) TimerEvent: {}
+[28.818327] (-) TimerEvent: {}
+[28.919064] (-) TimerEvent: {}
+[29.019867] (-) TimerEvent: {}
+[29.120634] (-) TimerEvent: {}
+[29.221463] (-) TimerEvent: {}
+[29.322509] (-) TimerEvent: {}
+[29.423687] (-) TimerEvent: {}
+[29.524761] (-) TimerEvent: {}
+[29.625742] (-) TimerEvent: {}
+[29.726564] (-) TimerEvent: {}
+[29.827330] (-) TimerEvent: {}
+[29.928043] (-) TimerEvent: {}
+[30.028786] (-) TimerEvent: {}
+[30.129543] (-) TimerEvent: {}
+[30.230237] (-) TimerEvent: {}
+[30.330988] (-) TimerEvent: {}
+[30.431857] (-) TimerEvent: {}
+[30.532891] (-) TimerEvent: {}
+[30.633742] (-) TimerEvent: {}
+[30.734972] (-) TimerEvent: {}
+[30.785130] (stereo_camera_node) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking CXX executable stereo_camera_node\x1b[0m\n'}
+[30.835168] (-) TimerEvent: {}
+[30.935884] (-) TimerEvent: {}
+[31.036807] (-) TimerEvent: {}
+[31.137830] (-) TimerEvent: {}
+[31.238795] (-) TimerEvent: {}
+[31.339689] (-) TimerEvent: {}
+[31.440565] (-) TimerEvent: {}
+[31.541779] (-) TimerEvent: {}
+[31.642496] (-) TimerEvent: {}
+[31.743414] (-) TimerEvent: {}
+[31.844406] (-) TimerEvent: {}
+[31.945555] (-) TimerEvent: {}
+[32.046357] (-) TimerEvent: {}
+[32.147130] (-) TimerEvent: {}
+[32.232013] (stereo_camera_node) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/stereo_camera_node.dir/src/main.cpp.o: in function `YAML::Exception::Exception(YAML::Mark const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':\n"}
+[32.233346] (stereo_camera_node) StderrLine: {'line': b"main.cpp:(.text._ZN4YAML9ExceptionC2ERKNS_4MarkERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE[_ZN4YAML9ExceptionC5ERKNS_4MarkERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE]+0x60): undefined reference to `vtable for YAML::Exception'\n"}
+[32.234972] (stereo_camera_node) StderrLine: {'line': b"/usr/bin/ld: main.cpp:(.text._ZN4YAML9ExceptionC2ERKNS_4MarkERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE[_ZN4YAML9ExceptionC5ERKNS_4MarkERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE]+0x64): undefined reference to `vtable for YAML::Exception'\n"}
+[32.236454] (stereo_camera_node) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/stereo_camera_node.dir/src/main.cpp.o: in function `YAML::RepresentationException::RepresentationException(YAML::Mark const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':\n"}
+[32.237621] (stereo_camera_node) StderrLine: {'line': b"main.cpp:(.text._ZN4YAML23RepresentationExceptionC2ERKNS_4MarkERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE[_ZN4YAML23RepresentationExceptionC5ERKNS_4MarkERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE]+0x24): undefined reference to `vtable for YAML::RepresentationException'\n"}
+[32.238530] (stereo_camera_node) StderrLine: {'line': b"/usr/bin/ld: main.cpp:(.text._ZN4YAML23RepresentationExceptionC2ERKNS_4MarkERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE[_ZN4YAML23RepresentationExceptionC5ERKNS_4MarkERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE]+0x28): undefined reference to `vtable for YAML::RepresentationException'\n"}
+[32.240339] (stereo_camera_node) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/stereo_camera_node.dir/src/main.cpp.o: in function `YAML::InvalidNode::InvalidNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':\n"}
+[32.241573] (stereo_camera_node) StderrLine: {'line': b"main.cpp:(.text._ZN4YAML11InvalidNodeC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE[_ZN4YAML11InvalidNodeC5ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE]+0x7c): undefined reference to `vtable for YAML::InvalidNode'\n"}
+[32.242669] (stereo_camera_node) StderrLine: {'line': b"/usr/bin/ld: main.cpp:(.text._ZN4YAML11InvalidNodeC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE[_ZN4YAML11InvalidNodeC5ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE]+0x80): undefined reference to `vtable for YAML::InvalidNode'\n"}
+[32.244086] (stereo_camera_node) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/stereo_camera_node.dir/src/main.cpp.o: in function `YAML::BadConversion::BadConversion(YAML::Mark const&)':\n"}
+[32.245816] (stereo_camera_node) StderrLine: {'line': b"main.cpp:(.text._ZN4YAML13BadConversionC2ERKNS_4MarkE[_ZN4YAML13BadConversionC5ERKNS_4MarkE]+0x84): undefined reference to `vtable for YAML::BadConversion'\n"}
+[32.247175] (-) TimerEvent: {}
+[32.248351] (stereo_camera_node) StderrLine: {'line': b"/usr/bin/ld: main.cpp:(.text._ZN4YAML13BadConversionC2ERKNS_4MarkE[_ZN4YAML13BadConversionC5ERKNS_4MarkE]+0x88): undefined reference to `vtable for YAML::BadConversion'\n"}
+[32.250426] (stereo_camera_node) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/stereo_camera_node.dir/src/main.cpp.o: in function `YAML::detail::memory_holder::create_node()':\n"}
+[32.252137] (stereo_camera_node) StderrLine: {'line': b"main.cpp:(.text._ZN4YAML6detail13memory_holder11create_nodeEv[_ZN4YAML6detail13memory_holder11create_nodeEv]+0x14): undefined reference to `YAML::detail::memory::create_node()'\n"}
+[32.253638] (stereo_camera_node) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/stereo_camera_node.dir/src/main.cpp.o: in function `YAML::detail::node_ref::mark_defined()':\n"}
+[32.255374] (stereo_camera_node) StderrLine: {'line': b"main.cpp:(.text._ZN4YAML6detail8node_ref12mark_definedEv[_ZN4YAML6detail8node_ref12mark_definedEv]+0x14): undefined reference to `YAML::detail::node_data::mark_defined()'\n"}
+[32.256811] (stereo_camera_node) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/stereo_camera_node.dir/src/main.cpp.o: in function `YAML::detail::node_ref::set_null()':\n"}
+[32.258883] (stereo_camera_node) StderrLine: {'line': b"main.cpp:(.text._ZN4YAML6detail8node_ref8set_nullEv[_ZN4YAML6detail8node_ref8set_nullEv]+0x14): undefined reference to `YAML::detail::node_data::set_null()'\n"}
+[32.260399] (stereo_camera_node) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/stereo_camera_node.dir/src/main.cpp.o: in function `YAML::detail::node_ref::set_scalar(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':\n"}
+[32.261984] (stereo_camera_node) StderrLine: {'line': b"main.cpp:(.text._ZN4YAML6detail8node_ref10set_scalarERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE[_ZN4YAML6detail8node_ref10set_scalarERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE]+0x1c): undefined reference to `YAML::detail::node_data::set_scalar(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'\n"}
+[32.263461] (stereo_camera_node) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/stereo_camera_node.dir/src/main.cpp.o: in function `YAML::detail::node_ref::size() const':\n"}
+[32.264905] (stereo_camera_node) StderrLine: {'line': b"main.cpp:(.text._ZNK4YAML6detail8node_ref4sizeEv[_ZNK4YAML6detail8node_ref4sizeEv]+0x14): undefined reference to `YAML::detail::node_data::size() const'\n"}
+[32.266540] (stereo_camera_node) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/stereo_camera_node.dir/src/main.cpp.o: in function `YAML::detail::node_ref::begin()':\n"}
+[32.267995] (stereo_camera_node) StderrLine: {'line': b"main.cpp:(.text._ZN4YAML6detail8node_ref5beginEv[_ZN4YAML6detail8node_ref5beginEv]+0x38): undefined reference to `YAML::detail::node_data::begin()'\n"}
+[32.269548] (stereo_camera_node) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/stereo_camera_node.dir/src/main.cpp.o: in function `YAML::detail::node_ref::end()':\n"}
+[32.270782] (stereo_camera_node) StderrLine: {'line': b"main.cpp:(.text._ZN4YAML6detail8node_ref3endEv[_ZN4YAML6detail8node_ref3endEv]+0x38): undefined reference to `YAML::detail::node_data::end()'\n"}
+[32.272509] (stereo_camera_node) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/stereo_camera_node.dir/src/main.cpp.o: in function `YAML::Node::EnsureNodeExists() const':\n"}
+[32.274109] (stereo_camera_node) StderrLine: {'line': b"main.cpp:(.text._ZNK4YAML4Node16EnsureNodeExistsEv[_ZNK4YAML4Node16EnsureNodeExistsEv]+0x50): undefined reference to `YAML::InvalidNode::~InvalidNode()'\n"}
+[32.274870] (stereo_camera_node) StderrLine: {'line': b"/usr/bin/ld: main.cpp:(.text._ZNK4YAML4Node16EnsureNodeExistsEv[_ZNK4YAML4Node16EnsureNodeExistsEv]+0x54): undefined reference to `YAML::InvalidNode::~InvalidNode()'\n"}
+[32.276092] (stereo_camera_node) StderrLine: {'line': b"/usr/bin/ld: main.cpp:(.text._ZNK4YAML4Node16EnsureNodeExistsEv[_ZNK4YAML4Node16EnsureNodeExistsEv]+0x58): undefined reference to `typeinfo for YAML::InvalidNode'\n"}
+[32.277885] (stereo_camera_node) StderrLine: {'line': b"/usr/bin/ld: main.cpp:(.text._ZNK4YAML4Node16EnsureNodeExistsEv[_ZNK4YAML4Node16EnsureNodeExistsEv]+0x5c): undefined reference to `typeinfo for YAML::InvalidNode'\n"}
+[32.278996] (stereo_camera_node) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/stereo_camera_node.dir/src/main.cpp.o: in function `YAML::Node::Mark() const':\n"}
+[32.279438] (stereo_camera_node) StderrLine: {'line': b"main.cpp:(.text._ZNK4YAML4Node4MarkEv[_ZNK4YAML4Node4MarkEv]+0x50): undefined reference to `YAML::InvalidNode::~InvalidNode()'\n"}
+[32.280092] (stereo_camera_node) StderrLine: {'line': b"/usr/bin/ld: main.cpp:(.text._ZNK4YAML4Node4MarkEv[_ZNK4YAML4Node4MarkEv]+0x54): undefined reference to `YAML::InvalidNode::~InvalidNode()'\n"}
+[32.281491] (stereo_camera_node) StderrLine: {'line': b"/usr/bin/ld: main.cpp:(.text._ZNK4YAML4Node4MarkEv[_ZNK4YAML4Node4MarkEv]+0x58): undefined reference to `typeinfo for YAML::InvalidNode'\n"}
+[32.282855] (stereo_camera_node) StderrLine: {'line': b"/usr/bin/ld: main.cpp:(.text._ZNK4YAML4Node4MarkEv[_ZNK4YAML4Node4MarkEv]+0x5c): undefined reference to `typeinfo for YAML::InvalidNode'\n"}
+[32.283980] (stereo_camera_node) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/stereo_camera_node.dir/src/main.cpp.o: in function `YAML::Node::Type() const':\n"}
+[32.284443] (stereo_camera_node) StderrLine: {'line': b"main.cpp:(.text._ZNK4YAML4Node4TypeEv[_ZNK4YAML4Node4TypeEv]+0x4c): undefined reference to `YAML::InvalidNode::~InvalidNode()'\n"}
+[32.284802] (stereo_camera_node) StderrLine: {'line': b"/usr/bin/ld: main.cpp:(.text._ZNK4YAML4Node4TypeEv[_ZNK4YAML4Node4TypeEv]+0x50): undefined reference to `YAML::InvalidNode::~InvalidNode()'\n"}
+[32.285130] (stereo_camera_node) StderrLine: {'line': b"/usr/bin/ld: main.cpp:(.text._ZNK4YAML4Node4TypeEv[_ZNK4YAML4Node4TypeEv]+0x54): undefined reference to `typeinfo for YAML::InvalidNode'\n"}
+[32.285495] (stereo_camera_node) StderrLine: {'line': b"/usr/bin/ld: main.cpp:(.text._ZNK4YAML4Node4TypeEv[_ZNK4YAML4Node4TypeEv]+0x58): undefined reference to `typeinfo for YAML::InvalidNode'\n"}
+[32.285841] (stereo_camera_node) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/stereo_camera_node.dir/src/main.cpp.o: in function `YAML::Node::Scalar[abi:cxx11]() const':\n"}
+[32.287012] (stereo_camera_node) StderrLine: {'line': b"main.cpp:(.text._ZNK4YAML4Node6ScalarB5cxx11Ev[_ZNK4YAML4Node6ScalarB5cxx11Ev]+0x4c): undefined reference to `YAML::InvalidNode::~InvalidNode()'\n"}
+[32.287852] (stereo_camera_node) StderrLine: {'line': b"/usr/bin/ld: main.cpp:(.text._ZNK4YAML4Node6ScalarB5cxx11Ev[_ZNK4YAML4Node6ScalarB5cxx11Ev]+0x50): undefined reference to `YAML::InvalidNode::~InvalidNode()'\n"}
+[32.288229] (stereo_camera_node) StderrLine: {'line': b"/usr/bin/ld: main.cpp:(.text._ZNK4YAML4Node6ScalarB5cxx11Ev[_ZNK4YAML4Node6ScalarB5cxx11Ev]+0x54): undefined reference to `typeinfo for YAML::InvalidNode'\n"}
+[32.288669] (stereo_camera_node) StderrLine: {'line': b"/usr/bin/ld: main.cpp:(.text._ZNK4YAML4Node6ScalarB5cxx11Ev[_ZNK4YAML4Node6ScalarB5cxx11Ev]+0x58): undefined reference to `typeinfo for YAML::InvalidNode'\n"}
+[32.289001] (stereo_camera_node) StderrLine: {'line': b"/usr/bin/ld: main.cpp:(.text._ZNK4YAML4Node6ScalarB5cxx11Ev[_ZNK4YAML4Node6ScalarB5cxx11Ev]+0x84): undefined reference to `YAML::detail::node_data::empty_scalar[abi:cxx11]()'\n"}
+[32.289375] (stereo_camera_node) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/stereo_camera_node.dir/src/main.cpp.o: in function `YAML::Node::size() const':\n"}
+[32.289726] (stereo_camera_node) StderrLine: {'line': b"main.cpp:(.text._ZNK4YAML4Node4sizeEv[_ZNK4YAML4Node4sizeEv]+0x4c): undefined reference to `YAML::InvalidNode::~InvalidNode()'\n"}
+[32.290080] (stereo_camera_node) StderrLine: {'line': b"/usr/bin/ld: main.cpp:(.text._ZNK4YAML4Node4sizeEv[_ZNK4YAML4Node4sizeEv]+0x50): undefined reference to `YAML::InvalidNode::~InvalidNode()'\n"}
+[32.290500] (stereo_camera_node) StderrLine: {'line': b"/usr/bin/ld: main.cpp:(.text._ZNK4YAML4Node4sizeEv[_ZNK4YAML4Node4sizeEv]+0x54): undefined reference to `typeinfo for YAML::InvalidNode'\n"}
+[32.290862] (stereo_camera_node) StderrLine: {'line': b"/usr/bin/ld: main.cpp:(.text._ZNK4YAML4Node4sizeEv[_ZNK4YAML4Node4sizeEv]+0x58): undefined reference to `typeinfo for YAML::InvalidNode'\n"}
+[32.291554] (stereo_camera_node) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/stereo_camera_node.dir/src/main.cpp.o: in function `StereoCameraNode::loadRectifyMaps(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':\n"}
+[32.292868] (stereo_camera_node) StderrLine: {'line': b"main.cpp:(.text._ZN16StereoCameraNode15loadRectifyMapsERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE[_ZN16StereoCameraNode15loadRectifyMapsERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE]+0x3c): undefined reference to `YAML::LoadFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'\n"}
+[32.294117] (stereo_camera_node) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/stereo_camera_node.dir/src/main.cpp.o: in function `float YAML::Node::as<float>() const':\n"}
+[32.295227] (stereo_camera_node) StderrLine: {'line': b"main.cpp:(.text._ZNK4YAML4Node2asIfEET_v[_ZNK4YAML4Node2asIfEET_v]+0x84): undefined reference to `YAML::InvalidNode::~InvalidNode()'\n"}
+[32.296967] (stereo_camera_node) StderrLine: {'line': b"/usr/bin/ld: main.cpp:(.text._ZNK4YAML4Node2asIfEET_v[_ZNK4YAML4Node2asIfEET_v]+0x88): undefined reference to `YAML::InvalidNode::~InvalidNode()'\n"}
+[32.298372] (stereo_camera_node) StderrLine: {'line': b"/usr/bin/ld: main.cpp:(.text._ZNK4YAML4Node2asIfEET_v[_ZNK4YAML4Node2asIfEET_v]+0x8c): undefined reference to `typeinfo for YAML::InvalidNode'\n"}
+[32.299830] (stereo_camera_node) StderrLine: {'line': b"/usr/bin/ld: main.cpp:(.text._ZNK4YAML4Node2asIfEET_v[_ZNK4YAML4Node2asIfEET_v]+0x90): undefined reference to `typeinfo for YAML::InvalidNode'\n"}
+[32.301051] (stereo_camera_node) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/stereo_camera_node.dir/src/main.cpp.o: in function `YAML::TypedBadConversion<float>::~TypedBadConversion()':\n"}
+[32.301551] (stereo_camera_node) StderrLine: {'line': b"main.cpp:(.text._ZN4YAML18TypedBadConversionIfED2Ev[_ZN4YAML18TypedBadConversionIfED5Ev]+0x20): undefined reference to `YAML::BadConversion::~BadConversion()'\n"}
+[32.301908] (stereo_camera_node) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/stereo_camera_node.dir/src/main.cpp.o: in function `YAML::detail::node* YAML::detail::node_data::get<int>(int const&, std::shared_ptr<YAML::detail::memory_holder>) const':\n"}
+[32.302232] (stereo_camera_node) StderrLine: {'line': b"main.cpp:(.text._ZNK4YAML6detail9node_data3getIiEEPNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZNK4YAML6detail9node_data3getIiEEPNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x118): undefined reference to `YAML::BadSubscript::~BadSubscript()'\n"}
+[32.302847] (stereo_camera_node) StderrLine: {'line': b"/usr/bin/ld: main.cpp:(.text._ZNK4YAML6detail9node_data3getIiEEPNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZNK4YAML6detail9node_data3getIiEEPNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x11c): undefined reference to `YAML::BadSubscript::~BadSubscript()'\n"}
+[32.304096] (stereo_camera_node) StderrLine: {'line': b"/usr/bin/ld: main.cpp:(.text._ZNK4YAML6detail9node_data3getIiEEPNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZNK4YAML6detail9node_data3getIiEEPNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x120): undefined reference to `typeinfo for YAML::BadSubscript'\n"}
+[32.305485] (stereo_camera_node) StderrLine: {'line': b"/usr/bin/ld: main.cpp:(.text._ZNK4YAML6detail9node_data3getIiEEPNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZNK4YAML6detail9node_data3getIiEEPNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x124): undefined reference to `typeinfo for YAML::BadSubscript'\n"}
+[32.306892] (stereo_camera_node) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/stereo_camera_node.dir/src/main.cpp.o: in function `YAML::detail::node& YAML::detail::node_data::get<char [7]>(char const (&) [7], std::shared_ptr<YAML::detail::memory_holder>)':\n"}
+[32.308606] (stereo_camera_node) StderrLine: {'line': b"main.cpp:(.text._ZN4YAML6detail9node_data3getIA7_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIA7_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0xd8): undefined reference to `YAML::detail::node_data::convert_to_map(std::shared_ptr<YAML::detail::memory_holder> const&)'\n"}
+[32.309556] (stereo_camera_node) StderrLine: {'line': b"/usr/bin/ld: main.cpp:(.text._ZN4YAML6detail9node_data3getIA7_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIA7_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x124): undefined reference to `YAML::BadSubscript::~BadSubscript()'\n"}
+[32.309946] (stereo_camera_node) StderrLine: {'line': b"/usr/bin/ld: main.cpp:(.text._ZN4YAML6detail9node_data3getIA7_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIA7_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x128): undefined reference to `YAML::BadSubscript::~BadSubscript()'\n"}
+[32.310387] (stereo_camera_node) StderrLine: {'line': b"/usr/bin/ld: main.cpp:(.text._ZN4YAML6detail9node_data3getIA7_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIA7_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x12c): undefined reference to `typeinfo for YAML::BadSubscript'\n"}
+[32.310757] (stereo_camera_node) StderrLine: {'line': b"/usr/bin/ld: main.cpp:(.text._ZN4YAML6detail9node_data3getIA7_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIA7_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x130): undefined reference to `typeinfo for YAML::BadSubscript'\n"}
+[32.311089] (stereo_camera_node) StderrLine: {'line': b"/usr/bin/ld: main.cpp:(.text._ZN4YAML6detail9node_data3getIA7_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIA7_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x1fc): undefined reference to `YAML::detail::node_data::insert_map_pair(YAML::detail::node&, YAML::detail::node&)'\n"}
+[32.311496] (stereo_camera_node) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/stereo_camera_node.dir/src/main.cpp.o: in function `YAML::BadSubscript::BadSubscript<int>(YAML::Mark const&, int const&)':\n"}
+[32.311852] (stereo_camera_node) StderrLine: {'line': b"main.cpp:(.text._ZN4YAML12BadSubscriptC2IiEERKNS_4MarkERKT_[_ZN4YAML12BadSubscriptC5IiEERKNS_4MarkERKT_]+0x64): undefined reference to `vtable for YAML::BadSubscript'\n"}
+[32.312176] (stereo_camera_node) StderrLine: {'line': b"/usr/bin/ld: main.cpp:(.text._ZN4YAML12BadSubscriptC2IiEERKNS_4MarkERKT_[_ZN4YAML12BadSubscriptC5IiEERKNS_4MarkERKT_]+0x68): undefined reference to `vtable for YAML::BadSubscript'\n"}
+[32.312572] (stereo_camera_node) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/stereo_camera_node.dir/src/main.cpp.o: in function `YAML::BadSubscript::BadSubscript<char [7]>(YAML::Mark const&, char const (&) [7])':\n"}
+[32.312966] (stereo_camera_node) StderrLine: {'line': b"main.cpp:(.text._ZN4YAML12BadSubscriptC2IA7_cEERKNS_4MarkERKT_[_ZN4YAML12BadSubscriptC5IA7_cEERKNS_4MarkERKT_]+0x60): undefined reference to `vtable for YAML::BadSubscript'\n"}
+[32.313334] (stereo_camera_node) StderrLine: {'line': b"/usr/bin/ld: main.cpp:(.text._ZN4YAML12BadSubscriptC2IA7_cEERKNS_4MarkERKT_[_ZN4YAML12BadSubscriptC5IA7_cEERKNS_4MarkERKT_]+0x64): undefined reference to `vtable for YAML::BadSubscript'\n"}
+[32.313710] (stereo_camera_node) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/stereo_camera_node.dir/src/main.cpp.o: in function `YAML::detail::node& YAML::detail::node_data::convert_to_node<char [7]>(char const (&) [7], std::shared_ptr<YAML::detail::memory_holder>)':\n"}
+[32.314039] (stereo_camera_node) StderrLine: {'line': b"main.cpp:(.text._ZN4YAML6detail9node_data15convert_to_nodeIA7_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data15convert_to_nodeIA7_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x64): undefined reference to `YAML::detail::memory_holder::merge(YAML::detail::memory_holder&)'\n"}
+[32.339025] (stereo_camera_node) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/stereo_camera_node.dir/src/main.cpp.o:(.data.rel.ro._ZTIN4YAML18TypedBadConversionIfEE[_ZTIN4YAML18TypedBadConversionIfEE]+0x10): undefined reference to `typeinfo for YAML::BadConversion'\n"}
+[32.347405] (-) TimerEvent: {}
+[32.409936] (stereo_camera_node) StderrLine: {'line': b'collect2: error: ld returned 1 exit status\n'}
+[32.416575] (stereo_camera_node) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/stereo_camera_node.dir/build.make:257: stereo_camera_node] Error 1\n'}
+[32.417936] (stereo_camera_node) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/stereo_camera_node.dir/all] Error 2\n'}
+[32.419312] (stereo_camera_node) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[32.429692] (stereo_camera_node) CommandEnded: {'returncode': 2}
+[32.447640] (-) TimerEvent: {}
+[32.478302] (stereo_camera_node) JobEnded: {'identifier': 'stereo_camera_node', 'rc': 2}
+[32.490587] (-) EventReactorShutdown: {}
