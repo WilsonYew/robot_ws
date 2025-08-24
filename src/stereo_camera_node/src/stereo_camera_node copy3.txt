@@ -1,0 +1,98 @@
+#include <rclcpp/rclcpp.hpp>
+#include <sensor_msgs/msg/image.hpp>
+#include <sensor_msgs/msg/camera_info.hpp>
+#include <cv_bridge/cv_bridge.hpp>
+#include <opencv2/opencv.hpp>
+
+class StereoCameraNode : public rclcpp::Node {
+public:
+    StereoCameraNode()
+        : Node("stereo_camera_node")
+    {
+        // Declare parameters
+        this->declare_parameter<std::string>("left_camera_device", "/dev/video0");
+        this->declare_parameter<std::string>("right_camera_device", "/dev/video1");
+        this->declare_parameter<std::string>("rect_map", "config/stereo_rectify_maps.yaml");
+
+        // Publishers
+        left_rect_pub_ = this->create_publisher<sensor_msgs::msg::Image>("left/image_rect", 1);
+        right_rect_pub_ = this->create_publisher<sensor_msgs::msg::Image>("right/image_rect", 1);
+        left_info_pub_ = this->create_publisher<sensor_msgs::msg::CameraInfo>("left/camera_info", 1);
+        right_info_pub_ = this->create_publisher<sensor_msgs::msg::CameraInfo>("right/camera_info", 1);
+
+        // Load rectification map
+        loadRectifyMap(this->get_parameter("rect_map").as_string(), map1_, map2_);
+
+        // Open cameras
+        left_cam_.open(this->get_parameter("left_camera_device").as_string());
+        right_cam_.open(this->get_parameter("right_camera_device").as_string());
+        if (!left_cam_.isOpened() || !right_cam_.isOpened()) {
+            RCLCPP_ERROR(this->get_logger(), "Cannot open cameras");
+            rclcpp::shutdown();
+        }
+
+        // Timer to capture and publish
+        timer_ = this->create_wall_timer(
+            std::chrono::milliseconds(30),  // ~33 FPS
+            std::bind(&StereoCameraNode::captureAndPublish, this)
+        );
+    }
+
+private:
+    void loadRectifyMap(const std::string& file, cv::Mat& map1, cv::Mat& map2)
+    {
+        cv::FileStorage fs(file, cv::FileStorage::READ);
+        if (!fs.isOpened()) {
+            RCLCPP_ERROR(this->get_logger(), "Cannot open rectify map: %s", file.c_str());
+            return;
+        }
+        fs["map1"] >> map1;
+        fs["map2"] >> map2;
+    }
+
+    void captureAndPublish()
+    {
+        cv::Mat left_frame, right_frame, left_rect, right_rect;
+
+        left_cam_.read(left_frame);
+        right_cam_.read(right_frame);
+
+        if (left_frame.empty() || right_frame.empty()) {
+            RCLCPP_WARN(this->get_logger(), "Empty frames captured");
+            return;
+        }
+
+        // Rectify both frames using the same map
+        cv::remap(left_frame, left_rect, map1_, map2_, cv::INTER_LINEAR);
+        cv::remap(right_frame, right_rect, map1_, map2_, cv::INTER_LINEAR);
+
+        // Convert to ROS messages
+        auto left_msg = cv_bridge::CvImage(std_msgs::msg::Header(), "bgr8", left_rect).toImageMsg();
+        auto right_msg = cv_bridge::CvImage(std_msgs::msg::Header(), "bgr8", right_rect).toImageMsg();
+
+        // Publish images
+        left_rect_pub_->publish(*left_msg);   // note the dereference for shared_ptr compatibility
+        right_rect_pub_->publish(*right_msg);
+
+        // Publish camera info
+        left_info_msg_.header = left_msg->header;
+        right_info_msg_.header = right_msg->header;
+        left_info_pub_->publish(left_info_msg_);
+        right_info_pub_->publish(right_info_msg_);
+    }
+
+    cv::VideoCapture left_cam_, right_cam_;
+    cv::Mat map1_, map2_;
+    rclcpp::Publisher<sensor_msgs::msg::Image>::SharedPtr left_rect_pub_, right_rect_pub_;
+    rclcpp::Publisher<sensor_msgs::msg::CameraInfo>::SharedPtr left_info_pub_, right_info_pub_;
+    sensor_msgs::msg::CameraInfo left_info_msg_, right_info_msg_;
+    rclcpp::TimerBase::SharedPtr timer_;
+};
+
+int main(int argc, char** argv)
+{
+    rclcpp::init(argc, argv);
+    rclcpp::spin(std::make_shared<StereoCameraNode>());
+    rclcpp::shutdown();
+    return 0;
+}
