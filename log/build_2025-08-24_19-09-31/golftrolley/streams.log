@@ -1,0 +1,19 @@
+[6.227s] Invoking command in '/home/golftrolley/robot_ws/src/golftrolley': PYTHONPATH=/home/golftrolley/robot_ws/build/golftrolley/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/golftrolley/robot_ws/install/golftrolley/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/golftrolley build --build-base /home/golftrolley/robot_ws/build/golftrolley/build install --record /home/golftrolley/robot_ws/build/golftrolley/install.log --single-version-externally-managed install_data
+[9.148s] running egg_info
+[9.263s] writing ../../build/golftrolley/golftrolley.egg-info/PKG-INFO
+[9.267s] writing dependency_links to ../../build/golftrolley/golftrolley.egg-info/dependency_links.txt
+[9.268s] writing requirements to ../../build/golftrolley/golftrolley.egg-info/requires.txt
+[9.269s] writing top-level names to ../../build/golftrolley/golftrolley.egg-info/top_level.txt
+[9.626s] reading manifest file '../../build/golftrolley/golftrolley.egg-info/SOURCES.txt'
+[9.628s] writing manifest file '../../build/golftrolley/golftrolley.egg-info/SOURCES.txt'
+[9.629s] running build
+[9.630s] running build_py
+[9.630s] running install
+[9.669s] running install_lib
+[9.849s] running install_data
+[9.850s] running install_egg_info
+[10.033s] removing '/home/golftrolley/robot_ws/install/golftrolley/lib/python3.12/site-packages/golftrolley-0.0.0-py3.12.egg-info' (and everything under it)
+[10.049s] Copying ../../build/golftrolley/golftrolley.egg-info to /home/golftrolley/robot_ws/install/golftrolley/lib/python3.12/site-packages/golftrolley-0.0.0-py3.12.egg-info
+[10.079s] running install_scripts
+[11.325s] writing list of installed files to '/home/golftrolley/robot_ws/build/golftrolley/install.log'
+[11.558s] Invoked command in '/home/golftrolley/robot_ws/src/golftrolley' returned '0': PYTHONPATH=/home/golftrolley/robot_ws/build/golftrolley/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/golftrolley/robot_ws/install/golftrolley/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/golftrolley build --build-base /home/golftrolley/robot_ws/build/golftrolley/build install --record /home/golftrolley/robot_ws/build/golftrolley/install.log --single-version-externally-managed install_data

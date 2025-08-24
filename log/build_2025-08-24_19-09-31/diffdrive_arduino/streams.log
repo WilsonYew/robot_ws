@@ -1,0 +1,51 @@
+[0.106s] Invoking command in '/home/golftrolley/robot_ws/build/diffdrive_arduino': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/golftrolley/robot_ws/install/stereo_camera_split:/home/golftrolley/robot_ws/install/serial_motor_demo:/home/golftrolley/robot_ws/install/golftrolley:/opt/ros/jazzy /usr/bin/cmake --build /home/golftrolley/robot_ws/build/diffdrive_arduino -- -j4 -l4
+[0.551s] [100%] Built target diffdrive_arduino
+[1.761s] Invoked command in '/home/golftrolley/robot_ws/build/diffdrive_arduino' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/golftrolley/robot_ws/install/stereo_camera_split:/home/golftrolley/robot_ws/install/serial_motor_demo:/home/golftrolley/robot_ws/install/golftrolley:/opt/ros/jazzy /usr/bin/cmake --build /home/golftrolley/robot_ws/build/diffdrive_arduino -- -j4 -l4
+[1.778s] Invoking command in '/home/golftrolley/robot_ws/build/diffdrive_arduino': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/golftrolley/robot_ws/install/stereo_camera_split:/home/golftrolley/robot_ws/install/serial_motor_demo:/home/golftrolley/robot_ws/install/golftrolley:/opt/ros/jazzy /usr/bin/cmake --install /home/golftrolley/robot_ws/build/diffdrive_arduino
+[1.992s] -- Install configuration: ""
+[1.995s] -- Up-to-date: /home/golftrolley/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/diffdrive_arduino.xml
+[1.995s] -- Up-to-date: /home/golftrolley/robot_ws/install/diffdrive_arduino/include/diffdrive_arduino
+[1.998s] -- Up-to-date: /home/golftrolley/robot_ws/install/diffdrive_arduino/include/diffdrive_arduino/diffdrive_arduino
+[1.999s] -- Up-to-date: /home/golftrolley/robot_ws/install/diffdrive_arduino/include/diffdrive_arduino/diffdrive_arduino/visibility_control.h
+[1.999s] -- Up-to-date: /home/golftrolley/robot_ws/install/diffdrive_arduino/include/diffdrive_arduino/diffdrive_arduino/diffbot_system.hpp
+[2.002s] -- Up-to-date: /home/golftrolley/robot_ws/install/diffdrive_arduino/include/diffdrive_arduino/diffdrive_arduino/wheel.hpp
+[2.004s] -- Up-to-date: /home/golftrolley/robot_ws/install/diffdrive_arduino/include/diffdrive_arduino/diffdrive_arduino/arduino_comms.hpp
+[2.007s] -- Up-to-date: /home/golftrolley/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/launch
+[2.011s] -- Up-to-date: /home/golftrolley/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/launch/view_robot.launch.py
+[2.011s] -- Up-to-date: /home/golftrolley/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/ros2_control
+[2.012s] -- Up-to-date: /home/golftrolley/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/ros2_control/diffbot.ros2_control.xacro
+[2.012s] -- Up-to-date: /home/golftrolley/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/urdf
+[2.013s] -- Up-to-date: /home/golftrolley/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/urdf/diffbot.materials.xacro
+[2.013s] -- Up-to-date: /home/golftrolley/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/urdf/diffbot.urdf.xacro
+[2.014s] -- Up-to-date: /home/golftrolley/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/urdf/diffbot_description.urdf.xacro
+[2.015s] -- Up-to-date: /home/golftrolley/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/rviz
+[2.015s] -- Up-to-date: /home/golftrolley/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/rviz/diffbot_view.rviz
+[2.017s] -- Up-to-date: /home/golftrolley/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/rviz/diffbot.rviz
+[2.018s] -- Up-to-date: /home/golftrolley/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/launch
+[2.019s] -- Up-to-date: /home/golftrolley/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/launch/diffbot.launch.py
+[2.019s] -- Up-to-date: /home/golftrolley/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/config
+[2.020s] -- Up-to-date: /home/golftrolley/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/config/diffbot_controllers.yaml
+[2.020s] -- Up-to-date: /home/golftrolley/robot_ws/install/diffdrive_arduino/lib/libdiffdrive_arduino.so
+[2.021s] -- Up-to-date: /home/golftrolley/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/library_path.sh
+[2.022s] -- Up-to-date: /home/golftrolley/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/library_path.dsv
+[2.022s] -- Up-to-date: /home/golftrolley/robot_ws/install/diffdrive_arduino/share/ament_index/resource_index/package_run_dependencies/diffdrive_arduino
+[2.025s] -- Up-to-date: /home/golftrolley/robot_ws/install/diffdrive_arduino/share/ament_index/resource_index/parent_prefix_path/diffdrive_arduino
+[2.026s] -- Up-to-date: /home/golftrolley/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/ament_prefix_path.sh
+[2.026s] -- Up-to-date: /home/golftrolley/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/ament_prefix_path.dsv
+[2.027s] -- Up-to-date: /home/golftrolley/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/path.sh
+[2.027s] -- Up-to-date: /home/golftrolley/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/path.dsv
+[2.028s] -- Up-to-date: /home/golftrolley/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/local_setup.bash
+[2.029s] -- Up-to-date: /home/golftrolley/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/local_setup.sh
+[2.029s] -- Up-to-date: /home/golftrolley/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/local_setup.zsh
+[2.032s] -- Up-to-date: /home/golftrolley/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/local_setup.dsv
+[2.033s] -- Installing: /home/golftrolley/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.dsv
+[2.034s] -- Up-to-date: /home/golftrolley/robot_ws/install/diffdrive_arduino/share/ament_index/resource_index/packages/diffdrive_arduino
+[2.034s] -- Up-to-date: /home/golftrolley/robot_ws/install/diffdrive_arduino/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/diffdrive_arduino
+[2.035s] -- Up-to-date: /home/golftrolley/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/export_diffdrive_arduinoExport.cmake
+[2.036s] -- Up-to-date: /home/golftrolley/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/export_diffdrive_arduinoExport-noconfig.cmake
+[2.037s] -- Up-to-date: /home/golftrolley/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/ament_cmake_export_targets-extras.cmake
+[2.037s] -- Up-to-date: /home/golftrolley/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.038s] -- Up-to-date: /home/golftrolley/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/diffdrive_arduinoConfig.cmake
+[2.038s] -- Up-to-date: /home/golftrolley/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/diffdrive_arduinoConfig-version.cmake
+[2.039s] -- Up-to-date: /home/golftrolley/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.xml
+[2.141s] Invoked command in '/home/golftrolley/robot_ws/build/diffdrive_arduino' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/golftrolley/robot_ws/install/stereo_camera_split:/home/golftrolley/robot_ws/install/serial_motor_demo:/home/golftrolley/robot_ws/install/golftrolley:/opt/ros/jazzy /usr/bin/cmake --install /home/golftrolley/robot_ws/build/diffdrive_arduino
