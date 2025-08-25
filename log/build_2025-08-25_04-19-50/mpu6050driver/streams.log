@@ -1,0 +1,60 @@
+[0.051s] Invoking command in '/home/golftrolley/robot_ws/build/mpu6050driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/golftrolley/robot_ws/install/stereo_camera_split:/home/golftrolley/robot_ws/install/serial_motor_demo:/home/golftrolley/robot_ws/install/golftrolley:/opt/ros/jazzy /usr/bin/cmake /home/golftrolley/robot_ws/src/ros2_mpu6050_driver -DCMAKE_INSTALL_PREFIX=/home/golftrolley/robot_ws/install/mpu6050driver
+[0.484s] -- The C compiler identification is GNU 13.3.0
+[0.869s] -- The CXX compiler identification is GNU 13.3.0
+[0.984s] -- Detecting C compiler ABI info
+[1.617s] -- Detecting C compiler ABI info - done
+[1.679s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.683s] -- Detecting C compile features
+[1.684s] -- Detecting C compile features - done
+[1.761s] -- Detecting CXX compiler ABI info
+[2.599s] -- Detecting CXX compiler ABI info - done
+[2.646s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.647s] -- Detecting CXX compile features
+[2.651s] -- Detecting CXX compile features - done
+[2.682s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[3.826s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[4.782s] -- Found rclcpp: 28.1.10 (/opt/ros/jazzy/share/rclcpp/cmake)
+[5.214s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[5.343s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[5.502s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.669s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[6.373s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[6.407s] -- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[7.154s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[7.273s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[7.397s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[7.931s] -- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[8.898s] -- Configuring done (8.8s)
+[8.983s] -- Generating done (0.0s)
+[8.997s] -- Build files have been written to: /home/golftrolley/robot_ws/build/mpu6050driver
+[9.061s] Invoked command in '/home/golftrolley/robot_ws/build/mpu6050driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/golftrolley/robot_ws/install/stereo_camera_split:/home/golftrolley/robot_ws/install/serial_motor_demo:/home/golftrolley/robot_ws/install/golftrolley:/opt/ros/jazzy /usr/bin/cmake /home/golftrolley/robot_ws/src/ros2_mpu6050_driver -DCMAKE_INSTALL_PREFIX=/home/golftrolley/robot_ws/install/mpu6050driver
+[9.074s] Invoking command in '/home/golftrolley/robot_ws/build/mpu6050driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/golftrolley/robot_ws/install/stereo_camera_split:/home/golftrolley/robot_ws/install/serial_motor_demo:/home/golftrolley/robot_ws/install/golftrolley:/opt/ros/jazzy /usr/bin/cmake --build /home/golftrolley/robot_ws/build/mpu6050driver -- -j4 -l4
+[9.459s] [ 33%] [32mBuilding CXX object CMakeFiles/mpu6050driver.dir/src/mpu6050sensor.cpp.o[0m
+[9.469s] [ 66%] [32mBuilding CXX object CMakeFiles/mpu6050driver.dir/src/mpu6050driver.cpp.o[0m
+[67.736s] [100%] [32m[1mLinking CXX executable mpu6050driver[0m
+[69.690s] [100%] Built target mpu6050driver
+[69.796s] Invoked command in '/home/golftrolley/robot_ws/build/mpu6050driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/golftrolley/robot_ws/install/stereo_camera_split:/home/golftrolley/robot_ws/install/serial_motor_demo:/home/golftrolley/robot_ws/install/golftrolley:/opt/ros/jazzy /usr/bin/cmake --build /home/golftrolley/robot_ws/build/mpu6050driver -- -j4 -l4
+[69.820s] Invoking command in '/home/golftrolley/robot_ws/build/mpu6050driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/golftrolley/robot_ws/install/stereo_camera_split:/home/golftrolley/robot_ws/install/serial_motor_demo:/home/golftrolley/robot_ws/install/golftrolley:/opt/ros/jazzy /usr/bin/cmake --install /home/golftrolley/robot_ws/build/mpu6050driver
+[69.891s] -- Install configuration: ""
+[69.893s] -- Installing: /home/golftrolley/robot_ws/install/mpu6050driver/lib/mpu6050driver/mpu6050driver
+[69.903s] -- Set non-toolchain portion of runtime path of "/home/golftrolley/robot_ws/install/mpu6050driver/lib/mpu6050driver/mpu6050driver" to ""
+[69.905s] -- Installing: /home/golftrolley/robot_ws/install/mpu6050driver/share/mpu6050driver//launch
+[69.905s] -- Installing: /home/golftrolley/robot_ws/install/mpu6050driver/share/mpu6050driver//launch/mpu6050driver_launch.py
+[69.926s] -- Installing: /home/golftrolley/robot_ws/install/mpu6050driver/share/mpu6050driver//params
+[69.928s] -- Installing: /home/golftrolley/robot_ws/install/mpu6050driver/share/mpu6050driver//params/mpu6050.yaml
+[69.962s] -- Installing: /home/golftrolley/robot_ws/install/mpu6050driver/share/ament_index/resource_index/package_run_dependencies/mpu6050driver
+[69.965s] -- Installing: /home/golftrolley/robot_ws/install/mpu6050driver/share/ament_index/resource_index/parent_prefix_path/mpu6050driver
+[69.967s] -- Installing: /home/golftrolley/robot_ws/install/mpu6050driver/share/mpu6050driver/environment/ament_prefix_path.sh
+[69.970s] -- Installing: /home/golftrolley/robot_ws/install/mpu6050driver/share/mpu6050driver/environment/ament_prefix_path.dsv
+[69.972s] -- Installing: /home/golftrolley/robot_ws/install/mpu6050driver/share/mpu6050driver/environment/path.sh
+[69.973s] -- Installing: /home/golftrolley/robot_ws/install/mpu6050driver/share/mpu6050driver/environment/path.dsv
+[69.975s] -- Installing: /home/golftrolley/robot_ws/install/mpu6050driver/share/mpu6050driver/local_setup.bash
+[69.976s] -- Installing: /home/golftrolley/robot_ws/install/mpu6050driver/share/mpu6050driver/local_setup.sh
+[69.977s] -- Installing: /home/golftrolley/robot_ws/install/mpu6050driver/share/mpu6050driver/local_setup.zsh
+[69.979s] -- Installing: /home/golftrolley/robot_ws/install/mpu6050driver/share/mpu6050driver/local_setup.dsv
+[69.980s] -- Installing: /home/golftrolley/robot_ws/install/mpu6050driver/share/mpu6050driver/package.dsv
+[69.981s] -- Installing: /home/golftrolley/robot_ws/install/mpu6050driver/share/ament_index/resource_index/packages/mpu6050driver
+[69.983s] -- Installing: /home/golftrolley/robot_ws/install/mpu6050driver/share/mpu6050driver/cmake/mpu6050driverConfig.cmake
+[69.984s] -- Installing: /home/golftrolley/robot_ws/install/mpu6050driver/share/mpu6050driver/cmake/mpu6050driverConfig-version.cmake
+[69.985s] -- Installing: /home/golftrolley/robot_ws/install/mpu6050driver/share/mpu6050driver/package.xml
+[69.993s] Invoked command in '/home/golftrolley/robot_ws/build/mpu6050driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/golftrolley/robot_ws/install/stereo_camera_split:/home/golftrolley/robot_ws/install/serial_motor_demo:/home/golftrolley/robot_ws/install/golftrolley:/opt/ros/jazzy /usr/bin/cmake --install /home/golftrolley/robot_ws/build/mpu6050driver

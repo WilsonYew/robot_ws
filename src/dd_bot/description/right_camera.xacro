@@ -15,7 +15,7 @@
             <material name="black"/>
         </visual>
         <visual>
-            <origin xyz="-0.01 -0.03 0.0" rpy="0 1.5708 0"/>
+            <origin xyz="0.01 -0.03 0.0" rpy="0 1.5708 0"/>
             <geometry>
                 <cylinder radius="0.01" length="0.02"/>
             </geometry>
@@ -27,7 +27,7 @@
     <joint name="right_camera_optical_joint" type="fixed">
         <parent link="right_camera_link"/>
         <child link="right_camera_link_optical"/>
-        <origin xyz="0 0.03 0" rpy="${-pi/2} 0 ${-pi*3/2}"/> 
+        <origin xyz="0 -0.03 0" rpy="${-pi/2} 0 ${-pi/2}"/> 
     </joint>
 
     <link name="right_camera_link_optical"></link>

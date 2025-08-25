@@ -1,6 +1,7 @@
 /home/golftrolley/robot_ws/install/dd_bot/share/dd_bot/config/twist_mux.yaml
 /home/golftrolley/robot_ws/install/dd_bot/share/dd_bot/config/gz_bridge.yaml
 /home/golftrolley/robot_ws/install/dd_bot/share/dd_bot/config/view_bot.rviz
+/home/golftrolley/robot_ws/install/dd_bot/share/dd_bot/config/gaz_ros2_ctl_use_sim.yaml
 /home/golftrolley/robot_ws/install/dd_bot/share/dd_bot/config/my_controllers.yaml
 /home/golftrolley/robot_ws/install/dd_bot/share/dd_bot/config/joystick.yaml
 /home/golftrolley/robot_ws/install/dd_bot/share/dd_bot/config/empty.yaml

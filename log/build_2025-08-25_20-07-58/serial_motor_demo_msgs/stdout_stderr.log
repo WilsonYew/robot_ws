@@ -1,0 +1,21 @@
+[  1%] Built target serial_motor_demo_msgs__rosidl_generator_type_description
+[  1%] Built target ament_cmake_python_copy_serial_motor_demo_msgs
+[  3%] Built target serial_motor_demo_msgs__cpp
+[ 24%] Built target serial_motor_demo_msgs__rosidl_generator_c
+[ 33%] Built target serial_motor_demo_msgs__rosidl_typesupport_introspection_c
+[ 42%] Built target serial_motor_demo_msgs__rosidl_typesupport_fastrtps_c
+[ 51%] Built target serial_motor_demo_msgs__rosidl_typesupport_cpp
+[ 61%] Built target serial_motor_demo_msgs__rosidl_typesupport_c
+[ 70%] Built target serial_motor_demo_msgs__rosidl_typesupport_fastrtps_cpp
+[ 79%] Built target serial_motor_demo_msgs__rosidl_typesupport_introspection_cpp
+[ 79%] Built target serial_motor_demo_msgs
+[ 81%] Built target serial_motor_demo_msgs__py
+[ 88%] Built target serial_motor_demo_msgs__rosidl_generator_py
+running egg_info
+[ 92%] Built target serial_motor_demo_msgs_s__rosidl_typesupport_introspection_c
+[ 96%] Built target serial_motor_demo_msgs_s__rosidl_typesupport_fastrtps_c
+[100%] Built target serial_motor_demo_msgs_s__rosidl_typesupport_c
+interrupted
+gmake[2]: *** [CMakeFiles/ament_cmake_python_build_serial_motor_demo_msgs_egg.dir/build.make:70: CMakeFiles/ament_cmake_python_build_serial_motor_demo_msgs_egg] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:478: CMakeFiles/ament_cmake_python_build_serial_motor_demo_msgs_egg.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

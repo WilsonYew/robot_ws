@@ -13,13 +13,12 @@ diff_cont:
   ros__parameters:
 
     publish_rate: 50.0
-
     base_frame_id: base_link
-
+    odom_frame_id: odom
     left_wheel_names: ['left_wheel_joint']
     right_wheel_names: ['right_wheel_joint']
     wheel_separation: 0.56 #for turning
-    wheel_radius: 0.1 #for left and right differences
+    wheel_radius: 0.129 #for left and right differences
 
     # use_stamped_vel: false
 
