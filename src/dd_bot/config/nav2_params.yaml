@@ -1,0 +1,141 @@
+# nav2_params.yaml
+amcl: {}     # not used when doing live SLAM; leave empty or remove
+
+bt_navigator:
+  ros__parameters:
+    use_sim_time: false
+    global_frame: map
+    robot_base_frame: base_link
+    odom_topic: /odom
+    default_bt_xml_filename: "navigate_w_replanning_and_recovery.xml"
+
+controller_server:
+  ros__parameters:
+    use_sim_time: false
+    controller_plugins: ["FollowPath"]
+    FollowPath:
+      plugin: "dwb_core::DWBLocalPlanner"
+      debug_trajectory_details: false
+      min_vel_x: 0.0
+      max_vel_x: 0.6
+      max_vel_theta: 1.5
+      acc_lim_x: 1.0
+      acc_lim_theta: 2.0
+      xy_goal_tolerance: 0.15
+      yaw_goal_tolerance: 0.15
+      simulate_ahead_time: 1.0
+
+planner_server:
+  ros__parameters:
+    use_sim_time: false
+    planner_plugins: ["GridBased"]
+    GridBased:
+      plugin: "nav2_navfn_planner/NavfnPlanner"
+      tolerance: 0.2
+      use_astar: false
+
+behavior_server:
+  ros__parameters:
+    use_sim_time: false
+
+waypoint_follower:
+  ros__parameters:
+    use_sim_time: false
+
+# ===== Costmaps =====
+global_costmap:
+  ros__parameters:
+    use_sim_time: false
+    global_frame: map
+    robot_base_frame: base_link
+    # If using live SLAM (RTAB-Map publishing /map), keep rolling_window=false
+    # and pull from StaticLayer. Or disable StaticLayer if you only want lidar.
+    rolling_window: false
+    track_unknown_space: true
+    update_frequency: 4.0
+    publish_frequency: 2.0
+    resolution: 0.05
+    robot_radius: 0.25   # OR use a polygon footprint below
+    # footprint: [[0.25,0.2], [0.25,-0.2], [-0.25,-0.2], [-0.25,0.2]]
+    plugins:
+      - {name: static_layer,   type: "nav2_costmap_2d::StaticLayer"}
+      - {name: obstacle_layer, type: "nav2_costmap_2d::ObstacleLayer"}
+      - {name: inflation_layer,type: "nav2_costmap_2d::InflationLayer"}
+
+    # Static map from /map (RTAB-Map). If your /map publisher is not transient-local, set to false.
+    static_layer:
+      enabled: true
+      map_topic: /map
+      subscribe_to_updates: true
+      map_subscribe_transient_local: false
+
+    obstacle_layer:
+      enabled: true
+      max_obstacle_height: 1.5
+      observation_sources: scan
+      scan:
+        topic: /scan
+        data_type: LaserScan
+        clearing: true
+        marking: true
+        inf_is_valid: true
+        min_obstacle_height: 0.0
+        max_obstacle_height: 1.5
+
+    inflation_layer:
+      enabled: true
+      inflation_radius: 0.6
+      cost_scaling_factor: 3.0
+
+local_costmap:
+  ros__parameters:
+    use_sim_time: false
+    global_frame: odom
+    robot_base_frame: base_link
+    rolling_window: true
+    width: 6.0
+    height: 6.0
+    resolution: 0.05
+    update_frequency: 10.0
+    publish_frequency: 5.0
+    robot_radius: 0.25
+    plugins:
+      - {name: obstacle_layer, type: "nav2_costmap_2d::ObstacleLayer"}
+      - {name: inflation_layer,type: "nav2_costmap_2d::InflationLayer"}
+
+    obstacle_layer:
+      enabled: true
+      max_obstacle_height: 1.5
+      observation_sources: scan
+      scan:
+        topic: /scan
+        data_type: LaserScan
+        clearing: true
+        marking: true
+        inf_is_valid: true
+
+    inflation_layer:
+      enabled: true
+      inflation_radius: 0.5
+      cost_scaling_factor: 3.0
+
+map_server:      # leave empty when using live SLAM (RTAB-Map supplies /map)
+  ros__parameters: {}
+
+smoother_server:
+  ros__parameters:
+    use_sim_time: false
+
+# Lifecycle manager to bring everything up
+lifecycle_manager:
+  ros__parameters:
+    autostart: true
+    bond_timeout: 0.0
+    node_names:
+      - controller_server
+      - planner_server
+      - smoother_server
+      - behavior_server
+      - bt_navigator
+      - waypoint_follower
+      # No map_server here when in SLAM mode
