@@ -19,7 +19,7 @@ def generate_launch_description():
     # !!! MAKE SURE YOU SET THE PACKAGE NAME CORRECTLY !!!
 
     #robotxacroname= 'robot'
-    package_name='dd_bot' #<--- CHANGE ME
+    package_name='golftrolley' #<--- CHANGE ME
 
     # launch for robot discription
     rsp = IncludeLaunchDescription(
