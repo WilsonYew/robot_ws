@@ -30,3 +30,4 @@ target_include_directories(
 install(TARGETS mpu6050driver DESTINATION lib/${PROJECT_NAME})
 install(DIRECTORY launch params DESTINATION share/${PROJECT_NAME}/)
 ament_package()
+

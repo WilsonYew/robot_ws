@@ -173,10 +173,21 @@ double MPU6050Sensor::getAngularVelocityZ() const
   return gyro_z_converted;
 }
 
+// double MPU6050Sensor::convertRawGyroscopeData(int16_t gyro_raw) const
+// {
+//   const double ang_vel_in_deg_per_s = static_cast<double>(gyro_raw) / GYRO_SENS_MAP.at(gyro_range_);
+//   return ang_vel_in_deg_per_s;
+// }
+
 double MPU6050Sensor::convertRawGyroscopeData(int16_t gyro_raw) const
 {
-  const double ang_vel_in_deg_per_s = static_cast<double>(gyro_raw) / GYRO_SENS_MAP.at(gyro_range_);
-  return ang_vel_in_deg_per_s;
+  // raw -> deg/s using the selected full-scale sensitivity
+  const double ang_vel_deg_s =
+      static_cast<double>(gyro_raw) / GYRO_SENS_MAP.at(gyro_range_);
+
+  // convert deg/s -> rad/s (no need for M_PI; hard-coded constant is portable)
+  constexpr double DEG2RAD = 0.017453292519943295; // pi/180
+  return ang_vel_deg_s * DEG2RAD;  // now returns rad/s
 }
 
 double MPU6050Sensor::convertRawAccelerometerData(int16_t accel_raw) const

@@ -1,0 +1,8 @@
+imu_filter_madgwick:
+  ros__parameters:
+    use_mag: false
+    world_frame: enu          # matches ROS ENU
+    publish_tf: false
+    gain: 0.05                # start point; increase if too sluggish
+    zeta: 0.01               # gyro bias correction; try 0.001–0.01 if drift
+

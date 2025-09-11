@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" >
+
+    <link name="imu_link"/>
+
+    <!-- <joint name="imu_mount" type="fixed">
+    <parent link="base_link"/>
+    <child  link="imu_link"/> -->
+    <!-- Set rpy to physically rotate the sensor PCB axes into base_link axes -->
+    <!-- <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+    </joint> -->
+
+
+</robot>

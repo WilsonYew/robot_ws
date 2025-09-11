@@ -32,32 +32,62 @@ MPU6050Driver::MPU6050Driver()
   mpu6050_->printOffsets();
   // Create publisher
   publisher_ = this->create_publisher<sensor_msgs::msg::Imu>("imu/data_raw", 10);
-  std::chrono::duration<int64_t, std::milli> frequency =
-      1000ms / this->get_parameter("gyro_range").as_int();
-  timer_ = this->create_wall_timer(frequency, std::bind(&MPU6050Driver::handleInput, this));
+  int hz = this->get_parameter("frequency").as_int();
+  if (hz <= 0) {
+    RCLCPP_WARN(this->get_logger(), "Invalid 'frequency' (%d). Falling back to 100 Hz.", hz);
+    hz = 100;
+  }
+  auto period = std::chrono::milliseconds(1000 / hz);
+  timer_ = this->create_wall_timer(period, std::bind(&MPU6050Driver::handleInput, this));
+
 }
 
 void MPU6050Driver::handleInput()
 {
-  auto message = sensor_msgs::msg::Imu();
+  sensor_msgs::msg::Imu message;
   message.header.stamp = this->get_clock()->now();
-  message.header.frame_id = "base_link";
-  message.linear_acceleration_covariance = {0};
-  message.linear_acceleration.x = mpu6050_->getAccelerationX();
+  message.header.frame_id = "base_link";  // or your imu frame, e.g., "imu_link"
+
+  // Data (now SI units because you changed convertRawGyroscopeData)
+  message.linear_acceleration.x = mpu6050_->getAccelerationX();   // m/s^2
   message.linear_acceleration.y = mpu6050_->getAccelerationY();
   message.linear_acceleration.z = mpu6050_->getAccelerationZ();
-  message.angular_velocity_covariance[0] = {0};
-  message.angular_velocity.x = mpu6050_->getAngularVelocityX();
+
+  message.angular_velocity.x = mpu6050_->getAngularVelocityX();   // rad/s
   message.angular_velocity.y = mpu6050_->getAngularVelocityY();
   message.angular_velocity.z = mpu6050_->getAngularVelocityZ();
-  // Invalidate quaternion
-  message.orientation_covariance[0] = -1;
-  message.orientation.x = 0;
-  message.orientation.y = 0;
-  message.orientation.z = 0;
-  message.orientation.w = 0;
+
+  // --- Covariances ---
+  // If you DO NOT publish orientation: set -1 on the diagonal to tell consumers to ignore it
+  message.orientation_covariance = {
+    -1.0, 0.0, 0.0,
+     0.0,-1.0, 0.0,
+     0.0, 0.0,-1.0
+  };
+
+  // Gyro covariance (rad/s)^2 (tune later from data)
+  message.angular_velocity_covariance = {
+    0.001, 0.0,   0.0,
+    0.0,   0.001, 0.0,
+    0.0,   0.0,   0.0025
+  };
+
+  // Accel covariance (m/s^2)^2 (tune later from data)
+  message.linear_acceleration_covariance = {
+    0.02, 0.0,  0.0,
+    0.0,  0.02, 0.0,
+    0.0,  0.0,  0.04
+  };
+
+  // Keep orientation invalid (zeros are fine since it's ignored via covariance)
+  message.orientation.x = 0.0;
+  message.orientation.y = 0.0;
+  message.orientation.z = 0.0;
+  message.orientation.w = 0.0;
+
   publisher_->publish(message);
 }
+
 
 void MPU6050Driver::declareParameters()
 {
@@ -71,7 +101,7 @@ void MPU6050Driver::declareParameters()
   this->declare_parameter<double>("accel_x_offset", 0.0);
   this->declare_parameter<double>("accel_y_offset", 0.0);
   this->declare_parameter<double>("accel_z_offset", 0.0);
-  this->declare_parameter<int>("frequency", 0.0);
+  this->declare_parameter<int>("frequency", 100);
 }
 
 int main(int argc, char* argv[])
