@@ -3,7 +3,7 @@ mpu6050driver:
     gyro_range: 0
     accel_range: 0
     dlpf_bandwidth: 1        # try 2–3; lower = smoother
-    frequency: 50        # integer, not 100.0
+    frequency: 30        # integer, not 100.0
     # After measuring (see below), put your averages here:
     gyro_x_offset: 0.00      # deg/s
     gyro_y_offset: 0.00
