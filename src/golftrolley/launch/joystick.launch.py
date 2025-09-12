@@ -27,11 +27,19 @@ def generate_launch_description():
             remappings=[('/cmd_vel','/cmd_vel_joy')]
          )
 
+    twist_mux_params = os.path.join(get_package_share_directory("golftrolley"),'config','twist_mux.yaml')
+    twist_mux = Node(
+            package="twist_mux",
+            executable="twist_mux",
+            parameters=[twist_mux_params],
+            remappings=[('/cmd_vel_out','/cmd_vel_unstamped_muxed')]
+        )
+
     twist_stamper = Node(
             package='twist_stamper',
             executable='twist_stamper',
             parameters=[{'use_sim_time': use_sim_time}],
-            remappings=[('/cmd_vel_in','/cmd_vel_joy'),
+            remappings=[('/cmd_vel_in','/cmd_vel_unstamped_muxed'),
                         ('/cmd_vel_out','/diff_cont/cmd_vel')]
          )
 
@@ -43,5 +51,6 @@ def generate_launch_description():
             description='Use sim time if true'),
         joy_node,
         teleop_node,
+        twist_mux,
         twist_stamper       
     ])

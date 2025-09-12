@@ -1,95 +1,121 @@
-# nav2_params.yaml
-amcl: {}     # not used when doing live SLAM; leave empty or remove
+# golftrolley/config/nav2_params.yaml
+amcl:
+  ros__parameters:
+    use_map_topic: true
+    scan_topic: /scan
+    min_particle_period: 0.2
+    odom_frame_id: odom
+    base_frame_id: base_link
+    global_frame_id: map
+    set_initial_pose: false
+    alpha1: 0.2
+    alpha2: 0.2
+    alpha3: 0.2
+    alpha4: 0.2
+    laser_model_type: likelihood_field
+    update_min_a: 0.2
+    update_min_d: 0.1
+    resample_interval: 2
+    max_beams: 30
+    z_hit: 0.5
+    z_rand: 0.5
+    sigma_hit: 0.2
+
+map_server:
+  ros__parameters:
+    yaml_filename: /home/golftrolley/maps/course.yaml  # <-- set your map yaml
+    frame_id: map
 
 bt_navigator:
   ros__parameters:
     use_sim_time: false
-    global_frame: map
-    robot_base_frame: base_link
-    odom_topic: /odom
     default_bt_xml_filename: "navigate_w_replanning_and_recovery.xml"
 
 controller_server:
   ros__parameters:
     use_sim_time: false
+    controller_frequency: 10.0
+    odom_topic: /odometry/filtered
+    min_vel_x: 0.0
+    max_vel_x: 0.8
+    min_vel_theta: 0.0
+    max_vel_theta: 1.4
+    progress_checker:
+      plugin: "nav2_controller::SimpleProgressChecker"
+    goal_checker:
+      plugin: "nav2_controller::SimpleGoalChecker"
     controller_plugins: ["FollowPath"]
     FollowPath:
       plugin: "dwb_core::DWBLocalPlanner"
       debug_trajectory_details: false
-      min_vel_x: 0.0
-      max_vel_x: 0.6
-      max_vel_theta: 1.5
-      acc_lim_x: 1.0
-      acc_lim_theta: 2.0
+      acc_lim_x: 0.8
+      acc_lim_theta: 1.5
+      decel_lim_x: -0.8
+      vx_samples: 10
+      vtheta_samples: 20
+      sim_time: 1.0
+      linear_granularity: 0.05
+      angular_granularity: 0.025
       xy_goal_tolerance: 0.15
       yaw_goal_tolerance: 0.15
-      simulate_ahead_time: 1.0
 
 planner_server:
   ros__parameters:
-    use_sim_time: false
+    expected_planner_frequency: 1.0
     planner_plugins: ["GridBased"]
     GridBased:
       plugin: "nav2_navfn_planner/NavfnPlanner"
-      tolerance: 0.2
-      use_astar: false
+      tolerance: 0.5
+
+smoother_server:
+  ros__parameters:
+    smoother_plugins: ["SimpleSmoother"]
+    SimpleSmoother:
+      plugin: "nav2_smoother::SimpleSmoother"
 
 behavior_server:
   ros__parameters:
-    use_sim_time: false
+    behaviors: ["spin", "backup", "drive_on_heading"]
+    spin:
+      plugin: "nav2_behaviors/Spin"
+    backup:
+      plugin: "nav2_behaviors/BackUp"
+    drive_on_heading:
+      plugin: "nav2_behaviors/DriveOnHeading"
 
 waypoint_follower:
   ros__parameters:
-    use_sim_time: false
+    plugin_lib_names: ["nav2_waypoint_follower::WaypointFollower"]
 
-# ===== Costmaps =====
 global_costmap:
   ros__parameters:
-    use_sim_time: false
     global_frame: map
     robot_base_frame: base_link
-    # If using live SLAM (RTAB-Map publishing /map), keep rolling_window=false
-    # and pull from StaticLayer. Or disable StaticLayer if you only want lidar.
-    rolling_window: false
-    track_unknown_space: true
-    update_frequency: 4.0
-    publish_frequency: 2.0
+    use_sim_time: false
     resolution: 0.05
-    robot_radius: 0.25   # OR use a polygon footprint below
-    # footprint: [[0.25,0.2], [0.25,-0.2], [-0.25,-0.2], [-0.25,0.2]]
-    plugins:
-      - {name: static_layer,   type: "nav2_costmap_2d::StaticLayer"}
-      - {name: obstacle_layer, type: "nav2_costmap_2d::ObstacleLayer"}
-      - {name: inflation_layer,type: "nav2_costmap_2d::InflationLayer"}
-
-    # Static map from /map (RTAB-Map). If your /map publisher is not transient-local, set to false.
+    update_frequency: 2.0
+    publish_frequency: 1.0
+    rolling_window: false
+    plugins: ["static_layer", "obstacle_layer", "inflation_layer"]
     static_layer:
-      enabled: true
-      map_topic: /map
-      subscribe_to_updates: true
-      map_subscribe_transient_local: false
-
+      plugin: "nav2_costmap_2d::StaticLayer"
+      map_subscribe_transient_local: true
     obstacle_layer:
-      enabled: true
-      max_obstacle_height: 1.5
-      observation_sources: scan
-      scan:
+      plugin: "nav2_costmap_2d::ObstacleLayer"
+      observation_sources: lidar
+      lidar:
         topic: /scan
-        data_type: LaserScan
+        max_obstacle_height: 2.0
+        obstacle_range: 8.0
+        raytrace_range: 9.0
         clearing: true
         marking: true
-        inf_is_valid: true
-        min_obstacle_height: 0.0
-        max_obstacle_height: 1.5
-
     inflation_layer:
-      enabled: true
-      inflation_radius: 0.6
-      cost_scaling_factor: 3.0
+      plugin: "nav2_costmap_2d::InflationLayer"
+      inflation_radius: 0.60
 
 local_costmap:
   ros__parameters:
-    use_sim_time: false
     global_frame: odom
     robot_base_frame: base_link
     rolling_window: true
@@ -98,44 +124,30 @@ local_costmap:
     resolution: 0.05
     update_frequency: 10.0
     publish_frequency: 5.0
-    robot_radius: 0.25
-    plugins:
-      - {name: obstacle_layer, type: "nav2_costmap_2d::ObstacleLayer"}
-      - {name: inflation_layer,type: "nav2_costmap_2d::InflationLayer"}
-
+    plugins: ["obstacle_layer", "inflation_layer"]
     obstacle_layer:
-      enabled: true
-      max_obstacle_height: 1.5
-      observation_sources: scan
-      scan:
+      plugin: "nav2_costmap_2d::ObstacleLayer"
+      observation_sources: lidar
+      lidar:
         topic: /scan
-        data_type: LaserScan
+        obstacle_range: 6.0
+        raytrace_range: 7.0
         clearing: true
         marking: true
-        inf_is_valid: true
-
     inflation_layer:
-      enabled: true
-      inflation_radius: 0.5
-      cost_scaling_factor: 3.0
+      plugin: "nav2_costmap_2d::InflationLayer"
+      inflation_radius: 0.50
 
-map_server:      # leave empty when using live SLAM (RTAB-Map supplies /map)
-  ros__parameters: {}
-
-smoother_server:
-  ros__parameters:
-    use_sim_time: false
-
-# Lifecycle manager to bring everything up
 lifecycle_manager:
   ros__parameters:
     autostart: true
-    bond_timeout: 0.0
-    node_names:
-      - controller_server
-      - planner_server
-      - smoother_server
-      - behavior_server
-      - bt_navigator
-      - waypoint_follower
-      # No map_server here when in SLAM mode
+    node_names: [
+      "map_server",
+      "amcl",
+      "controller_server",
+      "planner_server",
+      "smoother_server",
+      "behavior_server",
+      "bt_navigator",
+      "waypoint_follower"
+    ]
