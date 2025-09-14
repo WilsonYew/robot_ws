@@ -30,7 +30,7 @@ def generate_launch_description():
 
     joystick = IncludeLaunchDescription(
                 PythonLaunchDescriptionSource([os.path.join(
-                    get_package_share_directory(package_name),'launch','joystick.launch.py'
+                    get_package_share_directory(package_name),'launch','joystick2.launch.py'
                 )])
     )
 

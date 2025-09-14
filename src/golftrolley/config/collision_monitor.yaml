@@ -1,0 +1,55 @@
+# ~/robot_ws/src/golftrolley/config/collision_monitor.yaml
+collision_monitor:
+  ros__parameters:
+    base_frame_id: "base_link"
+    odom_frame_id: "odom"
+    cmd_vel_in_topic: "/cmd_vel_muxed"
+    cmd_vel_out_topic: "/cmd_vel_collision"
+    state_topic: "collision_monitor_state"         # optional; nice for RViz/echo
+    transform_tolerance: 0.5
+    source_timeout: 0.8
+    base_shift_correction: true
+    stop_pub_timeout: 2.0
+    enable_stamped_cmd_vel: false                  # Jazzy: keep false unless you feed TwistStamped
+
+    # --- Polygons list: names only ---
+    polygons: ["StopZone", "SlowZone", "BubbleCircle"]
+
+    # --- Polygons defined by name (new Jazzy format) ---
+    StopZone:
+      type: "polygon"
+      action_type: "stop"
+      points: "[[0.18, -0.25], [0.18, 0.25], [0.80, 0.35], [0.80, -0.35]]"
+      min_points: 4
+      visualize: true
+      polygon_pub_topic: "polygon_stop"
+      enabled: true
+
+    SlowZone:
+      type: "polygon"
+      action_type: "limit"          # or "slowdown" if you prefer slowdown_ratio
+      linear_limit: 0.25
+      angular_limit: 0.8
+      points: "[[0.10, -0.40], [0.10, 0.40], [1.60, 0.60], [1.60, -0.60]]"
+      min_points: 4
+      visualize: true
+      polygon_pub_topic: "polygon_slow"
+      enabled: true
+
+    BubbleCircle:
+      type: "circle"
+      action_type: "limit"
+      radius: 0.90
+      linear_limit: 0.35
+      angular_limit: 0.80
+      visualize: true
+      polygon_pub_topic: "polygon_bubble"
+      enabled: true
+
+    # --- Sources ---
+    observation_sources: ["scan"]
+    scan:
+      type: "scan"
+      topic: "/scan"
+      source_timeout: 0.2
+      enabled: true

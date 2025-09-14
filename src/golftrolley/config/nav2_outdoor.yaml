@@ -1,0 +1,104 @@
+# golftrolley/config/nav2_outdoor.yaml
+amcl: {use_sim_time: false}  # if you move to AMCL later; for SLAM keep it out
+map_server: {yaml_filename: ""}  # not used when mapping online
+planner_server:
+  ros__parameters:
+    expected_planner_frequency: 1.0
+
+controller_server:
+  ros__parameters:
+    use_realtime_controller: true
+    controller_plugins: ["FollowPath"]   # placeholder if you switch later
+    FollowPath:
+      plugin: "dwb_core::DWBLocalPlanner"
+      min_vel_x: 0.0
+      max_vel_x: 0.8
+      min_vel_y: 0.0
+      max_vel_theta: 1.2
+      acc_lim_x: 0.6
+      acc_lim_theta: 1.2
+      decel_lim_x: 0.8
+      decel_lim_theta: 1.5
+      vx_samples: 10
+      vtheta_samples: 15
+      sim_time: 2.0
+      linear_granularity: 0.1
+      angular_granularity: 0.1
+      critics: ["ObstacleFootprint","GoalAlign","PathAlign","PathDist"]
+      ObstacleFootprint.scale: 0.02
+      PathAlign.scale: 32.0
+      PathDist.scale: 24.0
+      GoalAlign.scale: 24.0
+
+bt_navigator:
+  ros__parameters:
+    default_bt_xml_filename: "navigate_w_replanning_and_recovery.xml"
+
+local_costmap:
+  local_costmap:
+    ros__parameters:
+      global_frame: odom
+      robot_base_frame: base_link
+      update_frequency: 10.0
+      publish_frequency: 5.0
+      rolling_window: true
+      width: 6.0
+      height: 6.0
+      resolution: 0.05
+      footprint: [[0.35,0.25],[0.35,-0.25],[-0.35,-0.25],[-0.35,0.25]]
+      plugins: ["obstacle_layer","inflation_layer"]
+      obstacle_layer:
+        observation_sources: scan
+        scan:
+          topic: /scan
+          max_obstacle_height: 1.5
+          clearing: true
+          marking: true
+          inf_is_valid: true
+          obstacle_range: 8.0
+          raytrace_range: 10.0
+      inflation_layer:
+        inflation_radius: 0.45     # outdoor corners/grass margin
+        cost_scaling_factor: 8.0
+
+global_costmap:
+  global_costmap:
+    ros__parameters:
+      global_frame: map
+      robot_base_frame: base_link
+      update_frequency: 2.0
+      publish_frequency: 1.0
+      rolling_window: false
+      width: 80.0
+      height: 80.0
+      resolution: 0.10
+      track_unknown_space: true
+      plugins: ["obstacle_layer","inflation_layer","static_layer"]
+      obstacle_layer:
+        observation_sources: scan
+        scan:
+          topic: /scan
+          max_obstacle_height: 1.5
+          clearing: true
+          marking: true
+          obstacle_range: 8.0
+          raytrace_range: 10.0
+      inflation_layer:
+        inflation_radius: 0.55     # more buffer outdoors
+        cost_scaling_factor: 6.0
+      static_layer:
+        enabled: false              # when mapping online, keep static off
+
+# SLAM Toolbox (already working)
+slam_toolbox:
+  ros__parameters:
+    mode: "mapping"
+    odom_frame: odom
+    map_frame: map
+    base_frame: base_link
+    resolution: 0.05
+    max_laser_range: 12.0
+    minimum_time_interval: 0.10
+    transform_publish_period: 0.05
+    use_scan_matching: true
+    use_rviz: false

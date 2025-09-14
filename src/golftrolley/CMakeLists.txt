@@ -38,7 +38,7 @@ install(
 )
 
 install(PROGRAMS
-  scripts/stereo_person_follower.py
+  scripts/mono_lidar_follower.py
   DESTINATION lib/${PROJECT_NAME}
 )
 

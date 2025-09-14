@@ -1,0 +1,18 @@
+# golftrolley/config/velocity_smoother.yaml
+velocity_smoother:
+  ros__parameters:
+    feedback: "OPEN_LOOP"
+    smoothing_frequency: 20.0
+    scale_velocities: true
+    max_velocity:
+      linear: 0.9
+      angular: 1.2
+    min_velocity:
+      linear: 0.05
+      angular: 0.15
+    max_accel:
+      linear: 0.6
+      angular: 1.2
+    max_decel:
+      linear: 0.8
+      angular: 1.5
