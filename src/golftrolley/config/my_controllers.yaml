@@ -12,7 +12,7 @@ controller_manager:
 diff_cont:
   ros__parameters:
 
-    publish_rate: 50.0
+    publish_rate: 30.0
     # enable_odom_tf: true
     base_frame_id: base_link
     odom_frame_id: odom
@@ -20,7 +20,7 @@ diff_cont:
     right_wheel_names: ['right_wheel_joint']
     wheel_separation: 0.56 #for turning
     wheel_radius: 0.1 #for left and right differences
-
+    enable_odom_tf: true
     # use_stamped_vel: false
 
     # open_loop: false    

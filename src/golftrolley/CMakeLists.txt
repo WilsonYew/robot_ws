@@ -37,4 +37,9 @@ install(
   DESTINATION share/${PROJECT_NAME}
 )
 
+install(PROGRAMS
+  scripts/stereo_person_follower.py
+  DESTINATION lib/${PROJECT_NAME}
+)
+
 ament_package()

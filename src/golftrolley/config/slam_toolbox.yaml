@@ -1,0 +1,41 @@
+slam_toolbox:
+  ros__parameters:
+    # --- Frames & topics ---
+    odom_frame: odom
+    map_frame: map
+    base_frame: base_link           # use base_footprint only if your TF tree uses it
+    scan_topic: /scan
+
+    # SLAM provides odom->base_* only if you set this true (usually keep false if controller/EKF publishes odom TF)
+    provide_odom_frame: false
+
+    use_sim_time: false
+    enable_interactive_mode: false  # headless Pi
+
+    # --- Publish/update rates (Pi-friendly) ---
+    transform_publish_period: 0.05  # 20 Hz map->odom
+    map_update_interval: 1.0        # visible updates
+    resolution: 0.05                # map resolution (m/cell)
+
+    # --- Data gating & CPU knobs ---
+    throttle_scans: 1
+    max_laser_range: 12.0
+    minimum_time_interval: 0.20
+    minimum_travel_distance: 0.05
+    minimum_travel_heading: 0.05
+    use_scan_matching: true
+    use_scan_barycenter: false
+
+    # --- Loop closure (moderate) ---
+    do_loop_closing: true
+    loop_search_maximum_distance: 8.0
+    scan_buffer_size: 10
+    scan_buffer_maximum_scan_distance: 15.0
+    link_scan_maximum_distance: 10.0
+    link_match_minimum_response_fine: 0.3
+
+    # --- Solver (Ceres) ---
+    solver_plugin: solver_plugins::CeresSolver
+    ceres_linear_solver: SPARSE_NORMAL_CHOLESKY
+    ceres_trust_strategy: LEVENBERG_MARQUARDT
+    ceres_dogleg_type: TRADITIONAL_DOGLEG

@@ -7,10 +7,10 @@ ekf_filter_node:
     two_d_mode: true
     frequency: 30.0
     sensor_timeout: 0.1
-    publish_tf: true
+    publish_tf: false
     print_diagnostics: true
 
-    odom0: /odom            # wheel odom
+    odom0: /diff_cont/odom            # wheel odom
     odom0_queue_size: 5
     odom0_differential: false
     odom0_relative: false
@@ -18,11 +18,11 @@ ekf_filter_node:
                    true,true,false,  false,false,true,
                    false,false,false]
 
-    imu0: /imu/filtered     # Madgwick (pure IMU)
+    imu0: /imu/data   # Madgwick (pure IMU)
     imu0_queue_size: 10
     imu0_differential: false
     imu0_remove_gravitational_acceleration: true
     # roll/pitch orientation + gyro rates; (skip yaw orientation, no mag)
-    imu0_config: [false,false,false,  true,true,false,
+    imu0_config: [false,false,false,  false,false,false,
                   false,false,false,  true,true,true,
                   true,true,true]
