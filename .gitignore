@@ -35,3 +35,10 @@ Makefile
 *.zip
 *.tar
 *.tar.gz
+venv/
+build/
+install/
+log/
+__pycache__/
+*.so
+*.avi
