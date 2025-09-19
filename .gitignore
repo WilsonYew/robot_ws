@@ -1,0 +1,37 @@
+# Python / venv
+venv/
+.env/
+.venv/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# ROS 2 workspaces
+build/
+install/
+log/
+.colcon/
+*.log
+
+# CMake/Make
+CMakeFiles/
+CMakeCache.txt
+cmake-build-*/
+Makefile
+*.o
+*.a
+*.la
+*.lo
+
+# IDEs & OS
+.vscode/
+.idea/
+.DS_Store
+
+# Misc
+*.bag
+*.zip
+*.tar
+*.tar.gz
