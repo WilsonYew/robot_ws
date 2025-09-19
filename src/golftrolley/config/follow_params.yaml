@@ -1,0 +1,161 @@
+# mono_lidar_follower:
+#   ros__parameters:
+#     det_topic: /yolo/detections
+#     det_qos_reliability: best_effort
+#     use_msg_stamp: false
+#     det_timeout_sec: 4.0
+#     hold_on_stale: true
+#     hold_max_sec: 3.0
+#     hold_decay_lin: 1.0
+#     hold_decay_ang: 0.9
+#     fx_override_px: 470.57825541925916
+#     cx_override_px: 160.105131149292
+#     img_width_override: 320
+#     target_box_height_px: 300.0
+#     deadband_px: 0.0
+#     k_linear: 0.02
+#     v_min: 0.20
+#     v_max: 0.6
+#     forward_only: false
+#     k_angular: 0.5
+#     w_min: 0.15
+#     w_max: 3.0
+#     slow_on_turn: false
+# Gentler, smoother follow tuned for ~1.5–2.0 m band
+
+# mono_lidar_follower:
+#   ros__parameters:
+#     # Topics / IO
+#     det_topic: /yolo/detections
+#     det_qos_reliability: best_effort
+#     use_msg_stamp: false
+#     cmd_vel_out: /cmd_vel_tracker
+
+#     # Intrinsics
+#     fx_override_px: 470.57825541925916
+#     cx_override_px: 160.105131149292
+#     img_width_override: 320
+
+#     # Target selection
+#     target_class_name: person
+#     min_score: 0.25
+
+#     # Linear (farther target → smaller height)
+#     target_box_height_px: 200.0   # was 250.0 → makes robot stop farther
+#     deadband_px: 20.0
+#     k_linear: 0.010
+#     v_min: 0.12
+#     v_max: 0.45
+#     forward_only: true
+
+#     # Angular
+#     k_angular: 0.60
+#     deadband_th_deg: 1.0
+#     w_min: 0.15
+#     w_max: 2.0
+
+#     # Turn slowdown with creep floor
+#     slow_on_turn: true
+#     v_turn_min: 0.08
+
+#     # Slow detections handling
+#     det_timeout_sec: 3.5
+#     hold_on_stale: true
+#     hold_max_sec: 2.5
+#     hold_decay_lin: 0.99
+#     hold_decay_ang: 0.85
+
+#     # Forward “force” safety (mild)
+#     force_forward_when_seen: true
+#     px_err_min_for_force: 3.0
+#     v_force_min: 0.12
+
+# mono_lidar_follower:
+#   ros__parameters:
+#     det_topic: /yolo/detections
+#     det_qos_reliability: best_effort
+#     use_msg_stamp: false
+#     cmd_vel_out: /cmd_vel_tracker
+
+#     fx_override_px: 470.57825541925916
+#     cx_override_px: 160.105131149292
+#     img_width_override: 320
+
+#     target_class_name: person
+#     min_score: 0.25
+
+#     # Start slightly larger than your current "h" so it moves forward, then
+#     # step DOWN by 10–20 px to push the stop farther once you confirm forward works.
+#     target_box_height_px: 260.0   # <-- raise if you still see no forward; lower later to stop farther
+#     deadband_px: 15.0
+
+#     k_linear: 0.012
+#     v_min: 0.12
+#     v_max: 0.45
+#     forward_only: true            # <-- prevents reverse
+
+#     k_angular: 0.6
+#     deadband_th_deg: 1.0
+#     w_min: 0.15
+#     w_max: 2.0
+
+#     slow_on_turn: true
+#     v_turn_min: 0.10
+
+#     det_timeout_sec: 3.5
+#     hold_on_stale: true
+#     hold_max_sec: 2.5
+#     hold_decay_lin: 0.99
+#     hold_decay_ang: 0.85
+
+#     force_forward_when_seen: true
+#     px_err_min_for_force: 3.0
+#     v_force_min: 0.12
+
+mono_lidar_follower:
+  ros__parameters:
+    det_topic: /yolo/detections
+    camera_info_topic: /left/camera_info
+    cmd_vel_out: /cmd_vel_tracker
+
+    fx_override_px: 470.6
+    cx_override_px: 160.1
+    img_width_override: 320
+    target_class_name: person
+    min_score: 0.25
+
+    # Angular
+    k_angular: 0.6
+    deadband_th_deg: 1.0
+    w_min: 0.15
+    w_max: 2.0
+
+    # Linear
+    target_box_height_px: 260.0
+    k_linear: 0.01
+    deadband_px: 20.0
+    v_min: 0.10
+    v_max: 0.45
+    forward_only: true
+
+    # Forward force floor
+    force_forward_when_seen: true
+    px_err_min_for_force: 3.0
+    v_force_min: 0.15
+
+    # Robustness
+    det_timeout_sec: 3.5
+    hold_on_stale: true
+    hold_max_sec: 2.5
+    hold_decay_lin: 0.99
+    hold_decay_ang: 0.85
+
+    # Align-first
+    align_first: true
+    align_enter_deg: 6.0
+    align_exit_deg: 2.0
+    align_max_w: 1.2
+    align_timeout_sec: 2.0
+
+
+

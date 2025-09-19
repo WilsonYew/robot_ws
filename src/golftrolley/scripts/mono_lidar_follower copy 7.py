@@ -3,7 +3,6 @@
 # - Angular cmd from bbox center vs principal point (cx, fx)
 # - Linear cmd from bbox pixel height vs target height (distance proxy)
 # - Holds last command briefly when detections pause
-# - Align-first mode: rotate to target, then advance
 
 import math
 import rclpy
@@ -84,8 +83,6 @@ class MonoCamFollower(Node):
         self.last_dets = None
         self.last_det_stamp = None
         self.last_debug_time = self.get_clock().now()
-
-        # Align-first state
         self.aligning = False
         self.align_start_time = None
 
@@ -202,11 +199,9 @@ class MonoCamFollower(Node):
                 if (now - rclpy.time.Time.from_msg(self.last_cmd_time)).nanoseconds / 1e9 < float(self.get_parameter('hold_max_sec').value):
                     dec_lin = float(self.get_parameter('hold_decay_lin').value)
                     dec_ang = float(self.get_parameter('hold_decay_ang').value)
-                    held = Twist()
-                    held.linear.x  = self.last_cmd.linear.x  * dec_lin
-                    held.angular.z = self.last_cmd.angular.z * dec_ang
-                    self.pub_cmd.publish(held)
-                    self.last_cmd = held
+                    self.last_cmd.linear.x  *= dec_lin
+                    self.last_cmd.angular.z *= dec_ang
+                    self.pub_cmd.publish(self.last_cmd)
                     self._dbg('HOLD: reusing last cmd')
                     return
             self._dbg('STOP: detections stale')
@@ -225,8 +220,7 @@ class MonoCamFollower(Node):
 
         # ---- Angular control (use effective fx/cx) ----
         th_err = -math.atan2((u - cx), fx)
-        k_ang = float(self.get_parameter('k_angular').value)
-        w = k_ang * th_err
+        w = float(self.get_parameter('k_angular').value) * th_err
 
         db_th = math.radians(float(self.get_parameter('deadband_th_deg').value))
         w_max = float(self.get_parameter('w_max').value)
@@ -238,85 +232,55 @@ class MonoCamFollower(Node):
         if 0.0 < w < w_min: w = w_min
         if -w_min < w < 0.0: w = -w_min
 
-        # ---- Align-first gate ----
-        align_first = bool(self.get_parameter('align_first').value)
-        enter = math.radians(float(self.get_parameter('align_enter_deg').value))
-        exit_ = math.radians(float(self.get_parameter('align_exit_deg').value))
-        align_wmax = float(self.get_parameter('align_max_w').value)
-        timeout_s = float(self.get_parameter('align_timeout_sec').value)
-
-        v_allowed = True
-        if align_first:
-            if not self.aligning and abs(th_err) >= enter:
-                self.aligning = True
-                self.align_start_time = now
-            elif self.aligning and abs(th_err) <= exit_:
-                self.aligning = False
-                self.align_start_time = None
-
-            timed_out = False
-            if self.aligning and self.align_start_time is not None:
-                timed_out = (now - self.align_start_time).nanoseconds / 1e9 > timeout_s
-
-            if self.aligning and not timed_out:
-                # Turn only while aligning
-                w = max(min(w, align_wmax), -align_wmax)
-                v_allowed = False
-
         # ---- Linear control ----
         h_tgt = float(self.get_parameter('target_box_height_px').value)
         px_err = h_tgt - h   # positive if person is too far (bbox too small)
         v_raw = float(self.get_parameter('k_linear').value) * px_err
+        v = v_raw
 
-        if not v_allowed:
+        db_px = float(self.get_parameter('deadband_px').value)
+        v_max = float(self.get_parameter('v_max').value)
+        v_min = float(self.get_parameter('v_min').value)
+        forward_only = bool(self.get_parameter('forward_only').value)
+
+        if abs(px_err) < db_px:
             v = 0.0
-        else:
-            v = v_raw
-            db_px = float(self.get_parameter('deadband_px').value)
-            v_max = float(self.get_parameter('v_max').value)
-            v_min = float(self.get_parameter('v_min').value)
-            forward_only = bool(self.get_parameter('forward_only').value)
 
-            if abs(px_err) < db_px:
-                v = 0.0
+        # clamp
+        v = max(min(v, v_max), -v_max)
 
-            # clamp
-            v = max(min(v, v_max), -v_max)
+        # forward-only clamp
+        if forward_only and v < 0.0:
+            v = 0.0
 
-            # forward-only clamp
-            if forward_only and v < 0.0:
-                v = 0.0
+        # force a forward floor when clearly too far
+        if bool(self.get_parameter('force_forward_when_seen').value):
+            if px_err > float(self.get_parameter('px_err_min_for_force').value):
+                v = max(v, float(self.get_parameter('v_force_min').value))
 
-            # force a forward floor when clearly too far
-            if bool(self.get_parameter('force_forward_when_seen').value):
-                if px_err > float(self.get_parameter('px_err_min_for_force').value):
-                    v = max(v, float(self.get_parameter('v_force_min').value))
+        # regular v_min floor
+        if 0.0 < v < v_min:
+            v = v_min
 
-            # regular v_min floor
-            if 0.0 < v < v_min:
-                v = v_min
-
-            # Optional: reduce forward speed when turning hard, with creep floor
-            if bool(self.get_parameter('slow_on_turn').value) and w_max > 0.0:
-                scale = 1.0 - min(1.0, abs(w) / w_max)
-                v *= max(0.0, scale)
-                v_turn_min = float(self.get_parameter('v_turn_min').value)
-                if v > 0.0 and v < v_turn_min:
-                    v = v_turn_min
+        # Optional: reduce forward speed when turning hard, with creep floor
+        if bool(self.get_parameter('slow_on_turn').value) and w_max > 0.0:
+            scale = 1.0 - min(1.0, abs(w) / w_max)
+            v *= max(0.0, scale)
+            v_turn_min = float(self.get_parameter('v_turn_min').value)
+            if v > 0.0 and v < v_turn_min:
+                v = v_turn_min
 
         # Publish + remember for hold
         cmd = Twist()
         cmd.linear.x = float(v)
         cmd.angular.z = float(w)
         self.pub_cmd.publish(cmd)
-
-        # store a copy for hold (avoid aliasing)
         self.last_cmd = Twist()
         self.last_cmd.linear.x = cmd.linear.x
         self.last_cmd.angular.z = cmd.angular.z
         self.last_cmd_time = now.to_msg()
 
-        self._dbg(f'align={self.aligning} v_raw={v_raw:.2f} v={cmd.linear.x:.2f} w={cmd.angular.z:.2f} | '
+        self._dbg(f'v_raw={v_raw:.2f} v={cmd.linear.x:.2f} w={cmd.angular.z:.2f} | '
                   f'u={u:.1f} h={h:.1f} tgt={h_tgt:.1f} | th_err={math.degrees(th_err):.1f}deg px_err={px_err:.1f}')
 
 

@@ -2,8 +2,7 @@
 # Mono camera person follower (YOLO only), robust to slow detections
 # - Angular cmd from bbox center vs principal point (cx, fx)
 # - Linear cmd from bbox pixel height vs target height (distance proxy)
-# - Holds last command briefly when detections pause
-# - Align-first mode: rotate to target, then advance
+# - Hold last command briefly when detections pause
 
 import math
 import rclpy
@@ -35,47 +34,35 @@ class MonoCamFollower(Node):
         self.declare_parameter('min_score', 0.25)
 
         # Angular control (to center)
-        self.declare_parameter('k_angular', 0.6)           # softer by default
-        self.declare_parameter('deadband_th_deg', 1.0)     # deg
-        self.declare_parameter('w_max', 2.0)
+        self.declare_parameter('k_angular', 1.2)           # rad/s per rad error
+        self.declare_parameter('deadband_th_deg', 2.0)     # deg
+        self.declare_parameter('w_max', 1.2)
         self.declare_parameter('w_min', 0.15)
 
         # Linear control (distance proxy from bbox height)
-        self.declare_parameter('target_box_height_px', 250.0)
-        self.declare_parameter('k_linear', 0.01)           # m/s per pixel error
-        self.declare_parameter('deadband_px', 20.0)        # px (≈ stop band)
-        self.declare_parameter('v_max', 0.45)
-        self.declare_parameter('v_min', 0.10)
+        self.declare_parameter('target_box_height_px', 220.0)
+        self.declare_parameter('k_linear', 0.003)          # m/s per pixel error
+        self.declare_parameter('deadband_px', 8.0)         # px
+        self.declare_parameter('v_max', 0.7)
+        self.declare_parameter('v_min', 0.05)
         self.declare_parameter('forward_only', True)
 
-        # Forward “force” floor when clearly too far (guarantees motion)
-        self.declare_parameter('force_forward_when_seen', True)
-        self.declare_parameter('px_err_min_for_force', 3.0)
-        self.declare_parameter('v_force_min', 0.15)
-
-        # Staleness + debug
+        # Staleness, debug
         self.declare_parameter('debug', True)
-        self.declare_parameter('det_timeout_sec', 3.5)     # tolerant for slow YOLO
+        self.declare_parameter('det_timeout_sec', 3.0)     # tolerant for slow YOLO
         self.declare_parameter('info_timeout_sec', 2.0)
 
         # Robustness to slow detections
         self.declare_parameter('use_msg_stamp', False)      # False = use receive time
         self.declare_parameter('det_qos_reliability', 'best_effort')  # or 'reliable'
         self.declare_parameter('hold_on_stale', True)
-        self.declare_parameter('hold_max_sec', 2.5)
-        self.declare_parameter('hold_decay_lin', 0.99)      # linear decays slowly
+        self.declare_parameter('hold_max_sec', 1.5)
+        self.declare_parameter('hold_decay_lin', 0.98)      # linear decays slowly
         self.declare_parameter('hold_decay_ang', 0.85)      # angular decays faster
 
-        # Turning slowdown controls (optional)
+        # Turning slowdown controls
         self.declare_parameter('slow_on_turn', True)        # scale v by turn amount
-        self.declare_parameter('v_turn_min', 0.08)          # keep at least this v while turning
-
-        # ---- Align-first behavior ----
-        self.declare_parameter('align_first', True)          # enable 2-stage behavior
-        self.declare_parameter('align_enter_deg', 6.0)       # start aligning if |err| >= this
-        self.declare_parameter('align_exit_deg', 2.0)        # consider aligned if |err| <= this
-        self.declare_parameter('align_max_w', 1.2)           # cap angular speed while aligning
-        self.declare_parameter('align_timeout_sec', 2.0)     # optional safety timeout
+        self.declare_parameter('v_turn_min', 0.0)           # keep at least this v while turning
 
         # ---------- State ----------
         self.fx = None
@@ -84,10 +71,6 @@ class MonoCamFollower(Node):
         self.last_dets = None
         self.last_det_stamp = None
         self.last_debug_time = self.get_clock().now()
-
-        # Align-first state
-        self.aligning = False
-        self.align_start_time = None
 
         # For "hold last command"
         self.last_cmd = Twist()
@@ -202,11 +185,9 @@ class MonoCamFollower(Node):
                 if (now - rclpy.time.Time.from_msg(self.last_cmd_time)).nanoseconds / 1e9 < float(self.get_parameter('hold_max_sec').value):
                     dec_lin = float(self.get_parameter('hold_decay_lin').value)
                     dec_ang = float(self.get_parameter('hold_decay_ang').value)
-                    held = Twist()
-                    held.linear.x  = self.last_cmd.linear.x  * dec_lin
-                    held.angular.z = self.last_cmd.angular.z * dec_ang
-                    self.pub_cmd.publish(held)
-                    self.last_cmd = held
+                    self.last_cmd.linear.x  *= dec_lin
+                    self.last_cmd.angular.z *= dec_ang
+                    self.pub_cmd.publish(self.last_cmd)
                     self._dbg('HOLD: reusing last cmd')
                     return
             self._dbg('STOP: detections stale')
@@ -225,8 +206,7 @@ class MonoCamFollower(Node):
 
         # ---- Angular control (use effective fx/cx) ----
         th_err = -math.atan2((u - cx), fx)
-        k_ang = float(self.get_parameter('k_angular').value)
-        w = k_ang * th_err
+        w = float(self.get_parameter('k_angular').value) * th_err
 
         db_th = math.radians(float(self.get_parameter('deadband_th_deg').value))
         w_max = float(self.get_parameter('w_max').value)
@@ -238,86 +218,42 @@ class MonoCamFollower(Node):
         if 0.0 < w < w_min: w = w_min
         if -w_min < w < 0.0: w = -w_min
 
-        # ---- Align-first gate ----
-        align_first = bool(self.get_parameter('align_first').value)
-        enter = math.radians(float(self.get_parameter('align_enter_deg').value))
-        exit_ = math.radians(float(self.get_parameter('align_exit_deg').value))
-        align_wmax = float(self.get_parameter('align_max_w').value)
-        timeout_s = float(self.get_parameter('align_timeout_sec').value)
-
-        v_allowed = True
-        if align_first:
-            if not self.aligning and abs(th_err) >= enter:
-                self.aligning = True
-                self.align_start_time = now
-            elif self.aligning and abs(th_err) <= exit_:
-                self.aligning = False
-                self.align_start_time = None
-
-            timed_out = False
-            if self.aligning and self.align_start_time is not None:
-                timed_out = (now - self.align_start_time).nanoseconds / 1e9 > timeout_s
-
-            if self.aligning and not timed_out:
-                # Turn only while aligning
-                w = max(min(w, align_wmax), -align_wmax)
-                v_allowed = False
-
         # ---- Linear control ----
         h_tgt = float(self.get_parameter('target_box_height_px').value)
         px_err = h_tgt - h   # positive if person is too far (bbox too small)
-        v_raw = float(self.get_parameter('k_linear').value) * px_err
+        v = float(self.get_parameter('k_linear').value) * px_err
 
-        if not v_allowed:
+        db_px = float(self.get_parameter('deadband_px').value)
+        v_max = float(self.get_parameter('v_max').value)
+        v_min = float(self.get_parameter('v_min').value)
+        forward_only = bool(self.get_parameter('forward_only').value)
+
+        if abs(px_err) < db_px:
             v = 0.0
-        else:
-            v = v_raw
-            db_px = float(self.get_parameter('deadband_px').value)
-            v_max = float(self.get_parameter('v_max').value)
-            v_min = float(self.get_parameter('v_min').value)
-            forward_only = bool(self.get_parameter('forward_only').value)
+        v = max(min(v, v_max), -v_max)
+        if forward_only and v < 0.0:
+            v = 0.0
+        if 0.0 < v < v_min:
+            v = v_min
 
-            if abs(px_err) < db_px:
-                v = 0.0
-
-            # clamp
-            v = max(min(v, v_max), -v_max)
-
-            # forward-only clamp
-            if forward_only and v < 0.0:
-                v = 0.0
-
-            # force a forward floor when clearly too far
-            if bool(self.get_parameter('force_forward_when_seen').value):
-                if px_err > float(self.get_parameter('px_err_min_for_force').value):
-                    v = max(v, float(self.get_parameter('v_force_min').value))
-
-            # regular v_min floor
-            if 0.0 < v < v_min:
-                v = v_min
-
-            # Optional: reduce forward speed when turning hard, with creep floor
-            if bool(self.get_parameter('slow_on_turn').value) and w_max > 0.0:
-                scale = 1.0 - min(1.0, abs(w) / w_max)
-                v *= max(0.0, scale)
-                v_turn_min = float(self.get_parameter('v_turn_min').value)
-                if v > 0.0 and v < v_turn_min:
-                    v = v_turn_min
+        # Optional: reduce forward speed when turning hard, with creep floor
+        if bool(self.get_parameter('slow_on_turn').value) and w_max > 0.0:
+            scale = 1.0 - min(1.0, abs(w) / w_max)
+            v *= max(0.0, scale)
+            v_turn_min = float(self.get_parameter('v_turn_min').value)
+            if v > 0.0 and v < v_turn_min:
+                v = v_turn_min
 
         # Publish + remember for hold
         cmd = Twist()
         cmd.linear.x = float(v)
         cmd.angular.z = float(w)
         self.pub_cmd.publish(cmd)
-
-        # store a copy for hold (avoid aliasing)
-        self.last_cmd = Twist()
-        self.last_cmd.linear.x = cmd.linear.x
-        self.last_cmd.angular.z = cmd.angular.z
+        self.last_cmd = cmd
         self.last_cmd_time = now.to_msg()
 
-        self._dbg(f'align={self.aligning} v_raw={v_raw:.2f} v={cmd.linear.x:.2f} w={cmd.angular.z:.2f} | '
-                  f'u={u:.1f} h={h:.1f} tgt={h_tgt:.1f} | th_err={math.degrees(th_err):.1f}deg px_err={px_err:.1f}')
+        self._dbg(f'cmd v={cmd.linear.x:.2f} w={cmd.angular.z:.2f} | '
+                  f'u={u:.1f} h={h:.1f} | th_err={math.degrees(th_err):.1f}deg px_err={px_err:.1f}')
 
 
 def main():

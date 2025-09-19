@@ -13,7 +13,7 @@ public:
   {
     // -------- Parameters --------
     this->declare_parameter<std::string>("device", "/dev/video0");
-    this->declare_parameter<int>("fps", 15);
+    this->declare_parameter<int>("fps", 10);
     this->declare_parameter<int>("width", 320);
     this->declare_parameter<int>("height", 240);
     this->declare_parameter<std::string>("frame_id", "camera_link_optical");

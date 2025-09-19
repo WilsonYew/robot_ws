@@ -35,13 +35,13 @@ def generate_launch_description():
             remappings=[('/cmd_vel_out','/cmd_vel_muxed')]
         )
 
-    twist_stamper = Node(
-            package='twist_stamper',
-            executable='twist_stamper',
-            parameters=[{'use_sim_time': use_sim_time}],
-            remappings=[('/cmd_vel_in','/cmd_vel_collision'),
-                        ('/cmd_vel_out','/cmd_vel_stamped')]
-         )
+    # twist_stamper = Node(
+    #         package='twist_stamper',
+    #         executable='twist_stamper',
+    #         parameters=[{'use_sim_time': use_sim_time}],
+    #         remappings=[('/cmd_vel_in','/cmd_vel_collision'),
+    #                     ('/cmd_vel_out','/cmd_vel_stamped')]
+    #      )
 
 
     return LaunchDescription([
@@ -52,5 +52,5 @@ def generate_launch_description():
         joy_node,
         teleop_node,
         twist_mux,
-        twist_stamper       
+        # twist_stamper       
     ])

@@ -1,55 +1,132 @@
+# # ~/robot_ws/src/golftrolley/config/collision_monitor.yaml
+# collision_monitor:
+#   ros__parameters:
+#     # Frames / TF
+#     base_frame_id: "base_link"
+#     odom_frame_id: "odom"
+#     transform_tolerance: 0.5
+
+#     # Cmd topics
+#     cmd_vel_in_topic: "/cmd_vel_muxed"
+#     cmd_vel_out_topic: "/cmd_vel_collision"
+#     stop_pub_timeout: 2.0
+#     enable_stamped_cmd_vel: false         # Jazzy or older => false
+#     base_shift_correction: true
+
+#     # (Optional) publish which zone is active (nice for RViz/echo)
+#     state_topic: "collision_monitor_state"
+
+#     # ---- Sources (Jazzy style) ----
+#     observation_sources: ["scan"]
+#     scan:
+#       type: "scan"
+#       topic: "/scan"
+#       source_timeout: 0.8
+#       min_range: 0.35
+#       max_range: 8.0
+#       enabled: true
+
+#     # ---- Polygons (Jazzy style) ----
+#     polygons: ["SlowZone", "StopZone"]
+
+#     SlowZone:
+#       type: "polygon"
+#       action_type: "limit"
+#       linear_limit: 0.25
+#       angular_limit: 0.8
+#       # NOTE: points must be a STRING containing [[x,y], ...]
+#       points: "[[0.25, -0.30], [0.25, 0.30], [1.20, 0.40], [1.20, -0.40]]"
+#       min_points: 4
+#       visualize: true
+#       polygon_pub_topic: "polygon_slow"
+
+#     StopZone:
+#       type: "polygon"
+#       action_type: "stop"
+#       points: "[[0.35, -0.20], [0.35, 0.20], [1.00, 0.25], [1.00, -0.25]]"
+#       min_points: 4
+#       visualize: true
+#       polygon_pub_topic: "polygon_stop"
+
+
 # ~/robot_ws/src/golftrolley/config/collision_monitor.yaml
 collision_monitor:
   ros__parameters:
+    # Frames / TF
     base_frame_id: "base_link"
     odom_frame_id: "odom"
+    transform_tolerance: 0.5
+
+    # Cmd topics
     cmd_vel_in_topic: "/cmd_vel_muxed"
     cmd_vel_out_topic: "/cmd_vel_collision"
-    state_topic: "collision_monitor_state"         # optional; nice for RViz/echo
-    transform_tolerance: 0.5
-    source_timeout: 0.8
-    base_shift_correction: true
     stop_pub_timeout: 2.0
-    enable_stamped_cmd_vel: false                  # Jazzy: keep false unless you feed TwistStamped
+    enable_stamped_cmd_vel: false
+    base_shift_correction: true
 
-    # --- Polygons list: names only ---
-    polygons: ["StopZone", "SlowZone", "BubbleCircle"]
+    # State / viz (optional)
+    state_topic: "collision_monitor_state"
 
-    # --- Polygons defined by name (new Jazzy format) ---
-    StopZone:
-      type: "polygon"
-      action_type: "stop"
-      points: "[[0.18, -0.25], [0.18, 0.25], [0.80, 0.35], [0.80, -0.35]]"
-      min_points: 4
-      visualize: true
-      polygon_pub_topic: "polygon_stop"
+    # -------- SOURCES --------
+    # A single LiDAR scan is fine; it contains side returns already.
+    observation_sources: ["front_scan"]
+    front_scan:
+      type: "scan"
+      topic: "/scan"           # your LiDAR topic
+      source_timeout: 0.8
+      min_range: 0.20
+      max_range: 8.0
       enabled: true
 
-    SlowZone:
+    # -------- POLYGONS --------
+    # Coordinates are in meters in base_link (x forward, y left).
+    polygons: ["SlowZoneFront", "StopZoneFront",
+               "StopZoneLeft", "StopZoneRight",
+               ]  # remove if you don't want rear stops "StopZoneRear"
+
+    # FRONT (keep your originals/tune as needed)
+    SlowZoneFront:
       type: "polygon"
-      action_type: "limit"          # or "slowdown" if you prefer slowdown_ratio
+      action_type: "limit"
       linear_limit: 0.25
       angular_limit: 0.8
-      points: "[[0.10, -0.40], [0.10, 0.40], [1.60, 0.60], [1.60, -0.60]]"
+      points: "[[0.25, -0.30], [0.25, 0.30], [1.20, 0.40], [1.20, -0.40]]"
       min_points: 4
       visualize: true
-      polygon_pub_topic: "polygon_slow"
-      enabled: true
+      polygon_pub_topic: "polygon_slow_front"
 
-    BubbleCircle:
-      type: "circle"
-      action_type: "limit"
-      radius: 0.90
-      linear_limit: 0.35
-      angular_limit: 0.80
+    StopZoneFront:
+      type: "polygon"
+      action_type: "stop"
+      points: "[[0.35, -0.20], [0.35, 0.20], [1.00, 0.25], [1.00, -0.25]]"
+      min_points: 4
       visualize: true
-      polygon_pub_topic: "polygon_bubble"
-      enabled: true
+      polygon_pub_topic: "polygon_stop_front"
 
-    # --- Sources ---
-    observation_sources: ["scan"]
-    scan:
-      type: "scan"
-      topic: "/scan"
-      source_timeout: 0.2
-      enabled: true
+    # LEFT SIDE STOP (y > 0). Make this hug the robot’s left side.
+    # Example assumes ~0.5 m robot width; tweak y-limits to match your chassis.
+    StopZoneLeft:
+      type: "polygon"
+      action_type: "stop"
+      points: "[[-0.10, 0.18], [0.90, 0.18], [0.90, 0.55], [-0.10, 0.55]]"
+      min_points: 4
+      visualize: true
+      polygon_pub_topic: "polygon_stop_left"
+
+    # RIGHT SIDE STOP (y < 0), mirrored
+    StopZoneRight:
+      type: "polygon"
+      action_type: "stop"
+      points: "[[-0.10, -0.18], [0.90, -0.18], [0.90, -0.55], [-0.10, -0.55]]"
+      min_points: 4
+      visualize: true
+      polygon_pub_topic: "polygon_stop_right"
+
+    # OPTIONAL REAR STOP (protects backing up)
+    # StopZoneRear:
+    #   type: "polygon"
+    #   action_type: "stop"
+    #   points: "[[-0.60, -0.35], [-0.60, 0.35], [-0.10, 0.35], [-0.10, -0.35]]"
+    #   min_points: 4
+    #   visualize: true
+    #   polygon_pub_topic: "polygon_stop_rear"

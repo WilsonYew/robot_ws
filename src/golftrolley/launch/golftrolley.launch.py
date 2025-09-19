@@ -21,25 +21,6 @@ def generate_launch_description():
         )]
     )
 
-    imu_driver = TimerAction(
-        period=4.0,
-        actions=[IncludeLaunchDescription(
-            PythonLaunchDescriptionSource(
-                PathJoinSubstitution([FindPackageShare('mpu6050driver'),
-                                       'launch', 'mpu6050driver_launch.py'])
-            )
-        )]
-    )
-
-    imu_filter_ekf = TimerAction(
-        period=5.0,
-        actions=[IncludeLaunchDescription(
-            PythonLaunchDescriptionSource(
-                PathJoinSubstitution([FindPackageShare('mpu6050driver'),
-                                       'launch', 'imu_filter_launch.py'])
-            )
-        )]
-    )
 
     # --- LiDAR: stable port + explicit args + respawn; start last ---
     lidar_launch = TimerAction(
@@ -53,46 +34,32 @@ def generate_launch_description():
     )
 
     # --- Stereo camera (use parameters dict; add respawn) ---
-    stereo_launch = TimerAction(
-        period=20.0,
+    mono_launch = TimerAction(
+        period=10.0,
         actions=[Node(
-            package='stereo_camera_node',
-            executable='stereo_camera_node',
-            name='stereo_camera_node',
-            output='screen',
-            respawn=True, respawn_delay=2.0,
+            package="stereo_camera_node",          # <-- change if your package name differs
+            executable="mono_camera_node",         # <-- must match your built executable
+            name="mono_camera_node",
+            output="screen",
             parameters=[{
-                'fps': 10,
-                'width': 640,
-                'height': 240,
-                'encoding': 'mono8',
-                'use_rectification': True
-            }]
+                "device": '/dev/video0',          # adjust if needed
+                "fps": 10,                 # open source at 30 fps
+                "width": 320,                   # try 640x480 if your CPU can handle it
+                "height": 240,
+                "frame_id": 'camera_link_optical', # must match URDF
+                "topic": '/image_rgb',
+                "use_mjpeg": True,
+            }],
         )]
     )
 
-    disparity_launch = TimerAction(
-        period=30.0,
-        actions=[Node(
-            package='stereo_image_proc', executable='disparity_node',
-            parameters=[{'approximate_sync': True}],
-            remappings=[
-                ('left/image_rect',  '/left/image_rect'),
-                ('right/image_rect', '/right/image_rect'),
-                ('left/camera_info','/left/camera_info'),
-                ('right/camera_info','/right/camera_info'),
-                ('disparity',       '/stereo/disparity'),
-            ],
-            respawn=True
-        )]
-    )
-    
+
     pkg = 'golftrolley'
     slam_params = os.path.join(get_package_share_directory(pkg), 'config', 'slam_toolbox.yaml')
 
 
     slam_online_async = TimerAction(
-        period=40.0,
+        period=20.0,
         actions=[IncludeLaunchDescription(
             PythonLaunchDescriptionSource(PathJoinSubstitution([
                 FindPackageShare('slam_toolbox'), 'launch', 'online_async_launch.py'
@@ -106,39 +73,19 @@ def generate_launch_description():
         )]
     )
 
-    # nav2_params = os.path.join(get_package_share_directory(pkg), 'config', 'nav2_params.yaml')
-
-    # nav2_stack = TimerAction(
-    #     period=30.0,  # after lidar (8s) and VO (20s in your last snippet) — adjust so inputs exist
-    #     actions=[
-    #         # Planner, controller, smoother, behaviors, BT nav, waypoint follower
-    #         Node(package='nav2_planner', executable='planner_server', name='planner_server',
-    #             output='screen', parameters=[nav2_params]),
-    #         Node(package='nav2_controller', executable='controller_server', name='controller_server',
-    #             output='screen', parameters=[nav2_params],
-    #             remappings=[('/cmd_vel','/cmd_vel')]),  # Nav2 -> twist_mux (your mux listens to /cmd_vel)
-    #         Node(package='nav2_smoother', executable='smoother_server', name='smoother_server',
-    #             output='screen', parameters=[nav2_params]),
-    #         Node(package='nav2_behaviors', executable='behavior_server', name='behavior_server',
-    #             output='screen', parameters=[nav2_params]),
-    #         Node(package='nav2_bt_navigator', executable='bt_navigator', name='bt_navigator',
-    #             output='screen', parameters=[nav2_params]),
-    #         Node(package='nav2_waypoint_follower', executable='waypoint_follower', name='waypoint_follower',
-    #             output='screen', parameters=[nav2_params]),
-    #         # Lifecycle manager
-    #         Node(package='nav2_lifecycle_manager', executable='lifecycle_manager', name='lifecycle_manager_navigation',
-    #             output='screen', parameters=[nav2_params]),
-    #     ]
-    # )
+    follow = TimerAction(
+        period=30.0,
+        actions=[IncludeLaunchDescription(
+            PythonLaunchDescriptionSource(PathJoinSubstitution([
+                FindPackageShare('golftrolley'), 'launch', 'follow.launch.py'
+            ])),
+        )]
+    )
 
     return LaunchDescription([
         robot,
-        imu_driver,
-        imu_filter_ekf,
-        stereo_launch,
-        # disparity_launch,
+        mono_launch,
         lidar_launch,
-        # rtabmap,
         slam_online_async,
-        # nav2_stack,
+        follow,
     ])

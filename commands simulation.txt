@@ -1,0 +1,12 @@
+{1} create jointstate for wheel
+ros2 run joint_state_publisher_gui joint_state_publisher_gui
+
+{2} publish the robot description
+ros2 launch dd_bot rsp.launch.py
+ros2 launch dd_bot launch_sim.launch.py
+
+ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args -r /cmd_vel:=/cmd_vel_in
+
+ros2 run twist_stamper twist_stamper --ros-args -r /cmd_vel_out:=/diff_cont/cmd_vel
+
+./arduino-ide_2.3.6_Linux_64bit.AppImage --no-sandbox

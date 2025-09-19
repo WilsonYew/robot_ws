@@ -1,0 +1,12 @@
+# ~/robot_ws/src/golftrolley/config/yolo.yaml
+yolo:
+  ros__parameters:
+    model_path: "/home/golftrolley/models/yolov8n.pt"   # <- your model
+    device: "cpu"                # was "0" -> must be "cpu" on non-CUDA systems
+    half: false                  # half precision needs CUDA; keep false on CPU
+    imgsz: 416                   # smaller for Pi/CPU; 320–640 is typical
+    conf_thres: 0.5
+    iou_thres: 0.45
+    max_det: 50
+    save_img: false
+    visualize: false

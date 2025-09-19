@@ -1,0 +1,132 @@
+-----------------------------------------------------------------------------------------
+{1}SERIAL_MOTOR:
+[rasp-pi] (/dev/ttyACM0) or (/dev/serial/by-id/usb-Arduino__www.arduino.cc__0043_75136323337351C0C0C1-if00)
+ros2 run serial_motor_demo driver --ros-args -p serial_port:=/dev/ttyACM0 -p baud_rate:=57600 -p loop_rate:=30 -p encoder_cpr:=2400
+[dev-comp]
+ros2 run serial_motor_demo gui
+
+-----------------------------------------------------------------------------------------
+{2}LIDAR:
+[rasp-pi] (/dev/ttyUSB0) or (/dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0001-if00-port0)
+ros2 launch ydlidar_ros2_driver ydlidar_launch.py
+
+topic: out= /scan, frame: laser
+
+services:
+ros2 service call /stop_scan std_srvs/srv/Empty
+ros2 service call /start_scan std_srvs/srv/Empty
+
+
+-----------------------------------------------------------------------------------------
+{3}IMU:
+[rasp-pi] (i2c) (linear+gyro x-orientation)
+ros2 launch mpu6050driver mpu6050driver_launch.py
+
+topic: out= /imu_rawdata
+
+[rasp-pi]
+ros2 run imu_filter_madgwick imu_filter_madgwick_node --ros-args -p use_mag:=false
+
+topic: out= /imu_data
+
+-----------------------------------------------------------------------------------------
+{4}STEREO CAMERA
+ros2 run stereo_camera_node stereo_camera_node \
+  --ros-args -p device:="/dev/video0" \
+             -p fps:=10 \
+             -p width:=640 \
+             -p height:=240 \
+             -p encoding:="mono8" \
+             -p use_rectification:=true
+
+calibrate:
+python3 stereo_calibrate.py   --pattern "left_*.png" "right_*.png"   --board 9 7 --square 0.02   --mono-thresh 1.5 --stereo-thresh 3 --max-iters 5   --alpha 0
+
+capture:
+ros2 run stereo_camera_node stereo_calibration_capture --ros-args -p num_frames:=50 -p device:=/dev/video1 -p width:=1280 -p height:=480
+
+ros2 run stereo_camera_node stereo_calibration_capture
+
+
+ros2 run rqt_image_view rqt_image_view
+
+-----------------------------------------------------------------------------------------
+{5}HARDWARE
+ros2 launch golftrolley launch_robot.launch.py
+
+-----------------------------------------------------------------------------------------
+{6}RTABMAP
+ros2 launch rtabmap_launch rtabmap.launch.py \
+  stereo:=true approx_sync:=true \
+  frame_id:=base_link odom_frame_id:=odom \
+  left_image_topic:=/left/image_rect  right_image_topic:=/right/image_rect \
+  left_camera_info_topic:=/left/camera_info  right_camera_info_topic:=/right/camera_info \
+  imu_topic:=/imu/filtered \
+  subscribe_scan:=true -r scan:=/scan \
+  rtabmap_args:="--params \
+    Grid/FromDepth=false; \
+    Grid/RayTracing=true; \
+    Grid/RangeMax=8.0; \
+    Grid/MaxObstacleHeight=2.0; \
+    Vis/MinInliers=12; \
+    Kp/DetectorStrategy=6"
+
+
+ros2 launch rtabmap_launch rtabmap.launch.py   stereo:=true approx_sync:=true topic_queue_size:=50 sync_queue_size:=50   frame_id:=base_link   left_image_topic:=/left/image_rect  right_image_topic:=/right/image_rect   left_camera_info_topic:=/left/camera_info  right_camera_info_topic:=/right/camera_info
+map_always_update:=true
+Grid/RayTracing:=true
+Grid/RangeMax:=8.0
+MaxObstacleHeight=2.0
+-r scan:=/scan
+Grid/Sensor=2
+
+ros2 launch rtabmap_launch rtabmap.launch.py \
+  stereo:=true approx_sync:=true frame_id:=base_link \
+  left_image_topic:=/left/image_rect right_image_topic:=/right/image_rect \
+  left_camera_info_topic:=/left/camera_info right_camera_info_topic:=/right/camera_info \
+  map_always_update:=true \
+  rtabmap_args:="\
+  Grid/RayTracing:=true"\
+  Grid/RangeMax:=8.0
+
+    --params \
+    Grid/Sensor=1;Grid/FromDepth=true;Grid/RangeMax=8.0; \
+    Grid/NormalsSegmentation=true;Grid/MaxGroundAngle=45; \
+    Grid/MaxGroundHeight=0.20;Grid/MaxObstacleHeight=2.0; \
+    Grid/NoiseFilteringRadius=0.05;Grid/NoiseFilteringMinNeighbors=5; \
+    Grid/MinClusterSize=10;Grid/RayTracing=true"
+    Grid/3D=true
+    -r scan:=/scan \
+-----------------------------------------------------------------------------------------
+{7}Controller
+bluetoothctl -scan on -scan off -connect mac<:> -exit
+ros2 launch dd_bot joystick.launch.py
+evtest    jstest-gtk(gui)
+ros2 run joy joy_enumerate_devices
+ros2 topic echo /joy
+
+
+
+TROUBLESHOOT:
+ls /dev/tty*
+ros2 run image_view disparity_view --ros-args -r image:=/stereo/disparity
+
+ros2 run yolo_ros yolo_detect \
+  --ros-args \
+  -p image_topic:=/left/image_rect \
+  -p publish_bounding_boxes:=true \
+  -p publish_detections:=true \
+  -p class_names:="[person]" \
+  -p model_name:=yolov8n.pt \
+  -p conf_thres:=0.35 \
+  -r /detections:=/detections
+
+
+ros2 bag record -a -o my_full_system_test_bag
+ros2 bag play my_full_system_bag
+
+tmux new -s rosbag
+
+tmux attach -t rosbag
+tmux ls
+tmux kill-session -t tosbag

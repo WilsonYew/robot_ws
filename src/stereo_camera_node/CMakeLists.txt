@@ -29,9 +29,15 @@ add_executable(stereo_camera_node src/stereo_camera_node.cpp)
 ament_target_dependencies(stereo_camera_node rclcpp sensor_msgs cv_bridge)
 target_link_libraries(stereo_camera_node yaml-cpp ${OpenCV_LIBS})
 
+add_executable(mono_camera_node src/mono_camera_node.cpp)
+ament_target_dependencies(mono_camera_node rclcpp sensor_msgs cv_bridge)
+target_link_libraries(mono_camera_node ${OpenCV_LIBS})
+
+
 # --- Install ---
 install(TARGETS
   stereo_camera_node
+  mono_camera_node
   stereo_calibration_capture
   DESTINATION lib/${PROJECT_NAME})
 

@@ -10,6 +10,53 @@ import os
 
 def generate_launch_description():
 
+    # disparity_launch = Node(
+    #         package='stereo_image_proc', executable='disparity_node',
+    #         parameters=[{'approximate_sync': True}],
+    #         remappings=[
+    #             ('left/image_rect',  '/left/image_rect'),
+    #             ('right/image_rect', '/right/image_rect'),
+    #             ('left/camera_info','/left/camera_info'),
+    #             ('right/camera_info','/right/camera_info'),
+    #             ('disparity',       '/stereo/disparity'),
+    #         ],
+    #         respawn=True
+    #     )
+
+    disparity = Node(
+        package='stereo_image_proc',
+        executable='disparity_node',
+        name='disparity',
+        remappings=[
+            ('left/image_rect',  '/left/image_rect'),
+            ('right/image_rect', '/right/image_rect'),
+            ('left/camera_info','/left/camera_info'),
+            ('right/camera_info','/right/camera_info'),
+            ('disparity',        '/disparity'),
+        ],
+        parameters=[{
+            'approximate_sync': True,
+        }],
+        output='screen'
+    )
+
+    point_cloud = Node(
+        package='stereo_image_proc',
+        executable='point_cloud_node',
+        name='points2',
+        remappings=[
+            ('left/image_rect',  '/left/image_rect_rgb'),
+            ('left/camera_info','/left/camera_info'),
+            ('disparity',        '/disparity'),
+            ('points2',          '/left/points2'),
+        ],
+        parameters=[{
+            'approximate_sync': True,
+        }],
+        output='screen'
+    )
+
+
 
     pkg = 'golftrolley'
     collision_params = os.path.join(get_package_share_directory(pkg), 'config', 'collision_monitor.yaml')
@@ -23,6 +70,14 @@ def generate_launch_description():
         parameters=[collision_params],
         output='screen')
 
+    # smoother = Node(
+    #     package='nav2_velocity_smoother',
+    #     executable='velocity_smoother',
+    #     name='velocity_smoother',
+    #     parameters=[smoother_params],
+    #     remappings=[('cmd_vel','/cmd_vel_collision'),
+    #                 ('smoothed_cmd_vel','/cmd_vel')],
+    #     output='screen')
 
     twist_stamper = Node(
             package='twist_stamper',
@@ -40,6 +95,13 @@ def generate_launch_description():
         parameters=[follow_params],
     )
 
+
+
+    # to_diff = Node(
+    #     package='topic_tools', executable='relay', name='cmd_vel_to_diff',
+    #     arguments=['/cmd_vel', '/diff_cont/cmd_vel'],  # simple relay
+    #     output='screen'
+    # )
 
     lifecycle_mgr = Node(
         package='nav2_lifecycle_manager',
@@ -62,7 +124,7 @@ def generate_launch_description():
             ])
         ),
         launch_arguments={
-            'input_image_topic': '/image_rgb',   # matches yolo_bringup arg
+            'input_image_topic': '/left/image_rect_rgb',   # matches yolo_bringup arg
             'model': 'yolov8n.pt',           # optional, defaults are fine
             'threshold': '0.35',
             # 'yolo_encoding': 'bgr8',       # only if your frames are bgr8
@@ -74,7 +136,11 @@ def generate_launch_description():
     follower_delayed = TimerAction(period=15.0, actions=[follower])
 
     return LaunchDescription([
+        # disparity_launch,
         collision_monitor,
+        # cloud,
+        # disparity,
+        # point_cloud,
         lifecycle_mgr,
         twist_stamper,
         follower_delayed,
